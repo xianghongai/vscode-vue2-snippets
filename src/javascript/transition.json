@@ -1,0 +1,64 @@
+{
+	"before-enter": {
+		"prefix": ["beforeEnterEvent", "transitionBeforeEnterEvent"],
+		"body": ["@before-enter=\"$1\"$0"],
+		"description": "@before-enter=''"
+	},
+	"enter": {
+		"prefix": ["enterEvent", "transitionEnterEvent"],
+		"body": ["@enter=\"$1\"$0"],
+		"description": "@enter=''"
+	},
+	"after-enter": {
+		"prefix": ["afterEnterEvent", "transitionAfterEnterEvent"],
+		"body": ["@after-enter=\"$1\"$0"],
+		"description": "@after-enter=''"
+	},
+	"enter-cancelled": {
+		"prefix": ["enterCancelledEvent", "transitionEnterCancelledEvent"],
+		"body": ["@enter-cancelled=\"$1\"$0"],
+		"description": "@enter-cancelled=''"
+	},
+
+	"before-leave": {
+		"prefix": ["beforeLeaveEvent", "transitionBeforeLeaveEvent"],
+		"body": ["@before-leave=\"$1\"$0"],
+		"description": "@before-leave=''"
+	},
+	"leave": {
+		"prefix": ["leaveEvent", "transitionLeaveEvent"],
+		"body": ["@leave=\"$1\"$0"],
+		"description": "@leave=''"
+	},
+	"after-leave": {
+		"prefix": ["afterLeaveEvent", "transitionAfterLeaveEvent"],
+		"body": ["@after-leave=\"$1\"$0"],
+		"description": "@after-leave=''"
+	},
+	"leave-cancelled": {
+		"prefix": ["leaveCancelledEvent", "transitionLeaveCancelledEvent"],
+		"body": ["@leave-cancelled=\"$1\"$0"],
+		"description": "@leave-cancelled='' (v-show only)"
+	},
+
+	"before-appear": {
+		"prefix": ["beforeAppearEvent", "transitionBeforeAppearEvent"],
+		"body": ["@before-appear=\"$1\"$0"],
+		"description": "@before-appear=''"
+	},
+	"appear": {
+		"prefix": ["appearEvent", "transitionAppearEvent"],
+		"body": ["@appear=\"$1\"$0"],
+		"description": "@appear=''"
+	},
+	"after-appear": {
+		"prefix": ["afterAppearEvent", "transitionAfterAppearEvent"],
+		"body": ["@after-appear=\"$1\"$0"],
+		"description": "@after-appear=''"
+	},
+	"appear-cancelled": {
+		"prefix": ["appearCancelledEvent", "transitionAppearCancelledEvent"],
+		"body": ["@appear-cancelled=\"$1\"$0"],
+		"description": "@appear-cancelled=''"
+	}
+}

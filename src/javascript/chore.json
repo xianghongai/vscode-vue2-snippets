@@ -1,0 +1,7 @@
+{
+	"Vue.version": {
+		"prefix": "Vue.version",
+		"body": ["Vue.version$0"],
+		"description": "Provides the installed version of Vue as a string. This is especially useful for community plugins and components, where you might use different strategies for different versions."
+	}
+}

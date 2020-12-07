@@ -1,0 +1,65 @@
+{
+	"Vue.config.silent": {
+		"prefix": "Vue.config.silent",
+		"body": ["Vue.config.silent = ${1:false};$0"],
+		"description": "Type: `boolean`, Default: `false`\nSuppress all Vue logs and warnings."
+	},
+	"Vue.config.optionMergeStrategies": {
+		"prefix": "Vue.config.optionMergeStrategies",
+		"body": [
+			"Vue.config.optionMergeStrategies.option = function (parent, child, vm) {",
+			"  ${1}",
+			"};$0"
+		],
+		"description": "Type: `{[key: string]: Function}`\nDefault: `{}`\nDefine custom merging strategies for options.\nThe merge strategy receives the value of that option defined on the parent and child instances as the first and second arguments, respectively. The context Vue instance is passed as the third argument."
+	},
+	"Vue.config.devtools": {
+		"prefix": "Vue.config.devtools",
+		"body": ["Vue.config.devtools = ${1:true};"],
+		"description": "Type: `boolean`, Default: `true`, (`false` in production builds)\nConfigure whether to allow vue-devtools inspection. This option’s default value is `true` in development builds and `false` in production builds. You can set it to `true` to enable inspection for production builds."
+	},
+	"Vue.config.errorHandler": {
+		"prefix": "Vue.config.errorHandler",
+		"body": [
+			"Vue.config.errorHandler = function (err, vm, info) {",
+			"  ${1}",
+			"};$0"
+		],
+		"description": "Type: `Function`.\n Default: `undefined`.\nAssign a handler for uncaught errors during component render function and watchers. The handler gets called with the error and the Vue instance.\n- In 2.2.0+, this hook also captures errors in component lifecycle hooks. Also, when this hook is `undefined`, captured errors will be logged with `console.error` instead of crashing the app.\n- In 2.4.0+, this hook also captures errors thrown inside Vue custom event handlers.\n- In 2.6.0+, this hook also captures errors thrown inside `v-on` DOM listeners. In addition, if any of the covered hooks or handlers returns a Promise chain (e.g. async functions), the error from that Promise chain will also be handled.\n- Error tracking services Sentry and Bugsnag provide official integrations using this option."
+	},
+	"Vue.config.warnHandler": {
+		"prefix": "Vue.config.warnHandler",
+		"body": [
+			"Vue.config.warnHandler = function (msg, vm, trace) {",
+			"  ${1}",
+			"};$0"
+		],
+		"description": "Type: `Function`.\n Default: `undefined`.\nAssign a custom handler for runtime Vue warnings. Note this only works during development and is ignored in production.(New in 2.4.0+)"
+	},
+	"Vue.config.ignoredElements": {
+		"prefix": "Vue.config.ignoredElements",
+		"body": [
+			"Vue.config.ignoredElements = [${1:'${2:feature-web-component}'}];${0}"
+		],
+		"description": "Type: `Array<string | RegExp>`.\n Default: `[]`.\n Make Vue ignore custom elements defined outside of Vue (e.g., using the Web Components APIs). Otherwise, it will throw a warning about an `Unknown custom element`, assuming that you forgot to register a global component or misspelled a component name."
+	},
+	"Vue.config.keyCodes": {
+		"prefix": "Vue.config.keyCodes",
+		"body": [
+			"Vue.config.keyCodes = {",
+			"  \"${1:kebab-case}\": ${2:179},",
+			"};"
+		],
+		"description": "Type: `{[key: string]: number | Array<number>}`.\n Default: `{}`.\n Define custom key alias(es) for `v-on`."
+	},
+	"Vue.config.performance": {
+		"prefix": "Vue.config.performance",
+		"body": ["Vue.config.performance = ${1:false};"],
+		"description": "Type: `boolean`, Default: `false (from 2.2.3+)`\nSet this to `true` to enable component init, compile, render and patch performance tracing in the browser devtool performance/timeline panel. Only works in development mode and in browsers that support the performance.mark API."
+	},
+	"Vue.config.productionTip": {
+		"prefix": "Vue.config.productionTip",
+		"body": ["Vue.config.productionTip = ${1:true};"],
+		"description": "Type: `boolean`, Default: `true`\nSet this to `false` to prevent the production tip on Vue startup."
+	}
+}

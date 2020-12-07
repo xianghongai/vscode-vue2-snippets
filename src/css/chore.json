@@ -1,0 +1,7 @@
+{
+	"v-cloak": {
+		"prefix": "v-cloak",
+		"body": ["[v-cloak] {", "  display: none;", "}"],
+		"description": "hide un-compiled mustache bindings until the Vue instance is ready."
+	}
+}

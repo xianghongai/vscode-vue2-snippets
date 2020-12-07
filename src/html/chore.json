@@ -1,0 +1,7 @@
+{
+	"key": {
+		"prefix": "key",
+		"body": [":key=\"${1:number|string|boolean|symbol}\""],
+		"description": "Expects: number | string | boolean (since 2.4.2) | symbol (since 2.5.12)\nChildren of the same common parent must have unique keys. Duplicate keys will cause render errors."
+	}
+}

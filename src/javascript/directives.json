@@ -1,0 +1,106 @@
+{
+	"Import Directive": {
+		"prefix": ["importDirective", "ivd"],
+		"body": [
+			"import $1 from '@/directives/${1:Feature}';$0"
+		]
+	},
+	"Vue Global Directive (All Hooks)": {
+		"prefix": ["Vue.directive()", "vgd"],
+		"body": [
+			"Vue.directive('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', {",
+			"  ${2:bind(el, binding, vnode) {$3\\},}",
+			"  ${4:inserted(el, binding, vnode) {$5\\},}",
+			"  ${6:update(el, binding, vnode, oldVnode) {$7\\},}",
+			"  ${8:componentUpdated(el, binding, vnode) {$9\\},}",
+			"  ${10:unbind(el, binding, vnode) {$11\\},}",
+			"});$0"
+		],
+		"description": "Register a global directive (all lifecycle hooks)"
+	},
+	"Vue Global Directive (bind, update)": {
+		"prefix": ["Vue.directive()", "vgd"],
+		"body": [
+			"Vue.directive('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', function (el, binding, vnode) {",
+			"  ${2:// `bind`, `update`}",
+			"  $0",
+			"});"
+		],
+		"description": "Register a global directive (bind, update)"
+	},
+	"Retrieve Global Directive": {
+		"prefix": "Vue.directive()",
+		"body": [
+			"const ${2:feature}Directive = Vue.directive('${1:id}');"
+		],
+		"description": "getter, return the directive definition if registered"
+	},
+	"Vue Single File Directive (All Hooks)": {
+		"prefix": ["vueDirective", "vsd"],
+		"body": [
+			"export default {",
+			"  name: '${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}',",
+			"  ${2:bind(el, binding, vnode) {$3\\},}",
+			"  ${4:inserted(el, binding, vnode) {$5\\},}",
+			"  ${6:update(el, binding, vnode, oldVnode) {$7\\},}",
+			"  ${8:componentUpdated(el, binding, vnode, oldVnode) {$9\\},}",
+			"  ${10:unbind(el, binding, vnode) {$11\\},}",
+			"});$0"
+		],
+		"description": "Register a single file directive (all lifecycle hooks)"
+	},
+	"Vue Local Directives": {
+		"prefix": ["option.directives", "vld"],
+		"body": [
+			"directives: {",
+			"  ${1:id}: {$2},$0",
+			"},"
+		],
+		"description": "Define local directives in a component’s options.\nA hash of directives to be made available to the Vue instance."
+	},
+	"Directive bind hook": {
+		"prefix": ["directive.bind", "vd.bind"],
+		"body": [
+			"bind (el${2:, binding${3:, vnode}}) {",
+			"  $4",
+			"},$0"
+		],
+		"description": "Directive `bind` lifecycle"
+	},
+	"Directive inserted hook": {
+		"prefix": ["directive.inserted", "vd.inserted"],
+		"body": [
+			"inserted (el${2:, binding${3:, vnode}}) {",
+			"  $4",
+			"},$0"
+		],
+		"description": "Directive `inserted` lifecycle"
+	},
+	"Directive update hook": {
+		"prefix": ["directive.update", "vd.update"],
+		"body": [
+			"update (el${2:, binding${3:, vnode${4:, oldVnode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `update` lifecycle"
+	},
+	"Directive componentUpdated hook": {
+		"prefix": ["directive.componentUpdated", "vd.componentUpdated"],
+		"body": [
+			"componentUpdated (el${2:, binding${3:, vnode${4:, oldVnode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `componentUpdated` lifecycle"
+	},
+	"Directive unbind hook": {
+		"prefix": ["directive.unbind", "vd.unbind"],
+		"body": [
+			"unbind (el${2:, binding${3:, vnode}}) {",
+			"  $4",
+			"},$0"
+		],
+		"description": "Directive `unbind` lifecycle"
+	}
+}

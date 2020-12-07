@@ -1,0 +1,121 @@
+{
+	"Router View": {
+		"prefix": "routerView",
+		"body": ["<router-view$1></router-view>$0"],
+		"description": "The `<router-view>` component is a functional component that renders the matched component for the given path. Components rendered in `<router-view>` can also contain their own `<router-view>`, which will render components for nested paths.\n`<router-view>` Props:\nname\ntype: string\ndefault: \"default\"\nWhen a `<router-view>` has a name, it will render the component with the corresponding name in the matched route record's components option."
+	},
+	"Named Router View": {
+		"prefix": "routerViewNamed",
+		"body": [
+			"<router-view name=\"view${1:Feature}\"></router-view>$0"
+		],
+		"description": "Named Views"
+	},
+	"Router link with literal string": {
+		"prefix": "routerLink",
+		"body": [
+			"<router-link to=\"$1\">${2:path}</router-link>$0"
+		],
+		"description": "Router Link with literal string"
+	},
+	"Router link using v-bind": {
+		"prefix": "routerLink",
+		"body": [
+			"<router-link :to=\"$1\">${2:path}</router-link>$0"
+		],
+		"description": "Router Link using `v-bind`"
+	},
+	"Router link to path": {
+		"prefix": "routerLinkPath",
+		"body": [
+			"<router-link :to=\"{ path: ${1:'${2:pathname}'} }\">${2:path}</router-link>$0"
+		],
+		"description": "Router Link to path"
+	},
+	"Router link to path with params": {
+		"prefix": "routerLinkParams",
+		"body": [
+			"<router-link :to=\"{ path: ${1:'${2:pathname}'}, params: { ${3:property}: ${4:'value'} } }\">${5:path}</router-link>$0"
+		],
+		"description": "Router link to path with params"
+	},
+	"Router link to path with query": {
+		"prefix": "routerLinkQuery",
+		"body": [
+			"<router-link :to=\"{ path: ${1:'${2:pathname}'}, query: { ${3:property}: ${4:'value'} } }\">${5:path}</router-link>$0"
+		],
+		"description": "Router link to path with query"
+	},
+	"Router link to path using append mode": {
+		"prefix": "routerLinkAppend",
+		"body": [
+			"<router-link :to=\"{ path: ${1:'${2:pathname}'} }\" append>${3:path}</router-link>$0"
+		],
+		"description": "Router Link to path"
+	},
+	"Router link to path using replace mode": {
+		"prefix": "routerLinkReplace",
+		"body": [
+			"<router-link :to=\"{ path: ${1:'${2:pathname}'} }\" replace>${3:path}</router-link>$0"
+		],
+		"description": "Router Link to path"
+	},
+	"Router link to named route": {
+		"prefix": "routerLinkNamedRoute",
+		"body": [
+			"<router-link :to=\"{ name: ${1:'${2:routename}'} }\">${3:path}</router-link>$0"
+		],
+		"description": "Router Link to named route"
+	},
+	"Router link to named route with params": {
+		"prefix": "routerLinkNamedRouteParams",
+		"body": [
+			"<router-link :to=\"{ name: ${1:'${2:routename}'}, params: { ${3:property}: ${4:'value'} } }\">${5:path}</router-link>$0"
+		],
+		"description": "Router link to named route with params"
+	},
+	"Router link to named route with query": {
+		"prefix": "routerLinkNamedRouteQuery",
+		"body": [
+			"<router-link :to=\"{ name: ${1:'${2:routename}'}, query: { ${3:property}: ${4:'value'} } }\">${5:path}</router-link>$0"
+		],
+		"description": "Router link to named route with query"
+	},
+	"Router with params": {
+		"prefix": "routerParams",
+		"body": ["params: { ${1:property}: ${2:'value'} }"],
+		"description": "router with params"
+	},
+	"Router with query": {
+		"prefix": "routerQuery",
+		"body": ["query: { ${1:property}: ${2:'value'} }"],
+		"description": "router with query"
+	},
+	"Router active-class": {
+		"prefix": "routerActiveClass",
+		"body": ["active-class=\"${1:router-link-active}\"$0"],
+		"description": "Configure the active CSS class applied when the link is active.\ntype: string\ndefault: \"router-link-active\"\n"
+	},
+	"Router with exact match": {
+		"prefix": "routerExact",
+		"body": ["exact$0"],
+		"description": "exact match mode.\ntype: boolean\ndefault: false"
+	},
+	"Router exact-active-class": {
+		"prefix": "routerExactActiveClass",
+		"body": [
+			"exact-active-class=\"${1:router-link-exact-active}\"$0"
+		],
+		"description": "Configure the active CSS class applied when the link is active with `exact` match.\ntype: string\ndefault: \"router-link-exact-active\""
+	},
+	"Router aria-current-value": {
+		"prefix": "routerAriaCurrentValue",
+		"body": ["aria-current-value=\"${1:page}\"$0"],
+		"description": "Configure the value of aria-current when the link is active with `exact` match.\ntype: 'page' | 'step' | 'location' | 'date' | 'time'\ndefault: \"page\""
+	},
+	"Router tag": {
+		"prefix": "routerTag",
+		"body": ["tag=\"${1:a}\"$0"],
+		"description": "tag=''\ntype: string\ndefault: \"a\"\n"
+	}
+}

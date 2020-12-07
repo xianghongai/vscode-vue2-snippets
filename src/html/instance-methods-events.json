@@ -1,0 +1,9 @@
+{
+	"$emit": {
+		"prefix": "vEmit",
+		"body": [
+			"@${1:event}=\"\\$emit('${2:event-name}'${3:, ${4:\\$event.target.value}})\""
+		],
+		"description": "Trigger an event on the current instance. Any additional arguments will be passed into the listener’s callback function."
+	}
+}

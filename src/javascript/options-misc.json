@@ -1,0 +1,37 @@
+{
+	"option.name": {
+		"prefix": "option.name",
+		"body": ["name: 'feature-component',$0"],
+		"description": "Type: `string`.\nRestriction: only respected when used as a component option.\nDetails:\nAllow the component to recursively invoke itself in its template. Note that when a component is registered globally with `Vue.component()`, the global ID is automatically set as its name.\nAnother benefit of specifying a `name` option is debugging. Named components result in more helpful warning messages. Also, when inspecting an app in the vue-devtools, unnamed components will show up as `<AnonymousComponent>`, which isn’t very informative. By providing the `name` option, you will get a much more informative component tree."
+	},
+	"option.delimiters": {
+		"prefix": "option.delimiters",
+		"body": ["delimiters: ['${1:{{}', '${2:\\}\\}}'],$0"],
+		"description": "Type: `Array<string>`.\nDefault: ['{{', '}}'].\nRestrictions: This option is only available in the full build, with in-browser compilation.\nDetails:\nChange the plain text interpolation delimiters."
+	},
+	"option.functional": {
+		"prefix": "option.functional",
+		"body": ["functional: ${1:true},$0"],
+		"description": "Type: `boolean`.\nDetails:\nCauses a component to be stateless (no `data`) and instanceless (no `this` context). They are only a `render` function that returns virtual nodes making them much cheaper to render."
+	},
+	"option.model": {
+		"prefix": "option.model",
+		"body": [
+			"model: {",
+			"  prop: '${1:checked}',",
+			"  event: '${2:change}',",
+			"},$0"
+		],
+		"description": "Type: `{prop?: string, event?: string}`.\nDetails:\nAllows a custom component to customize the prop and event used when it’s used with `v-model`. By default, `v-model` on a component uses `value` as the prop and `input` as the event, but some input types such as checkboxes and radio buttons may want to use the `value` prop for a different purpose. Using the `model` option can avoid the conflict in such cases. (New in 2.2.0)"
+	},
+	"option.inheritAttrs": {
+		"prefix": "option.inheritAttrs",
+		"body": ["inheritAttrs: ${1:true},$0"],
+		"description": "Type: `boolean`.\nDefault: `true`.\nDetails:\nBy default, parent scope attribute bindings that are not recognized as props will “fallthrough” and be applied to the root element of the child component as normal HTML attributes. When authoring a component that wraps a target element or another component, this may not always be the desired behavior. By setting `inheritAttrs` to `false`, this default behavior can be disabled. The attributes are available via the `$attrs` instance property (also new in 2.4) and can be explicitly bound to a non-root element using `v-bind`. (New in 2.4.0+)\nNote: this option does not affect `class` and `style` bindings."
+	},
+	"option.comments": {
+		"prefix": "option.comments",
+		"body": ["comments: ${1:false},$0"],
+		"description": "Type: `boolean`.\nDefault: `false`.\nRestrictions: This option is only available in the full build, with in-browser compilation.\nDetails:\nWhen set to true, will preserve and render HTML comments found in templates. The default behavior is discarding them. (New in 2.4.0+)"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"Vue.extend(options)": {
+		"prefix": "Vue.extend()",
+		"body": [
+			"const ${2:Feature}Constructor = Vue.extend(${1:Main});$0"
+		],
+		"description": "Arguments: `{Object} options`.\nCreate a “subclass” of the base Vue constructor. The argument should be an object containing component options.\nThe special case to note here is the `data` option - it must be a function when used with `Vue.extend()`."
+	},
+	"option.extends": {
+		"prefix": "option.extends",
+		"body": ["extends: ${1:Feature},$0"],
+		"description": "Type: `Object | Function`.\nAllows declaratively extending another component (could be either a plain options object or a constructor) without having to use `Vue.extend`. This is primarily intended to make it easier to extend between single file components."
+	}
+}

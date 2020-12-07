@@ -1,0 +1,40 @@
+{
+	"Import Filter": {
+		"prefix": ["importFilter", "ivf"],
+		"body": ["import $1 from '@/filters/${1:Feature}';$0"]
+	},
+	"Vue Global Filter": {
+		"prefix": ["Vue.filter()", "vgf"],
+		"body": [
+			"Vue.filter('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', function (text, length, suffix = '...') {",
+			"  return text.substring(0, length) + suffix;",
+			"});"
+		],
+		"description": "register a global filter, return processed value"
+	},
+	"Retrieve Global Filter": {
+		"prefix": "Vue.filter(id)",
+		"body": ["const ${2:feature} = Vue.filter('${1:id}');"],
+		"description": "return the filter if registered."
+	},
+	"Vue Local Filters": {
+		"prefix": ["option.filters", "vlf"],
+		"body": [
+			"filters: {",
+			"  ${1:Upper}(text, length, suffix = '...') {",
+			"    return text.substring(0, length) + suffix;",
+			"  },",
+			"},"
+		],
+		"description": "Define local filters in a component’s options.\nA hash of filters to be made available to the Vue instance."
+	},
+	"Vue Local Filter Option": {
+		"prefix": ["filterOption", "fo"],
+		"body": [
+			"${1:feature}(text, length, suffix = '...') {",
+			"  return text.substring(0, length) + suffix;",
+			"}"
+		],
+		"description": "filter option"
+	}
+}

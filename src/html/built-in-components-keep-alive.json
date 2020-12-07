@@ -1,0 +1,7 @@
+{
+	"keep-alive": {
+		"prefix": "keepAlive",
+		"body": ["<keep-alive$1>", "$2", "</keep-alive>$0"],
+		"description": "keep-alive element.\n 1. `include` - string or RegExp or Array. Only components with matching names will be cached.\n 2. `exclude` - string or RegExp or Array. Any component with a matching name will not be cached.\n 3. `max` - number. The maximum number of component instances to cache.\nWhen wrapped around a dynamic component, <keep-alive> caches the inactive component instances without destroying them. Similar to `<transition>`, `<keep-alive>` is an abstract component: it doesn’t render a DOM element itself, and doesn’t show up in the component parent chain.\nWhen a component is toggled inside `<keep-alive>`, its `activated` and `deactivated` lifecycle hooks will be invoked accordingly."
+	}
+}

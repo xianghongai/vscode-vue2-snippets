@@ -1,0 +1,312 @@
+{
+	"import Vuex": {
+		"prefix": "importVuex",
+		"body": ["import Vuex from 'vuex';$0"],
+		"description": "import Vuex"
+	},
+	"import Vuex (Helpers)": {
+		"prefix": "importVuexHelpers",
+		"body": [
+			"import { ${1:mapState, }${2:mapGetters, }${3:mapMutations, }${4:mapActions} } from 'vuex';$0"
+		],
+		"description": "import Vuex (mapState, mapGetters, mapMutations, mapActions)"
+	},
+
+	"Create the Vuex instance": {
+		"prefix": "newVuex",
+		"body": [
+			"import Vuex from 'vuex';",
+			"",
+			"Vue.use(Vuex);",
+			"$0",
+			"const store = new Vuex.Store({",
+			"  state: () => ({",
+			"    feature: { property: value },",
+			"  }),",
+			"  modules: {},",
+			"  mutations: {},",
+			"  actions: {},",
+			"  getters: {},",
+			"});"
+		],
+		"description": "Create the Vuex instance.\nVuex.Store Constructor Options:\n\n# state\n `type: Object | Function`.\n The root state object for the Vuex store.\n If you pass a function that returns an object, the returned object is used as the root state. This is useful when you want to reuse the state object especially for module reuse.\n \n# mutations\n `type: { [type: string]: Function }`.\n Register mutations on the store. The handler function always receives state as the first argument (will be module local state if defined in a module), and receives a second payload argument if there is one.\n \n# actions\n `type: { [type: string]: Function }`.\n Register actions on the store. The handler function receives a context(state, rootState, commit, dispatch, getters, rootGetters) object that exposes the following properties, And also receives a second payload argument if there is one.\n \n# getters\n `type: { [key: string]: Function }`.\n Register getters on the store, Registered getters are exposed on store.getters. The getter function receives the following arguments: state, getters.\n Specific when defined in a module: state, getters, rootState, rootGetters.\n \n# modules\n `type: Object`.\n An object containing sub modules to be merged into the store, in the shape of `{key: {state, namespaced?, mutations?, actions?, getters?, modules?}}`\n Each module can contain `state` and `mutations` similar to the root options. A module's state will be attached to the store's root state using the module's key. A module's mutations and getters will only receives the module's local state as the first argument instead of the root state, and module actions' `context.state` will also point to the local state.\n \n# plugins\n `type: Array<Function>`.\n An array of plugin functions to be applied to the store. The plugin simply receives the store as the only argument and can either listen to mutations (for outbound data persistence, logging, or debugging) or dispatch mutations (for inbound data e.g. websockets or observables).\n \n# strict\n `type: boolean (false)`.\n Force the Vuex store into strict mode. In strict mode any mutations to Vuex state outside of mutation handlers will throw an Error.\n \n# devtools\n `type: boolean`.\n Turn the devtools on or off for a particular vuex instance. For instance passing false tells the Vuex store to not subscribe to devtools plugin. Useful for if you have multiple stores on a single page."
+	},
+
+	"Vuex Getters": {
+		"prefix": "vuexGetters",
+		"body": [
+			"const getters = {",
+			"  ${2:feature}: (state${1:, getters, rootState, rootGetters}) => state.${3:feature}.${4:property},",
+			"};",
+			"",
+			"export default getters;"
+		],
+		"description": "Vuex Getters"
+	},
+
+	"Vuex Modules": {
+		"prefix": "vuexModules",
+		"body": [
+			"const state = () => ({",
+			"  ${1:feature}: { ${2:property}: ${3:value} },%4",
+			"});",
+			"",
+			"const mutations = {",
+			"  ${5:mutationHandler}(state, ${6:payload}) {",
+			"    $7",
+			"  },",
+			"};",
+			"",
+			"const actions = {",
+			"  ${8:actionHandler}({ commit }, ${9:payload}) {",
+			"    return new Promise((resolve) => {",
+			"      ${10:request}().then((response) => {",
+			"        commit(${11:mutationHandler}, response);",
+			"        resolve(response);",
+			"      });",
+			"    });",
+			"  },",
+			"};",
+			"",
+			"export default {",
+			"  namespaced: true,",
+			"  state,",
+			"  mutations,",
+			"  actions,",
+			"};"
+		],
+		"description": "Vuex Modules"
+	},
+
+	"Actions property": {
+		"prefix": "action",
+		"body": [
+			"${1:actionHandler}: ({ commit${2:, dispatch${3:, state, getters, rootState, rootGetters}} }, ${4:payload}) => {",
+			"  commit(${5:mutationHandler}, $4);$0",
+			"},"
+		],
+		"description": "description"
+	},
+	"Actions property (Promise)": {
+		"prefix": "action",
+		"body": [
+			"${1:actionHandler}({ commit }, ${2:payload}) {",
+			"  return new Promise((resolve) => {",
+			"    ${3:request}().then((response) => {",
+			"      commit(${4:mutationHandler}, response);",
+			"      resolve(response);$0",
+			"    });",
+			"  });",
+			"},"
+		],
+		"description": "description"
+	},
+	"Actions property (Async/Await)": {
+		"prefix": "action",
+		"body": [
+			"${1:actionHandler}: async ({ commit }, ${2:payload}) => {",
+			"  commit(${3:mutationHandler}, await ${4:request}());$0",
+			"},"
+		],
+		"description": "description"
+	},
+
+	"mapState (array)": {
+		"prefix": "mapState",
+		"body": ["...mapState(['${1:featureState}'$2]),$0"],
+		"description": "`mapState(namespace?: string, map: Array<string> | Object<string | function>): Object`\nCreate component computed options that return the sub tree of the Vuex store.\nThe first argument can optionally be a namespace string.\nThe second object argument's members can be a function. `function(state: any)`"
+	},
+	"mapState (object)": {
+		"prefix": "mapState",
+		"body": [
+			"...mapState({",
+			"  ${1:${2:feature}: (state) => ${3:state.${4:feature}},}",
+			"  ${5:${6:featureAlias}: '${7:feature}',}",
+			"  ${8:${9:mergeLocalState}(state) { ${10:return state.feature + this.localFeature;} \\},}$10",
+			"}),$0"
+		],
+		"description": "`mapState(namespace?: string, map: Array<string> | Object<string | function>): Object`\nCreate component computed options that return the sub tree of the Vuex store.\nThe first argument can optionally be a namespace string.\nThe second object argument's members can be a function. `function(state: any)`"
+	},
+	"mapGetters (array)": {
+		"prefix": "mapGetters",
+		"body": ["...mapGetters(['${1:featureGetter}'$2]),$0"],
+		"description": "`mapGetters(namespace?: string, map: Array<string> | Object<string>): Object`.\nCreate component computed options that return the evaluated value of a getter.\nThe first argument can optionally be a namespace string."
+	},
+	"mapGetters (object)": {
+		"prefix": "mapGetters",
+		"body": [
+			"...mapGetters({",
+			"  ${1:${2:alias}: '${3:featureGetter}',}$4",
+			"}),$0"
+		],
+		"description": "`mapGetters(namespace?: string, map: Array<string> | Object<string>): Object`.\nCreate component computed options that return the evaluated value of a getter.\nThe first argument can optionally be a namespace string."
+	},
+	"mapMutations (array)": {
+		"prefix": "mapMutations",
+		"body": [
+			"...mapMutations(['${1:mutationHandler}'$2]),$0"
+		],
+		"description": "`mapMutations(namespace?: string, map: Array<string> | Object<string | function>): Object`.\nCreate component methods options that commit a mutation.\nThe first argument can optionally be a namespace string.\nThe second object argument's members can be a function. `function(commit: function, ...args: any[])`."
+	},
+	"mapMutations (object)": {
+		"prefix": "mapMutations",
+		"body": [
+			"...mapMutations({",
+			"  ${1:${2:alias}: '${3:mutationHandler}',}$4",
+			"}),$0"
+		],
+		"description": "`mapMutations(namespace?: string, map: Array<string> | Object<string | function>): Object`.\nCreate component methods options that commit a mutation.\nThe first argument can optionally be a namespace string.\nThe second object argument's members can be a function. `function(commit: function, ...args: any[])`."
+	},
+	"mapActions (array)": {
+		"prefix": "mapActions",
+		"body": ["...mapActions(['${1:actionHandler}'$2]),$0"],
+		"description": "`mapActions(namespace?: string, map: Array<string> | Object<string | function>): Object`.\nCreate component methods options that dispatch an action.\nThe first argument can optionally be a namespace string.\nThe second object argument's members can be a function. `function(dispatch: function, ...args: any[])`."
+	},
+	"mapActions (object)": {
+		"prefix": "mapActions",
+		"body": [
+			"...mapActions({",
+			"  ${1:${2:alias}: '${3:actionHandler}',}$4",
+			"}),$0"
+		],
+		"description": "`mapActions(namespace?: string, map: Array<string> | Object<string | function>): Object`.\nCreate component methods options that dispatch an action.\nThe first argument can optionally be a namespace string.\nThe second object argument's members can be a function. `function(dispatch: function, ...args: any[])`."
+	},
+	"createNamespacedHelpers": {
+		"prefix": "createNamespacedHelpers",
+		"body": [
+			"import { createNamespacedHelpers } from 'vuex';",
+			"",
+			"const { mapState, mapActions } = createNamespacedHelpers('${1:some/nested/module}');"
+		],
+		"description": "`createNamespacedHelpers(namespace: string): Object`.\nCreate namespaced component binding helpers. The returned object contains `mapState`, `mapGetters`, `mapActions` and `mapMutations` that are bound with the given namespace."
+	},
+
+	"store.getters": {
+		"prefix": "store.getters",
+		"body": [
+			"${1:this.\\$}store.getters.${2:featureGetter}"
+		],
+		"description": "type: `Object`.\nExposes registered getters. Read only."
+	},
+	"store.state": {
+		"prefix": "store.state",
+		"body": ["${1:this.\\$}store.state.${2:featureState}"],
+		"description": "type: `Object`.\nThe root state. Read only."
+	},
+
+	"store.commit(type, payload, options)": {
+		"prefix": ["store.commit()", "sc"],
+		"body": [
+			"${1:this.\\$}store.commit('${2:mutationHandler}', ${3:payload});$0"
+		],
+		"description": "`commit(type: string, payload?: any, options?: Object)`;\n`commit(mutation: Object, options?: Object)`;\nCommit a mutation. options can have `root: true` that allows to commit root mutations in namespaced modules. "
+	},
+	"store.dispatch(type, payload)": {
+		"prefix": ["store.dispatch()", "sd"],
+		"body": [
+			"${1:this.\\$}store.dispatch('${2:feature/actionHandler}', ${3:payload});$0"
+		],
+		"description": "`dispatch(type: string, payload?: any, options?: Object): Promise<any>`;\n`dispatch(action: Object, options?: Object): Promise<any>`;\nDispatch an action. `options` can have `root: true` that allows to dispatch root actions in namespaced modules. Returns a Promise that resolves all triggered action handlers. "
+	},
+	"store.dispatch(type, payload), promise": {
+		"prefix": ["store.dispatch()", "sdp"],
+		"body": [
+			"${1:this.\\$}store.dispatch('${2:feature/actionHandler}', ${3:payload}).then((${4:data}) => {",
+			"  $5",
+			"});$0"
+		],
+		"description": "`dispatch(type: string, payload?: any, options?: Object): Promise<any>`;\n`dispatch(action: Object, options?: Object): Promise<any>`;\nDispatch an action. `options` can have `root: true` that allows to dispatch root actions in namespaced modules. Returns a Promise that resolves all triggered action handlers. "
+	},
+	"store.replaceState(state)": {
+		"prefix": "store.replaceState()",
+		"body": ["${1:this.\\$}store.replaceState($2);$0"],
+		"description": "`replaceState(state: Object)`.\nReplace the store's root state. Use this only for state hydration / time-travel purposes."
+	},
+	"store.watch(getter, cb, options)": {
+		"prefix": "store.watch()",
+		"body": [
+			"const ${0:unwatch} = ${1:this.\\$}store.watch(",
+			"  () => ${1}store.getters.${3:featureGetter},",
+			"  (oldValue, newValue) => {",
+			"    $4",
+			"  },",
+			"  {",
+			"    ${5:deep: true,}",
+			"    ${6:immediate: true,}",
+			"  }",
+			");"
+		],
+		"description": "`watch(fn: Function, callback: Function, options?: Object): Function`.\nReactively watch fn's return value, and call the callback when the value changes. fn receives the store's state as the first argument, and getters as the second argument. Accepts an optional options object that takes the same options as Vue's `vm.$watch` method (opens new window).\nTo stop watching, call the returned unwatch function."
+	},
+	"store.subscribe(fn, options)": {
+		"prefix": "store.subscribe()",
+		"body": [
+			"const ${0:unsubscribe} = ${1:this.\\$}store.subscribe((mutation, state) => {",
+			"  $2",
+			"});"
+		],
+		"description": "`subscribe(handler: Function, options?: Object): Function`.\nSubscribe to store mutations. The `handler` is called after every mutation and receives the mutation descriptor and post-mutation state as arguments.\nBy default, new handler is added to the end of the chain, so it will be executed after other handlers that were added before. This can be overridden by adding `prepend: true` to `options`, which will add the handler to the beginning of the chain.\nThe `subscribe` method will return an `unsubscribe` function, which should be called when the subscription is no longer needed. For example, you might subscribe to a Vuex Module and unsubscribe when you unregister the module. Or you might call `subscribe` from inside a Vue Component and then destroy the component later. In these cases, you should remember to unsubscribe the subscription manually."
+	},
+	"store.subscribeAction(fn, options)": {
+		"prefix": "store.subscribeAction()",
+		"body": [
+			"const ${0:unsubscribe} = ${1:this.\\$}store.subscribeAction((action, state) => {",
+			"  $2",
+			"});"
+		],
+		"description": "`subscribeAction(handler: Function, options?: Object): Function`.\nSubscribe to store actions. The `handler` is called for every dispatched action and receives the action descriptor and current store state as arguments. The `subscribe` method will return an `unsubscribe` function, which should be called when the subscription is no longer needed. For example, when unregistering a Vuex module or before destroying a Vue component.\nBy default, new handler is added to the end of the chain, so it will be executed after other handlers that were added before. This can be overridden by adding `prepend: true` to `options`, which will add the handler to the beginning of the chain.\nThe `subscribeAction` method will return an `unsubscribe` function, which should be called when the subscription is no longer needed. For example, you might subscribe to a Vuex Module and unsubscribe when you unregister the module. Or you might call `subscribeAction` from inside a Vue Component and then destroy the component later. In these cases, you should remember to unsubscribe the subscription manually."
+	},
+	"store.subscribeAction(object)": {
+		"prefix": "store.subscribeAction()",
+		"body": [
+			"const ${0:unsubscribe} = ${1:this.\\$}store.subscribeAction({",
+			"  before: (action, state) => {",
+			"    $2",
+			"  },",
+			"  after: (action, state) => {",
+			"    $3",
+			"  },",
+			"  error: (action, state, error) => {",
+			"    $4",
+			"  }",
+			"});"
+		],
+		"description": "`subscribeAction(handler: Function, options?: Object): Function`.\nSubscribe to store actions. The `handler` is called for every dispatched action and receives the action descriptor and current store state as arguments. The `subscribe` method will return an `unsubscribe` function, which should be called when the subscription is no longer needed. For example, when unregistering a Vuex module or before destroying a Vue component.\nBy default, new handler is added to the end of the chain, so it will be executed after other handlers that were added before. This can be overridden by adding `prepend: true` to `options`, which will add the handler to the beginning of the chain.\nThe `subscribeAction` method will return an `unsubscribe` function, which should be called when the subscription is no longer needed. For example, you might subscribe to a Vuex Module and unsubscribe when you unregister the module. Or you might call `subscribeAction` from inside a Vue Component and then destroy the component later. In these cases, you should remember to unsubscribe the subscription manually."
+	},
+	"store.registerModule(path, rawModule, options)": {
+		"prefix": "store.registerModule()",
+		"body": [
+			"${1:this.\\$}store.registerModule('${2:feature}', {",
+			"  state: () => ({}),",
+			"  mutations: {},",
+			"  actions: {},",
+			"  getters: {},",
+			"});"
+		],
+		"description": "`registerModule(path: string | Array<string>, module: Module, options?: Object)`.\nRegister a dynamic module.\noptions can have `preserveState: true` that allows to preserve the previous state. Useful with Server Side Rendering."
+	},
+	"store.unregisterModule(path)": {
+		"prefix": "store.unregisterModule()",
+		"body": [
+			"${1:this.\\$}store.unregisterModule('${2:moduleName}')"
+		],
+		"description": "`unregisterModule(path: string | Array<string>)`.\nUnregister a dynamic module."
+	},
+	"store.hasModule(path)": {
+		"prefix": "store.hasModule()",
+		"body": [
+			"${1:this.\\$}store.hasModule('${2:moduleName}')"
+		],
+		"description": "`hasModule(path: string | Array<string>): boolean`.\nCheck if the module with the given name is already registered."
+	},
+	"store.hotUpdate(newOptions)": {
+		"prefix": "store.hotUpdate()",
+		"body": [
+			"${1:this.\\$}store.hotUpdate({",
+			"  ${2:mutations},",
+			"  ${3:modules},",
+			"})"
+		],
+		"description": "`hotUpdate(newOptions: Object)`.\nHot swap new actions and mutations."
+	}
+}

@@ -1,0 +1,308 @@
+{
+	"Prop Options": {
+		"prefix": "propOptions",
+		"body": [
+			"${1:property}: {",
+			"  type: ${2:String|Number|Boolean|Array|Objec|Date|Function|Symbol|Promise},",
+			"  required: ${3:boolean},",
+			"  default() {",
+			"    return ${4:any};",
+			"  },",
+			"  validator(value) {",
+			"    return ${5:boolean };",
+			"  },",
+			"},$0"
+		]
+	},
+	"String": {
+		"prefix": "propString",
+		"body": ["${1:property}: String,$0"]
+	},
+	"Number": {
+		"prefix": "propNumber",
+		"body": ["${1:property}: Number,$0"]
+	},
+	"Boolean": {
+		"prefix": "propBoolean",
+		"body": ["${1:property}: Boolean,$0"]
+	},
+	"Array": {
+		"prefix": "propArray",
+		"body": ["${1:property}: Array,$0"]
+	},
+	"Object": {
+		"prefix": "propObject",
+		"body": ["${1:property}: Object,$0"]
+	},
+	"Date": {
+		"prefix": "propDate",
+		"body": ["${1:property}: Date,$0"]
+	},
+	"Function": {
+		"prefix": "propFunction",
+		"body": ["${1:property}: Function,$0"]
+	},
+	"Symbol": {
+		"prefix": "propSymbol",
+		"body": ["${1:property}: Symbol,$0"]
+	},
+	"Promise": {
+		"prefix": "propPromise",
+		"body": ["${1:property}: Promise,$0"]
+	},
+
+	"String (default)": {
+		"prefix": "propStringDefault",
+		"body": [
+			"${1:property}: {",
+			"  type: String,",
+			"  default: '${2}',",
+			"},$0"
+		]
+	},
+	"Number (default)": {
+		"prefix": "propNumberDefault",
+		"body": [
+			"${1:property}: {",
+			"  type: Number,",
+			"  default: ${2},",
+			"},$0"
+		]
+	},
+	"Boolean (default)": {
+		"prefix": "propBooleanDefault",
+		"body": [
+			"${1:property}: {",
+			"  type: Boolean,",
+			"  default: ${2:true},",
+			"},$0"
+		]
+	},
+	"Array (default)": {
+		"prefix": "propArrayDefault",
+		"body": [
+			"${1:property}: {",
+			"  type: Array,",
+			"  default: [${2}],",
+			"},$0"
+		]
+	},
+	"Object (default)": {
+		"prefix": "propObjectDefault",
+		"body": [
+			"${1:property}: {",
+			"  type: Object,",
+			"  default: {${2}},",
+			"},$0"
+		]
+	},
+	"Date (default)": {
+		"prefix": "propDateDefault",
+		"body": [
+			"${1:property}: {",
+			"  type: Date,",
+			"  default: ${2},",
+			"},$0"
+		]
+	},
+	"Symbol (default)": {
+		"prefix": "propSymbolDefault",
+		"body": [
+			"${1:property}: {",
+			"  type: Symbol,",
+			"  default: ${2:Symbol($3)},",
+			"},$0"
+		]
+	},
+	"Function (default)": {
+		"prefix": "propFunctionDefault",
+		"body": [
+			"${1:property}: {",
+			"  type: Function,",
+			"  default: ${2},",
+			"},$0"
+		]
+	},
+	"Promise (default)": {
+		"prefix": "propPromiseDefault",
+		"body": [
+			"${1:property}: {",
+			"  type: Promise,",
+			"  default: ${2},",
+			"},$0"
+		]
+	},
+
+	"String (required)": {
+		"prefix": "propStringRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: String,",
+			"  required: ${2:true},",
+			"},$0"
+		]
+	},
+	"Number (required)": {
+		"prefix": "propNumberRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Number,",
+			"  required: ${2:true},",
+			"},$0"
+		]
+	},
+	"Boolean (required)": {
+		"prefix": "propBooleanRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Boolean,",
+			"  required: ${2:true},",
+			"},$0"
+		]
+	},
+	"Array (required)": {
+		"prefix": "propArrayRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Array,",
+			"  required: ${2:true},",
+			"},$0"
+		]
+	},
+	"Object (required)": {
+		"prefix": "propObjectRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Object,",
+			"  required: ${2:true},",
+			"},$0"
+		]
+	},
+	"Date (required)": {
+		"prefix": "propDateRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Date,",
+			"  required: ${2:true},",
+			"},$0"
+		]
+	},
+	"Function (required)": {
+		"prefix": "propFunctionRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Function,",
+			"  required: ${2:true},",
+			"},$0"
+		]
+	},
+	"Symbol (required)": {
+		"prefix": "propSymbolRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Symbol,",
+			"  required: ${2:true},",
+			"},$0"
+		]
+	},
+	"Promise (required)": {
+		"prefix": "propPromiseRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Promise,",
+			"  required: ${2:true},",
+			"},$0"
+		]
+	},
+
+	"String (default, required)": {
+		"prefix": "propStringDefaultRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: String,",
+			"  default: '${2}',",
+			"  required: ${3:true},",
+			"},$0"
+		]
+	},
+	"Number (default, required)": {
+		"prefix": "propNumberDefaultRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Number,",
+			"  default: ${2},",
+			"  required: ${3:true},",
+			"},$0"
+		]
+	},
+	"Boolean (default, required)": {
+		"prefix": "propBooleanDefaultRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Boolean,",
+			"  default: ${2:true},",
+			"  required: ${3:true},",
+			"},$0"
+		]
+	},
+	"Array (default, required)": {
+		"prefix": "propArrayDefaultRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Array,",
+			"  default: [${2}],",
+			"  required: ${3:true},",
+			"},$0"
+		]
+	},
+	"Object (default, required)": {
+		"prefix": "propObjectDefaultRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Object,",
+			"  default: {${2}},",
+			"  required: ${3:true},",
+			"},$0"
+		]
+	},
+	"Date (default, required)": {
+		"prefix": "propDateDefaultRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Date,",
+			"  default: ${2},",
+			"  required: ${3:true},",
+			"},$0"
+		]
+	},
+	"Function (default, required)": {
+		"prefix": "propFunctionDefaultRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Function,",
+			"  default: ${2},",
+			"  required: ${3:true},",
+			"},$0"
+		]
+	},
+	"Symbol (default, required)": {
+		"prefix": "propSymbolDefaultRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Symbol,",
+			"  default: ${2:Symbol($3)},",
+			"  required: ${4:true},",
+			"},$0"
+		]
+	},
+	"Promise (default, required)": {
+		"prefix": "propPromiseDefaultRequired",
+		"body": [
+			"${1:property}: {",
+			"  type: Promise,",
+			"  default: ${2},",
+			"  required: ${4:true},",
+			"},$0"
+		]
+	}
+}
