@@ -6,12 +6,20 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - 98% covered router.vuejs.org official document api
 - 100% covered vuex.vuejs.org official document api
 
+![](https://raw.githubusercontent.com/caringrun/assets/master/vscode-vue2-snippets.gif)
+
 ## Supported languages (file extensions)
 
 - JavaScript (`.js`)
 - TypeScript (`.ts`)
 - Html (`.html`)
 - Vue (`.vue`)
+
+## Resources 🤞
+
+- [JavaScript Code Snippet - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-snippet)
+- [JavaScript Comment Snippet - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-comment)
+- [React Snippets - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-react-snippet)
 
 ## Snippets
 
@@ -70,7 +78,7 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `vueScript` - Vue Script element
 - `vueStyle` - Vue Style element
 
-### JavaScript/TypeScript/Vue
+### JavaScript/TypeScript/Vue 🌿
 
 #### Import
 
@@ -378,7 +386,7 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `Vue.delete(target, propertyName/index)`
 - `Vue.observable(object)`
 
-### HTML
+### HTML 🌴
 
 #### Style & Class
 
@@ -450,7 +458,7 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 #### Transitions
 
 - `transition` - Vue Transition Component
-- `vanim` - Vue Transition Component with JavaScript Hooks
+- `transition` - Vue Transition Component with JavaScript Hooks
 - `transitionGroup` - Vue transition-group Component
 - `enterClass` / `transitionEnterClass` - enter-class
 - `enterActiveClass` / `transitionEnterActiveClass` - enter-active-class
@@ -485,7 +493,7 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `routerTag` - `tag="a"`, Router tag;
 
 
-### CSS
+### CSS 🌷
 
 - `v-cloak`
 
@@ -498,7 +506,7 @@ File Name
 - foo-bar`${TM_DIRECTORY}`, /index.vue  →  `name: foo-bar`;
 
 
-## License
+## License 📃
 
 MIT License
 
