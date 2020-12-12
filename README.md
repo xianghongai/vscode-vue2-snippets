@@ -39,7 +39,7 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
     * Directives
     * Extend
     * Filters, **Vue 3 REMOVED!**
-    * Mixin
+    * Mixin, **Vue 3.x BREAKING CHANGE.**
     * Plugins
     * Template
     * Transition
@@ -341,13 +341,13 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 
 #### Template/Plugins/Mixin/Extend
 
-- `Vue.compile(template)_UNSAFE`
-- `Vue.use(plugin)_UNSAFE`
+- `Vue.compile(template)_UNSAFE`, **Vue 3.x BREAKING CHANGE.**
+- `Vue.use(plugin)_UNSAFE`, **Vue 3.x BREAKING CHANGE.**
 - `pluginComponent` - Create Plugin
 - `pluginComponents` - Create Plugin
-- `Vue.mixin(mixin)_UNSAFE`
+- `Vue.mixin(mixin)_UNSAFE`, **Vue 3.x BREAKING CHANGE.**
 - `Vue.extend(options)_UNSAFE`
-- `Vue.prototype_UNSAFE` - Vue Plugin add an instance method
+- `Vue.prototype_UNSAFE` - Vue Plugin add an instance method, **Vue 3.x BREAKING CHANGE.**
 
 
 #### Components

@@ -4,21 +4,21 @@
 		"body": ["import $1 from '@/filters/${1:Feature}';$0"]
 	},
 	"Vue Global Filter": {
-		"prefix": ["Vue.filter()", "vgf"],
+		"prefix": ["Vue.filter()_UNSAFE", "vgf"],
 		"body": [
 			"Vue.filter('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', function (text, length, suffix = '...') {",
 			"  return text.substring(0, length) + suffix;",
 			"});"
 		],
-		"description": "register a global filter, return processed value"
+		"description": "Vue 3.x REMOVED.\nregister a global filter, return processed value"
 	},
 	"Retrieve Global Filter": {
-		"prefix": "Vue.filter(id)",
+		"prefix": "Vue.filter(id)_UNSAFE",
 		"body": ["const ${2:feature} = Vue.filter('${1:id}');"],
-		"description": "return the filter if registered."
+		"description": "Vue 3.x REMOVED.\nreturn the filter if registered."
 	},
 	"Vue Local Filters": {
-		"prefix": ["option.filters", "vlf"],
+		"prefix": ["option.filters_UNSAFE", "vlf"],
 		"body": [
 			"filters: {",
 			"  ${1:Upper}(text, length, suffix = '...') {",
@@ -26,7 +26,7 @@
 			"  },",
 			"},"
 		],
-		"description": "Define local filters in a component’s options.\nA hash of filters to be made available to the Vue instance."
+		"description": "Vue 3.x REMOVED.\nDefine local filters in a component’s options.\nA hash of filters to be made available to the Vue instance."
 	},
 	"Vue Local Filter Option": {
 		"prefix": ["filterOption", "fo"],
