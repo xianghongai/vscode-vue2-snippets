@@ -1,10 +1,10 @@
 {
 	"name": "vscode-vue2-snippets",
 	"publisher": "NicholasHsiang",
-	"displayName": "Vue2 Snippets",
-	"description": "Code snippets for Vue2",
+	"displayName": "Vue 2 Snippets",
+	"description": "Code snippets for Vue 2",
 	"icon": "art/icon.png",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
@@ -25,10 +25,15 @@
 		"Snippets"
 	],
 	"keywords": [
-		"Vue",
-		"Vue2",
 		"Snippet",
+		"Vue",
+		"Vue Router",
+		"Vuex",
+		"Vue 2",
+		"Vue2",
+		"Vue 2 Snippets",
 		"Vue2 Snippets",
+		"Vue 2 Code Snippets",
 		"Vue2 Code Snippets"
 	],
 	"contributes": {
