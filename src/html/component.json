@@ -1,5 +1,5 @@
 {
-	"component": {
+	"Dynamic Components": {
 		"prefix": "component",
 		"body": [
 			"<component :is=\"${1:componentId}\"></component>$0"

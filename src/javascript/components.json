@@ -5,14 +5,8 @@
 			"import $1 from '@/components/${1:Feature}';$0"
 		]
 	},
-	"Import Component Dynamically": {
-		"prefix": ["importComponentDynamically", "ivcd"],
-		"body": [
-			"const ${1} = () => import('@/${2:features}/${1:Feature}.vue');$0"
-		]
-	},
 	"Vue Global Component": {
-		"prefix": ["Vue.component()", "vgc"],
+		"prefix": ["vueGlobalComponent_UNSAFE", "vgc_UNSAFE"],
 		"body": [
 			"Vue.component(${1:'${2:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}'}, {",
 			"  props: { $3 },",

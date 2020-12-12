@@ -1,15 +1,4 @@
 {
-	"this.$parent": {
-		"prefix": "this.$parent",
-		"body": ["this.\\$parent$0"],
-		"description": "Type: `Vue instance`.\nThe parent instance, if the current instance has one.\nSpecify the parent instance for the instance to be created. Establishes a parent-child relationship between the two. The parent will be accessible as `this.$parent` for the child, and the child will be pushed into the parent’s `$children` array.\nUse `$parent` and `$children` sparingly - they mostly serve as an escape-hatch. Prefer using props and events for parent-child communication."
-	},
-	"this.$children": {
-		"prefix": "this.$children",
-		"body": ["this.\\$children$0"],
-		"description": "Type: `Vue instance`.\nThe child instance, if the current instance has one.\nSpecify the parent instance for the instance to be created. Establishes a parent-child relationship between the two. The parent will be accessible as `this.$parent` for the child, and the child will be pushed into the parent’s `$children` array.\nUse `$parent` and `$children` sparingly - they mostly serve as an escape-hatch. Prefer using props and events for parent-child communication."
-	},
-
 	"option.provide": {
 		"prefix": "option.provide",
 		"body": [

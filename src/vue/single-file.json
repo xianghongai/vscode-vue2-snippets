@@ -316,7 +316,7 @@
 		"description": "Vue Script element"
 	},
 	"Vue Style element": {
-		"prefix": "vueStyle",
+		"prefix": ["vueStyle", "styleLang"],
 		"body": [
 			"<style ${1:lang=\"$2\"} ${3:scoped}>",
 			"  $0",

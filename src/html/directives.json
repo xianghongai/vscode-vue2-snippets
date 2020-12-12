@@ -8,7 +8,7 @@
 			"  </${1:div}>",
 			"</template>"
 		],
-		"description": "template element"
+		"description": "template element.\nIn Vue 2.x, a `<template>` tag could not have a `key`. could place the keys on each of its children.\nIn Vue 3.x, the `key` should be placed on the `<template>` tag instead."
 	},
 	"functional template": {
 		"prefix": "templateFunctional",
@@ -19,7 +19,7 @@
 			"  </${1:div}>",
 			"</template>"
 		],
-		"description": "functional template element"
+		"description": "template-based functional components"
 	},
 	"x-template": {
 		"prefix": "xtemplate",
@@ -59,17 +59,20 @@
 	},
 	"Vue v-if, With Key": {
 		"prefix": "vIfWithKey",
-		"body": ["v-if=\"${1:condition}\" key=\"{feature}\"$0"]
+		"body": ["v-if=\"${1:condition}\" key=\"{feature}\"$0"],
+		"description": "Vue 3.x no longer recommend"
 	},
 	"Vue v-else, With Key": {
 		"prefix": "vElseWithKey",
-		"body": ["v-else key=\"{feature}\"$0"]
+		"body": ["v-else key=\"{feature}\"$0"],
+		"description": "Vue 3.x no longer recommend"
 	},
 	"Vue v-else-if, With Key": {
 		"prefix": "vElseIfWithKey",
 		"body": [
 			"v-else-if=\"${1:condition}\" key=\"{feature}\"$0"
-		]
+		],
+		"description": "Vue 3.x no longer recommend"
 	},
 	"Vue v-show": {
 		"prefix": "vShow",
@@ -102,14 +105,14 @@
 		"body": [
 			"@${1:click}=\"${2:handler}${3:(${4:arg}, ${5:\\$event})}\"$0"
 		],
-		"description": "Expects: `Function | Inline Statement | Object`\nModifiers:\n 1. `.stop` - call `event.stopPropagation()`.\n 2. `.prevent` - call `event.preventDefault()`.\n 3. `.capture` - add event listener in capture mode.\n 4. `.self` - only trigger handler if event was dispatched from this element.\n 5. `.{keyCode | keyAlias}` - only trigger handler on certain keys.\n 6. `.native` - listen for a native event on the root element of component.\n 7. `.once` - trigger handler at most once.\n 8. `.left` - (2.2.0+) only trigger handler for left button mouse events.\n 9. `.right` - (2.2.0+) only trigger handler for right button mouse events.\n 10. `.middle` - (2.2.0+) only trigger handler for middle button mouse events.\n 11. `.passive` - (2.3.0+) attaches a DOM event with `{ passive: true }`.\n"
+		"description": "Expects: `Function | Inline Statement | Object`\nModifiers:\n 1. `.stop` - call `event.stopPropagation()`.\n 2. `.prevent` - call `event.preventDefault()`.\n 3. `.capture` - add event listener in capture mode.\n 4. `.self` - only trigger handler if event was dispatched from this element.\n 5. `.{keyCode | keyAlias}` - only trigger handler on certain keys.\n 6. `.native` - listen for a native event on the root element of component. (Vue 3.x has been removed)\n 7. `.once` - trigger handler at most once.\n 8. `.left` - (2.2.0+) only trigger handler for left button mouse events.\n 9. `.right` - (2.2.0+) only trigger handler for right button mouse events.\n 10. `.middle` - (2.2.0+) only trigger handler for middle button mouse events.\n 11. `.passive` - (2.3.0+) attaches a DOM event with `{ passive: true }`.\n"
 	},
 	"v-on Longhand": {
 		"prefix": "vOnLonghand",
 		"body": [
 			"v-on:${1:click}=\"${2:handler}${3:(${4:arg}, ${5:\\$event})}\"$0"
 		],
-		"description": "Expects: `Function | Inline Statement | Object`\nModifiers:\n 1. `.stop` - call `event.stopPropagation()`.\n 2. `.prevent` - call `event.preventDefault()`.\n 3. `.capture` - add event listener in capture mode.\n 4. `.self` - only trigger handler if event was dispatched from this element.\n 5. `.{keyCode | keyAlias}` - only trigger handler on certain keys.\n 6. `.native` - listen for a native event on the root element of component.\n 7. `.once` - trigger handler at most once.\n 8. `.left` - (2.2.0+) only trigger handler for left button mouse events.\n 9. `.right` - (2.2.0+) only trigger handler for right button mouse events.\n 10. `.middle` - (2.2.0+) only trigger handler for middle button mouse events.\n 11. `.passive` - (2.3.0+) attaches a DOM event with `{ passive: true }`.\n"
+		"description": "Expects: `Function | Inline Statement | Object`\nModifiers:\n 1. `.stop` - call `event.stopPropagation()`.\n 2. `.prevent` - call `event.preventDefault()`.\n 3. `.capture` - add event listener in capture mode.\n 4. `.self` - only trigger handler if event was dispatched from this element.\n 5. `.{keyCode | keyAlias}` - only trigger handler on certain keys.\n 6. `.native` - listen for a native event on the root element of component. (Vue 3.x has been removed)\n 7. `.once` - trigger handler at most once.\n 8. `.left` - (2.2.0+) only trigger handler for left button mouse events.\n 9. `.right` - (2.2.0+) only trigger handler for right button mouse events.\n 10. `.middle` - (2.2.0+) only trigger handler for middle button mouse events.\n 11. `.passive` - (2.3.0+) attaches a DOM event with `{ passive: true }`.\n"
 	},
 	"v-on dynamic event": {
 		"prefix": "vOnDynamic",
@@ -147,7 +150,7 @@
 		"description": "key modifier using keyAlias"
 	},
 	"v-on key modifier using keyCode": {
-		"prefix": "vOnKeyCode",
+		"prefix": "vOnKeyCode_UNSAFE",
 		"body": [
 			"@${1:keyup}.${2:13}=\"${3:handler}${4:(${5:arg}, ${6:\\$event})}\"$0"
 		],
