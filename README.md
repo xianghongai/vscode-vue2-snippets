@@ -57,10 +57,10 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
     * VueX
 - HTML
     * Built In Components
-          + Component
-          + Keep Alive
-          + Slot
-          + Transition
+        + Dynamic Component
+        + Keep Alive
+        + Slot
+        + Transition
     * Directives
     * Instance Methods Events
     * Refs, Key
