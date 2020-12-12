@@ -352,10 +352,10 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 
 #### Components
 
-- `vueGlobalComponent`/`vgc` - Vue Global Component
-- `vueFunctionalComponents`/`vfc` - Vue Global Component
-- `vueAsyncComponents`/`vac` - `const Feature = () => import('@/views/FeaturePage.vue');` - Vue Async Components
-- `Vue.component()_UNSAFE` - Retrieve Global Component
+- `vueGlobalComponent`/`vgc` - Vue Global Component, **Vue 3 DEPRECATED!**
+- `vueFunctionalComponents`/`vfc` - Vue Functional Component, **Vue 3.x BREAKING CHANGE!**
+- `vueAsyncComponents`/`vac` - `const Feature = () => import('@/views/FeaturePage.vue');` - Vue Async Components, **Vue 3.x BREAKING CHANGE!**
+- `Vue.component()_UNSAFE` - Retrieve Global Component, **Vue 3 DEPRECATED!**
 
 #### Transition
 
