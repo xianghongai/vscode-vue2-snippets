@@ -15,6 +15,13 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - Html (`.html`)
 - Vue (`.vue`)
 
+## The `UNSAFE` prefix/suffix
+
+`UNSAFE_api`，`prefix`, Indicates that it is deprecated in the **current** version.
+
+`api_UNSAFE`，`suffix`, Indicates that it has been deprecated in **future** versions.
+
+
 ## Resources 🤞
 
 - [JavaScript Code Snippet - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-snippet)
@@ -26,12 +33,12 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - Vue
     * Single File Component
 - JavaScript/TypeScript/Vue
-    * Global Config
-    * Global Data
+    * Global Config, **Vue 3 DEPRECATED!**
+    * Global Data, **Vue 3 DEPRECATED!**
     * Components
     * Directives
     * Extend
-    * Filters
+    * Filters, **Vue 3 REMOVED!**
     * Mixin
     * Plugins
     * Template
@@ -45,7 +52,7 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
     * Options Dom
     * Options Lifecycle Hooks
     * Options Misc
-    * Options Props
+    * Options Props, Vue 3.x `Props` default value factory functions no longer have access to `this`.
     * Vue Router
     * VueX
 - HTML
@@ -59,8 +66,10 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
     * Refs, Key
     * Style & Class
     * Vue Router
+    * Transition
 - Style
     * v-cloak
+    * Transition
 
 
 ### Vue 🦢
@@ -76,16 +85,15 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `vueNoStyle` - Vue Single File Component with No Style
 - `vueTemplate` - Vue Template element
 - `vueScript` - Vue Script element
-- `vueStyle` - Vue Style element
+- `vueStyle`/`styleLang` - Vue Style element
 
 ### JavaScript/TypeScript/Vue 🌿
 
 #### Import
 
 - `importComponent` / `ivc` - `import Feature from '@/components/Feature';`
-- `importComponentDynamically` - `const Feature = () => import('@/features/Feature.vue');`
 - `importDirective` / `ivd` - `import Feature from '@/directives/Feature';`
-- `importFilter` / `ivf` - `import Feature from '@/filters/Feature';` **Vue 3 REMOVED!**
+- `importFilter_UNSAFE` / `ivf_UNSAFE` - `import Feature from '@/filters/Feature';` **Vue 3 REMOVED!**
 - `importVueRouter` - `import VueRouter from 'vue-router';`
 - `importVuex` - `import Vuex from 'vuex';`
 - `importVuexHelpers` - `import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';`
@@ -143,7 +151,7 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `fetchingAfterNavigation` - Fetching After Navigation
 - `fetchingBeforeNavigation` - Fetching Before Navigation
 - `routeTransition` - Route-Based Dynamic Transition
-- `vscrollbehavior` - Vue Router scrollBehavior
+- `vScrollbehavior` - Vue Router scrollBehavior
 
 #### VueX
 
@@ -180,9 +188,9 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 
 #### Directives
 
- - `Vue.directive()` / `vgd` - Vue Global Directive (All Hooks)
- - `Vue.directive()` / `vgd` - Vue Global Directive (bind, update)
- - `Vue.directive()` - Retrieve Global Directive
+ - `Vue.directive()_UNSAFE` / `vgd_UNSAFE` - Vue Global Directive (All Hooks)
+ - `Vue.directive()_UNSAFE` / `vgd_UNSAFE` - Vue Global Directive (bind, update)
+ - `Vue.directive()_UNSAFE` - Retrieve Global Directive
  - `vueDirective` / `vsd` - Vue Single File Directive (All Hooks)
  - `option.directives` / `vld` - Vue Local Directives
  - `directive.bind` / `vd.bind` - Directive bind hook
@@ -219,7 +227,7 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `option.comments`
 - `option.components`
 - `option.directives`
-- `option.filters`
+- `option.filters_UNSAFE`, **Vue 3 REMOVED!**
 - `option.mixins`
 - `option.extends`
 - `option.inheritAttrs`
@@ -242,8 +250,6 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 
 ##### Composition/DOM/Misc
 
-- `this.$parent`
-- `this.$children`
 - `el`
 - `template`
 - `render(h, context)`
@@ -301,13 +307,13 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `this.$options`
 - `this.$parent`
 - `this.$root`
-- `this.$children`
+- `this.$children_UNSAFE`, **Vue 3 REMOVED!**
 - `this.$slots`
-- `this.$scopedSlots`
+- `this.$scopedSlots_UNSAFE`, **Vue 3 REMOVED!**
 - `this.$refs`
 - `this.$isServer`
 - `this.$attrs`
-- `this.$listeners`
+- `this.$listeners_UNSAFE`, **Vue 3 REMOVED!**
 
 ##### Instance Methods Lifecycle
 
@@ -321,32 +327,35 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 
 - `this.$watch()`
 - `this.$watch(data, cb, {deep, immediate})`
-- `this.$set()`
+- `this.$set()`/`set`
 - `this.$delete()`
 
 
 #### Instance Methods Events
 
-- `this.$on()`, **Vue 3 REMOVED!**
-- `this.$emit()`
-- `this.$once()`, **Vue 3 REMOVED!**
-- `this.$off()`, **Vue 3 REMOVED!**
+- `this.$on()_UNSAFE`, **Vue 3 REMOVED!**
+- `this.$emit()`/`emit`
+- `this.$once()_UNSAFE`, **Vue 3 REMOVED!**
+- `this.$off()_UNSAFE`/`off`, **Vue 3 REMOVED!**
 
 
 #### Template/Plugins/Mixin/Extend
 
-- `Vue.compile(template)`
-- `Vue.use(plugin)`
+- `Vue.compile(template)_UNSAFE`
+- `Vue.use(plugin)_UNSAFE`
 - `pluginComponent` - Create Plugin
 - `pluginComponents` - Create Plugin
-- `Vue.mixin(mixin)`
-- `Vue.extend(options)`
+- `Vue.mixin(mixin)_UNSAFE`
+- `Vue.extend(options)_UNSAFE`
+- `Vue.prototype_UNSAFE` - Vue Plugin add an instance method
 
 
 #### Components
 
-- `Vue.component()` - Vue Global Component
-- `Vue.component()` - Retrieve Global Component
+- `vueGlobalComponent`/`vgc` - Vue Global Component
+- `vueFunctionalComponents`/`vfc` - Vue Global Component
+- `vueAsyncComponents`/`vac` - `const Feature = () => import('@/views/FeaturePage.vue');` - Vue Async Components
+- `Vue.component()_UNSAFE` - Retrieve Global Component
 
 #### Transition
 
@@ -366,25 +375,44 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 
 #### Global
 
+**DEPRECATED!**
+
+"Vue 2 doesn't have a concept of an "app". What we define as an app is simply a root Vue instance created via new Vue(). Every root instance created from the same Vue constructor shares the same global configuration. "
+
+"The rule of thumb is *any APIs that globally mutate Vue's behavior are now moved to the app instance*. Here is a table of the current global APIs and their corresponding instance APIs:"
+
+| 2.x Global API             | 3.x Instance API (`app`)                                                                                                                            |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Vue.config                 | app.config                                                                                                                                          |
+| Vue.config.productionTip   | *removed* ([see below](https://v3.vuejs.org/guide/migration/global-api.html#config-productiontip-removed))                                          |
+| Vue.config.ignoredElements | app.config.isCustomElement ([see below](https://v3.vuejs.org/guide/migration/global-api.html#config-ignoredelements-is-now-config-iscustomelement)) |
+| Vue.component              | app.component                                                                                                                                       |
+| Vue.directive              | app.directive                                                                                                                                       |
+| Vue.mixin                  | app.mixin                                                                                                                                           |
+| Vue.use                    | app.use ([see below](https://v3.vuejs.org/guide/migration/global-api.html#a-note-for-plugin-authors))                                               |
+| Vue.prototype              | app.config.globalProperties ([see below](https://v3.vuejs.org/guide/migration/global-api.html#vue-prototype-replaced-by-config-globalproperties))   |
+
+All other global APIs that do not globally mutate behavior are now named exports, as documented in [Global API Treeshaking](https://v3.vuejs.org/guide/migration/global-api-treeshaking.html).
+
 ##### Global Config
 
-- `Vue.config.silent`
-- `Vue.config.optionMergeStrategies`
-- `Vue.config.devtools`
-- `Vue.config.errorHandler`
-- `Vue.config.warnHandler`
-- `Vue.config.ignoredElements`
-- `Vue.config.keyCodes`
-- `Vue.config.performance`
-- `Vue.config.productionTip`
+- `Vue.config.silent_UNSAFE`
+- `Vue.config.optionMergeStrategies_UNSAFE`
+- `Vue.config.devtools_UNSAFE`
+- `Vue.config.errorHandler_UNSAFE`
+- `Vue.config.warnHandler_UNSAFE`
+- `Vue.config.ignoredElements_UNSAFE`
+- `Vue.config.keyCodes_UNSAFE`
+- `Vue.config.performance_UNSAFE`
+- `Vue.config.productionTip_UNSAFE`
 
 ##### Global Data
 
-- `Vue.nextTick([callback, context])`
-- `Vue.nextTick().then()`
-- `Vue.set(target, propertyName/index, value)`
-- `Vue.delete(target, propertyName/index)`
-- `Vue.observable(object)`
+- `Vue.nextTick([callback, context])_UNSAFE`
+- `Vue.nextTick().then()_UNSAFE`
+- `Vue.set(target, propertyName/index, value)_UNSAFE`
+- `Vue.delete(target, propertyName/index)_UNSAFE`
+- `Vue.observable(object)_UNSAFE`
 
 ### HTML 🌴
 
@@ -409,12 +437,12 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `vIf` - `v-if="condition"`, Vue v-if
 - `vElse` - `v-else`, Vue v-else
 - `vElseIf` - `v-else-if="condition"`, Vue v-else-if
-- `vIfWithKey` - `v-if="condition" key="{feature}"`, Vue v-if, With Key
-- `vElseWithKey` - `v-else key="{feature}"`, Vue v-else, With Key
-- `vElseIfWithKey` - `v-else-if="condition" key="{feature}"`, Vue v-else-if, With Key
+- `vIfWithKey_UNSAFE` - `v-if="condition" key="{feature}"`, Vue v-if, With Key, **Vue 3 DEPRECATED!**
+- `vElseWithKey_UNSAFE` - `v-else key="{feature}"`, Vue v-else, With Key, **Vue 3 DEPRECATED!**
+- `vElseIfWithKey_UNSAFE` - `v-else-if="condition" key="{feature}"`, Vue v-else-if, With Key, **Vue 3 DEPRECATED!**
 - `vShow` - `v-show="condition"`, Vue v-show
 - `vText` - `v-text="text"`, Vue v-text
-- `vFilter` - `:text-content.prop="text | filter"`, Vue v-bind filter
+- `vFilter_UNSAFE` - `:text-content.prop="text | filter"`, Vue v-bind filter, **Vue 3 REMOVED!**
 - `vHtml` - `v-html="html"`, Vue v-html
 - `vModel` - `v-model="value"`, Vue v-model
 - `vOn` - `@click="handler(arg, $event)"`, v-on event/listener
@@ -424,7 +452,7 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `vOnPreventDefault` - `@click.prevent="handler(arg, $event)"`, v-on prevent default
 - `vOnStopPropagationPreventDefault` - `@click.stop.prevent="handler(arg, $event)"`, v-on stop propagation and prevent default
 - `vOnKeyAlias` - `@keyup.enter="handler(arg, $event)"`, v-on key modifier using keyAlias
-- `vOnKeyCode` - `@keyup.13="handler(arg, $event)"`, v-on key modifier using keyCode
+- `vOnKeyCode_UNSAFE` - `@keyup.13="handler(arg, $event)"`, v-on key modifier using keyCode, **Vue 3 DEPRECATED!**
 - `vOnOnce` - `@click.once="handler(arg, $event)"`, v-on triggered at most once
 - `vOnObject` - `v-on="{ mousedown: handler(arg, $event), mouseup: handler(arg, $event) }"`, v-on object syntax
 - `vBind` - `:attribute="value"`, Vue v-bind
@@ -460,6 +488,9 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `transition` - Vue Transition Component
 - `transition` - Vue Transition Component with JavaScript Hooks
 - `transitionGroup` - Vue transition-group Component
+
+##### Custom Transition Classes
+
 - `enterClass` / `transitionEnterClass` - enter-class
 - `enterActiveClass` / `transitionEnterActiveClass` - enter-active-class
 - `enterToClass` / `transitionEnterToClass` - enter-to-class
@@ -469,6 +500,22 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 - `appearClass` / `transitionAppearClass` - appear-class
 - `appearToClass` / `transitionAppearToClass` - appear-to-class
 - `appearActiveClass` / `transitionAppearActiveClass` - appear-active-class
+
+##### JavaScript Hooks
+
+- `beforeEnterHook`/`transitionBeforeEnterHook` → `@before-enter='beforeEnter'`
+- `enterHook`/`transitionEnterHook` → `@enter='enter'`
+- `afterEnterHook`/`transitionAfterEnterHook` → `@after-enter='afterEnter'`
+- `enterCancelledHook`/`transitionEnterCancelledHook` → `@enter-cancelled='enterCancelled'`
+- `beforeLeaveHook`/`transitionBeforeLeaveHook` → `@before-leave='beforeLeave'`
+- `leaveHook`/`transitionLeaveHook` → `@leave='leave'`
+- `afterLeaveHook`/`transitionAfterLeaveHook` → `@after-leave='afterLeave'`
+- `leaveCancelledHook`/`transitionLeaveCancelledHook` → `@leave-cancelled='leaveCancelled'`
+- `beforeAppearHook`/`transitionBeforeAppearHook` → `@before-appear='beforeAppear'`
+- `appearHook`/`transitionAppearHook` → `@appear='appear'`
+- `afterAppearHook`/`transitionAfterAppearHook` → `@after-appear='afterAppear'`
+- `appearCancelledHook`/`transitionAppearCancelledHook` → `@appear-cancelled='appearCancelled'`
+
 
 #### Vue Router
 
@@ -496,6 +543,15 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x);
 ### CSS 🌷
 
 - `v-cloak`
+- `enterCSS`/ `transitionEnterCSS`  → `.feature-enter {}`
+- `enterActiveCSS`/`transitionEnterActiveCSS`  → `.feature-enter-active {}`
+- `enterToCSS`/ `transitionEnterToCSS`  → `.feature-enter-to {}`
+- `leaveCSS`/ `transitionLeaveCSS`  → `.feature-leave {}`
+- `leaveToCSS`/ `transitionLeaveToCSS`  → `.feature-leave-to {}`
+- `leaveActiveCSS`/`transitionLeaveActiveCSS`  → `.feature-leave-active {}`
+- `appearCSS`/ `transitionAppearCSS`  → `.feature-appear {}`
+- `appearToCSS`/ `transitionAppearToCSS`  → `.feature-appear-to {}`
+- `appearActiveCSS`/`transitionAppearActiveCSS`  → `.feature-appear-active {}`
 
 ---
 
