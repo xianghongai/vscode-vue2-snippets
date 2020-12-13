@@ -1,5 +1,21 @@
 {
-	"Vue.mixin(mixin)": {
+	"Basics Mixin": {
+		"prefix": "vueMixin",
+		"body": [
+			"const ${1:feature}Mixin = {",
+			"  created() {",
+			"    $2",
+			"  },",
+			"  methods: {",
+			"    ${4:handler}() {",
+			"      $3",
+			"    },",
+			"  },",
+			"};"
+		],
+		"description": "Define a mixin object"
+	},
+	"Global Mixin": {
 		"prefix": "Vue.mixin()_UNSAFE",
 		"body": ["Vue.mixin({$1});"],
 		"description": "Vue 3.x BREAKING CHANGE.\nArguments: `{Object} mixin`\nApply a mixin globally, which affects every Vue instance created afterwards. This can be used by plugin authors to inject custom behavior into components. Not recommended in application code."

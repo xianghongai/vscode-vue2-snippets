@@ -240,7 +240,7 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - `option.components`
 - `option.directives`
 - `option.filters_UNSAFE`, **Vue 3 REMOVED!**
-- `option.mixins`
+- `option.mixins` - uses mixin
 - `option.extends`
 - `option.inheritAttrs`
 - `option.model`
@@ -358,7 +358,8 @@ Let's try `pDDR`, Other parts can be operated in the same way.
 - `Vue.use(plugin)_UNSAFE`, **Vue 3.x BREAKING CHANGE.**
 - `pluginComponent` - Create Plugin
 - `pluginComponents` - Create Plugin
-- `Vue.mixin(mixin)_UNSAFE`, **Vue 3.x BREAKING CHANGE.**
+- `vueMixin` - Define a mixin object
+- `Vue.mixin(mixin)_UNSAFE` - Global Mixin, **Vue 3.x BREAKING CHANGE.**
 - `Vue.extend(options)_UNSAFE`
 - `Vue.prototype_UNSAFE` - Vue Plugin add an instance method, **Vue 3.x BREAKING CHANGE.**
 

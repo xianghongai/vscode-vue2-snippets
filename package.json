@@ -4,7 +4,7 @@
 	"displayName": "Vue 2 Snippets",
 	"description": "Code snippets for Vue 2",
 	"icon": "art/icon.png",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"

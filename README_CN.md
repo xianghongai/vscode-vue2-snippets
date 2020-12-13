@@ -242,7 +242,7 @@ Vue 2 和 3 变化比较大，2 推荐 Optional 范式，3 推荐 Composition Fu
 - `option.components`
 - `option.directives`
 - `option.filters_UNSAFE`, **Vue 3 REMOVED!**
-- `option.mixins`
+- `option.mixins` - uses mixin
 - `option.extends`
 - `option.inheritAttrs`
 - `option.model`
@@ -360,7 +360,8 @@ Vue 2 和 3 变化比较大，2 推荐 Optional 范式，3 推荐 Composition Fu
 - `Vue.use(plugin)_UNSAFE`, **Vue 3.x BREAKING CHANGE.**
 - `pluginComponent` - Create Plugin
 - `pluginComponents` - Create Plugin
-- `Vue.mixin(mixin)_UNSAFE`, **Vue 3.x BREAKING CHANGE.**
+- `vueMixin` - Define a mixin object
+- `Vue.mixin(mixin)_UNSAFE` - Global Mixin, **Vue 3.x BREAKING CHANGE.**
 - `Vue.extend(options)_UNSAFE`
 - `Vue.prototype_UNSAFE` - Vue Plugin add an instance method, **Vue 3.x BREAKING CHANGE.**
 
