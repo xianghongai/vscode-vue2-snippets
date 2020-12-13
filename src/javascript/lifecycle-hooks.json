@@ -17,6 +17,7 @@
 		],
 		"description": "The Full Lifecycle Hooks"
 	},
+
 	"Lifecycle Hooks: beforeCreate()": {
 		"prefix": ["lifecycleBeforeCreate", "option.beforeCreate()", "vlh.beforeCreate()"],
 		"body": ["beforeCreate() {", "  $1", "},$0"],

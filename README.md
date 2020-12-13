@@ -101,7 +101,7 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 
 ### JavaScript/TypeScript/Vue 🌿
 
-#### Import
+#### Import/Instance
 
 - `importComponent` / `ivc` - `import Feature from '@/components/Feature';`
 - `importDirective` / `ivd` - `import Feature from '@/directives/Feature';`
@@ -109,6 +109,7 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - `importVueRouter` - `import VueRouter from 'vue-router';`
 - `importVuex` - `import Vuex from 'vuex';`
 - `importVuexHelpers` - `import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';`
+- `newVue` - Vue Instance
 
 #### Vue Router
 

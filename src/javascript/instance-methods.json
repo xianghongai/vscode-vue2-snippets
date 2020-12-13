@@ -1,0 +1,91 @@
+{
+	"this.$watch()": {
+		"prefix": "this.$watch(data, cb)",
+		"body": [
+			"var ${3:unwatch} = this.\\$watch('${1:propertyName}', function (newValue, oldValue) {",
+			"  $2",
+			"});"
+		],
+		"description": "Watch an expression or a computed function on the Vue instance for changes. The callback gets called with the new value and the old value. The expression only accepts dot-delimited paths. For more complex expressions, use a function instead.\nVue 3.x Watch on Arrays need add the `deep` property."
+	},
+	"this.$watch(data, cb, {deep, immediate})": {
+		"prefix": "this.$watch(data, cb, {deep, immediate})",
+		"body": [
+			"var ${4:unwatch} = this.\\$watch('${1:propertyName}', function (newValue, oldValue) {",
+			"  $2",
+			"}, {",
+			"  deep: true,",
+			"  ${3:immediate: true,}",
+			"});"
+		],
+		"description": "1. To also detect nested value changes inside Objects, you need to pass in `deep: true` in the options argument. Note that you don’t need to do so to listen for Array mutations. \n2. Passing in `immediate: true` in the option will trigger the callback immediately with the current value of the expression.\nVue 3.x Watch on Arrays need add the `deep` property."
+	},
+	"this.$set()": {
+		"prefix": ["this.$set()", "set"],
+		"body": [
+			"this.\\$set(this.${1:object/array}, ${2:propertyName/index}, ${3:value});$0"
+		],
+		"description": "This is the alias of the global Vue.set."
+	},
+	"this.$delete()": {
+		"prefix": "this.$delete()",
+		"body": [
+			"this.\\$delete(this.${1:object/array}, ${2:propertyName/index}, ${3:value});$0"
+		],
+		"description": "This is the alias of the global Vue.delete."
+	},
+
+	"this.$nextTick()": {
+		"prefix": ["this.$nextTick(cb)", "nextTick"],
+		"body": ["this.\\$nextTick(${1:function () {$0\\}});"],
+		"description": "Defer the callback to be executed after the next DOM update cycle. Use it immediately after you've changed some data to wait for the DOM update. This is the same as the global `nextTick`, except that the callback's this context is automatically bound to the instance calling `this` method.\nSince `$nextTick()` returns a promise, using the new ES2017 async/await syntax: `await this.$nextTick();`"
+	},
+	"this.$forceUpdate()": {
+		"prefix": "this.$forceUpdate()",
+		"body": ["this.\\$forceUpdate()$0;"],
+		"description": "Force the component instance to re-render. Note it does not affect all child components, only the instance itself and child components with inserted slot content."
+	},
+	"this.$destroy()": {
+		"prefix": "this.$destroy()",
+		"body": ["this.\\$destroy()$0;"],
+		"description": "Completely destroy a vm. Clean up its connections with other existing vms, unbind all its directives, turn off all event listeners.\rTriggers the `beforeDestroy` and `destroyed` hooks."
+	},
+	"this.$mount()": {
+		"prefix": "this.$mount()",
+		"body": [
+			"new ${1:FeatureComponent}().\\$mount('#${2:app}')$0;"
+		],
+		"description": "`new FeatureComponent({ el: '#app' });`\n `const featureComponent = new FeatureComponent().$mount();`\n `document.getElementById('app').appendChild(featureComponent.$el);`\n `vm.$mount([elementOrSelector])`"
+	},
+
+	"this.$on()": {
+		"prefix": "this.$on()_UNSAFE",
+		"body": [
+			"this.\\$on('${1:event-name}', function (${2:param}) {",
+			"  $3",
+			"});$0"
+		],
+		"description": "Removed from Vue 3.0!\nListen for a custom event on the current vm. Events can be triggered by vm.$emit. The callback will receive all the additional arguments passed into these event-triggering methods.\n `vm.$on(event, callback)`"
+	},
+	"this.$emit()": {
+		"prefix": ["this.$emit()", "emit"],
+		"body": [
+			"this.\\$emit('${1:event-name}'${2:, ${3:param}});$0"
+		],
+		"description": "Trigger an event on the current instance. Any additional arguments will be passed into the listener’s callback function.\n `vm.$emit(eventName, […args])`"
+	},
+	"this.$once()": {
+		"prefix": "this.$once()_UNSAFE",
+		"body": [
+			"this.\\$once('${1:event-name}', function () {",
+			"  $2",
+			"});$0"
+		],
+		"description": "Removed from Vue 3.0!\nListen for a custom event, but only once. The listener will be removed once it triggers for the first time.\n `vm.$once(event, callback)`"
+	},
+	"this.$off()": {
+		"prefix": ["this.$off()_UNSAFE", "off"],
+		"body": ["this.\\$off($1);$0"],
+		"description": "Removed from Vue 3.0!\nRemove custom event listener(s).\n 1. If no arguments are provided, remove all event listeners;\n 2. If only the event is provided, remove all listeners for that event;\n 3. If both event and callback are given, remove the listener for that specific callback only.\n `vm.$off([event, callback])`"
+	}
+}
