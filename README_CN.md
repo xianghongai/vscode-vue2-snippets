@@ -1,4 +1,6 @@
-# Vue2 Snippet (Visual Studio Code)
+# Vue 2 Snippet (Visual Studio Code)
+
+另外需要安装 "[Vue HTML Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-html-snippets)".
 
 Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x) 代码片断
 
@@ -7,6 +9,10 @@ Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x) 代码片断
 - 100% 涵盖了 vuex.vuejs.org 官方文档中的 api
 
 ## 规划
+
+![](https://raw.githubusercontent.com/caringrun/assets/master/vscode-vue-snippets-banner.png)
+
+Vue 2 和 3 Template Directives 部分一样 （vscode-vue-html-snippets）。
 
 Vue 2 和 3 变化比较大，2 推荐 Optional 范式，3 推荐 Composition Functions 范式。Vue 中常用的 “Global API、Directives、Transition、Async Components、Instance Events、Lifecycle” 都发生了较大的变化。并且 VueX 也推出了 4 版本。
 
@@ -24,7 +30,6 @@ Vue 2 和 3 变化比较大，2 推荐 Optional 范式，3 推荐 Composition Fu
 
 - JavaScript (`.js`)
 - TypeScript (`.ts`)
-- Html (`.html`)
 - Vue (`.vue`)
 
 ## `UNSAFE` 前后缀

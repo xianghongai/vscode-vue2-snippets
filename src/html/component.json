@@ -1,9 +1,0 @@
-{
-	"Dynamic Components": {
-		"prefix": "component",
-		"body": [
-			"<component :is=\"${1:componentId}\"></component>$0"
-		],
-		"description": "A “meta component” for rendering dynamic components. The actual component to render is determined by the `is` prop."
-	}
-}

@@ -1,4 +1,6 @@
-# Vue2 Snippet (Visual Studio Code)
+# Vue 2 Snippet (Visual Studio Code)
+
+You need to install "[Vue HTML Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-html-snippets)".
 
 Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x).  [中文](./README_CN.md)
 
@@ -7,6 +9,10 @@ Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x).  [中文](./READ
 - 100% covered vuex.vuejs.org official document api
 
 ## Design
+
+![](https://raw.githubusercontent.com/caringrun/assets/master/vscode-vue-snippets-banner.png)
+
+Vue 2 and 3 Template Directives are the same (vscode-vue-html-snippets).
 
 Vue 2 and 3 have relatively large changes, 2 recommends the Optional paradigm, and 3 recommends the Composition Functions paradigm. The commonly used "Global API, Directives, Transition, Async Components, Instance Events, Lifecycle" in Vue have undergone major changes. And VueX also launched 4 versions.
 
