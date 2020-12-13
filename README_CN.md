@@ -1,20 +1,20 @@
 # Vue2 Snippet (Visual Studio Code)
 
-Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x).  [中文](./README_CN.md)
+Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x) 代码片断
 
-- 100% covered vuejs.org official document api
-- 98% covered router.vuejs.org official document api
-- 100% covered vuex.vuejs.org official document api
+- 100% 涵盖了 vuejs.org 官方文档中的 api
+- 98% 涵盖了 router.vuejs.org 官方文档中的 api
+- 100% 涵盖了 vuex.vuejs.org 官方文档中的 api
 
-## Design
+## 规划
 
-Vue 2 and 3 have relatively large changes, 2 recommends the Optional paradigm, and 3 recommends the Composition Functions paradigm. The commonly used "Global API, Directives, Transition, Async Components, Instance Events, Lifecycle" in Vue have undergone major changes. And VueX also launched 4 versions.
+Vue 2 和 3 变化比较大，2 推荐 Optional 范式，3 推荐 Composition Functions 范式。Vue 中常用的 “Global API、Directives、Transition、Async Components、Instance Events、Lifecycle” 都发生了较大的变化。并且 VueX 也推出了 4 版本。
 
-In addition, with the introduction of new features of "reactive refs" and "Teleport", the upgrade of many community resources will be major changes.
+另外随着 “reactive refs”、“Teleport” 新特性的引入，很多社区资源的升级都将是较大的变化。
 
-Therefore, it is not good to design Vue 2 and 3 Code Snippets together.
+因此将 Vue 2 和 3 的 Code Snippets 设计在一起，是不好的。
 
-It is best to separate the Code Snippets of Vue 2 and 3 respectively. According to the actual situation in the project, select `Disable (Workspace)` in the extension. If you feel this is more cumbersome, you can install the extension supported by version 2 in "`VS Code`" , Install the extensions supported by version 3 in "`VS Code-Insiders`".
+最好将 Vue 2 和 3 的 Code Snippets 各自分开，在项目中根据实际情况，在扩展中选择 `Disable (Workspace)`，如果觉得这样比较繁琐，可以在 “VS Code” 中安装 2 版本支持的扩展，在 “VS Code - Insiders” 中安装 3 版本支持的扩展。
 
 ---
 
@@ -27,14 +27,14 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - Html (`.html`)
 - Vue (`.vue`)
 
-## The `UNSAFE` prefix/suffix
+## `UNSAFE` 前后缀
 
-`UNSAFE_api`，`prefix`, Indicates that it is deprecated in the **current** version.
+`UNSAFE_api`，`prefix`, 前缀风格，说明这个 API 在**当前版本**中不推荐使用；
 
-`api_UNSAFE`，`suffix`, Indicates that it has been deprecated in **future** versions.
+`api_UNSAFE`，`suffix`, 后缀风格，说明这个 API 在**未来版本**中不推荐使用。
 
 
-## Resources 🤞
+## 相关资源 🤞
 
 - [JavaScript Code Snippet - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-snippet)
 - [JavaScript Comment Snippet - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-comment)
@@ -86,22 +86,24 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 
 ### Vue 🦢
 
-- `vue` - Vue Single File Component with SCSS
-- `vueSass` - Vue Single File Component with SASS
-- `vueLess` - Vue Single File Component with LESS
-- `vuePostCSS` - Vue Single File Component with PostCSS
-- `vueCSS` - Vue Single File Component with CSS
-- `vueStylus` - Vue Single File Component with Stylus
-- `vueTypeScript` - Vue Single File Component with TypeScript
-- `vueTypeScriptClass` - Vue Single File Component with Class based TypeScript format
-- `vueNoStyle` - Vue Single File Component with No Style
-- `vueTemplate` - Vue Template element
-- `vueScript` - Vue Script element
-- `vueStyle`/`styleLang` - Vue Style element
+单文件组件的文件名应该要么始终是单词大写开头 (PascalCase)，要么始终是横线连接 (kebab-case)。
+
+- `vue` - 使用 SCSS 的单文件组件文件
+- `vueSass` - 使用 SASS 的单文件组件文件
+- `vueLess` - 使用 LESS 的单文件组件文件
+- `vuePostCSS` - 使用 PostCSS 的单文件组件文件
+- `vueCSS` - 使用 CSS 的单文件组件文件
+- `vueStylus` - 使用 Stylus 的单文件组件文件
+- `vueTypeScript` - 使用 TypeScript 的单文件组件文件
+- `vueTypeScriptClass` - 使用 TypeScript（类风格） 的单文件组件文件
+- `vueNoStyle` - 使用 No Style 的单文件组件文件
+- `vueTemplate` - Vue `＜template＞` 元素
+- `vueScript` - Vue `＜script＞` 元素
+- `vueStyle`/`styleLang` - Vue `＜style＞` 元素
 
 ### JavaScript/TypeScript/Vue 🌿
 
-#### Import
+#### 文件导入
 
 - `importComponent` / `ivc` - `import Feature from '@/components/Feature';`
 - `importDirective` / `ivd` - `import Feature from '@/directives/Feature';`
@@ -182,20 +184,20 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - `mapActions` - mapActions (array)
 - `mapActions` - mapActions (object)
 - `createNamespacedHelpers` - createNamespacedHelpers
-- `store.getters` - [this.]store.getters
-- `store.state` - [this.]store.state
-- `store.commit()` / `sc` - [this.]store.commit(type, payload, options)
-- `store.dispatch()` / `sd` - [this.]store.dispatch(type, payload)
-- `store.dispatch()` / `sdp` - [this.]store.dispatch(type, payload), promise
-- `store.replaceState()` - [this.]store.replaceState(state)
-- `store.watch()` - [this.]store.watch(getter, cb, options)
-- `store.subscribe()` - [this.]store.subscribe(fn, options)
-- `store.subscribeAction()` - [this.]store.subscribeAction(fn, options)
-- `store.subscribeAction()` - [this.]store.subscribeAction(object)
-- `store.registerModule()` - [this.]store.registerModule(path, rawModule, options)
-- `store.unregisterModule()` - [this.]store.unregisterModule(path)
-- `store.hasModule()` - [this.]store.hasModule(path)
-- `store.hotUpdate()` - [this.]store.hotUpdate(newOptions)
+- `store.getters` - store.getters
+- `store.state` - store.state
+- `store.commit()` / `sc` - store.commit(type, payload, options)
+- `store.dispatch()` / `sd` - store.dispatch(type, payload)
+- `store.dispatch()` / `sdp` - store.dispatch(type, payload), promise
+- `store.replaceState()` - store.replaceState(state)
+- `store.watch()` - store.watch(getter, cb, options)
+- `store.subscribe()` - store.subscribe(fn, options)
+- `store.subscribeAction()` - store.subscribeAction(fn, options)
+- `store.subscribeAction()` - store.subscribeAction(object)
+- `store.registerModule()` - store.registerModule(path, rawModule, options)
+- `store.unregisterModule()` - store.unregisterModule(path)
+- `store.hasModule()` - store.hasModule(path)
+- `store.hotUpdate()` - store.hotUpdate(newOptions)
 
 
 #### Directives
@@ -308,7 +310,7 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - `propSymbolDefaultRequired` - Symbol (default, required)
 - `propPromiseDefaultRequired` - Promise (default, required)
 
-Let's try `pDDR`, Other parts can be operated in the same way.
+尝试一下 `pPDR`，其它部分可以同样操作。
 
 #### Instance
 
@@ -390,7 +392,7 @@ Let's try `pDDR`, Other parts can be operated in the same way.
 
 **DEPRECATED!**
 
-View "Migration from Vue 2" [Global API](https://v3.vuejs.org/guide/migration/global-api.html), [Global API Treeshaking](https://v3.vuejs.org/guide/migration/global-api-treeshaking.html).
+查看“从 Vue 2 迁移”[全局 API](https://v3.cn.vuejs.org/guide/migration/global-api.html) 和 [全局 API Treeshaking](https://v3.cn.vuejs.org/guide/migration/global-api-treeshaking.html#_2-x-%E8%AF%AD%E6%B3%95)；
 
 ##### Global Config
 
@@ -555,7 +557,7 @@ View "Migration from Vue 2" [Global API](https://v3.vuejs.org/guide/migration/gl
 
 ## File Name
 
-View "Style Guide" [Priority B Rules: Strongly Recommended (Improving Readability)](https://v3.vuejs.org/style-guide/#priority-b-rules-strongly-recommended-improving-readability).
+查看“风格指南” [优先级 B 的规则：强烈推荐 (增强代码可读性)](https://v3.cn.vuejs.org/style-guide/#%E4%BC%98%E5%85%88%E7%BA%A7-b-%E7%9A%84%E8%A7%84%E5%88%99-%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90-%E5%A2%9E%E5%BC%BA%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7)。
 
 - foo-bar`${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}`, .vue  →  `name: FooBar`;
 - foo-bar`${TM_FILENAME_BASE}`, .vue  →  `name: foo-bar`;
