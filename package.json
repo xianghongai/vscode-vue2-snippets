@@ -4,7 +4,7 @@
 	"displayName": "Vue 2 Snippets",
 	"description": "Code snippets for Vue 2",
 	"icon": "art/icon.png",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
@@ -69,18 +69,6 @@
 			{
 				"language": "vue",
 				"path": "./snippets/vue.json"
-			},
-			{
-				"language": "css",
-				"path": "./snippets/css.json"
-			},
-			{
-				"language": "scss",
-				"path": "./snippets/css.json"
-			},
-			{
-				"language": "less",
-				"path": "./snippets/css.json"
 			}
 		]
 	},

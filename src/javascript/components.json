@@ -5,6 +5,7 @@
 			"import $1 from '@/components/${1:Feature}';$0"
 		]
 	},
+
 	"Vue Global Component": {
 		"prefix": ["vueGlobalComponent_UNSAFE", "vgc_UNSAFE"],
 		"body": [
@@ -20,6 +21,7 @@
 		],
 		"description": "Vue 3.x DEPRECATED.\nRegister or retrieve a global component. Registration also automatically sets the component’s `name` with the given `id`.\nAutomatically call `Vue.extend`"
 	},
+
 	"Vue Functional Components": {
 		"prefix": ["vueFunctionalComponents_UNSAFE", "vfc_UNSAFE"],
 		"body": [
@@ -32,6 +34,7 @@
 		],
 		"description": "Vue 3.x BREAKING CHANGE.\nFunctional Components doesn’t manage any state, watch any state passed to it, and it has no lifecycle methods. Really, it’s only a function with some props.\nMark components as `functional`, which means that they’re stateless (no reactive data) and instanceless (no this context). \n In 2.3.0+ omit the `props` option and all attributes found on the component node will be implicitly extracted as props.\nThe reference will be HTMLElement when used with functional components because they’re stateless and instanceless."
 	},
+
 	"Vue Async Components": {
 		"prefix": ["vueAsyncComponents", "vac"],
 		"body": [
