@@ -1,8 +1,28 @@
-# Vue 2 Snippet (Visual Studio Code)
+<p>
+  <h1 align="center">Vue 2 Snippet (Visual Studio Code)</h1>
+</p>
+
+<p align="center">
+  <a href="https://github.com/xianghongai/vscode-vue2-snippets">
+    <img src="https://img.shields.io/github/repo-size/xianghongai/vscode-vue2-snippets?style=plastic&color=4ac51c">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue2-snippets">
+    <img src="https://vsmarketplacebadge.apphb.com/version-short/NicholasHsiang.vscode-vue2-snippets.svg?style=plastic&color=f07b3c">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue2-snippets">
+    <img src="https://vsmarketplacebadge.apphb.com/installs-short/NicholasHsiang.vscode-vue2-snippets.svg?style=plastic&color=4ac51c">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue2-snippets">
+    <img src="https://vsmarketplacebadge.apphb.com/rating-short/NicholasHsiang.vscode-vue2-snippets.svg?style=plastic&color=4ac51c">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue2-snippets">
+    <img src="https://img.shields.io/github/license/xianghongai/vscode-vue2-snippets?maxAge=2592000&style=plastic&color=4ac51c">
+  </a>
+</p>
 
 [中文](./README_CN.md)
 
-🏳️‍🌈🏳️‍🌈🏳️‍🌈 First need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".
+🌈🌈🌈 First need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".
 
 Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x).
 
