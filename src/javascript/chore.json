@@ -12,8 +12,8 @@
 			"import App from './App.vue';",
 			"$0",
 			"const ${1:app} = new Vue({",
-			"  el: '#${2:root}',",
-			"  render: (h) => h(App),",
+			"\tel: '#${2:root}',",
+			"\trender: (h) => h(App),",
 			"});"
 		],
 		"description": "new Vue({...}).$mount('#app')"

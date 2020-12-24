@@ -18,8 +18,8 @@
 		"prefix": "option.model",
 		"body": [
 			"model: {",
-			"  prop: '${1:checked}',",
-			"  event: '${2:change}',",
+			"\tprop: '${1:checked}',",
+			"\tevent: '${2:change}',",
 			"},$0"
 		],
 		"description": "Type: `{prop?: string, event?: string}`.\nDetails:\nAllows a custom component to customize the prop and event used when it’s used with `v-model`. By default, `v-model` on a component uses `value` as the prop and `input` as the event, but some input types such as checkboxes and radio buttons may want to use the `value` prop for a different purpose. Using the `model` option can avoid the conflict in such cases. (New in 2.2.0)"

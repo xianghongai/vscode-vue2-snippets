@@ -29,7 +29,7 @@
 		"prefix": ["router", "newVueRouter"],
 		"body": [
 			"const ${1:router} = new VueRouter({",
-			"  ${2:routes}",
+			"\t${2:routes}",
 			"});$0"
 		],
 		"description": "Create the router instance, The default is hash mode."
@@ -44,11 +44,11 @@
 			"Vue.use(VueRouter);",
 			"",
 			"export const router = new VueRouter({",
-			"  ${1:base: '${2:/}',}",
-			"  ${3:mode: '${4:history}',}",
-			"  routes: [$0",
-			"    { path: '/pathname', component: Feature }",
-			"  ]",
+			"\t${1:base: '${2:/}',}",
+			"\t${3:mode: '${4:history}',}",
+			"\troutes: [$0",
+			"\t\t{ path: '/pathname', component: Feature }",
+			"\t]",
 			"});"
 		],
 		"description": "Base for Vue Router"
@@ -58,8 +58,8 @@
 		"prefix": "routerHistoryMode",
 		"body": [
 			"const ${1:router} = new VueRouter({",
-			"  mode: 'history',",
-			"  ${2:routes}",
+			"\tmode: 'history',",
+			"\t${2:routes}",
 			"});$0"
 		],
 		"description": "Create the router instance with HTML5 History Mode"
@@ -69,17 +69,17 @@
 		"prefix": "routes",
 		"body": [
 			"const ${1:routes} = [",
-			"  { path: '${2:/feature}', component: ${3:Feature} },",
-			"  {",
-			"    path: '${4:/feature}',",
-			"    component: ${5:Feature},",
-			"    children: [",
-			"      {",
-			"        path: '${6:/feature}',",
-			"        component: ${7:Feature},",
-			"      },",
-			"    ],",
-			"  },",
+			"\t{ path: '${2:/feature}', component: ${3:Feature} },",
+			"\t{",
+			"\t\tpath: '${4:/feature}',",
+			"\t\tcomponent: ${5:Feature},",
+			"\t\tchildren: [",
+			"\t\t\t{",
+			"\t\t\t\tpath: '${6:/feature}',",
+			"\t\t\t\tcomponent: ${7:Feature},",
+			"\t\t\t},",
+			"\t\t],",
+			"\t},",
 			"];"
 		],
 		"description": "Define routes"
@@ -96,9 +96,9 @@
 		"prefix": "routeLazy",
 		"body": [
 			"{",
-			"  path: '${1:pathName}',",
-			"  name: '${2:routeName}',",
-			"  component: () => import('./${3:Feature}'),",
+			"\tpath: '${1:pathName}',",
+			"\tname: '${2:routeName}',",
+			"\tcomponent: () => import('./${3:Feature}'),",
 			"},"
 		],
 		"description": "Define lazy loading route"
@@ -107,9 +107,9 @@
 		"prefix": "routePropsBooleanMode",
 		"body": [
 			"{",
-			"  path: '${1:/feature}',",
-			"  component: ${2:Feature},",
-			"  props: true,",
+			"\tpath: '${1:/feature}',",
+			"\tcomponent: ${2:Feature},",
+			"\tprops: true,",
 			"},$0"
 		],
 		"description": "When `props` is set to `true`, the `route.params` will be set as the component props."
@@ -118,9 +118,9 @@
 		"prefix": "routePropsObjectMode",
 		"body": [
 			"{",
-			"  path: '${1:/feature}',",
-			"  component: ${2:Feature},",
-			"  props: { ${3:property}: '${4:value}' },",
+			"\tpath: '${1:/feature}',",
+			"\tcomponent: ${2:Feature},",
+			"\tprops: { ${3:property}: '${4:value}' },",
 			"},$0"
 		],
 		"description": ""
@@ -129,12 +129,12 @@
 		"prefix": "routePropsFunctionMode",
 		"body": [
 			"{",
-			"  path: '${1:/feature}',",
-			"  component: ${2:Feature},",
-			"  props: (route) => ($3{",
-			"    property: route.params.property,",
-			"    key: route.query.key,",
-			"  }),",
+			"\tpath: '${1:/feature}',",
+			"\tcomponent: ${2:Feature},",
+			"\tprops: (route) => ($3{",
+			"\t\tproperty: route.params.property,",
+			"\t\tkey: route.query.key,",
+			"\t}),",
 			"},$0"
 		],
 		"description": ""
@@ -143,14 +143,14 @@
 		"prefix": "routePropsFunctionModeNamedViews",
 		"body": [
 			"{",
-			"  path: '${1:/feature}',",
-			"  component: ${2:Feature},",
-			"  props: {",
-			"    default: ${3:true},",
-			"    ${4:viewName}: (route) => ($5{",
-			"      property: route.params.property,",
-			"    }),",
-			"  },",
+			"\tpath: '${1:/feature}',",
+			"\tcomponent: ${2:Feature},",
+			"\tprops: {",
+			"\t\tdefault: ${3:true},",
+			"\t\t${4:viewName}: (route) => ($5{",
+			"\t\t\tproperty: route.params.property,",
+			"\t\t}),",
+			"\t},",
 			"},$0"
 		],
 		"description": ""
@@ -159,11 +159,11 @@
 		"prefix": "routeNamedViews",
 		"body": [
 			"{",
-			"  path: '${1:/pathname}',",
-			"  components: {",
-			"    default: ${2:Feature},",
-			"    view${3:Name}: ${3},",
-			"  },",
+			"\tpath: '${1:/pathname}',",
+			"\tcomponents: {",
+			"\t\tdefault: ${2:Feature},",
+			"\t\tview${3:Name}: ${3},",
+			"\t},",
 			"},"
 		],
 		"description": ""
@@ -194,21 +194,21 @@
 		"prefix": "routeRedirectDynamic",
 		"body": [
 			"{",
-			"  path: '/dynamic-redirect/:id?',",
-			"  redirect: (to) => {",
-			"    const { hash, params, query } = to;",
-			"    if (query.property === 'value') {",
-			"      return { path: '/pathname', query: null };",
-			"    }",
-			"    if (hash === '#feature') {",
-			"      return { name: 'routename', hash: '' };",
-			"    }",
-			"    if (params.id) {",
-			"      return '/with-params/:id';",
-			"    } else {",
-			"      return '/feature';",
-			"    }",
-			"  },",
+			"\tpath: '/dynamic-redirect/:id?',",
+			"\tredirect: (to) => {",
+			"\t\tconst { hash, params, query } = to;",
+			"\t\tif (query.property === 'value') {",
+			"\t\t\treturn { path: '/pathname', query: null };",
+			"\t\t}",
+			"\t\tif (hash === '#feature') {",
+			"\t\t\treturn { name: 'routename', hash: '' };",
+			"\t\t}",
+			"\t\tif (params.id) {",
+			"\t\t\treturn '/with-params/:id';",
+			"\t\t} else {",
+			"\t\t\treturn '/feature';",
+			"\t\t}",
+			"\t},",
 			"},"
 		],
 		"description": "Define dynamic redirect"
@@ -238,8 +238,8 @@
 		"prefix": "routerPushParams",
 		"body": [
 			"${5:this.\\$}router.push({",
-			"  path: ${1:'${2:pathname}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
+			"\tpath: ${1:'${2:pathname}'},",
+			"\tparams: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
 		"description": "Router navigate to path with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
@@ -248,8 +248,8 @@
 		"prefix": "routerPushQuery",
 		"body": [
 			"${5:this.\\$}router.push({",
-			"  path: ${1:'${2:pathname}'},",
-			"  query: { ${3:property}: ${4:'value'} },",
+			"\tpath: ${1:'${2:pathname}'},",
+			"\tquery: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
 		"description": "Router navigate to path with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
@@ -265,8 +265,8 @@
 		"prefix": "routerPushNamedRouteParams",
 		"body": [
 			"${5:this.\\$}router.push({",
-			"  name: ${1:'${2:routename}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
+			"\tname: ${1:'${2:routename}'},",
+			"\tparams: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
 		"description": "Router navigate to named routes with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
@@ -275,8 +275,8 @@
 		"prefix": "routerPushNamedRouteQuery",
 		"body": [
 			"${5:this.\\$}router.push({",
-			"  name: ${1:'${2:routename}'},",
-			"  query: { ${3:property}: ${4:'value'} },",
+			"\tname: ${1:'${2:routename}'},",
+			"\tquery: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
 		"description": "Router navigate to named routes with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
@@ -285,8 +285,8 @@
 		"prefix": "routerReplacePath",
 		"body": [
 			"${5:this.\\$}router.replace({",
-			"  path: ${1:'${2:pathname}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
+			"\tpath: ${1:'${2:pathname}'},",
+			"\tparams: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
 		"description": "Router navigate to path without pushing a new history entry.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)"
@@ -295,8 +295,8 @@
 		"prefix": "routerReplaceNamedRoute",
 		"body": [
 			"${5:this.\\$}router.replace({",
-			"  name: ${1:'${2:routename}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
+			"\tname: ${1:'${2:routename}'},",
+			"\tparams: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
 		"description": "Router navigate to named routes without pushing a new history entry.\n#syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
@@ -327,8 +327,8 @@
 		"prefix": ["routerBeforeEach", "guardGlobalBefore"],
 		"body": [
 			"router.beforeEach((to, from, next) => {",
-			"  /* must call `next` */",
-			"  $0",
+			"\t/* must call `next` */",
+			"\t$0",
 			"});"
 		],
 		"description": "register global before guards.\n`beforeEach(callback(to, from, next))`"
@@ -337,8 +337,8 @@
 		"prefix": ["routerBeforeResolve", "guardGlobalResolve"],
 		"body": [
 			"router.beforeResolve((to, from, next) => {",
-			"  /* must call `next` */",
-			"  $0",
+			"\t/* must call `next` */",
+			"\t$0",
 			"});"
 		],
 		"description": "register global resolve guards.\n`beforeResolve(callback(to, from, next))`"
@@ -347,7 +347,7 @@
 		"prefix": "routerAfterEach",
 		"body": [
 			"router.afterEach((to, from) => {",
-			"  $0",
+			"\t$0",
 			"});"
 		],
 		"description": "register global after hooks.\n`afterEach(callback(to, from))`"
@@ -356,8 +356,8 @@
 		"prefix": ["routeBeforeEnter", "guardPerRoute"],
 		"body": [
 			"beforeEnter((to, from, next) => {",
-			"  /* must call `next` */",
-			"  $0",
+			"\t/* must call `next` */",
+			"\t$0",
 			"});"
 		],
 		"description": "register guards on a route's configuration object.\n`beforeEnter(callback(to, from, next))`"
@@ -366,21 +366,21 @@
 		"prefix": ["componentGuards", "guardInComponent"],
 		"body": [
 			"beforeRouteEnter(to, from, next) {",
-			"  next((vm) => {$0});",
+			"\tnext((vm) => {$0});",
 			"},",
 			"beforeRouteUpdate(to, from, next) {",
-			"  // this.name = to.params.name;",
-			"  next();",
+			"\t// this.name = to.params.name;",
+			"\tnext();",
 			"},",
 			"beforeRouteLeave(to, from, next) {",
-			"  const answer = window.confirm(",
-			"    'Do you really want to leave? you have unsaved changes!'",
-			"  );",
-			"  if (answer) {",
-			"    next();",
-			"  } else {",
-			"    next(false);",
-			"  }",
+			"\tconst answer = window.confirm(",
+			"\t\t'Do you really want to leave? you have unsaved changes!'",
+			"\t);",
+			"\tif (answer) {",
+			"\t\tnext();",
+			"\t} else {",
+			"\t\tnext(false);",
+			"\t}",
 			"},"
 		],
 		"description": "define route navigation guards inside route components "
@@ -468,40 +468,40 @@
 		"prefix": "fetchingAfterNavigation",
 		"body": [
 			"export default {",
-			"  data() {",
-			"    return {",
-			"      loading: false,",
-			"      post: null,",
-			"      error: null,",
-			"    };",
-			"  },",
-			"  created() {",
-			"    // fetch the data when the view is created and the data is",
-			"    // already being observed",
-			"    this.fetchData();",
-			"  },",
-			"  watch: {",
-			"    // call again the method if the route changes",
-			"    \\$route: 'fetchData',",
-			"  },",
-			"  methods: {",
-			"    fetchData() {",
-			"      this.error = this.post = null;",
-			"      this.loading = true;",
-			"      const fetchedId = this.\\$route.params.id;",
-			"      // data fetching util / API wrapper",
-			"      ${1:getPost}(fetchedId, (err, post) => {",
-			"        // make sure this request is the last one we did, discard otherwise",
-			"        if (this.\\$route.params.id !== fetchedId) return;",
-			"        this.loading = false;",
-			"        if (err) {",
-			"          this.error = err.toString();",
-			"        } else {",
-			"          this.post = post;",
-			"        }",
-			"      });",
-			"    },",
-			"  },",
+			"\tdata() {",
+			"\t\treturn {",
+			"\t\t\tloading: false,",
+			"\t\t\tpost: null,",
+			"\t\t\terror: null,",
+			"\t\t};",
+			"\t},",
+			"\tcreated() {",
+			"\t\t// fetch the data when the view is created and the data is",
+			"\t\t// already being observed",
+			"\t\tthis.fetchData();",
+			"\t},",
+			"\twatch: {",
+			"\t\t// call again the method if the route changes",
+			"\t\t\\$route: 'fetchData',",
+			"\t},",
+			"\tmethods: {",
+			"\t\tfetchData() {",
+			"\t\t\tthis.error = this.post = null;",
+			"\t\t\tthis.loading = true;",
+			"\t\t\tconst fetchedId = this.\\$route.params.id;",
+			"\t\t\t// data fetching util / API wrapper",
+			"\t\t\t${1:getPost}(fetchedId, (err, post) => {",
+			"\t\t\t\t// make sure this request is the last one we did, discard otherwise",
+			"\t\t\t\tif (this.\\$route.params.id !== fetchedId) return;",
+			"\t\t\t\tthis.loading = false;",
+			"\t\t\t\tif (err) {",
+			"\t\t\t\t\tthis.error = err.toString();",
+			"\t\t\t\t} else {",
+			"\t\t\t\t\tthis.post = post;",
+			"\t\t\t\t}",
+			"\t\t\t});",
+			"\t\t},",
+			"\t},",
 			"};"
 		],
 		"description": "fetch data in the component's created hook."
@@ -510,35 +510,35 @@
 		"prefix": "fetchingBeforeNavigation",
 		"body": [
 			"export default {",
-			"  data() {",
-			"    return {",
-			"      post: null,",
-			"      error: null,",
-			"    };",
-			"  },",
-			"  beforeRouteEnter(to, from, next) {",
-			"    ${1:getPost}(to.params.id, (err, post) => {",
-			"      next((vm) => vm.setData(err, post));",
-			"    });",
-			"  },",
-			"  // when route changes and this component is already rendered,",
-			"  // the logic will be slightly different.",
-			"  beforeRouteUpdate(to, from, next) {",
-			"    this.post = null;",
-			"    ${1}(to.params.id, (err, post) => {",
-			"      this.setData(err, post);",
-			"      next();",
-			"    });",
-			"  },",
-			"  methods: {",
-			"    setData(err, post) {",
-			"      if (err) {",
-			"        this.error = err.toString();",
-			"      } else {",
-			"        this.post = post;",
-			"      }",
-			"    },",
-			"  },",
+			"\tdata() {",
+			"\t\treturn {",
+			"\t\t\tpost: null,",
+			"\t\t\terror: null,",
+			"\t\t};",
+			"\t},",
+			"\tbeforeRouteEnter(to, from, next) {",
+			"\t\t${1:getPost}(to.params.id, (err, post) => {",
+			"\t\t\tnext((vm) => vm.setData(err, post));",
+			"\t\t});",
+			"\t},",
+			"\t// when route changes and this component is already rendered,",
+			"\t// the logic will be slightly different.",
+			"\tbeforeRouteUpdate(to, from, next) {",
+			"\t\tthis.post = null;",
+			"\t\t${1}(to.params.id, (err, post) => {",
+			"\t\t\tthis.setData(err, post);",
+			"\t\t\tnext();",
+			"\t\t});",
+			"\t},",
+			"\tmethods: {",
+			"\t\tsetData(err, post) {",
+			"\t\t\tif (err) {",
+			"\t\t\t\tthis.error = err.toString();",
+			"\t\t\t} else {",
+			"\t\t\t\tthis.post = post;",
+			"\t\t\t}",
+			"\t\t},",
+			"\t},",
 			"};"
 		],
 		"description": "fetch the data before actually navigating to the new route."
@@ -548,11 +548,11 @@
 		"prefix": "routeTransition",
 		"body": [
 			"watch: {",
-			"  \\$route(to, from) {",
-			"    const toDepth = to.path.split('/').length;",
-			"    const fromDepth = from.path.split('/').length;",
-			"    this.${1:transitionName} = toDepth < fromDepth ? 'slide-right' : 'slide-left';",
-			"  },",
+			"\t\\$route(to, from) {",
+			"\t\tconst toDepth = to.path.split('/').length;",
+			"\t\tconst fromDepth = from.path.split('/').length;",
+			"\t\tthis.${1:transitionName} = toDepth < fromDepth ? 'slide-right' : 'slide-left';",
+			"\t},",
 			"},"
 		]
 	},
@@ -561,11 +561,11 @@
 		"prefix": "vScrollbehavior",
 		"body": [
 			"scrollBehavior(to, from, savedPosition) {",
-			"  if(savedPosition) {",
-			"    return savedPosition;",
-			"  } else {",
-			"    return { x: 0, y: 0 };",
-			"  }",
+			"\tif(savedPosition) {",
+			"\t\treturn savedPosition;",
+			"\t} else {",
+			"\t\treturn { x: 0, y: 0 };",
+			"\t}",
 			"},"
 		],
 		"description": "Vue Router scrollBehavior"

@@ -3,14 +3,14 @@
 		"prefix": "vueMixin",
 		"body": [
 			"const ${1:feature}Mixin = {",
-			"  created() {",
-			"    $2",
-			"  },",
-			"  methods: {",
-			"    ${4:handler}() {",
-			"      $3",
-			"    },",
-			"  },",
+			"\tcreated() {",
+			"\t\t$2",
+			"\t},",
+			"\tmethods: {",
+			"\t\t${4:handler}() {",
+			"\t\t\t$3",
+			"\t\t},",
+			"\t},",
 			"};"
 		],
 		"description": "Define a mixin object"

@@ -8,7 +8,7 @@
 		"prefix": "Vue.config.optionMergeStrategies_UNSAFE",
 		"body": [
 			"Vue.config.optionMergeStrategies.option = function (parent, child, vm) {",
-			"  ${1}",
+			"\t${1}",
 			"};$0"
 		],
 		"description": "Type: `{[key: string]: Function}`\nDefault: `{}`\nDefine custom merging strategies for options.\nThe merge strategy receives the value of that option defined on the parent and child instances as the first and second arguments, respectively. The context Vue instance is passed as the third argument."
@@ -22,7 +22,7 @@
 		"prefix": "Vue.config.errorHandler_UNSAFE",
 		"body": [
 			"Vue.config.errorHandler = function (err, vm, info) {",
-			"  ${1}",
+			"\t${1}",
 			"};$0"
 		],
 		"description": "Type: `Function`.\n Default: `undefined`.\nAssign a handler for uncaught errors during component render function and watchers. The handler gets called with the error and the Vue instance.\n- In 2.2.0+, this hook also captures errors in component lifecycle hooks. Also, when this hook is `undefined`, captured errors will be logged with `console.error` instead of crashing the app.\n- In 2.4.0+, this hook also captures errors thrown inside Vue custom event handlers.\n- In 2.6.0+, this hook also captures errors thrown inside `v-on` DOM listeners. In addition, if any of the covered hooks or handlers returns a Promise chain (e.g. async functions), the error from that Promise chain will also be handled.\n- Error tracking services Sentry and Bugsnag provide official integrations using this option."
@@ -31,7 +31,7 @@
 		"prefix": "Vue.config.warnHandler_UNSAFE",
 		"body": [
 			"Vue.config.warnHandler = function (msg, vm, trace) {",
-			"  ${1}",
+			"\t${1}",
 			"};$0"
 		],
 		"description": "Type: `Function`.\n Default: `undefined`.\nAssign a custom handler for runtime Vue warnings. Note this only works during development and is ignored in production.(New in 2.4.0+)"
@@ -47,7 +47,7 @@
 		"prefix": "Vue.config.keyCodes_UNSAFE",
 		"body": [
 			"Vue.config.keyCodes = {",
-			"  \"${1:kebab-case}\": ${2:179},",
+			"\t\"${1:kebab-case}\": ${2:179},",
 			"};"
 		],
 		"description": "`KeyboardEvent.keyCode` has been deprecated.\nType: `{[key: string]: number | Array<number>}`.\n Default: `{}`.\n Define custom key alias(es) for `v-on`."
@@ -65,14 +65,14 @@
 
 	"Vue.nextTick([callback, context])": {
 		"prefix": "Vue.nextTick()_UNSAFE",
-		"body": ["Vue.nextTick(function () {", "  $0", "});"],
+		"body": ["Vue.nextTick(function () {", "\t$0", "});"],
 		"description": "Defer the callback to be executed after the next DOM update cycle. Use it immediately after you’ve changed some data to wait for the DOM update."
 	},
 	"Vue.nextTick().then()": {
 		"prefix": "Vue.nextTick().then()_UNSAFE",
 		"body": [
 			"Vue.nextTick().then(function () {",
-			"  $0",
+			"\t$0",
 			"});"
 		],
 		"description": "New in 2.1.0+: returns a Promise if no callback is provided and Promise is supported in the execution environment. Please note that Vue does not come with a Promise polyfill, so if you target browsers that don’t support Promises natively (looking at you, IE), you will have to provide a polyfill yourself."
