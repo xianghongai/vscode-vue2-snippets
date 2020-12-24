@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/github/repo-size/xianghongai/vscode-vue2-snippets?style=plastic&color=4ac51c">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue2-snippets">
-    <img src="https://vsmarketplacebadge.apphb.com/version-short/NicholasHsiang.vscode-vue2-snippets.svg?style=plastic&color=f07b3c">
+    <img src="https://vsmarketplacebadge.apphb.com/version-short/NicholasHsiang.vscode-vue2-snippets.svg?style=plastic&color=42a5f5">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue2-snippets">
     <img src="https://vsmarketplacebadge.apphb.com/installs-short/NicholasHsiang.vscode-vue2-snippets.svg?style=plastic&color=4ac51c">
@@ -22,7 +22,7 @@
 
 [中文](./README_CN.md)
 
-🌈🌈🌈 First need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".
+🌈🌈🌈 First need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)", **they are one combined release.**
 
 Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x).
 
