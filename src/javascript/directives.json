@@ -67,7 +67,7 @@
 			"\t$4",
 			"},$0"
 		],
-		"description": "Directive `bind` lifecycle"
+		"description": "Directive `bind` lifecycle.\ncalled only once, when the directive is first bound to the element. This is where you can do one-time setup work."
 	},
 	"Directive inserted hook": {
 		"prefix": ["directive.inserted", "vd.inserted"],
@@ -76,7 +76,7 @@
 			"\t$4",
 			"},$0"
 		],
-		"description": "Directive `inserted` lifecycle"
+		"description": "Directive `inserted` lifecycle.\ncalled when the bound element has been inserted into its parent node (this only guarantees parent node presence, not necessarily in-document)."
 	},
 	"Directive update hook": {
 		"prefix": ["directive.update", "vd.update"],
@@ -85,7 +85,7 @@
 			"\t$5",
 			"},$0"
 		],
-		"description": "Directive `update` lifecycle"
+		"description": "Directive `update` lifecycle.\ncalled after the containing component’s VNode has updated, but possibly before its children have updated. The directive’s value may or may not have changed, but you can skip unnecessary updates by comparing the binding’s current and old values (see below on hook arguments)."
 	},
 	"Directive componentUpdated hook": {
 		"prefix": ["directive.componentUpdated", "vd.componentUpdated"],
@@ -94,7 +94,7 @@
 			"\t$5",
 			"},$0"
 		],
-		"description": "Directive `componentUpdated` lifecycle"
+		"description": "Directive `componentUpdated` lifecycle.\ncalled after the containing component’s VNode and the VNodes of its children have updated."
 	},
 	"Directive unbind hook": {
 		"prefix": ["directive.unbind", "vd.unbind"],
@@ -103,6 +103,6 @@
 			"\t$4",
 			"},$0"
 		],
-		"description": "Directive `unbind` lifecycle"
+		"description": "Directive `unbind` lifecycle.\ncalled only once, when the directive is unbound from the element."
 	}
 }
