@@ -41,11 +41,11 @@
 			"export default {",
 			"  name: '${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}',",
 			"  ${2:bind(el, binding, vnode) {$3\\},}",
-			"  ${4:inserted(el, binding, vnode) {$5\\},}",
+			"  ${4:inserted(el, binding, vnode) {${5:vnode.context.\\$nextTick(() => {\\});}\\},}",
 			"  ${6:update(el, binding, vnode, oldVnode) {$7\\},}",
 			"  ${8:componentUpdated(el, binding, vnode, oldVnode) {$9\\},}",
 			"  ${10:unbind(el, binding, vnode) {$11\\},}",
-			"});$0"
+			"};$0"
 		],
 		"description": "Register a single file directive (all lifecycle hooks)"
 	},
