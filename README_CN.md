@@ -1,6 +1,6 @@
 # Vue 2 Snippet (Visual Studio Code)
 
-另外需要安装 "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".
+🏳️‍🌈🏳️‍🌈🏳️‍🌈 首先需要安装 "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".
 
 Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x) 代码片断
 

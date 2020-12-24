@@ -1,8 +1,10 @@
 # Vue 2 Snippet (Visual Studio Code)
 
-You need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".
+[中文](./README_CN.md)
 
-Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x).  [中文](./README_CN.md)
+🏳️‍🌈🏳️‍🌈🏳️‍🌈 First need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".
+
+Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x).
 
 - 100% covered vuejs.org official document api
 - 98% covered router.vuejs.org official document api
@@ -195,7 +197,7 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
  - `Vue.directive()_UNSAFE` / `vgd_UNSAFE` - Vue Global Directive (bind, update)
  - `Vue.directive()_UNSAFE` - Retrieve Global Directive
  - `vueDirective` / `vsd` - Vue Single File Directive (All Hooks)
- - `option.directives` / `vld` - Vue Local Directives
+ - `option.directives` / `vld` - **V**ue **L**ocal **D**irectives
  - `directive.bind` / `vd.bind` - **V**ue **D**irective bind hook
  - `directive.inserted` / `vd.inserted` - **V**ue **D**irective inserted hook
  - `directive.update` / `vd.update` - **V**ue **D**irective update hook
