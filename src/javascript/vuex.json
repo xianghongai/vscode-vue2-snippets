@@ -48,7 +48,7 @@
 		"prefix": "vuexModules",
 		"body": [
 			"const state = () => ({",
-			"\t${1:feature}: { ${2:property}: ${3:value} },%4",
+			"\t${1:feature}: { ${2:property}: ${3:value} },$4",
 			"});",
 			"",
 			"const mutations = {",
