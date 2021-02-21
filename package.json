@@ -4,7 +4,7 @@
 	"displayName": "Vue 2 Snippets",
 	"description": "Code snippets for Vue 2",
 	"icon": "art/icon.png",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
@@ -73,7 +73,8 @@
 		]
 	},
 	"scripts": {
-		"build": "node merge.js && vsce package"
+		"build": "node merge.js && vsce package",
+		"release": "node merge.js && vsce package && vsce publish"
 	},
 	"devDependencies": {
 		"glob": "^7.1.4"
