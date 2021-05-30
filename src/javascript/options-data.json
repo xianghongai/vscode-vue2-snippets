@@ -11,7 +11,7 @@
 			"\t${1:property}: ${2:'${3:value}'},$4",
 			"},$0"
 		],
-		"description": "Type: Object.\nonly respected in instance creation via `new`."
+		"description": "Type: Object.\nonly respected in instance creation via `new`.\nPass props to an instance during its creation. This is primarily intended to make unit testing easier."
 	},
 	"option data()": {
 		"prefix": "option.data()",
