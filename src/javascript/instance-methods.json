@@ -36,7 +36,7 @@
 	},
 
 	"this.$nextTick()": {
-		"prefix": ["this.$nextTick(cb)", "nextTick"],
+		"prefix": ["this.$nextTick(cb)", "nextTick", "nt"],
 		"body": ["this.\\$nextTick(${1:function () {$0\\}});"],
 		"description": "Defer the callback to be executed after the next DOM update cycle. Use it immediately after you've changed some data to wait for the DOM update. This is the same as the global `nextTick`, except that the callback's this context is automatically bound to the instance calling `this` method.\nSince `$nextTick()` returns a promise, using the new ES2017 async/await syntax: `await this.$nextTick();`"
 	},

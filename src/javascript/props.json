@@ -1,6 +1,6 @@
 {
 	"Prop Options": {
-		"prefix": "propOptions",
+		"prefix": ["propOptions", "poptions"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: ${2:String|Number|Boolean|Array|Objec|Date|Function|Symbol|Promise},",
@@ -15,44 +15,44 @@
 		]
 	},
 	"String": {
-		"prefix": "propString",
+		"prefix": ["propString", "ps"],
 		"body": ["${1:property}: String,$0"]
 	},
 	"Number": {
-		"prefix": "propNumber",
+		"prefix": ["propNumber", "pn"],
 		"body": ["${1:property}: Number,$0"]
 	},
 	"Boolean": {
-		"prefix": "propBoolean",
+		"prefix": ["propBoolean", "pb"],
 		"body": ["${1:property}: Boolean,$0"]
 	},
 	"Array": {
-		"prefix": "propArray",
+		"prefix": ["propArray", "pa"],
 		"body": ["${1:property}: Array,$0"]
 	},
 	"Object": {
-		"prefix": "propObject",
+		"prefix": ["propObject", "po"],
 		"body": ["${1:property}: Object,$0"]
 	},
 	"Date": {
-		"prefix": "propDate",
+		"prefix": ["propDate", "pd"],
 		"body": ["${1:property}: Date,$0"]
 	},
 	"Function": {
-		"prefix": "propFunction",
+		"prefix": ["propFunction", "pf"],
 		"body": ["${1:property}: Function,$0"]
 	},
 	"Symbol": {
-		"prefix": "propSymbol",
+		"prefix": ["propSymbol", "psy"],
 		"body": ["${1:property}: Symbol,$0"]
 	},
 	"Promise": {
-		"prefix": "propPromise",
+		"prefix": ["propPromise", "pp"],
 		"body": ["${1:property}: Promise,$0"]
 	},
 
 	"String (default)": {
-		"prefix": "propStringDefault",
+		"prefix": ["propStringDefault", "psd"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: String,",
@@ -61,7 +61,7 @@
 		]
 	},
 	"Number (default)": {
-		"prefix": "propNumberDefault",
+		"prefix": ["propNumberDefault", "pnd"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Number,",
@@ -70,7 +70,7 @@
 		]
 	},
 	"Boolean (default)": {
-		"prefix": "propBooleanDefault",
+		"prefix": ["propBooleanDefault", "pbd"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Boolean,",
@@ -79,7 +79,7 @@
 		]
 	},
 	"Array (default)": {
-		"prefix": "propArrayDefault",
+		"prefix": ["propArrayDefault", "pad"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Array,",
@@ -88,7 +88,7 @@
 		]
 	},
 	"Object (default)": {
-		"prefix": "propObjectDefault",
+		"prefix": ["propObjectDefault", "pod"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Object,",
@@ -97,7 +97,7 @@
 		]
 	},
 	"Date (default)": {
-		"prefix": "propDateDefault",
+		"prefix": ["propDateDefault", "pdd"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Date,",
@@ -106,7 +106,7 @@
 		]
 	},
 	"Symbol (default)": {
-		"prefix": "propSymbolDefault",
+		"prefix": ["propSymbolDefault", "psyd"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Symbol,",
@@ -115,7 +115,7 @@
 		]
 	},
 	"Function (default)": {
-		"prefix": "propFunctionDefault",
+		"prefix": ["propFunctionDefault", "pfd"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Function,",
@@ -124,7 +124,7 @@
 		]
 	},
 	"Promise (default)": {
-		"prefix": "propPromiseDefault",
+		"prefix": ["propPromiseDefault", "ppd"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Promise,",
@@ -134,7 +134,7 @@
 	},
 
 	"String (required)": {
-		"prefix": "propStringRequired",
+		"prefix": ["propStringRequired", "psr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: String,",
@@ -143,7 +143,7 @@
 		]
 	},
 	"Number (required)": {
-		"prefix": "propNumberRequired",
+		"prefix": ["propNumberRequired", "pnr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Number,",
@@ -152,7 +152,7 @@
 		]
 	},
 	"Boolean (required)": {
-		"prefix": "propBooleanRequired",
+		"prefix": ["propBooleanRequired", "pbr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Boolean,",
@@ -161,7 +161,7 @@
 		]
 	},
 	"Array (required)": {
-		"prefix": "propArrayRequired",
+		"prefix": ["propArrayRequired", "par"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Array,",
@@ -170,7 +170,7 @@
 		]
 	},
 	"Object (required)": {
-		"prefix": "propObjectRequired",
+		"prefix": ["propObjectRequired", "por"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Object,",
@@ -179,7 +179,7 @@
 		]
 	},
 	"Date (required)": {
-		"prefix": "propDateRequired",
+		"prefix": ["propDateRequired", "pdr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Date,",
@@ -188,7 +188,7 @@
 		]
 	},
 	"Function (required)": {
-		"prefix": "propFunctionRequired",
+		"prefix": ["propFunctionRequired", "pfr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Function,",
@@ -197,7 +197,7 @@
 		]
 	},
 	"Symbol (required)": {
-		"prefix": "propSymbolRequired",
+		"prefix": ["propSymbolRequired", "psyr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Symbol,",
@@ -206,7 +206,7 @@
 		]
 	},
 	"Promise (required)": {
-		"prefix": "propPromiseRequired",
+		"prefix": ["propPromiseRequired", "ppr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Promise,",
@@ -216,7 +216,7 @@
 	},
 
 	"String (default, required)": {
-		"prefix": "propStringDefaultRequired",
+		"prefix": ["propStringDefaultRequired", "psdr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: String,",
@@ -226,7 +226,7 @@
 		]
 	},
 	"Number (default, required)": {
-		"prefix": "propNumberDefaultRequired",
+		"prefix": ["propNumberDefaultRequired", "pndr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Number,",
@@ -236,7 +236,7 @@
 		]
 	},
 	"Boolean (default, required)": {
-		"prefix": "propBooleanDefaultRequired",
+		"prefix": ["propBooleanDefaultRequired", "pbdr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Boolean,",
@@ -246,7 +246,7 @@
 		]
 	},
 	"Array (default, required)": {
-		"prefix": "propArrayDefaultRequired",
+		"prefix": ["propArrayDefaultRequired", "padr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Array,",
@@ -256,7 +256,7 @@
 		]
 	},
 	"Object (default, required)": {
-		"prefix": "propObjectDefaultRequired",
+		"prefix": ["propObjectDefaultRequired", "podr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Object,",
@@ -266,7 +266,7 @@
 		]
 	},
 	"Date (default, required)": {
-		"prefix": "propDateDefaultRequired",
+		"prefix": ["propDateDefaultRequired", "pddr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Date,",
@@ -276,7 +276,7 @@
 		]
 	},
 	"Function (default, required)": {
-		"prefix": "propFunctionDefaultRequired",
+		"prefix": ["propFunctionDefaultRequired", "pfdr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Function,",
@@ -286,7 +286,7 @@
 		]
 	},
 	"Symbol (default, required)": {
-		"prefix": "propSymbolDefaultRequired",
+		"prefix": ["propSymbolDefaultRequired", "psydr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Symbol,",
@@ -296,7 +296,7 @@
 		]
 	},
 	"Promise (default, required)": {
-		"prefix": "propPromiseDefaultRequired",
+		"prefix": ["propPromiseDefaultRequired", "ppdr"],
 		"body": [
 			"${1:property}: {",
 			"\ttype: Promise,",

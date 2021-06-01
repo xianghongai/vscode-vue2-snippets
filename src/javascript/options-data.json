@@ -1,20 +1,16 @@
 {
 	"option props": {
-		"prefix": "option.props",
+		"prefix": ["option.props", "op"],
 		"body": ["props: {", "\t$1", "},$0"],
 		"description": "Type: Array<string> | Object"
 	},
 	"option propsData": {
 		"prefix": "option.propsData",
-		"body": [
-			"propsData: {",
-			"\t${1:property}: ${2:'${3:value}'},$4",
-			"},$0"
-		],
+		"body": ["propsData: {", "\t${1:property}: ${2:'${3:value}'},$4", "},$0"],
 		"description": "Type: Object.\nonly respected in instance creation via `new`.\nPass props to an instance during its creation. This is primarily intended to make unit testing easier."
 	},
 	"option data()": {
-		"prefix": "option.data()",
+		"prefix": ["option.data()", "data"],
 		"body": [
 			"data() {",
 			"\treturn {",
@@ -26,7 +22,7 @@
 	},
 
 	"option computed": {
-		"prefix": "option.computed",
+		"prefix": ["option.computed", "oc"],
 		"body": [
 			"computed: {",
 			"\t${1:property}() {",
@@ -45,20 +41,28 @@
 		"description": "Type: { [key: string]: Function | { get: Function, set: Function } }\nComputed properties to be mixed into the Vue instance. All getters and setters have their this context automatically bound to the Vue instance.\nNote that if you use an arrow function with a computed property, `this` won’t be the component’s instance, but you can still access the instance as the function’s first argument."
 	},
 
-	"option methods": {
-		"prefix": "option.methods",
+	"computed property": {
+		"prefix": ["option.computedProperty","cp"],
 		"body": [
-			"methods: {",
-			"\t${1:methodName}($2) {",
-			"\t\t$3",
-			"\t},$0",
-			"},"
-		],
+			"\t${3:property}: {",
+			"\t\tget() {",
+			"\t\t\treturn this.${4:value};",
+			"\t\t},",
+			"\t\tset(${5:val}) {",
+			"\t\t\tthis.${4:value} = $5;",
+			"\t\t},",
+			"\t},$0"
+		]
+	},
+
+	"option methods": {
+		"prefix": ["option.methods", "om"],
+		"body": ["methods: {", "\t${1:methodName}($2) {", "\t\t$3", "\t},$0", "},"],
 		"description": "Type: { [key: string]: Function }"
 	},
 
 	"option watch": {
-		"prefix": "option.watch",
+		"prefix": ["option.watch", "ow"],
 		"body": [
 			"watch: {",
 			"\t${1:propertyName}(newValue, oldValue) {",
@@ -68,16 +72,14 @@
 		],
 		"description": "Type: { [key: string]: String | Function | Object | Array}\nString: methodName,\nFunction: handler(val, oldVal),\nObject: {handler(val, oldVal): Function, deep: Boolean, immediate: Boolean},\nArray: [String, Object, Function]\nAn object where keys are expressions to watch and values are the corresponding callbacks. The value can also be a string of a method name, or an Object that contains additional options. The Vue instance will call `$watch()` for each entry in the object at instantiation."
 	},
+
 	"option watch property": {
-		"prefix": "option.watchProperty",
-		"body": [
-			"${1:propertyName}(newValue, oldValue) {",
-			"\t$2",
-			"},$0"
-		]
+		"prefix": ["option.watchProperty", "wp"],
+		"body": ["${1:propertyName}(newValue, oldValue) {", "\t$2", "},$0"]
 	},
+
 	"option watch property (deep)": {
-		"prefix": "option.watchPropertyDeep",
+		"prefix": ["option.watchPropertyDeep", "wpd"],
 		"body": [
 			"${1:propertyName}: {",
 			"\thandler(newValue, oldValue) {",
@@ -88,7 +90,7 @@
 		]
 	},
 	"option watch property (immediate)": {
-		"prefix": "option.watchPropertyImmediate",
+		"prefix": ["option.watchPropertyImmediate", "wpi"],
 		"body": [
 			"${1:propertyName}: {",
 			"\thandler(newValue, oldValue) {",
@@ -99,7 +101,7 @@
 		]
 	},
 	"option watch property (deep, immediate)": {
-		"prefix": "option.watchPropertyDeepImmediate",
+		"prefix": ["option.watchPropertyDeepImmediate", "wpdi", "wpid"],
 		"body": [
 			"${1:propertyName}: {",
 			"\thandler(newValue, oldValue) {",

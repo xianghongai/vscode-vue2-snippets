@@ -21,7 +21,7 @@
 		"description": "Vue 3.x BREAKING CHANGE.\nArguments: `{Object} mixin`\nApply a mixin globally, which affects every Vue instance created afterwards. This can be used by plugin authors to inject custom behavior into components. Not recommended in application code."
 	},
 	"option.mixins": {
-		"prefix": "option.mixins",
+		"prefix": ["option.mixins", "omi"],
 		"body": ["mixins: [${1:Mixin}],$0"],
 		"description": "Type: `Array<Object>`.\nThe `mixins` option accepts an array of mixin objects. These mixin objects can contain instance options like normal instance objects, and they will be merged against the eventual options using the same option merging logic in `Vue.extend()`. e.g. If your mixin contains a created hook and the component itself also has one, both functions will be called.\nMixin hooks are called in the order they are provided, and called before the component’s own hooks."
 	}

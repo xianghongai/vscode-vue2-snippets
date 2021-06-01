@@ -22,6 +22,29 @@
 
 [中文](./README_CN.md)
 
+## Beginning
+
+Simple code snippets that don’t need to be memorized, It can significantly improve coding efficiency.
+
+Some commonly used triggers that have been processed as "subconscious", such as I want to declare the **l**ifecycle hook function **b**efore **d**estroy in **o**ption: , press `olbd` and press Enter to output `beforeDestroy() {},`;
+
+For another example, I want to create a `props`, which is of type `string`, with a `default` property, and press `psd` to output:
+
+```js
+property: {
+  type: String,
+  default: '',
+},
+```
+
+It is recommended to take a look at the source code to learn about common snippet prefixes.
+
+The source code directory has been well layered, It is convenient to view the content of the corresponding topic.
+
+It may take a little time to adapt in the early stage, and you will gradually get used to this shortcut.
+
+## Install
+
 🌈🌈🌈 First need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)", **they are one combined release.**
 
 Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x).
@@ -429,7 +452,6 @@ MIT License
 ---
 
 TODO: vue-ssr
-
 
 **Donate**
 

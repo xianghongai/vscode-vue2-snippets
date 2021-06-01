@@ -1,5 +1,28 @@
 # Vue 2 Snippet (Visual Studio Code)
 
+## 背景
+
+简单的、不需要刻意记忆的代码片断，能显著提升编码效率。
+
+一些常用的已经处理成“下意识”的触发，如我想在 `option` 中声明生命周期 (`lifecycle`) 钩子函数： `before destroy`，按 `olbd` 回车，即可生成 `beforeDestroy() {  },`；
+
+又如，我想生明一个 `props`，是 `string` 类型的，带 `default` 属性，按 `psd` 回车，即可生成：
+
+```js
+property: {
+  type: String,
+  default: '',
+},
+```
+
+建议大致看一下源码，去了解一下常用的 snippet 前缀。
+
+源码目录已经做了良好的分层，方便查看对应主题的内容。
+
+前期适应可能需要花一点点时间，慢慢的就会习惯这种快捷方式，毕竟 “There is nothing new under the coding”，形式上来来去去就那些；如果您能习惯这套方案，希望您能进行一个好的评价，并推荐给朋友，谢谢 :)
+
+## 安装
+
 🏳️‍🌈🏳️‍🌈🏳️‍🌈 首先需要安装 "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".
 
 Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x) 代码片断
@@ -34,9 +57,9 @@ Vue 2 和 3 变化比较大，2 推荐 Optional 范式，3 推荐 Composition Fu
 
 ## `UNSAFE` 前后缀
 
-`UNSAFE_api`，`prefix`, 前缀风格，说明这个 API 在**当前版本**中不推荐使用；
+`UNSAFE_api/prefix`，`prefix`, 前缀风格，说明这个 API 在**当前版本**中不推荐使用；
 
-`api_UNSAFE`，`suffix`, 后缀风格，说明这个 API 在**未来版本**中不推荐使用。
+`api/prefix_UNSAFE`，`suffix`, 后缀风格，说明这个 API 在**未来版本**中不推荐使用。
 
 
 ## 相关资源 🤞

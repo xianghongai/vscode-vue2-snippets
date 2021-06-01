@@ -255,14 +255,14 @@
 		"description": "Router navigate to path with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
 	},
 	"Router navigate to named routes": {
-		"prefix": "routerPushNamedRoute",
+		"prefix": ["routerPushNamedRoute", "rpn"],
 		"body": [
 			"${2:this.\\$}router.push({ name: '${1:routename}' });"
 		],
 		"description": "Router navigate to named routes\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
 	},
 	"Router navigate to named routes with params": {
-		"prefix": "routerPushNamedRouteParams",
+		"prefix": ["routerPushNamedRouteParams", "rpp"],
 		"body": [
 			"${5:this.\\$}router.push({",
 			"\tname: ${1:'${2:routename}'},",
@@ -272,7 +272,7 @@
 		"description": "Router navigate to named routes with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
 	},
 	"Router navigate to named routes with query": {
-		"prefix": "routerPushNamedRouteQuery",
+		"prefix": ["routerPushNamedRouteQuery", "rpq"],
 		"body": [
 			"${5:this.\\$}router.push({",
 			"\tname: ${1:'${2:routename}'},",
@@ -416,17 +416,17 @@
 		"description": "A string that equals the path of the current route, always resolved as an absolute path."
 	},
 	"$route.params": {
-		"prefix": "this.$route.params",
+		"prefix": ["this.$route.params", "rp"],
 		"body": ["this.\\$route.params"],
 		"description": "An object that contains key/value pairs of dynamic segments and star segments. If there are no params the value will be an empty object."
 	},
 	"$route.query": {
-		"prefix": "this.$route.query",
+		"prefix": ["this.$route.query", "rq"],
 		"body": ["this.\\$route.query"],
 		"description": "An object that contains key/value pairs of the query string."
 	},
 	"$route.hash": {
-		"prefix": "this.$route.hash",
+		"prefix": ["this.$route.hash", "rh"],
 		"body": ["this.\\$route.hash"],
 		"description": "The hash of the current route (with the #), if it has one. If no hash is present the value will be an empty string."
 	},
