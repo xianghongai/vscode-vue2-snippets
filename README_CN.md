@@ -19,7 +19,7 @@ property: {
 
 源码目录已经做了良好的分层，方便查看对应主题的内容。
 
-前期适应可能需要花一点点时间，慢慢的就会习惯这种快捷方式，毕竟 “There is nothing new under the coding”，形式上来来去去就那些；如果您能习惯这套方案，希望您能进行一个好的评价，并推荐给朋友，谢谢 :)
+前期适应可能需要花一点点时间，慢慢的就会习惯这种快捷方式，毕竟 “There is nothing new under the coding”，形式上来来去去就那些；如果您能习惯这套方案，希望您能进行一个好的[评价](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue2-snippets&ssr=false#review-details)，并推荐给朋友，谢谢 :)
 
 ## 安装
 
