@@ -4,7 +4,7 @@
 	"displayName": "Vue 2 Snippets",
 	"description": "Code snippets for Vue 2",
 	"icon": "art/icon.png",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
@@ -43,6 +43,10 @@
 	"contributes": {
 		"snippets": [
 			{
+				"language": "vue",
+				"path": "./snippets/javascript.json"
+			},
+			{
 				"language": "javascript",
 				"path": "./snippets/javascript.json"
 			},
@@ -57,10 +61,6 @@
 			{
 				"language": "html",
 				"path": "./snippets/vue.json"
-			},
-			{
-				"language": "vue",
-				"path": "./snippets/javascript.json"
 			},
 			{
 				"language": "vue",
