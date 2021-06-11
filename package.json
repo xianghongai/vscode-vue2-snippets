@@ -4,7 +4,7 @@
 	"displayName": "Vue 2 Snippets",
 	"description": "Code snippets for Vue 2",
 	"icon": "art/icon.png",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
@@ -24,6 +24,10 @@
 	"categories": [
 		"Snippets"
 	],
+	"scripts": {
+		"build": "node merge.js && vsce package",
+		"release": "node merge.js && vsce package && vsce publish"
+	},
 	"keywords": [
 		"Snippet",
 		"Vue",
@@ -55,10 +59,6 @@
 		],
 		"snippets": [
 			{
-				"language": "vue",
-				"path": "./snippets/javascript.json"
-			},
-			{
 				"language": "javascript",
 				"path": "./snippets/javascript.json"
 			},
@@ -77,12 +77,12 @@
 			{
 				"language": "vue",
 				"path": "./snippets/vue.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/html.json"
 			}
 		]
-	},
-	"scripts": {
-		"build": "node merge.js && vsce package",
-		"release": "node merge.js && vsce package && vsce publish"
 	},
 	"devDependencies": {
 		"glob": "^7.1.4"

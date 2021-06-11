@@ -15,72 +15,72 @@
 			"errorCaptured(err, vm, info) {},",
 			"serverPrefetch() {},"
 		],
-		"description": "The Full Lifecycle Hooks"
+		"description": "The Full Lifecycle Hooks\n"
 	},
 
 	"Lifecycle Hooks: beforeCreate()": {
 		"prefix": ["lifecycleBeforeCreate", "option.beforeCreate()", "olbc"],
 		"body": ["beforeCreate() {", "\t$1", "},$0", ""],
-		"description": "Called synchronously immediately after the instance has been initialized, before data observation and event/watcher setup."
+		"description": "Called synchronously immediately after the instance has been initialized, before data observation and event/watcher setup.\n"
 	},
 	"Lifecycle Hooks: created()": {
 		"prefix": ["lifecycleCreated", "option.created()", "olc"],
 		"body": ["created() {", "\t$1", "},$0", ""],
-		"description": "Called synchronously after the instance is created. At this stage, the instance has finished processing the options which means the following have been set up: data observation, computed properties, methods, watch/event callbacks. However, the mounting phase has not been started, and the $el property will not be available yet."
+		"description": "Called synchronously after the instance is created. At this stage, the instance has finished processing the options which means the following have been set up: data observation, computed properties, methods, watch/event callbacks. However, the mounting phase has not been started, and the $el property will not be available yet.\n"
 	},
 	"Lifecycle Hooks: beforeMount()": {
 		"prefix": ["lifecycleBeforeMount", "option.beforeMount()", "olbm"],
 		"body": ["beforeMount() {", "\t$1", "},$0", ""],
-		"description": "Called right before the mounting begins: the render function is about to be called for the first time.\nThis hook is not called during server-side rendering."
+		"description": "Called right before the mounting begins: the render function is about to be called for the first time.\nThis hook is not called during server-side rendering.\n"
 	},
 	"Lifecycle Hooks: mounted()": {
 		"prefix": ["lifecycleMounted", "option.mounted()", "olm"],
 		"body": ["mounted() {", "\t$1", "},$0", ""],
-		"description": "Called after the instance has been mounted, where `el` is replaced by the newly created `vm.$el`. If the root instance is mounted to an in-document element, `vm.$el` will also be in-document when `mounted` is called.\nNote that `mounted` does not guarantee that all child components have also been mounted. If you want to wait until the entire view has been rendered, you can use `vm.$nextTick` inside of mounted.\nThis hook is not called during server-side rendering."
+		"description": "Called after the instance has been mounted, where `el` is replaced by the newly created `vm.$el`. If the root instance is mounted to an in-document element, `vm.$el` will also be in-document when `mounted` is called.\nNote that `mounted` does not guarantee that all child components have also been mounted. If you want to wait until the entire view has been rendered, you can use `vm.$nextTick` inside of mounted.\nThis hook is not called during server-side rendering.\n"
 	},
 	"Lifecycle Hooks: beforeUpdate()": {
 		"prefix": ["lifecycleBeforeUpdate", "option.beforeUpdate()", "olbu"],
 		"body": ["beforeUpdate() {", "\t$1", "},$0", ""],
-		"description": "Called when data changes, before the DOM is patched. This is a good place to access the existing DOM before an update, e.g. to remove manually added event listeners.\nThis hook is not called during server-side rendering, because only the initial render is performed server-side.\nThis hook is not called during server-side rendering, because only the initial render is performed server-side."
+		"description": "Called when data changes, before the DOM is patched. This is a good place to access the existing DOM before an update, e.g. to remove manually added event listeners.\nThis hook is not called during server-side rendering, because only the initial render is performed server-side.\nThis hook is not called during server-side rendering, because only the initial render is performed server-side.\n"
 	},
 	"Lifecycle Hooks: updated()": {
 		"prefix": ["lifecycleUpdated", "option.updated()", "olu"],
 		"body": ["updated() {", "\t$1", "},$0", ""],
-		"description": "Called after a data change causes the virtual DOM to be re-rendered and patched.\nThe component’s DOM will have been updated when this hook is called, so you can perform DOM-dependent operations here. However, in most cases you should avoid changing state inside the hook. To react to state changes, it’s usually better to use a computed property or watcher instead.\nNote that updated does not guarantee that all child components have also been re-rendered. If you want to wait until the entire view has been re-rendered, you can use vm.$nextTick inside of updated.\nThis hook is not called during server-side rendering."
+		"description": "Called after a data change causes the virtual DOM to be re-rendered and patched.\nThe component’s DOM will have been updated when this hook is called, so you can perform DOM-dependent operations here. However, in most cases you should avoid changing state inside the hook. To react to state changes, it’s usually better to use a computed property or watcher instead.\nNote that updated does not guarantee that all child components have also been re-rendered. If you want to wait until the entire view has been re-rendered, you can use vm.$nextTick inside of updated.\nThis hook is not called during server-side rendering.\n"
 	},
 	"Lifecycle Hooks: activated()": {
 		"prefix": ["lifecycleActivated", "option.activated()", "ola"],
 		"body": ["activated() {", "\t$1", "},$0", ""],
-		"description": "Called when a kept-alive component is activated.\nThis hook is not called during server-side rendering."
+		"description": "Called when a kept-alive component is activated.\nThis hook is not called during server-side rendering.\n"
 	},
 	"Lifecycle Hooks: deactivated()": {
 		"prefix": ["lifecycleDeactivated", "option.deactivated()", "olda"],
 		"body": ["deactivated() {", "\t$1", "},$0", ""],
-		"description": "Called when a kept-alive component is deactivated.\nThis hook is not called during server-side rendering."
+		"description": "Called when a kept-alive component is deactivated.\nThis hook is not called during server-side rendering.\n"
 	},
 	"Lifecycle Hooks: beforeDestroy()": {
 		"prefix": ["lifecycleBeforeDestroy", "option.beforeDestroy()", "olbd"],
 		"body": ["beforeDestroy() {", "\t$1", "},$0", ""],
-		"description": "Called right before a Vue instance is destroyed. At this stage the instance is still fully functional.\nThis hook is not called during server-side rendering."
+		"description": "Called right before a Vue instance is destroyed. At this stage the instance is still fully functional.\nThis hook is not called during server-side rendering.\n"
 	},
 	"Lifecycle Hooks: destroyed()": {
 		"prefix": ["lifecycleDestroyed", "option.destroyed()", "old"],
 		"body": ["destroyed() {", "\t$1", "},$0", ""],
-		"description": "Called after a Vue instance has been destroyed. When this hook is called, all directives of the Vue instance have been unbound, all event listeners have been removed, and all child Vue instances have also been destroyed.\nThis hook is not called during server-side rendering."
+		"description": "Called after a Vue instance has been destroyed. When this hook is called, all directives of the Vue instance have been unbound, all event listeners have been removed, and all child Vue instances have also been destroyed.\nThis hook is not called during server-side rendering.\n"
 	},
 	"Lifecycle Hooks: errorCaptured()": {
 		"prefix": ["lifecycleErrorCaptured", "option.errorCaptured()"],
 		"body": ["errorCaptured(err, vm, info) {", "\t$1", "},$0", ""],
-		"description": "Called when an error from any descendent component is captured. The hook receives three arguments: the error, the component instance that triggered the error, and a string containing information on where the error was captured. The hook can return `false` to stop the error from propagating further."
+		"description": "Called when an error from any descendent component is captured. The hook receives three arguments: the error, the component instance that triggered the error, and a string containing information on where the error was captured. The hook can return `false` to stop the error from propagating further.\n"
 	},
 	"Lifecycle Hooks: serverCacheKey()": {
 		"prefix": ["lifecycleServerCacheKey", "option.serverCacheKey()"],
 		"body": ["serverCacheKey(props) {", "\t$1", "},$0"],
-		"description": "Return the cache key for the component based on incoming props. Does NOT have access to this.\nServer-side only."
+		"description": "Return the cache key for the component based on incoming props. Does NOT have access to this.\nServer-side only.\n"
 	},
 	"Lifecycle Hooks: serverPrefetch()": {
 		"prefix": ["lifecycleServerPrefetch", "option.serverPrefetch()"],
 		"body": ["serverPrefetch() {", "\t$1", "},$0"],
-		"description": "Fetch async data during server side rendering. It should store fetched data into a global store and return a Promise. The server renderer will wait on this hook until the Promise is resolved. This hook has access to the component instance via `this`.\nServer-side only."
+		"description": "Fetch async data during server side rendering. It should store fetched data into a global store and return a Promise. The server renderer will wait on this hook until the Promise is resolved. This hook has access to the component instance via `this`.\nServer-side only.\n"
 	}
 }

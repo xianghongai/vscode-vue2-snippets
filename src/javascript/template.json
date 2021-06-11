@@ -4,6 +4,6 @@
 		"body": [
 			"const ${2:res} = Vue.compile('${1:template}');$0"
 		],
-		"description": "Arguments: `{string} template`.\nCompiles a template string into a render function. Only available in the full build."
+		"description": "Arguments: `{string} template`.\nCompiles a template string into a render function. Only available in the full build.\n"
 	}
 }
