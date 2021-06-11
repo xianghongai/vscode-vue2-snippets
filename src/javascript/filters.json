@@ -10,12 +10,12 @@
 			"\treturn text.substring(0, length) + suffix;",
 			"});"
 		],
-		"description": "Vue 3.x REMOVED.\nregister a global filter, return processed value"
+		"description": "Vue 3.x REMOVED.\nregister a global filter, return processed value\n"
 	},
 	"Retrieve Global Filter": {
 		"prefix": "UNSAFE_Vue.filter(id)",
 		"body": ["const ${2:feature} = Vue.filter('${1:id}');"],
-		"description": "Vue 3.x REMOVED.\nreturn the filter if registered."
+		"description": "Vue 3.x REMOVED.\nreturn the filter if registered.\n"
 	},
 	"Vue Local Filters": {
 		"prefix": ["UNSAFE_option.filters"],
@@ -26,7 +26,7 @@
 			"\t},",
 			"},"
 		],
-		"description": "Vue 3.x REMOVED.\nDefine local filters in a component’s options.\nA hash of filters to be made available to the Vue instance."
+		"description": "Vue 3.x REMOVED.\nDefine local filters in a component’s options.\nA hash of filters to be made available to the Vue instance.\n"
 	},
 	"Vue Local Filter Option": {
 		"prefix": ["UNSAFE_filterOption"],
@@ -35,6 +35,6 @@
 			"\treturn text.substring(0, length) + suffix;",
 			"}"
 		],
-		"description": "filter option"
+		"description": "filter option\n"
 	}
 }

@@ -22,7 +22,7 @@
 	"import VueRouter": {
 		"prefix": "importVueRouter",
 		"body": ["import VueRouter from 'vue-router';$0"],
-		"description": "import VueRouter"
+		"description": "import VueRouter\n"
 	},
 
 	"Create the router instance": {
@@ -32,7 +32,7 @@
 			"\t${2:routes}",
 			"});$0"
 		],
-		"description": "Create the router instance, The default is hash mode."
+		"description": "Create the router instance, The default is hash mode.\n"
 	},
 
 	"Create the router instance (import)": {
@@ -51,7 +51,7 @@
 			"\t]",
 			"});"
 		],
-		"description": "Base for Vue Router"
+		"description": "Base for Vue Router\n"
 	},
 
 	"Create the router instance with HTML5 History Mode": {
@@ -62,7 +62,7 @@
 			"\t${2:routes}",
 			"});$0"
 		],
-		"description": "Create the router instance with HTML5 History Mode"
+		"description": "Create the router instance with HTML5 History Mode\n"
 	},
 
 	"Define routes": {
@@ -82,7 +82,7 @@
 			"\t},",
 			"];"
 		],
-		"description": "Define routes"
+		"description": "Define routes\n"
 	},
 
 	"Define route": {
@@ -90,7 +90,7 @@
 		"body": [
 			"{ path: '${1:/feature/:id}', component: ${2:Feature} },"
 		],
-		"description": "Define route"
+		"description": "Define route\n"
 	},
 	"Define lazy loading route": {
 		"prefix": "routeLazy",
@@ -101,7 +101,7 @@
 			"\tcomponent: () => import('./${3:Feature}'),",
 			"},"
 		],
-		"description": "Define lazy loading route"
+		"description": "Define lazy loading route\n"
 	},
 	"Define route and pass props to route components (Boolean mode)": {
 		"prefix": "routePropsBooleanMode",
@@ -112,7 +112,7 @@
 			"\tprops: true,",
 			"},$0"
 		],
-		"description": "When `props` is set to `true`, the `route.params` will be set as the component props."
+		"description": "When `props` is set to `true`, the `route.params` will be set as the component props.\n"
 	},
 	"Define route and pass props to route components (Object mode)": {
 		"prefix": "routePropsObjectMode",
@@ -123,7 +123,7 @@
 			"\tprops: { ${3:property}: '${4:value}' },",
 			"},$0"
 		],
-		"description": ""
+		"description": "\n"
 	},
 	"Define route and pass props to route components (Function mode)": {
 		"prefix": "routePropsFunctionMode",
@@ -137,7 +137,7 @@
 			"\t}),",
 			"},$0"
 		],
-		"description": ""
+		"description": "\n"
 	},
 	"Define route and pass props for routes with named views (Function mode)": {
 		"prefix": "routePropsFunctionModeNamedViews",
@@ -153,7 +153,7 @@
 			"\t},",
 			"},$0"
 		],
-		"description": ""
+		"description": "\n"
 	},
 	"Define route for named views": {
 		"prefix": "routeNamedViews",
@@ -166,14 +166,14 @@
 			"\t},",
 			"},"
 		],
-		"description": ""
+		"description": "\n"
 	},
 	"Define alias route": {
 		"prefix": "routeAlias",
 		"body": [
 			"{ path: '${1:/feature}', component: ${2:Feature}, alias: '{3:/feature}' },"
 		],
-		"description": "Define alias route"
+		"description": "Define alias route\n"
 	},
 
 	"Define redirect route": {
@@ -181,14 +181,14 @@
 		"body": [
 			"{ path: '${1:/feature/:id}', redirect: '${2:/pathname}' },"
 		],
-		"description": "Define redirect route\nExample:\n// relative redirect to a sibling route\n`{ path: 'relative-redirect', redirect: 'feature' }`\n// absolute redirect\n`{ path: '/absolute-redirect', redirect: '/feature' },`\n// named redirect\n`{ path: '/named-redirect', redirect: { name: 'feature' }},`\n// redirect with params\n`{ path: '/redirect-with-params/:id', redirect: '/with-params/:id' },`"
+		"description": "Define redirect route\nExample:\n// relative redirect to a sibling route\n`{ path: 'relative-redirect', redirect: 'feature' }`\n// absolute redirect\n`{ path: '/absolute-redirect', redirect: '/feature' },`\n// named redirect\n`{ path: '/named-redirect', redirect: { name: 'feature' }},`\n// redirect with params\n`{ path: '/redirect-with-params/:id', redirect: '/with-params/:id' },`\n"
 	},
 	"Define redirect named route": {
 		"prefix": "routeRedirectNamedRoute",
 		"body": [
 			"{ path: '${1:/feature/:id}', redirect: { name: '${2:routename}' }},"
 		],
-		"description": "Define redirect route"
+		"description": "Define redirect route\n"
 	},
 	"Define dynamic redirect": {
 		"prefix": "routeRedirectDynamic",
@@ -211,7 +211,7 @@
 			"\t},",
 			"},"
 		],
-		"description": "Define dynamic redirect"
+		"description": "Define dynamic redirect\n"
 	},
 
 	"Define named route": {
@@ -219,20 +219,20 @@
 		"body": [
 			"{ path: '${1:/named-redirect}', name: '${2:feature}', component: ${3:Feature} },"
 		],
-		"description": "Define named route"
+		"description": "Define named route\n"
 	},
 
 	"Router navigate to path with literal string": {
 		"prefix": "routerPush",
 		"body": ["${2:this.\\$}router.push('${1:pathname}');"],
-		"description": "Router navigate to path.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
+		"description": "Router navigate to path.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Router navigate to path": {
 		"prefix": "routerPushPath",
 		"body": [
 			"${2:this.\\$}router.push({ path: '${1:pathname}' });"
 		],
-		"description": "Router navigate to path.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
+		"description": "Router navigate to path.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Router navigate to path with params": {
 		"prefix": "routerPushParams",
@@ -242,7 +242,7 @@
 			"\tparams: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
-		"description": "Router navigate to path with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
+		"description": "Router navigate to path with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Router navigate to path with query": {
 		"prefix": "routerPushQuery",
@@ -252,14 +252,14 @@
 			"\tquery: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
-		"description": "Router navigate to path with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
+		"description": "Router navigate to path with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Router navigate to named routes": {
 		"prefix": ["routerPushNamedRoute", "rpn"],
 		"body": [
 			"${2:this.\\$}router.push({ name: '${1:routename}' });"
 		],
-		"description": "Router navigate to named routes\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
+		"description": "Router navigate to named routes\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Router navigate to named routes with params": {
 		"prefix": ["routerPushNamedRouteParams", "rpp"],
@@ -269,7 +269,7 @@
 			"\tparams: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
-		"description": "Router navigate to named routes with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
+		"description": "Router navigate to named routes with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Router navigate to named routes with query": {
 		"prefix": ["routerPushNamedRouteQuery", "rpq"],
@@ -279,7 +279,7 @@
 			"\tquery: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
-		"description": "Router navigate to named routes with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
+		"description": "Router navigate to named routes with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Router navigate to path without pushing a new history entry": {
 		"prefix": "routerReplacePath",
@@ -289,7 +289,7 @@
 			"\tparams: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
-		"description": "Router navigate to path without pushing a new history entry.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)"
+		"description": "Router navigate to path without pushing a new history entry.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Router navigate to named routes without pushing a new history entry": {
 		"prefix": "routerReplaceNamedRoute",
@@ -299,28 +299,28 @@
 			"\tparams: { ${3:property}: ${4:'value'} },",
 			"});"
 		],
-		"description": "Router navigate to named routes without pushing a new history entry.\n#syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)"
+		"description": "Router navigate to named routes without pushing a new history entry.\n#syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 
 	"Programmatically navigate to a new URL: go(n)": {
 		"prefix": "routerGo",
 		"body": ["${2:this.\\$}router.go('${1:n}');"],
-		"description": "This method takes a single integer as parameter that indicates by how many steps to go forwards or go backwards in the history stack."
+		"description": "This method takes a single integer as parameter that indicates by how many steps to go forwards or go backwards in the history stack.\n"
 	},
 	"Programmatically navigate to a new URL: back()": {
 		"prefix": "routerBack",
 		"body": ["${2:this.\\$}router.back();"],
-		"description": "go backwards in the history stack."
+		"description": "go backwards in the history stack.\n"
 	},
 	"Programmatically navigate to a new URL: forward()": {
 		"prefix": "routerForward",
 		"body": ["${2:this.\\$}router.forward();"],
-		"description": "go forwards in the history stack."
+		"description": "go forwards in the history stack.\n"
 	},
 	"Reverse URL resolving": {
 		"prefix": "routerResolve",
 		"body": ["router.resolve(to, current, append);"],
-		"description": "Given location in form same as used in `<router-link/>`."
+		"description": "Given location in form same as used in `<router-link/>`.\n"
 	},
 
 	"Global Before Guards": {
@@ -331,7 +331,7 @@
 			"\t$0",
 			"});"
 		],
-		"description": "register global before guards.\n`beforeEach(callback(to, from, next))`"
+		"description": "register global before guards.\n`beforeEach(callback(to, from, next))`\n"
 	},
 	"Global Resolve Guards": {
 		"prefix": ["routerBeforeResolve", "guardGlobalResolve"],
@@ -341,7 +341,7 @@
 			"\t$0",
 			"});"
 		],
-		"description": "register global resolve guards.\n`beforeResolve(callback(to, from, next))`"
+		"description": "register global resolve guards.\n`beforeResolve(callback(to, from, next))`\n"
 	},
 	"Global After Hooks": {
 		"prefix": "routerAfterEach",
@@ -350,7 +350,7 @@
 			"\t$0",
 			"});"
 		],
-		"description": "register global after hooks.\n`afterEach(callback(to, from))`"
+		"description": "register global after hooks.\n`afterEach(callback(to, from))`\n"
 	},
 	"Per-Route Guard": {
 		"prefix": ["routeBeforeEnter", "guardPerRoute"],
@@ -360,7 +360,7 @@
 			"\t$0",
 			"});"
 		],
-		"description": "register guards on a route's configuration object.\n`beforeEnter(callback(to, from, next))`"
+		"description": "register guards on a route's configuration object.\n`beforeEnter(callback(to, from, next))`\n"
 	},
 	"In-Component Guards": {
 		"prefix": ["componentGuards", "guardInComponent"],
@@ -383,13 +383,13 @@
 			"\t}",
 			"},"
 		],
-		"description": "define route navigation guards inside route components "
+		"description": "define route navigation guards inside route components \n"
 	},
 
 	"Dynamically add more routes to the router": {
 		"prefix": "routerAddRoutes",
 		"body": ["router.addRoutes(${1:routes});$0"],
-		"description": "The argument must be an Array using the same route config format with the `routes` constructor option.\naddRoutes(routes)"
+		"description": "The argument must be an Array using the same route config format with the `routes` constructor option.\naddRoutes(routes)\n"
 	},
 
 	"Router instance method: onReady(callback, errorCallback)": {
@@ -397,58 +397,58 @@
 		"body": [
 			"router.onReady(${1:callback}, ${2:errorCallback});$0"
 		],
-		"description": "This method queues a callback to be called when the router has completed the initial navigation, which means it has resolved all async enter hooks and async components that are associated with the initial route."
+		"description": "This method queues a callback to be called when the router has completed the initial navigation, which means it has resolved all async enter hooks and async components that are associated with the initial route.\n"
 	},
 	"Router instance method: onError(callback)": {
 		"prefix": "routerOnError",
 		"body": ["router.onError(${1:callback});$0"],
-		"description": "Register a callback which will be called when an error is caught during a route navigation. Note for an error to be called, it must be one of the following scenarios:\nThe error is thrown synchronously inside a route guard function;\nThe error is caught and asynchronously handled by calling next(err) inside a route guard function;\nAn error occurred when trying to resolve an async component that is required to render a route."
+		"description": "Register a callback which will be called when an error is caught during a route navigation. Note for an error to be called, it must be one of the following scenarios:\nThe error is thrown synchronously inside a route guard function;\nThe error is caught and asynchronously handled by calling next(err) inside a route guard function;\nAn error occurred when trying to resolve an async component that is required to render a route.\n"
 	},
 	"Router instance method: getMatchedComponents(to)": {
 		"prefix": "routerGetMatchedComponents",
 		"body": ["router.getMatchedComponents(to);"],
-		"description": "Returns an Array of the components (definition/constructor, not instances) matched by the provided location or the current route. This is mostly used during server-side rendering to perform data prefetching."
+		"description": "Returns an Array of the components (definition/constructor, not instances) matched by the provided location or the current route. This is mostly used during server-side rendering to perform data prefetching.\n"
 	},
 
 	"$route.path": {
 		"prefix": "this.$route.path",
 		"body": ["this.\\$route.path"],
-		"description": "A string that equals the path of the current route, always resolved as an absolute path."
+		"description": "A string that equals the path of the current route, always resolved as an absolute path.\n"
 	},
 	"$route.params": {
 		"prefix": ["this.$route.params", "rp"],
 		"body": ["this.\\$route.params"],
-		"description": "An object that contains key/value pairs of dynamic segments and star segments. If there are no params the value will be an empty object."
+		"description": "An object that contains key/value pairs of dynamic segments and star segments. If there are no params the value will be an empty object.\n"
 	},
 	"$route.query": {
 		"prefix": ["this.$route.query", "rq"],
 		"body": ["this.\\$route.query"],
-		"description": "An object that contains key/value pairs of the query string."
+		"description": "An object that contains key/value pairs of the query string.\n"
 	},
 	"$route.hash": {
 		"prefix": ["this.$route.hash", "rh"],
 		"body": ["this.\\$route.hash"],
-		"description": "The hash of the current route (with the #), if it has one. If no hash is present the value will be an empty string."
+		"description": "The hash of the current route (with the #), if it has one. If no hash is present the value will be an empty string.\n"
 	},
 	"$route.fullPath": {
 		"prefix": "this.$route.fullPath",
 		"body": ["this.\\$route.fullPath"],
-		"description": "The full resolved URL including query and hash."
+		"description": "The full resolved URL including query and hash.\n"
 	},
 	"$route.matched": {
 		"prefix": "this.$route.matched",
 		"body": ["this.\\$route.matched"],
-		"description": "An Array containing route records for all nested path segments of the current route. "
+		"description": "An Array containing route records for all nested path segments of the current route. \n"
 	},
 	"$route.name": {
 		"prefix": "this.$route.name",
 		"body": ["this.\\$route.name"],
-		"description": "The name of the current route, if it has one."
+		"description": "The name of the current route, if it has one.\n"
 	},
 	"$route.redirectedFrom": {
 		"prefix": "this.$route.redirectedFrom",
 		"body": ["this.\\$route.redirectedFrom"],
-		"description": "The name of the route being redirected from, if there were one."
+		"description": "The name of the route being redirected from, if there were one.\n"
 	},
 
 	"Lazy Loading Routes": {
@@ -504,7 +504,7 @@
 			"\t},",
 			"};"
 		],
-		"description": "fetch data in the component's created hook."
+		"description": "fetch data in the component's created hook.\n"
 	},
 	"Fetching Before Navigation": {
 		"prefix": "fetchingBeforeNavigation",
@@ -541,7 +541,7 @@
 			"\t},",
 			"};"
 		],
-		"description": "fetch the data before actually navigating to the new route."
+		"description": "fetch the data before actually navigating to the new route.\n"
 	},
 
 	"Route-Based Dynamic Transition": {
@@ -568,6 +568,6 @@
 			"\t}",
 			"},"
 		],
-		"description": "Vue Router scrollBehavior"
+		"description": "Vue Router scrollBehavior\n"
 	}
 }

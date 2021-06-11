@@ -16,7 +16,7 @@
 			"\t${10:unbind(el, binding, vnode) {$11\\},}",
 			"});$0"
 		],
-		"description": "Register a global directive (all lifecycle hooks)"
+		"description": "Register a global directive (all lifecycle hooks)\n"
 	},
 	"Vue Global Directive (bind, update)": {
 		"prefix": ["Vue.directive()", "vgd"],
@@ -26,14 +26,14 @@
 			"\t$0",
 			"});"
 		],
-		"description": "Register a global directive (bind, update)"
+		"description": "Register a global directive (bind, update)\n"
 	},
 	"Retrieve Global Directive": {
 		"prefix": "Vue.directive()",
 		"body": [
 			"const ${2:feature}Directive = Vue.directive('${1:id}');"
 		],
-		"description": "getter, return the directive definition if registered"
+		"description": "getter, return the directive definition if registered\n"
 	},
 	"Vue Single File Directive (All Hooks)": {
 		"prefix": ["vueDirective", "vsd"],
@@ -47,7 +47,7 @@
 			"\t${10:unbind(el, binding, vnode) {$11\\},}",
 			"};$0"
 		],
-		"description": "Register a single file directive (all lifecycle hooks)"
+		"description": "Register a single file directive (all lifecycle hooks)\n"
 	},
 	"Vue Local Directives": {
 		"prefix": ["option.directives", "vld"],
@@ -58,7 +58,7 @@
 			"},$0",
 			"},"
 		],
-		"description": "Define local directives in a component’s options.\nA hash of directives to be made available to the Vue instance."
+		"description": "Define local directives in a component’s options.\nA hash of directives to be made available to the Vue instance.\n"
 	},
 	"Directive bind hook": {
 		"prefix": ["directive.bind", "vd.bind"],
@@ -67,7 +67,7 @@
 			"\t$4",
 			"},$0"
 		],
-		"description": "Directive `bind` lifecycle.\ncalled only once, when the directive is first bound to the element. This is where you can do one-time setup work."
+		"description": "Directive `bind` lifecycle.\ncalled only once, when the directive is first bound to the element. This is where you can do one-time setup work.\n"
 	},
 	"Directive inserted hook": {
 		"prefix": ["directive.inserted", "vd.inserted"],
@@ -76,7 +76,7 @@
 			"\t$4",
 			"},$0"
 		],
-		"description": "Directive `inserted` lifecycle.\ncalled when the bound element has been inserted into its parent node (this only guarantees parent node presence, not necessarily in-document)."
+		"description": "Directive `inserted` lifecycle.\ncalled when the bound element has been inserted into its parent node (this only guarantees parent node presence, not necessarily in-document).\n"
 	},
 	"Directive update hook": {
 		"prefix": ["directive.update", "vd.update"],
@@ -85,7 +85,7 @@
 			"\t$5",
 			"},$0"
 		],
-		"description": "Directive `update` lifecycle.\ncalled after the containing component’s VNode has updated, but possibly before its children have updated. The directive’s value may or may not have changed, but you can skip unnecessary updates by comparing the binding’s current and old values (see below on hook arguments)."
+		"description": "Directive `update` lifecycle.\ncalled after the containing component’s VNode has updated, but possibly before its children have updated. The directive’s value may or may not have changed, but you can skip unnecessary updates by comparing the binding’s current and old values (see below on hook arguments).\n"
 	},
 	"Directive componentUpdated hook": {
 		"prefix": ["directive.componentUpdated", "vd.componentUpdated"],
@@ -94,7 +94,7 @@
 			"\t$5",
 			"},$0"
 		],
-		"description": "Directive `componentUpdated` lifecycle.\ncalled after the containing component’s VNode and the VNodes of its children have updated."
+		"description": "Directive `componentUpdated` lifecycle.\ncalled after the containing component’s VNode and the VNodes of its children have updated.\n"
 	},
 	"Directive unbind hook": {
 		"prefix": ["directive.unbind", "vd.unbind"],
@@ -103,6 +103,6 @@
 			"\t$4",
 			"},$0"
 		],
-		"description": "Directive `unbind` lifecycle.\ncalled only once, when the directive is unbound from the element."
+		"description": "Directive `unbind` lifecycle.\ncalled only once, when the directive is unbound from the element.\n"
 	}
 }

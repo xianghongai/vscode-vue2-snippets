@@ -2,12 +2,12 @@
 	"option props": {
 		"prefix": ["option.props", "op"],
 		"body": ["props: {", "\t$1", "},$0"],
-		"description": "Type: Array<string> | Object"
+		"description": "Type: Array<string> | Object\n"
 	},
 	"option propsData": {
 		"prefix": "option.propsData",
 		"body": ["propsData: {", "\t${1:property}: ${2:'${3:value}'},$4", "},$0"],
-		"description": "Type: Object.\nonly respected in instance creation via `new`.\nPass props to an instance during its creation. This is primarily intended to make unit testing easier."
+		"description": "Type: Object.\nonly respected in instance creation via `new`.\nPass props to an instance during its creation. This is primarily intended to make unit testing easier.\n"
 	},
 	"option data()": {
 		"prefix": ["option.data()", "data"],
@@ -18,7 +18,7 @@
 			"\t};",
 			"},$0"
 		],
-		"description": "Type: Object | Function"
+		"description": "Type: Object | Function\n"
 	},
 
 	"option computed": {
@@ -28,17 +28,10 @@
 			"\t${1:property}() {",
 			"\t\treturn this.${2:property};",
 			"\t},",
-			"\t${3:property}: {",
-			"\t\tget() {",
-			"\t\t\treturn this.${4:property};",
-			"\t\t},",
-			"\t\tset(${5:val}) {",
-			"\t\t\tthis.${6:property} = $5;",
-			"\t\t},",
-			"\t},$0",
+			"",
 			"},"
 		],
-		"description": "Type: { [key: string]: Function | { get: Function, set: Function } }\nComputed properties to be mixed into the Vue instance. All getters and setters have their this context automatically bound to the Vue instance.\nNote that if you use an arrow function with a computed property, `this` won’t be the component’s instance, but you can still access the instance as the function’s first argument."
+		"description": "Type: { [key: string]: Function | { get: Function, set: Function } }\nComputed properties to be mixed into the Vue instance. All getters and setters have their this context automatically bound to the Vue instance.\nNote that if you use an arrow function with a computed property, `this` won’t be the component’s instance, but you can still access the instance as the function’s first argument.\n"
 	},
 
 	"computed property": {
@@ -58,7 +51,7 @@
 	"option methods": {
 		"prefix": ["option.methods", "om"],
 		"body": ["methods: {", "\t${1:methodName}($2) {", "\t\t$3", "\t},$0", "},"],
-		"description": "Type: { [key: string]: Function }"
+		"description": "Type: { [key: string]: Function }\n"
 	},
 
 	"option watch": {
@@ -70,7 +63,7 @@
 			"\t},$0",
 			"},"
 		],
-		"description": "Type: { [key: string]: String | Function | Object | Array}\nString: methodName,\nFunction: handler(val, oldVal),\nObject: {handler(val, oldVal): Function, deep: Boolean, immediate: Boolean},\nArray: [String, Object, Function]\nAn object where keys are expressions to watch and values are the corresponding callbacks. The value can also be a string of a method name, or an Object that contains additional options. The Vue instance will call `$watch()` for each entry in the object at instantiation."
+		"description": "Type: { [key: string]: String | Function | Object | Array}\nString: methodName,\nFunction: handler(val, oldVal),\nObject: {handler(val, oldVal): Function, deep: Boolean, immediate: Boolean},\nArray: [String, Object, Function]\nAn object where keys are expressions to watch and values are the corresponding callbacks. The value can also be a string of a method name, or an Object that contains additional options. The Vue instance will call `$watch()` for each entry in the object at instantiation.\n"
 	},
 
 	"option watch property": {
