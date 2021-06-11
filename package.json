@@ -4,7 +4,7 @@
 	"displayName": "Vue 2 Snippets",
 	"description": "Code snippets for Vue 2",
 	"icon": "art/icon.png",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
@@ -21,7 +21,9 @@
 	"engines": {
 		"vscode": "^0.12.x"
 	},
-	"categories": ["Snippets"],
+	"categories": [
+		"Snippets"
+	],
 	"keywords": [
 		"Snippet",
 		"Vue",
@@ -42,8 +44,13 @@
 		"languages": [
 			{
 				"id": "vue",
-				"aliases": ["Vue", "vue"],
-				"extensions": [".vue"]
+				"aliases": [
+					"Vue",
+					"vue"
+				],
+				"extensions": [
+					".vue"
+				]
 			}
 		],
 		"snippets": [
