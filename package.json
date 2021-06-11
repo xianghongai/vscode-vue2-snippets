@@ -21,9 +21,7 @@
 	"engines": {
 		"vscode": "^0.12.x"
 	},
-	"categories": [
-		"Snippets"
-	],
+	"categories": ["Snippets"],
 	"keywords": [
 		"Snippet",
 		"Vue",
@@ -41,6 +39,13 @@
 		"Vue2 Code Snippets"
 	],
 	"contributes": {
+		"languages": [
+			{
+				"id": "vue",
+				"aliases": ["Vue", "vue"],
+				"extensions": [".vue"]
+			}
+		],
 		"snippets": [
 			{
 				"language": "vue",
