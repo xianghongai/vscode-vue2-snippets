@@ -6,7 +6,7 @@
 
 一些常用的已经处理成“下意识”的触发，如我想在 `option` 中声明生命周期 (`lifecycle`) 钩子函数： `before destroy`，按 `olbd` 回车，即可生成 `beforeDestroy() {  },`；
 
-又如，我想生明一个 `props`，是 `string` 类型的，带 `default` 属性，按 `psd` 回车，即可生成：
+又如，我想声明一个 `props`，是 `string` 类型的，带 `default` 属性，按 `psd` 回车，即可生成：
 
 ```js
 property: {
@@ -23,7 +23,7 @@ property: {
 
 ## 安装
 
-🏳️‍🌈🏳️‍🌈🏳️‍🌈 首先需要安装 "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".
+🏳️‍🌈🏳️‍🌈🏳️‍🌈 **首先需要安装 "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".**
 
 Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x) 代码片断
 
