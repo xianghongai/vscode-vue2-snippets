@@ -25,8 +25,10 @@
 		"Snippets"
 	],
 	"scripts": {
-		"build": "node merge.js && vsce package",
-		"release": "node merge.js && vsce package && vsce publish"
+		"prebuild": "node merge.js",
+		"build": "vsce package",
+		"prepublish": "npm run build",
+		"publish": "vsce publish"
 	},
 	"keywords": [
 		"Snippet",
