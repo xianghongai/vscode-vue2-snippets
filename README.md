@@ -26,7 +26,7 @@
 
 Simple code snippets that don’t need to be memorized, It can significantly improve coding efficiency.
 
-Some commonly used triggers that have been processed as "subconscious", such as I want to declare the **l**ifecycle hook function **b**efore **d**estroy in **o**ption: , press `olbd` and press Enter to output `beforeDestroy() {},`;
+Some commonly used triggers that have been processed as "subconscious", such as I want to declare the **o**ption **l**ifecycle hook function **b**efore **d**estroy: , press `olbd` and press Enter to output `beforeDestroy() {},`;
 
 For another example, I want to create a `props`, which is of type `string`, with a `default` property, and press `psd` to output:
 
@@ -45,7 +45,7 @@ It may take a little time to adapt in the early stage, and you will gradually ge
 
 ## Install
 
-🌈🌈🌈 First need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)", **they are one combined release.**
+🌈🌈🌈 **First need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)"** (template directive), they are one combined release.
 
 Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x).
 

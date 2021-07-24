@@ -10,7 +10,7 @@
 		"description": "Type: Object.\nonly respected in instance creation via `new`.\nPass props to an instance during its creation. This is primarily intended to make unit testing easier.\n"
 	},
 	"option data()": {
-		"prefix": ["option.data()", "data"],
+		"prefix": ["option.data()", "od", "data"],
 		"body": [
 			"data() {",
 			"\treturn {",
