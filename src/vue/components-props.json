@@ -1,0 +1,17 @@
+{
+	"v-bind=\"$attrs\"": {
+		"prefix": ["vAttrs"],
+		"body": ["${1:v-bind=\"\\$attrs\"}$0"],
+		"description": "In combination with `inheritAttrs: false`, apply attributes to some other element instead of the root element"
+	},
+	"v-bind=\"$listeners\"": {
+		"prefix": ["vListeners"],
+		"body": ["${1:v-on=\"\\$listeners\"}$0"],
+		"description": "In combination with `inheritAttrs: false`, apply listeners to some other element instead of the root element"
+	},
+	"v-bind=\"$attrs\" v-on=\"$listeners\"": {
+		"prefix": ["vAttrsListeners", "val"],
+		"body": ["${1:v-bind=\"\\$attrs\" }${2:v-on=\"\\$listeners\"}$0"],
+		"description": "In combination with `inheritAttrs: false`, apply attributes and listeners to some other element instead of the root element"
+	}
+}
