@@ -3,7 +3,7 @@
 		"prefix": ["propOptions", "poptions"],
 		"body": [
 			"${1:property}: {",
-			"\ttype: ${2:String|Number|Boolean|Array|Objec|Date|Function|Symbol|Promise},",
+			"\ttype: ${2:String|Number|Boolean|Array|Objec|Date|Function|Symbol},",
 			"\trequired: ${3:boolean},",
 			"\tdefault() {",
 			"\t\treturn ${4:any};",
@@ -83,7 +83,9 @@
 		"body": [
 			"${1:property}: {",
 			"\ttype: Array,",
-			"\tdefault: [${2}],",
+      "\tdefault() {",
+			"\t\treturn [${3:any}];",
+			"\t},",
 			"},$0"
 		]
 	},
@@ -92,7 +94,9 @@
 		"body": [
 			"${1:property}: {",
 			"\ttype: Object,",
-			"\tdefault: {${2}},",
+			"\tdefault() {",
+			"\t\treturn {${3:any}};",
+			"\t},",
 			"},$0"
 		]
 	},
@@ -119,7 +123,9 @@
 		"body": [
 			"${1:property}: {",
 			"\ttype: Function,",
-			"\tdefault: ${2},",
+			"\tdefault() {",
+			"\t\treturn ${2:any};",
+			"\t},",
 			"},$0"
 		]
 	},
@@ -250,8 +256,10 @@
 		"body": [
 			"${1:property}: {",
 			"\ttype: Array,",
-			"\tdefault: [${2}],",
 			"\trequired: ${3:true},",
+      "\tdefault() {",
+			"\t\treturn [${3:any}];",
+			"\t},",
 			"},$0"
 		]
 	},
@@ -260,8 +268,10 @@
 		"body": [
 			"${1:property}: {",
 			"\ttype: Object,",
-			"\tdefault: {${2}},",
 			"\trequired: ${3:true},",
+			"\tdefault() {",
+			"\t\treturn {${3:any}};",
+			"\t},",
 			"},$0"
 		]
 	},
@@ -280,8 +290,10 @@
 		"body": [
 			"${1:property}: {",
 			"\ttype: Function,",
-			"\tdefault: ${2},",
 			"\trequired: ${3:true},",
+			"\tdefault() {",
+			"\t\treturn ${2:any};",
+			"\t},",
 			"},$0"
 		]
 	},
