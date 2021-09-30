@@ -25,7 +25,7 @@
 		"description": "import VueRouter\n"
 	},
 
-	"Create the router instance": {
+	"Vue Create the router instance": {
 		"prefix": ["router", "newVueRouter"],
 		"body": [
 			"const ${1:router} = new VueRouter({",
@@ -35,7 +35,7 @@
 		"description": "Create the router instance, The default is hash mode.\n"
 	},
 
-	"Create the router instance (import)": {
+	"Vue Create the router instance (import)": {
 		"prefix": "newVueRouter",
 		"body": [
 			"import Vue from 'vue';",
@@ -54,7 +54,7 @@
 		"description": "Base for Vue Router\n"
 	},
 
-	"Create the router instance with HTML5 History Mode": {
+	"Vue Create the router instance with HTML5 History Mode": {
 		"prefix": "routerHistoryMode",
 		"body": [
 			"const ${1:router} = new VueRouter({",
@@ -65,7 +65,7 @@
 		"description": "Create the router instance with HTML5 History Mode\n"
 	},
 
-	"Define routes": {
+	"Vue Define routes": {
 		"prefix": "routes",
 		"body": [
 			"const ${1:routes} = [",
@@ -85,14 +85,14 @@
 		"description": "Define routes\n"
 	},
 
-	"Define route": {
+	"Vue Define route": {
 		"prefix": "route",
 		"body": [
 			"{ path: '${1:/feature/:id}', component: ${2:Feature} },"
 		],
 		"description": "Define route\n"
 	},
-	"Define lazy loading route": {
+	"Vue Define lazy loading route": {
 		"prefix": "routeLazy",
 		"body": [
 			"{",
@@ -103,7 +103,7 @@
 		],
 		"description": "Define lazy loading route\n"
 	},
-	"Define route and pass props to route components (Boolean mode)": {
+	"Vue Define route and pass props to route components (Boolean mode)": {
 		"prefix": "routePropsBooleanMode",
 		"body": [
 			"{",
@@ -114,7 +114,7 @@
 		],
 		"description": "When `props` is set to `true`, the `route.params` will be set as the component props.\n"
 	},
-	"Define route and pass props to route components (Object mode)": {
+	"Vue Define route and pass props to route components (Object mode)": {
 		"prefix": "routePropsObjectMode",
 		"body": [
 			"{",
@@ -125,7 +125,7 @@
 		],
 		"description": "\n"
 	},
-	"Define route and pass props to route components (Function mode)": {
+	"Vue Define route and pass props to route components (Function mode)": {
 		"prefix": "routePropsFunctionMode",
 		"body": [
 			"{",
@@ -139,7 +139,7 @@
 		],
 		"description": "\n"
 	},
-	"Define route and pass props for routes with named views (Function mode)": {
+	"Vue Define route and pass props for routes with named views (Function mode)": {
 		"prefix": "routePropsFunctionModeNamedViews",
 		"body": [
 			"{",
@@ -155,7 +155,7 @@
 		],
 		"description": "\n"
 	},
-	"Define route for named views": {
+	"Vue Define route for named views": {
 		"prefix": "routeNamedViews",
 		"body": [
 			"{",
@@ -168,7 +168,7 @@
 		],
 		"description": "\n"
 	},
-	"Define alias route": {
+	"Vue Define alias route": {
 		"prefix": "routeAlias",
 		"body": [
 			"{ path: '${1:/feature}', component: ${2:Feature}, alias: '{3:/feature}' },"
@@ -176,21 +176,21 @@
 		"description": "Define alias route\n"
 	},
 
-	"Define redirect route": {
+	"Vue Define redirect route": {
 		"prefix": "routeRedirect",
 		"body": [
 			"{ path: '${1:/feature/:id}', redirect: '${2:/pathname}' },"
 		],
 		"description": "Define redirect route\nExample:\n// relative redirect to a sibling route\n`{ path: 'relative-redirect', redirect: 'feature' }`\n// absolute redirect\n`{ path: '/absolute-redirect', redirect: '/feature' },`\n// named redirect\n`{ path: '/named-redirect', redirect: { name: 'feature' }},`\n// redirect with params\n`{ path: '/redirect-with-params/:id', redirect: '/with-params/:id' },`\n"
 	},
-	"Define redirect named route": {
+	"Vue Define redirect named route": {
 		"prefix": "routeRedirectNamedRoute",
 		"body": [
 			"{ path: '${1:/feature/:id}', redirect: { name: '${2:routename}' }},"
 		],
 		"description": "Define redirect route\n"
 	},
-	"Define dynamic redirect": {
+	"Vue Define dynamic redirect": {
 		"prefix": "routeRedirectDynamic",
 		"body": [
 			"{",
@@ -214,7 +214,7 @@
 		"description": "Define dynamic redirect\n"
 	},
 
-	"Define named route": {
+	"Vue Define named route": {
 		"prefix": "routeNamed",
 		"body": [
 			"{ path: '${1:/named-redirect}', name: '${2:feature}', component: ${3:Feature} },"
@@ -222,19 +222,19 @@
 		"description": "Define named route\n"
 	},
 
-	"Router navigate to path with literal string": {
+	"Vue Router navigate to path with literal string": {
 		"prefix": "routerPush",
 		"body": ["${2:this.\\$}router.push('${1:pathname}');"],
 		"description": "Router navigate to path.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
-	"Router navigate to path": {
+	"Vue Router navigate to path": {
 		"prefix": "routerPushPath",
 		"body": [
 			"${2:this.\\$}router.push({ path: '${1:pathname}' });"
 		],
 		"description": "Router navigate to path.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
-	"Router navigate to path with params": {
+	"Vue Router navigate to path with params": {
 		"prefix": "routerPushParams",
 		"body": [
 			"${5:this.\\$}router.push({",
@@ -244,7 +244,7 @@
 		],
 		"description": "Router navigate to path with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
-	"Router navigate to path with query": {
+	"Vue Router navigate to path with query": {
 		"prefix": "routerPushQuery",
 		"body": [
 			"${5:this.\\$}router.push({",
@@ -254,14 +254,14 @@
 		],
 		"description": "Router navigate to path with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
-	"Router navigate to named routes": {
+	"Vue Router navigate to named routes": {
 		"prefix": ["routerPushNamedRoute", "rpn"],
 		"body": [
 			"${2:this.\\$}router.push({ name: '${1:routename}' });"
 		],
 		"description": "Router navigate to named routes\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
-	"Router navigate to named routes with params": {
+	"Vue Router navigate to named routes with params": {
 		"prefix": ["routerPushNamedRouteParams", "rpp"],
 		"body": [
 			"${5:this.\\$}router.push({",
@@ -271,7 +271,7 @@
 		],
 		"description": "Router navigate to named routes with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
-	"Router navigate to named routes with query": {
+	"Vue Router navigate to named routes with query": {
 		"prefix": ["routerPushNamedRouteQuery", "rpq"],
 		"body": [
 			"${5:this.\\$}router.push({",
@@ -281,7 +281,7 @@
 		],
 		"description": "Router navigate to named routes with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
-	"Router navigate to path without pushing a new history entry": {
+	"Vue Router navigate to path without pushing a new history entry": {
 		"prefix": "routerReplacePath",
 		"body": [
 			"${5:this.\\$}router.replace({",
@@ -291,7 +291,7 @@
 		],
 		"description": "Router navigate to path without pushing a new history entry.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)\n"
 	},
-	"Router navigate to named routes without pushing a new history entry": {
+	"Vue Router navigate to named routes without pushing a new history entry": {
 		"prefix": "routerReplaceNamedRoute",
 		"body": [
 			"${5:this.\\$}router.replace({",
@@ -302,28 +302,28 @@
 		"description": "Router navigate to named routes without pushing a new history entry.\n#syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 
-	"Programmatically navigate to a new URL: go(n)": {
+	"Vue Programmatically navigate to a new URL: go(n)": {
 		"prefix": "routerGo",
 		"body": ["${2:this.\\$}router.go('${1:n}');"],
 		"description": "This method takes a single integer as parameter that indicates by how many steps to go forwards or go backwards in the history stack.\n"
 	},
-	"Programmatically navigate to a new URL: back()": {
+	"Vue Programmatically navigate to a new URL: back()": {
 		"prefix": "routerBack",
 		"body": ["${2:this.\\$}router.back();"],
 		"description": "go backwards in the history stack.\n"
 	},
-	"Programmatically navigate to a new URL: forward()": {
+	"Vue Programmatically navigate to a new URL: forward()": {
 		"prefix": "routerForward",
 		"body": ["${2:this.\\$}router.forward();"],
 		"description": "go forwards in the history stack.\n"
 	},
-	"Reverse URL resolving": {
+	"Vue Reverse URL resolving": {
 		"prefix": "routerResolve",
 		"body": ["router.resolve(to, current, append);"],
 		"description": "Given location in form same as used in `<router-link/>`.\n"
 	},
 
-	"Global Before Guards": {
+	"Vue Global Before Guards": {
 		"prefix": ["routerBeforeEach", "guardGlobalBefore"],
 		"body": [
 			"router.beforeEach((to, from, next) => {",
@@ -333,7 +333,7 @@
 		],
 		"description": "register global before guards.\n`beforeEach(callback(to, from, next))`\n"
 	},
-	"Global Resolve Guards": {
+	"Vue Global Resolve Guards": {
 		"prefix": ["routerBeforeResolve", "guardGlobalResolve"],
 		"body": [
 			"router.beforeResolve((to, from, next) => {",
@@ -343,7 +343,7 @@
 		],
 		"description": "register global resolve guards.\n`beforeResolve(callback(to, from, next))`\n"
 	},
-	"Global After Hooks": {
+	"Vue Global After Hooks": {
 		"prefix": "routerAfterEach",
 		"body": [
 			"router.afterEach((to, from) => {",
@@ -352,7 +352,7 @@
 		],
 		"description": "register global after hooks.\n`afterEach(callback(to, from))`\n"
 	},
-	"Per-Route Guard": {
+	"Vue Per-Route Guard": {
 		"prefix": ["routeBeforeEnter", "guardPerRoute"],
 		"body": [
 			"beforeEnter((to, from, next) => {",
@@ -362,7 +362,7 @@
 		],
 		"description": "register guards on a route's configuration object.\n`beforeEnter(callback(to, from, next))`\n"
 	},
-	"In-Component Guards": {
+	"Vue In-Component Guards": {
 		"prefix": ["componentGuards", "guardInComponent"],
 		"body": [
 			"beforeRouteEnter(to, from, next) {",
@@ -386,85 +386,85 @@
 		"description": "define route navigation guards inside route components \n"
 	},
 
-	"Dynamically add more routes to the router": {
+	"Vue Dynamically add more routes to the router": {
 		"prefix": "routerAddRoutes",
 		"body": ["router.addRoutes(${1:routes});$0"],
 		"description": "The argument must be an Array using the same route config format with the `routes` constructor option.\naddRoutes(routes)\n"
 	},
 
-	"Router instance method: onReady(callback, errorCallback)": {
+	"Vue Router instance method: onReady(callback, errorCallback)": {
 		"prefix": "routerOnReady",
 		"body": [
 			"router.onReady(${1:callback}, ${2:errorCallback});$0"
 		],
 		"description": "This method queues a callback to be called when the router has completed the initial navigation, which means it has resolved all async enter hooks and async components that are associated with the initial route.\n"
 	},
-	"Router instance method: onError(callback)": {
+	"Vue Router instance method: onError(callback)": {
 		"prefix": "routerOnError",
 		"body": ["router.onError(${1:callback});$0"],
 		"description": "Register a callback which will be called when an error is caught during a route navigation. Note for an error to be called, it must be one of the following scenarios:\nThe error is thrown synchronously inside a route guard function;\nThe error is caught and asynchronously handled by calling next(err) inside a route guard function;\nAn error occurred when trying to resolve an async component that is required to render a route.\n"
 	},
-	"Router instance method: getMatchedComponents(to)": {
+	"Vue Router instance method: getMatchedComponents(to)": {
 		"prefix": "routerGetMatchedComponents",
 		"body": ["router.getMatchedComponents(to);"],
 		"description": "Returns an Array of the components (definition/constructor, not instances) matched by the provided location or the current route. This is mostly used during server-side rendering to perform data prefetching.\n"
 	},
 
-	"$route.path": {
+	"Vue $route.path": {
 		"prefix": "this.$route.path",
 		"body": ["this.\\$route.path"],
 		"description": "A string that equals the path of the current route, always resolved as an absolute path.\n"
 	},
-	"$route.params": {
+	"Vue $route.params": {
 		"prefix": ["this.$route.params", "rp"],
 		"body": ["this.\\$route.params"],
 		"description": "An object that contains key/value pairs of dynamic segments and star segments. If there are no params the value will be an empty object.\n"
 	},
-	"$route.query": {
+	"Vue $route.query": {
 		"prefix": ["this.$route.query", "rq"],
 		"body": ["this.\\$route.query"],
 		"description": "An object that contains key/value pairs of the query string.\n"
 	},
-	"$route.hash": {
+	"Vue $route.hash": {
 		"prefix": ["this.$route.hash", "rh"],
 		"body": ["this.\\$route.hash"],
 		"description": "The hash of the current route (with the #), if it has one. If no hash is present the value will be an empty string.\n"
 	},
-	"$route.fullPath": {
+	"Vue $route.fullPath": {
 		"prefix": "this.$route.fullPath",
 		"body": ["this.\\$route.fullPath"],
 		"description": "The full resolved URL including query and hash.\n"
 	},
-	"$route.matched": {
+	"Vue $route.matched": {
 		"prefix": "this.$route.matched",
 		"body": ["this.\\$route.matched"],
 		"description": "An Array containing route records for all nested path segments of the current route. \n"
 	},
-	"$route.name": {
+	"Vue $route.name": {
 		"prefix": "this.$route.name",
 		"body": ["this.\\$route.name"],
 		"description": "The name of the current route, if it has one.\n"
 	},
-	"$route.redirectedFrom": {
+	"Vue $route.redirectedFrom": {
 		"prefix": "this.$route.redirectedFrom",
 		"body": ["this.\\$route.redirectedFrom"],
 		"description": "The name of the route being redirected from, if there were one.\n"
 	},
 
-	"Lazy Loading Routes": {
+	"Vue Lazy Loading Routes": {
 		"prefix": "lazyRoute",
 		"body": [
 			"const ${1} = () => import('@/${2:features}/${1:Feature}.vue');$0"
 		]
 	},
-	"Lazy Loading Routes, Grouping Components in the Same Chunk": {
+	"Vue Lazy Loading Routes, Grouping Components in the Same Chunk": {
 		"prefix": "lazyRouteChunk",
 		"body": [
 			"const ${1:Feature1} = () => import(/* webpackChunkName: \"${3:feature}\" */ '${4:.}/${1}.vue');",
 			"const ${2:Feature2} = () => import(/* webpackChunkName: \"${3}\" */ '${5:.}/${2}.vue');"
 		]
 	},
-	"Fetching After Navigation": {
+	"Vue Fetching After Navigation": {
 		"prefix": "fetchingAfterNavigation",
 		"body": [
 			"export default {",
@@ -506,7 +506,7 @@
 		],
 		"description": "fetch data in the component's created hook.\n"
 	},
-	"Fetching Before Navigation": {
+	"Vue Fetching Before Navigation": {
 		"prefix": "fetchingBeforeNavigation",
 		"body": [
 			"export default {",
@@ -544,7 +544,7 @@
 		"description": "fetch the data before actually navigating to the new route.\n"
 	},
 
-	"Route-Based Dynamic Transition": {
+	"Vue Route-Based Dynamic Transition": {
 		"prefix": "routeTransition",
 		"body": [
 			"watch: {",

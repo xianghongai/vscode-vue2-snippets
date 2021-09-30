@@ -28,7 +28,7 @@
 		],
 		"description": "Register a global directive (bind, update)\n"
 	},
-	"Retrieve Global Directive": {
+	"Vue Retrieve Global Directive": {
 		"prefix": "Vue.directive()",
 		"body": [
 			"const ${2:feature}Directive = Vue.directive('${1:id}');"
@@ -49,6 +49,7 @@
 		],
 		"description": "Register a single file directive (all lifecycle hooks)\n"
 	},
+
 	"Vue Local Directives": {
 		"prefix": ["option.directives", "vld"],
 		"body": [
@@ -60,7 +61,8 @@
 		],
 		"description": "Define local directives in a component’s options.\nA hash of directives to be made available to the Vue instance.\n"
 	},
-	"Directive bind hook": {
+
+	"Vue directive hook/bind": {
 		"prefix": ["directive.bind", "vd.bind"],
 		"body": [
 			"bind (el${2:, binding${3:, vnode}}) {",
@@ -69,7 +71,7 @@
 		],
 		"description": "Directive `bind` lifecycle.\ncalled only once, when the directive is first bound to the element. This is where you can do one-time setup work.\n"
 	},
-	"Directive inserted hook": {
+	"Vue directive hook/inserted": {
 		"prefix": ["directive.inserted", "vd.inserted"],
 		"body": [
 			"inserted (el${2:, binding${3:, vnode}}) {",
@@ -78,7 +80,7 @@
 		],
 		"description": "Directive `inserted` lifecycle.\ncalled when the bound element has been inserted into its parent node (this only guarantees parent node presence, not necessarily in-document).\n"
 	},
-	"Directive update hook": {
+	"Vue directive hook/update": {
 		"prefix": ["directive.update", "vd.update"],
 		"body": [
 			"update (el${2:, binding${3:, vnode${4:, oldVnode}}}) {",
@@ -87,7 +89,7 @@
 		],
 		"description": "Directive `update` lifecycle.\ncalled after the containing component’s VNode has updated, but possibly before its children have updated. The directive’s value may or may not have changed, but you can skip unnecessary updates by comparing the binding’s current and old values (see below on hook arguments).\n"
 	},
-	"Directive componentUpdated hook": {
+	"Vue directive hook/componentUpdated": {
 		"prefix": ["directive.componentUpdated", "vd.componentUpdated"],
 		"body": [
 			"componentUpdated (el${2:, binding${3:, vnode${4:, oldVnode}}}) {",
@@ -96,7 +98,7 @@
 		],
 		"description": "Directive `componentUpdated` lifecycle.\ncalled after the containing component’s VNode and the VNodes of its children have updated.\n"
 	},
-	"Directive unbind hook": {
+	"Vue directive hook/unbind": {
 		"prefix": ["directive.unbind", "vd.unbind"],
 		"body": [
 			"unbind (el${2:, binding${3:, vnode}}) {",
@@ -104,5 +106,10 @@
 			"},$0"
 		],
 		"description": "Directive `unbind` lifecycle.\ncalled only once, when the directive is unbound from the element.\n"
+	},
+
+	"Vue option.directives": {
+		"prefix": ["option.directives", "ods"],
+		"body": ["directives: { ${1:Feature} },$0"]
 	}
 }
