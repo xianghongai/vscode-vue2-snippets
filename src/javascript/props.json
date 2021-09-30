@@ -14,19 +14,19 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/String": {
+	"Vue option props, String": {
 		"prefix": ["propString", "ps"],
 		"body": ["${1:property}: String,$0"]
 	},
-	"Vue option Props/Number": {
+	"Vue option props, Number": {
 		"prefix": ["propNumber", "pn"],
 		"body": ["${1:property}: Number,$0"]
 	},
-	"Vue option Props/Boolean": {
+	"Vue option props, Boolean": {
 		"prefix": ["propBoolean", "pb"],
 		"body": ["${1:property}: Boolean,$0"]
 	},
-	"Vue option Props/Array": {
+	"Vue option props, Array": {
 		"prefix": ["propArray", "pa"],
 		"body": [
 			"${1:property}: {",
@@ -37,7 +37,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Object": {
+	"Vue option props, Object": {
 		"prefix": ["propObject", "po"],
 		"body": [
 			"${1:property}: {",
@@ -48,11 +48,11 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Date": {
+	"Vue option props, Date": {
 		"prefix": ["propDate", "pd"],
 		"body": ["${1:property}: Date,$0"]
 	},
-	"Vue option Props/Function": {
+	"Vue option props, Function": {
 		"prefix": ["propFunction", "pf"],
 		"body": [
 			"${1:property}: {",
@@ -63,16 +63,16 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Symbol": {
+	"Vue option props, Symbol": {
 		"prefix": ["propSymbol", "psy"],
 		"body": ["${1:property}: Symbol,$0"]
 	},
-	"Vue option Props/Promise": {
+	"Vue option props, Promise": {
 		"prefix": ["propPromise", "pp"],
 		"body": ["${1:property}: Promise,$0"]
 	},
 
-	"Vue option Props/String (default)": {
+	"Vue option props, String (default)": {
 		"prefix": ["propStringDefault", "psd"],
 		"body": [
 			"${1:property}: {",
@@ -81,7 +81,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Number (default)": {
+	"Vue option props, Number (default)": {
 		"prefix": ["propNumberDefault", "pnd"],
 		"body": [
 			"${1:property}: {",
@@ -90,7 +90,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Boolean (default)": {
+	"Vue option props, Boolean (default)": {
 		"prefix": ["propBooleanDefault", "pbd"],
 		"body": [
 			"${1:property}: {",
@@ -99,7 +99,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Array (default)": {
+	"Vue option props, Array (default)": {
 		"prefix": ["propArrayDefault", "pad"],
 		"body": [
 			"${1:property}: {",
@@ -110,7 +110,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Object (default)": {
+	"Vue option props, Object (default)": {
 		"prefix": ["propObjectDefault", "pod"],
 		"body": [
 			"${1:property}: {",
@@ -121,7 +121,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Date (default)": {
+	"Vue option props, Date (default)": {
 		"prefix": ["propDateDefault", "pdd"],
 		"body": [
 			"${1:property}: {",
@@ -130,7 +130,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Symbol (default)": {
+	"Vue option props, Symbol (default)": {
 		"prefix": ["propSymbolDefault", "psyd"],
 		"body": [
 			"${1:property}: {",
@@ -139,7 +139,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Function (default)": {
+	"Vue option props, Function (default)": {
 		"prefix": ["propFunctionDefault", "pfd"],
 		"body": [
 			"${1:property}: {",
@@ -150,7 +150,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Promise (default)": {
+	"Vue option props, Promise (default)": {
 		"prefix": ["propPromiseDefault", "ppd"],
 		"body": [
 			"${1:property}: {",
@@ -160,7 +160,7 @@
 		]
 	},
 
-	"Vue option Props/String (required)": {
+	"Vue option props, String (required)": {
 		"prefix": ["propStringRequired", "psr"],
 		"body": [
 			"${1:property}: {",
@@ -169,7 +169,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Number (required)": {
+	"Vue option props, Number (required)": {
 		"prefix": ["propNumberRequired", "pnr"],
 		"body": [
 			"${1:property}: {",
@@ -178,7 +178,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Boolean (required)": {
+	"Vue option props, Boolean (required)": {
 		"prefix": ["propBooleanRequired", "pbr"],
 		"body": [
 			"${1:property}: {",
@@ -187,7 +187,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Array (required)": {
+	"Vue option props, Array (required)": {
 		"prefix": ["propArrayRequired", "par"],
 		"body": [
 			"${1:property}: {",
@@ -196,7 +196,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Object (required)": {
+	"Vue option props, Object (required)": {
 		"prefix": ["propObjectRequired", "por"],
 		"body": [
 			"${1:property}: {",
@@ -205,7 +205,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Date (required)": {
+	"Vue option props, Date (required)": {
 		"prefix": ["propDateRequired", "pdr"],
 		"body": [
 			"${1:property}: {",
@@ -214,7 +214,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Function (required)": {
+	"Vue option props, Function (required)": {
 		"prefix": ["propFunctionRequired", "pfr"],
 		"body": [
 			"${1:property}: {",
@@ -223,7 +223,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Symbol (required)": {
+	"Vue option props, Symbol (required)": {
 		"prefix": ["propSymbolRequired", "psyr"],
 		"body": [
 			"${1:property}: {",
@@ -232,7 +232,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Promise (required)": {
+	"Vue option props, Promise (required)": {
 		"prefix": ["propPromiseRequired", "ppr"],
 		"body": [
 			"${1:property}: {",
@@ -242,7 +242,7 @@
 		]
 	},
 
-	"Vue option Props/String (default, required)": {
+	"Vue option props, String (default, required)": {
 		"prefix": ["propStringDefaultRequired", "psdr"],
 		"body": [
 			"${1:property}: {",
@@ -252,7 +252,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Number (default, required)": {
+	"Vue option props, Number (default, required)": {
 		"prefix": ["propNumberDefaultRequired", "pndr"],
 		"body": [
 			"${1:property}: {",
@@ -262,7 +262,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Boolean (default, required)": {
+	"Vue option props, Boolean (default, required)": {
 		"prefix": ["propBooleanDefaultRequired", "pbdr"],
 		"body": [
 			"${1:property}: {",
@@ -272,7 +272,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Array (default, required)": {
+	"Vue option props, Array (default, required)": {
 		"prefix": ["propArrayDefaultRequired", "padr"],
 		"body": [
 			"${1:property}: {",
@@ -284,7 +284,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Object (default, required)": {
+	"Vue option props, Object (default, required)": {
 		"prefix": ["propObjectDefaultRequired", "podr"],
 		"body": [
 			"${1:property}: {",
@@ -296,7 +296,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Date (default, required)": {
+	"Vue option props, Date (default, required)": {
 		"prefix": ["propDateDefaultRequired", "pddr"],
 		"body": [
 			"${1:property}: {",
@@ -306,7 +306,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Function (default, required)": {
+	"Vue option props, Function (default, required)": {
 		"prefix": ["propFunctionDefaultRequired", "pfdr"],
 		"body": [
 			"${1:property}: {",
@@ -318,7 +318,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Symbol (default, required)": {
+	"Vue option props, Symbol (default, required)": {
 		"prefix": ["propSymbolDefaultRequired", "psydr"],
 		"body": [
 			"${1:property}: {",
@@ -328,7 +328,7 @@
 			"},$0"
 		]
 	},
-	"Vue option Props/Promise (default, required)": {
+	"Vue option props, Promise (default, required)": {
 		"prefix": ["propPromiseDefaultRequired", "ppdr"],
 		"body": [
 			"${1:property}: {",

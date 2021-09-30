@@ -1,6 +1,6 @@
 {
 	"Vue option.props": {
-		"prefix": ["option.props", "op"],
+		"prefix": ["option.props", "op", "ops"],
 		"body": ["props: {", "\t$1", "},$0"],
 		"description": "Type: Array<string> | Object\n"
 	},
@@ -49,7 +49,7 @@
 	},
 
 	"Vue option.methods": {
-		"prefix": ["option.methods", "om"],
+		"prefix": ["option.methods", "oms"],
 		"body": ["methods: {", "\t${1:methodName}($2) {", "\t\t$3", "\t},$0", "},"],
 		"description": "Type: { [key: string]: Function }\n"
 	},
