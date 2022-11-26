@@ -1,0 +1,26 @@
+{
+	"Import Service": {
+		"prefix": ["importService", "ivs"],
+		"body": [
+			"import { $2 } from '@/services/${1:Feature}';$0"
+		]
+	},
+	"Import Util": {
+		"prefix": ["importUtil", "ivu"],
+		"body": [
+			"import { $2 } from '@/utils/${1:Feature}';$0"
+		]
+	},
+	"Import Constant": {
+		"prefix": ["importConstant", "ivc"],
+		"body": [
+			"import { $2 } from '@/constants/${1:Feature}';$0"
+		]
+	},
+	"Import Config": {
+		"prefix": ["importConfig", "ivcg"],
+		"body": [
+			"import { $2 } from '@/configs/${1:Feature}';$0"
+		]
+	}
+}
