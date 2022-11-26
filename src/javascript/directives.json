@@ -1,10 +1,4 @@
 {
-	"Import Directive": {
-		"prefix": ["importDirective", "ivd"],
-		"body": [
-			"import $1 from '@/directives/${1:Feature}';$0"
-		]
-	},
 	"Vue Global Directive (All Hooks)": {
 		"prefix": ["Vue.directive()", "vgd"],
 		"body": [

@@ -138,12 +138,6 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 
 #### Import/Instance
 
-- `importComponent` / `ivc`, `import Feature from '@/components/Feature';`, **i**mport a **v**ue **c**omponent
-- `importDirective` / `ivd`, `import Feature from '@/directives/Feature';`, **i**mport a **v**ue **d**irective
-- `importService` / `ivs`, `import { Feature } from '@/services/Feature';`, **i**mport a **v**ue **s**ervice
-- `importUtil` / `ivu`, `import { Feature } from '@/utils/Feature';`, **i**mport a **v**ue **u**til
-- `importConstant` / `ivc`, `import { Feature } from '@/constants/Feature';`, **i**mport a **v**ue **c**onstant
-- `importConfig` / `ivcg`, `import { Feature } from '@/configs/Feature';`, **i**mport a **v**ue **c**nfi**g**
 - `importFilter_UNSAFE` / `ivf_UNSAFE`, `import Feature from '@/filters/Feature';` **Vue 3 REMOVED!**
 - `importVueRouter`, `import VueRouter from 'vue-router';`
 - `importVuex`, `import Vuex from 'vuex';`
