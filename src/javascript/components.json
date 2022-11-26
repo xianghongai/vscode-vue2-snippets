@@ -1,11 +1,4 @@
 {
-	"Import Vue Component": {
-		"prefix": ["importComponent", "ivc"],
-		"body": [
-			"import $1 from '@/components/${1:Feature}';$0"
-		]
-	},
-
 	"Vue Global Component": {
 		"prefix": ["vueGlobalComponent_UNSAFE", "vgc_UNSAFE"],
 		"body": [
