@@ -28,6 +28,10 @@
 		"body": ["created() {", "\t$1", "},$0", ""],
 		"description": "Called synchronously after the instance is created. At this stage, the instance has finished processing the options which means the following have been set up: data observation, computed properties, methods, watch/event callbacks. However, the mounting phase has not been started, and the $el property will not be available yet.\n"
 	},
+	"Vue lifecycle, async option.created()": {
+		"prefix": ["lifecycleCreated", "async.option.created()", "aolc"],
+		"body": ["async created() {", "\t$1", "},$0", ""]
+	},
 	"Vue lifecycle, option.beforeMount()": {
 		"prefix": ["lifecycleBeforeMount", "option.beforeMount()", "olbm"],
 		"body": ["beforeMount() {", "\t$1", "},$0", ""],
@@ -37,6 +41,10 @@
 		"prefix": ["lifecycleMounted", "option.mounted()", "olm"],
 		"body": ["mounted() {", "\t$1", "},$0", ""],
 		"description": "Called after the instance has been mounted, where `el` is replaced by the newly created `vm.$el`. If the root instance is mounted to an in-document element, `vm.$el` will also be in-document when `mounted` is called.\nNote that `mounted` does not guarantee that all child components have also been mounted. If you want to wait until the entire view has been rendered, you can use `vm.$nextTick` inside of mounted.\nThis hook is not called during server-side rendering.\n"
+	},
+  "Vue lifecycle, async option.mounted()": {
+		"prefix": ["lifecycleMounted", "async.option.mounted()", "aolm"],
+		"body": ["async created() {", "\t$1", "},$0", ""]
 	},
 	"Vue lifecycle, option.beforeUpdate()": {
 		"prefix": ["lifecycleBeforeUpdate", "option.beforeUpdate()", "olbu"],
@@ -69,17 +77,17 @@
 		"description": "Called after a Vue instance has been destroyed. When this hook is called, all directives of the Vue instance have been unbound, all event listeners have been removed, and all child Vue instances have also been destroyed.\nThis hook is not called during server-side rendering.\n"
 	},
 	"Vue lifecycle, option.errorCaptured()": {
-		"prefix": ["lifecycleErrorCaptured", "option.errorCaptured()"],
+		"prefix": ["lifecycleErrorCaptured", "option.errorCaptured()", "olec"],
 		"body": ["errorCaptured(err, vm, info) {", "\t$1", "},$0", ""],
 		"description": "Called when an error from any descendent component is captured. The hook receives three arguments: the error, the component instance that triggered the error, and a string containing information on where the error was captured. The hook can return `false` to stop the error from propagating further.\n"
 	},
 	"Vue lifecycle, option.serverCacheKey()": {
-		"prefix": ["lifecycleServerCacheKey", "option.serverCacheKey()"],
+		"prefix": ["lifecycleServerCacheKey", "option.serverCacheKey()", "olsck"],
 		"body": ["serverCacheKey(props) {", "\t$1", "},$0"],
 		"description": "Return the cache key for the component based on incoming props. Does NOT have access to this.\nServer-side only.\n"
 	},
 	"Vue lifecycle, option.serverPrefetch()": {
-		"prefix": ["lifecycleServerPrefetch", "option.serverPrefetch()"],
+		"prefix": ["lifecycleServerPrefetch", "option.serverPrefetch()", "olsp"],
 		"body": ["serverPrefetch() {", "\t$1", "},$0"],
 		"description": "Fetch async data during server side rendering. It should store fetched data into a global store and return a Promise. The server renderer will wait on this hook until the Promise is resolved. This hook has access to the component instance via `this`.\nServer-side only.\n"
 	}
