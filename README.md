@@ -45,13 +45,19 @@ It may take a little time to adapt in the early stage, and you will gradually ge
 
 ## Install
 
-🌈🌈🌈 **First need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)"** (template directive), they are one combined release.
+🌈🌈🌈 Also need to install:
 
-Code snippets for Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x).
+- [Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets), Contains code for the `v-*` family of directives, `import` components, directives, and services common to Vue 2 and 3.
+- [Vue 3 Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue3-snippets), For Vue 3.
+- [Pinia Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-pinia-snippets), For Pinia.
+- [VueX Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vuex-snippets), For VueX.
+- [JavaScript Code Snippet](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-snippet), Reference MDN documentation.
+- [JavaScript Comment Snippet](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-comment), Reference JSDOC, ESDOC documentation.
+
+Code snippets for Vue (v2.x) + Vue Router (v3.x).
 
 - 100% covered vuejs.org official document api
 - 98% covered router.vuejs.org official document api
-- 100% covered vuex.vuejs.org official document api
 
 ## Design
 
@@ -116,7 +122,6 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
     * Options Misc
     * Options Props, Vue 3.x `Props` default value factory functions no longer have access to `this`.
     * Vue Router
-    * VueX
 
 
 ### Vue 🦢
@@ -198,39 +203,6 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - `fetchingBeforeNavigation`, Fetching Before Navigation
 - `routeTransition`, Route-Based Dynamic Transition
 - `vScrollbehavior`, Vue Router scrollBehavior
-
-#### VueX
-
-- `newVuex`, Create the Vuex instance
-- `vuexGetters`, Vuex Getters
-- `vuexModules`, Vuex Modules
-- `action`, Actions property
-- `action`, Actions property (Promise)
-- `action`, Actions property (Async/Await)
-- `mapState`, mapState (array)
-- `mapState`, mapState (object)
-- `mapGetters`, mapGetters (array)
-- `mapGetters`, mapGetters (object)
-- `mapMutations`, mapMutations (array)
-- `mapMutations`, mapMutations (object)
-- `mapActions`, mapActions (array)
-- `mapActions`, mapActions (object)
-- `createNamespacedHelpers`, createNamespacedHelpers
-- `store.getters`, [this.]store.getters
-- `store.state`, [this.]store.state
-- `store.commit()` / `sc`, [this.]store.commit(type, payload, options)
-- `store.dispatch()` / `sd`, [this.]store.dispatch(type, payload)
-- `store.dispatch()` / `sdp`, [this.]store.dispatch(type, payload), promise
-- `store.replaceState()`, [this.]store.replaceState(state)
-- `store.watch()`, [this.]store.watch(getter, cb, options)
-- `store.subscribe()`, [this.]store.subscribe(fn, options)
-- `store.subscribeAction()`, [this.]store.subscribeAction(fn, options)
-- `store.subscribeAction()`, [this.]store.subscribeAction(object)
-- `store.registerModule()`, [this.]store.registerModule(path, rawModule, options)
-- `store.unregisterModule()`, [this.]store.unregisterModule(path)
-- `store.hasModule()`, [this.]store.hasModule(path)
-- `store.hotUpdate()`, [this.]store.hotUpdate(newOptions)
-
 
 #### Directives
 
