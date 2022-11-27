@@ -23,13 +23,19 @@ property: {
 
 ## 安装
 
-🏳️‍🌈🏳️‍🌈🏳️‍🌈 **首先需要安装 "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".**
+🏳️‍🌈🏳️‍🌈🏳️‍🌈 另外还需要安装：
 
-Vue (v2.x) + Vue Router (v3.x) + VueX (v3.x) 代码片断
+- [Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets), 包含 Vue 2 和 3 中共用的 `v-*` 系列指令、`import` 组件、指令、服务之类的代码。
+- [Vue 3 Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue3-snippets), 参考 Vue 3 官方文档示例及测试用例源码。
+- [Pinia Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-pinia-snippets), 参考 Pinia 官方文档示例。
+- [VueX Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vuex-snippets), 参考 VueX 官方文档示例、测试用例源码。
+- [JavaScript Code Snippet](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-snippet), 参考 MDN 文档。
+- [JavaScript Comment Snippet](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-comment), 参考 JSDOC、ESDOC 文档，用于便捷编写 JavaScript 注释。
+
+Vue (v2.x) + Vue Router (v3.x) 代码片断
 
 - 100% 涵盖了 vuejs.org 官方文档中的 api
 - 98% 涵盖了 router.vuejs.org 官方文档中的 api
-- 100% 涵盖了 vuex.vuejs.org 官方文档中的 api
 
 ## 规划
 
