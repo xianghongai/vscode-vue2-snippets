@@ -32,7 +32,7 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single File Component with SCSS"
+		"description": "Vue Single File Component with SCSS.\n"
 	},
 	"Vue Single File Component with SASS": {
 		"prefix": "vueSass",
@@ -67,7 +67,7 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single File Component with SASS"
+		"description": "Vue Single File Component with SASS.\n"
 	},
 	"Vue Single File Component with LESS": {
 		"prefix": "vueLess",
@@ -102,7 +102,7 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single File Component with LESS"
+		"description": "Vue Single File Component with LESS.\n"
 	},
 	"Vue Single File Component with PostCSS": {
 		"prefix": "vuePostCSS",
@@ -137,7 +137,7 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single File Component with PostCSS"
+		"description": "Vue Single File Component with PostCSS.\n"
 	},
 	"Vue Single File Component with CSS": {
 		"prefix": "vueCSS",
@@ -172,7 +172,7 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single File Component with CSS"
+		"description": "Vue Single File Component with CSS.\n"
 	},
 	"Vue Single File Component with Stylus": {
 		"prefix": "vueStylus",
@@ -207,7 +207,7 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single File Component with Stylus"
+		"description": "Vue Single File Component with Stylus.\n"
 	},
 	"Vue Single File Component with TypeScript": {
 		"prefix": "vueTypeScript",
@@ -230,7 +230,7 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single File Component with TypeScript"
+		"description": "Vue Single File Component with TypeScript.\n"
 	},
 	"Vue Single File Component with Class based TypeScript format": {
 		"prefix": "vueTypeScriptClass",
@@ -254,7 +254,7 @@
 			"",
 			"</style>"
 		],
-		"description": "Base for Vue File with Class based TypeScript format"
+		"description": "Base for Vue File with Class based TypeScript format.\n"
 	},
 	"Vue Single File Component with No Style": {
 		"prefix": "vueNoStyle",
@@ -285,7 +285,7 @@
 			"};",
 			"</script>"
 		],
-		"description": "Vue Single File Component with No Style"
+		"description": "Vue Single File Component with No Style.\n"
 	},
 	"Vue Template element": {
 		"prefix": "vueTemplate",
@@ -296,7 +296,7 @@
 			"\t</div>",
 			"</template>"
 		],
-		"description": "Vue Template element"
+		"description": "Vue Template element.\n"
 	},
 	"Vue Script element": {
 		"prefix": "vueScript",
@@ -321,7 +321,7 @@
 			"};",
 			"</script>"
 		],
-		"description": "Vue Script element"
+		"description": "Vue Script element.\n"
 	},
 	"Vue Style element": {
 		"prefix": ["vueStyle", "styleLang"],
@@ -330,6 +330,6 @@
 			"\t$0",
 			"</style>"
 		],
-		"description": "Vue Style element"
+		"description": "Vue Style element.\n"
 	}
 }

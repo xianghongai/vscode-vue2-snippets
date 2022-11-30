@@ -1,5 +1,5 @@
 {
-	"Vue Global Component": {
+	"Vue Global API - component": {
 		"prefix": ["vueGlobalComponent_UNSAFE", "vgc_UNSAFE"],
 		"body": [
 			"Vue.component(${1:'${2:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}'}, {",
@@ -60,7 +60,7 @@
 		"description": "Vue 3.x DEPRECATED.\nretrieve a registered component (always return constructor)\n"
 	},
 
-	"Vue option.components": {
+	"Vue Options Assets - components": {
 		"prefix": ["option.components", "ocs"],
 		"body": ["components: { ${1:Feature} },$0"]
 	}

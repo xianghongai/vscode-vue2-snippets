@@ -121,7 +121,7 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
     * Options Lifecycle Hooks
     * Options Misc
     * Options Props, Vue 3.x `Props` default value factory functions no longer have access to `this`.
-    * Vue Router
+- Vue Router
 
 
 ### Vue 🦢
@@ -149,61 +149,6 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - `importVuexHelpers`, `import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';`
 - `newVue`, Vue Instance
 
-#### Vue Router
-
-- `router` / `newVueRouter`, Create the router instance
-- `newVueRouter`, Create the router instance (import)
-- `routerHistoryMode`, Create the router instance with HTML5 History Mode
-- `routes`, Define routes
-- `route`, Define route
-- `routeLazy`, Define lazy loading route
-- `routePropsBooleanMode`, Define route and pass props to route components (Boolean mode)
-- `routePropsObjectMode`, Define route and pass props to route components (Object mode)
-- `routePropsFunctionMode`, Define route and pass props to route components (Function mode)
-- `routePropsFunctionModeNamedViews`, Define route and pass props for routes with named views (Function mode)
-- `routeNamedViews`, Define route for named views
-- `routeAlias`, Define alias route
-- `routeRedirect`, Define redirect route
-- `routeRedirectNamedRoute`, Define redirect named route
-- `routeRedirectDynamic`, Define dynamic redirect
-- `routeNamed`, Define named route
-- `routerPush`, Router navigate to path with literal string
-- `routerPushPath`, Router navigate to path
-- `routerPushParams`, Router navigate to path with params
-- `routerPushQuery`, Router navigate to path with query
-- `routerPushNamedRoute`, Router navigate to named routes
-- `routerPushNamedRouteParams`, Router navigate to named routes with params
-- `routerPushNamedRouteQuery`, Router navigate to named routes with query
-- `routerReplacePath`, Router navigate to path without pushing a new history entry
-- `routerReplaceNamedRoute`, Router navigate to named routes without pushing a new history entry
-- `routerGo`, Programmatically navigate to a new URL: go(n)
-- `routerBack`, Programmatically navigate to a new URL: back()
-- `routerForward`, Programmatically navigate to a new URL: forward()
-- `routerResolve`, Reverse URL resolving
-- `routerBeforeEach` / `guardGlobalBefore`, Global Before Guards
-- `routerBeforeResolve` / `guardGlobalResolve`, Global Resolve Guards
-- `routerAfterEach`, Global After Hooks
-- `routeBeforeEnter` / `guardPerRoute`, Per-Route Guard
-- `componentGuards` / `guardInComponent`, In-Component Guards
-- `routerAddRoutes`, Dynamically add more routes to the router
-- `routerOnReady`, Router instance method: onReady(callback, errorCallback)
-- `routerOnError`, Router instance method: onError(callback)
-- `routerGetMatchedComponents`, Router instance method: getMatchedComponents(to)
-- `this.$route.path`, $route.path
-- `this.$route.params`, $route.params
-- `this.$route.query`, $route.query
-- `this.$route.hash`, $route.hash
-- `this.$route.fullPath`, $route.fullPath
-- `this.$route.matched`, $route.matched
-- `this.$route.name`, $route.name
-- `this.$route.redirectedFrom`, $route.redirectedFrom
-- `lazyRoute`, Lazy Loading Routes
-- `lazyRouteChunk`, Lazy Loading Routes, Grouping Components in the Same Chunk
-- `fetchingAfterNavigation`, Fetching After Navigation
-- `fetchingBeforeNavigation`, Fetching Before Navigation
-- `routeTransition`, Route-Based Dynamic Transition
-- `vScrollbehavior`, Vue Router scrollBehavior
-
 #### Directives
 
  - `Vue.directive()_UNSAFE` / `vgd_UNSAFE`, vue global directive (all hooks)
@@ -217,18 +162,17 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
  - `directive.componentUpdated` / `vd.componentUpdated`, **v**ue **d**irective componentUpdated hook
  - `directive.unbind` / `vd.unbind`, **v**ue **d**irective unbind hook
 
-
 #### Options
 
 ##### Lifecycle
 
-- `ol`, Vue **O**ption **L**ifecycle Hooks
+- `ola`, Vue **O**ption **L**ifecycle Hooks
 - `lifecycleBeforeCreate` / `option.beforeCreate()` / `olbc`, vue **o**ption **l**ifecycle hooks: **b**efore**C**reate()
 - `lifecycleCreated` / `option.created()` / `olc`, vue **o**ption **l**ifecycle hooks: **c**reated()
-- `lifecycleCreatedAsync` / `async.option.created()` / `aolc`, **A**sync vue **o**ption **l**ifecycle hooks: **c**reated()
+- `lifecycleCreatedAsync` / `async.option.created()` / `asolc`, **A**sync vue **o**ption **l**ifecycle hooks: **c**reated()
 - `lifecycleBeforeMount` / `option.beforeMount()` / `olbm`, vue **o**ption **l**ifecycle hooks: **b**efore**M**ount()
 - `lifecycleMounted` / `option.mounted()` / `olm`, vue **o**ption **l**ifecycle hooks: **m**ounted()
-- `lifecycleMountedAsync` / `async.option.mounted()` / `aolm`, **A**sync vue **o**ption **l**ifecycle hooks: **m**ounted()
+- `lifecycleMountedAsync` / `async.option.mounted()` / `asolm`, **A**sync vue **o**ption **l**ifecycle hooks: **m**ounted()
 - `lifecycleBeforeUpdate` / `option.beforeUpdate()` / `olbu`, vue **o**ption **l**ifecycle hooks: **b**efore**U**pdate()
 - `lifecycleUpdated` / `option.updated()` / `olu`, vue **o**ption **l**ifecycle hooks: **u**pdated()
 - `lifecycleActivated` / `option.activated()` / `ola`, vue **o**ption **l**ifecycle hooks: **a**ctivated()
@@ -238,6 +182,13 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - `lifecycleErrorCaptured` / `option.errorCaptured()` / `olec`, vue **o**ption **l**ifecycle hooks: **e**rror**C**aptured()
 - `lifecycleServerCacheKey` / `option.serverCacheKey()` / `olsck`, vue **o**ption **l**ifecycle hooks: **s**erver**C**ache**K**ey()
 - `lifecycleServerPrefetch` / `option.serverPrefetch()` / `olsp`, vue **o**ption **l**ifecycle hooks: **s**erver**P**refetch()
+
+```js
+// asolc ->
+  async created() {
+
+  },
+```
 
 ##### Option
 
@@ -255,18 +206,57 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - `option.props`, **o**ption **p**rops
 - `option.propsData`, option propsData
 - `option.data()`, **o**ption **d**ata()
-- `option.computed`, **o**ption **c**ompute**d**
-- `option.watch`, **o**ption **w**atch
-- `option.watchProperty`, **o**ption **w**atch **p**roperty
-- `option.watchPropertyDeep`, **o**ption **w**atch **p**roperty (**d**eep)
-- `option.watchPropertyImmediate`, **o**ption **w**atch **p**roperty (**i**mmediate)
-- `option.watchPropertyDeepImmediate`, **o**ption **w**atch **p**roperty (**d**eep, **i**mmediate)
 - `option.methods`, **o**ption **m**ethod**s**
 - `option.provide`, **o**ption **p**rovid**e**
 - `option.inject`, **o**ption **i**njec**t**
 - `option.template`, **o**ption **t**emplat**e**
 - `option.render`, **o**ption **r**ender
 - `option.renderError`
+
+###### Computed
+
+- `option.computed`, **o**ption **c**ompute**d**
+
+```js
+// ocd ->                              // options computed
+  computed: {
+    property() {
+      return this.property;
+    },
+
+    // cp ->                           // computed property
+    property() {
+      return this.property;
+    },
+
+  },
+```
+
+###### Watch
+
+```js
+// ow ->                              // options watch
+  watch: {
+    propertyName(newValue, oldValue) {
+
+    },
+
+    // wpdi ->                        // watch property (deep, immediate)
+    propertyName: {
+      deep: true,
+      immediate: true,
+      handler(newValue, oldValue) {
+
+      },
+    },
+  },
+```
+
+- `option.watch`, **o**ption **w**atch
+- `option.watchProperty`, **o**ption **w**atch **p**roperty
+- `option.watchPropertyDeep`, **o**ption **w**atch **p**roperty (**d**eep)
+- `option.watchPropertyImmediate`, **o**ption **w**atch **p**roperty (**i**mmediate)
+- `option.watchPropertyDeepImmediate`, **o**ption **w**atch **p**roperty (**d**eep, **i**mmediate)
 
 ##### Composition/DOM/Misc
 
@@ -277,6 +267,15 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 
 
 #### Props
+
+
+```js
+// psd ->
+property: {
+  type: String,
+  default: '',
+},
+```
 
 - `propOptions`, **o**ptions **p**rop
 - `propString`, **p**rop **s**tring
@@ -316,6 +315,7 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - `propSymbolDefaultRequired`, **p**rop **s**ymbol (**d**efault, **r**equired)
 - `propPromiseDefaultRequired`, **p**rop **p**romise (**d**efault, **r**equired)
 
+
 #### Instance
 
 ##### Instance Properties
@@ -335,6 +335,11 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 - `this.$listeners_UNSAFE`, **Vue 3 REMOVED!**
 
 ##### Instance Methods Lifecycle
+
+```js
+// atn ->
+await this.$nextTick();
+```
 
 - `this.$nextTick()`, **n**ext**T**ick
 - `await this.$nextTick()`, **a**wait **n**ext**T**ick
@@ -401,6 +406,62 @@ View "Migration from Vue 2" [Global API](https://v3.vuejs.org/guide/migration/gl
 - `Vue.observable(object)_UNSAFE`
 
 ---
+
+
+### Vue Router
+
+- `router` / `newVueRouter`, Create the router instance
+- `newVueRouter`, Create the router instance (import)
+- `routerHistoryMode`, Create the router instance with HTML5 History Mode
+- `routes`, Define routes
+- `route`, Define route
+- `routeLazy`, Define lazy loading route
+- `routePropsBooleanMode`, Define route and pass props to route components (Boolean mode)
+- `routePropsObjectMode`, Define route and pass props to route components (Object mode)
+- `routePropsFunctionMode`, Define route and pass props to route components (Function mode)
+- `routePropsFunctionModeNamedViews`, Define route and pass props for routes with named views (Function mode)
+- `routeNamedViews`, Define route for named views
+- `routeAlias`, Define alias route
+- `routeRedirect`, Define redirect route
+- `routeRedirectNamedRoute`, Define redirect named route
+- `routeRedirectDynamic`, Define dynamic redirect
+- `routeNamed`, Define named route
+- `routerPush`, Router navigate to path with literal string
+- `routerPushPath`, Router navigate to path
+- `routerPushParams`, Router navigate to path with params
+- `routerPushQuery`, Router navigate to path with query
+- `routerPushNamedRoute`, Router navigate to named routes
+- `routerPushNamedRouteParams`, Router navigate to named routes with params
+- `routerPushNamedRouteQuery`, Router navigate to named routes with query
+- `routerReplacePath`, Router navigate to path without pushing a new history entry
+- `routerReplaceNamedRoute`, Router navigate to named routes without pushing a new history entry
+- `routerGo`, Programmatically navigate to a new URL: go(n)
+- `routerBack`, Programmatically navigate to a new URL: back()
+- `routerForward`, Programmatically navigate to a new URL: forward()
+- `routerResolve`, Reverse URL resolving
+- `routerBeforeEach` / `guardGlobalBefore`, Global Before Guards
+- `routerBeforeResolve` / `guardGlobalResolve`, Global Resolve Guards
+- `routerAfterEach`, Global After Hooks
+- `routeBeforeEnter` / `guardPerRoute`, Per-Route Guard
+- `componentGuards` / `guardInComponent`, In-Component Guards
+- `routerAddRoutes`, Dynamically add more routes to the router
+- `routerOnReady`, Router instance method: onReady(callback, errorCallback)
+- `routerOnError`, Router instance method: onError(callback)
+- `routerGetMatchedComponents`, Router instance method: getMatchedComponents(to)
+- `this.$route.path`, $route.path
+- `this.$route.params`, $route.params
+- `this.$route.query`, $route.query
+- `this.$route.hash`, $route.hash
+- `this.$route.fullPath`, $route.fullPath
+- `this.$route.matched`, $route.matched
+- `this.$route.name`, $route.name
+- `this.$route.redirectedFrom`, $route.redirectedFrom
+- `lazyRoute`, Lazy Loading Routes
+- `lazyRouteChunk`, Lazy Loading Routes, Grouping Components in the Same Chunk
+- `fetchingAfterNavigation`, Fetching After Navigation
+- `fetchingBeforeNavigation`, Fetching Before Navigation
+- `routeTransition`, Route-Based Dynamic Transition
+- `vScrollbehavior`, Vue Router scrollBehavior
 
 ## File Name
 

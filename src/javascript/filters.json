@@ -1,5 +1,5 @@
 {
-	"Import Filter": {
+	"Vue Import Filter": {
 		"prefix": ["UNSAFE_importFilter"],
 		"body": ["import $1 from '@/filters/${1:Feature}';$0"]
 	},
@@ -10,31 +10,31 @@
 			"\treturn text.substring(0, length) + suffix;",
 			"});"
 		],
-		"description": "Vue 3.x REMOVED.\nregister a global filter, return processed value\n"
+		"description": "Vue 3.x REMOVED.\nRegister a global filter, return processed value.\n"
 	},
 	"Vue Retrieve Global Filter": {
 		"prefix": "UNSAFE_Vue.filter(id)",
 		"body": ["const ${2:feature} = Vue.filter('${1:id}');"],
-		"description": "Vue 3.x REMOVED.\nreturn the filter if registered.\n"
+		"description": "Vue 3.x REMOVED.\nRetrieve a global filter.\nReturn the filter if registered.\n"
 	},
-	"Vue Local Filters": {
+	"Vue Options Assets - Local Filters": {
 		"prefix": ["UNSAFE_option.filters"],
 		"body": [
 			"filters: {",
-			"\t${1:Upper}(text, length, suffix = '...') {",
+			"\t${1:featureFilter}(text, length, suffix = '...') {",
 			"\t\treturn text.substring(0, length) + suffix;",
 			"\t},",
 			"},"
 		],
 		"description": "Vue 3.x REMOVED.\nDefine local filters in a component’s options.\nA hash of filters to be made available to the Vue instance.\n"
 	},
-	"Vue Local Filter Option": {
+	"Vue Options Assets - Local Filter Option": {
 		"prefix": ["UNSAFE_filterOption"],
 		"body": [
-			"${1:feature}(text, length, suffix = '...') {",
+			"${1:featureFilter}(text, length, suffix = '...') {",
 			"\treturn text.substring(0, length) + suffix;",
-			"}"
+			"},"
 		],
-		"description": "filter option\n"
+		"description": "Vue 3.x REMOVED.\nDefine local filters in a component’s options.\nA hash of filters to be made available to the Vue instance.\n"
 	}
 }
