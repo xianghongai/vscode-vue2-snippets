@@ -1,5 +1,5 @@
 {
-	"Vue.use(plugin)": {
+	"Vue Global API - use(plugin)": {
 		"prefix": "Vue.use()_UNSAFE",
 		"body": ["Vue.use(${1:plugin});$0"],
 		"description": "Arguments: `{Object | Function} plugin.`\nInstall a Vue.js plugin. If the plugin is an Object, it must expose an install method. If it is a function itself, it will be treated as the install method. The install method will be called with Vue as the argument.\nThis method has to be called before calling `new Vue()`\nWhen this method is called on the same plugin multiple times, the plugin will be installed only once.\nPlugins usually add global-level functionality to Vue. There is no strictly defined scope for a plugin - there are typically several types of plugins:\n 1. Add some global methods or properties. e.g. vue-custom-element\n 2. Add one or more global assets: directives/filters/transitions etc. e.g. vue-touch\n 3. Add some component options by global mixin. e.g. vue-router\n 4. Add some Vue instance methods by attaching them to Vue.prototype.\n 5. A library that provides an API of its own, while at the same time injecting some combination of the above. e.g. vue-router\n"

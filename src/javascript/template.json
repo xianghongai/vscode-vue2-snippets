@@ -1,5 +1,5 @@
 {
-	"Vue.compile(template)": {
+	"Vue Global API - compile (template)": {
 		"prefix": "Vue.compile()",
 		"body": [
 			"const ${2:res} = Vue.compile('${1:template}');$0"
