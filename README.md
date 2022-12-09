@@ -26,7 +26,7 @@
 
 Simple code snippets that don’t need to be memorized, It can significantly improve coding efficiency.
 
-Some commonly used triggers that have been processed as "subconscious", such as I want to declare the **o**ption **l**ifecycle hook function **b**efore **d**estroy: , press `olbd` and press Enter to output `beforeDestroy() {},`;
+Some commonly used triggers that have been processed as "subconscious", such as I want to declare the <ins>o</ins>ption <ins>l</ins>ifecycle hook function <ins>b</ins>efore <ins>d</ins>estroy: , press `olbd` and press Enter to output `beforeDestroy() {},`;
 
 For another example, I want to create a `props`, which is of type `string`, with a `default` property, and press `psd` to output:
 
@@ -166,25 +166,31 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 
 ##### Lifecycle
 
-- `ola`, Vue **O**ption **L**ifecycle Hooks
-- `lifecycleBeforeCreate` / `option.beforeCreate()` / `olbc`, vue **o**ption **l**ifecycle hooks: **b**efore**C**reate()
-- `lifecycleCreated` / `option.created()` / `olc`, vue **o**ption **l**ifecycle hooks: **c**reated()
-- `lifecycleCreatedAsync` / `async.option.created()` / `asolc`, **A**sync vue **o**ption **l**ifecycle hooks: **c**reated()
-- `lifecycleBeforeMount` / `option.beforeMount()` / `olbm`, vue **o**ption **l**ifecycle hooks: **b**efore**M**ount()
-- `lifecycleMounted` / `option.mounted()` / `olm`, vue **o**ption **l**ifecycle hooks: **m**ounted()
-- `lifecycleMountedAsync` / `async.option.mounted()` / `asolm`, **A**sync vue **o**ption **l**ifecycle hooks: **m**ounted()
-- `lifecycleBeforeUpdate` / `option.beforeUpdate()` / `olbu`, vue **o**ption **l**ifecycle hooks: **b**efore**U**pdate()
-- `lifecycleUpdated` / `option.updated()` / `olu`, vue **o**ption **l**ifecycle hooks: **u**pdated()
-- `lifecycleActivated` / `option.activated()` / `ola`, vue **o**ption **l**ifecycle hooks: **a**ctivated()
-- `lifecycleDeactivated` / `option.deactivated()` / `olda`, vue **o**ption **l**ifecycle hooks: **d**e**a**ctivated()
-- `lifecycleBeforeDestroy` / `option.beforeDestroy()` / `olbd`, vue **o**ption **l**ifecycle hooks: **b**efore**D**estroy()
-- `lifecycleDestroyed` / `option.destroyed()` / `old`, vue **o**ption **l**ifecycle hooks: **d**estroyed()
-- `lifecycleErrorCaptured` / `option.errorCaptured()` / `olec`, vue **o**ption **l**ifecycle hooks: **e**rror**C**aptured()
-- `lifecycleServerCacheKey` / `option.serverCacheKey()` / `olsck`, vue **o**ption **l**ifecycle hooks: **s**erver**C**ache**K**ey()
-- `lifecycleServerPrefetch` / `option.serverPrefetch()` / `olsp`, vue **o**ption **l**ifecycle hooks: **s**erver**P**refetch()
+- `ol`, Vue <ins>O</ins>ption <ins>L</ins>ifecycle Hooks
+- `lifecycleBeforeCreate` / `option.beforeCreate()` / `olbc`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>b</ins>efore<ins>C</ins>reate()
+- `lifecycleCreated` / `option.created()` / `olc`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>c</ins>reated()
+- `lifecycleBeforeMount` / `option.beforeMount()` / `olbm`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>b</ins>efore<ins>M</ins>ount()
+- `lifecycleMounted` / `option.mounted()` / `olm`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>m</ins>ounted()
+- `lifecycleBeforeUpdate` / `option.beforeUpdate()` / `olbu`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>b</ins>efore<ins>U</ins>pdate()
+- `lifecycleUpdated` / `option.updated()` / `olu`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>u</ins>pdated()
+- `lifecycleActivated` / `option.activated()` / `ola`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>a</ins>ctivated()
+- `lifecycleDeactivated` / `option.deactivated()` / `olda`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>d</ins>e<ins>a</ins>ctivated()
+- `lifecycleBeforeDestroy` / `option.beforeDestroy()` / `olbd`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>b</ins>efore<ins>D</ins>estroy()
+- `lifecycleDestroyed` / `option.destroyed()` / `old`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>d</ins>estroyed()
+- `lifecycleErrorCaptured` / `option.errorCaptured()` / `olec`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>e</ins>rror<ins>C</ins>aptured()
+- `lifecycleServerCacheKey` / `option.serverCacheKey()` / `olsck`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>s</ins>erver<ins>C</ins>ache<ins>K</ins>ey()
+- `lifecycleServerPrefetch` / `option.serverPrefetch()` / `olsp`, <ins>o</ins>ption <ins>l</ins>ifecycle hooks: <ins>s</ins>erver<ins>P</ins>refetch()
+
+<ins>As</ins>ync Lifecycle Hooks:
+
+- `lifecycleAsyncCreated` / `async.option.created()` / `asolc`, <ins>As</ins>ync <ins>O</ins>ptions <ins>L</ins>ifecycle - async <ins>c</ins>reated()
+- `lifecycleAsyncMounted` / `async.option.mounted()` / `asolm`, <ins>As</ins>ync <ins>O</ins>ptions <ins>L</ins>ifecycle - async <ins>m</ins>ounted()
+- `lifecycleAsyncUpdated` / `async.option.updated()` / `asolu`, <ins>As</ins>ync <ins>O</ins>ptions <ins>L</ins>ifecycle - async <ins>u</ins>pdated()
+- `lifecycleAsyncActivated` / `async.option.activated()` / `asola`, <ins>As</ins>ync <ins>O</ins>ptions <ins>L</ins>ifecycle - async <ins>a</ins>ctivated()
+- `lifecycleAsyncDeactivated` / `async.option.deactivated()` / `asolda`, <ins>As</ins>ync <ins>O</ins>ptions <ins>L</ins>ifecycle - async <ins>de</ins>activated()
 
 ```js
-// asolc ->
+  // asolc ->                            async options lifecycle created
   async created() {
 
   },
@@ -215,16 +221,17 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 
 ###### Computed
 
-- `option.computed`, **o**ption **c**ompute**d**
+- `option.computed`, <ins>o</ins>ption <ins>c</ins>ompute**d**
+- `option.computedProperty`, <ins>c</ins>omputed <ins>p</ins>roperty
 
 ```js
-// ocd ->                              // options computed
+  // ocd ->                            // options computed
   computed: {
     property() {
       return this.property;
     },
 
-    // cp ->                           // computed property
+    // cp ->                            // computed property
     property() {
       return this.property;
     },
@@ -234,14 +241,20 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 
 ###### Watch
 
+- `option.watch`, **o**ption **w**atch
+- `option.watchProperty`, **o**ption **w**atch **p**roperty
+- `option.watchPropertyDeep`, **o**ption **w**atch **p**roperty (**d**eep)
+- `option.watchPropertyImmediate`, **o**ption **w**atch **p**roperty (**i**mmediate)
+- `option.watchPropertyDeepImmediate`, **o**ption **w**atch **p**roperty (**d**eep, **i**mmediate)
+
 ```js
-// ow ->                              // options watch
+  // ow ->                            // options watch
   watch: {
     propertyName(newValue, oldValue) {
 
     },
 
-    // wpdi ->                        // watch property (deep, immediate)
+    // wpdi ->                            // watch property (deep, immediate)
     propertyName: {
       deep: true,
       immediate: true,
@@ -252,11 +265,6 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
   },
 ```
 
-- `option.watch`, **o**ption **w**atch
-- `option.watchProperty`, **o**ption **w**atch **p**roperty
-- `option.watchPropertyDeep`, **o**ption **w**atch **p**roperty (**d**eep)
-- `option.watchPropertyImmediate`, **o**ption **w**atch **p**roperty (**i**mmediate)
-- `option.watchPropertyDeepImmediate`, **o**ption **w**atch **p**roperty (**d**eep, **i**mmediate)
 
 ##### Composition/DOM/Misc
 
@@ -267,7 +275,6 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 
 
 #### Props
-
 
 ```js
 // psd ->
