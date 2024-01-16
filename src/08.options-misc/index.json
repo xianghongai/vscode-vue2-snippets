@@ -1,7 +1,7 @@
 {
 	"Vue Options/Misc: name": {
 		"prefix": [
-			"option.name",
+			"option-name",
 			"on"
 		],
 		"body": [
@@ -10,7 +10,7 @@
 		"description": "Type: `string`.\nRestriction: only respected when used as a component option.\nDetails:\nAllow the component to recursively invoke itself in its template. Note that when a component is registered globally with `Vue.component()`, the global ID is automatically set as its name.\nAnother benefit of specifying a `name` option is debugging. Named components result in more helpful warning messages. Also, when inspecting an app in the vue-devtools, unnamed components will show up as `<AnonymousComponent>`, which isn’t very informative. By providing the `name` option, you will get a much more informative component tree.\n"
 	},
 	"Vue Options/Misc: delimiters": {
-		"prefix": "option.delimiters",
+		"prefix": "option-delimiters",
 		"body": [
 			"delimiters: ['${1:{{}', '${2:\\}\\}}'],$0"
 		],
@@ -18,7 +18,7 @@
 	},
 	"Vue Options/Misc: functional": {
 		"prefix": [
-			"option.functional",
+			"option-functional",
 			"of"
 		],
 		"body": [
@@ -27,7 +27,7 @@
 		"description": "Type: `boolean`.\nDetails:\nCauses a component to be stateless (no `data`) and instanceless (no `this` context). They are only a `render` function that returns virtual nodes making them much cheaper to render.\n"
 	},
 	"Vue Options/Misc: model": {
-		"prefix": "option.model",
+		"prefix": "option-model",
 		"body": [
 			"model: {",
 			"  prop: '${1:checked}',",
@@ -38,7 +38,7 @@
 	},
 	"Vue Options/Misc: inheritAttrs": {
 		"prefix": [
-			"option.inheritAttrs",
+			"option-inheritAttrs",
 			"oia"
 		],
 		"body": [
@@ -47,7 +47,7 @@
 		"description": "Type: `boolean`.\nDefault: `true`.\nDetails:\nBy default, parent scope attribute bindings that are not recognized as props will “fallthrough” and be applied to the root element of the child component as normal HTML attributes. When authoring a component that wraps a target element or another component, this may not always be the desired behavior. By setting `inheritAttrs` to `false`, this default behavior can be disabled. The attributes are available via the `$attrs` instance property (also new in 2.4) and can be explicitly bound to a non-root element using `v-bind`. (New in 2.4.0+)\nNote: this option does not affect `class` and `style` bindings.\n"
 	},
 	"Vue Options/Misc: comments": {
-		"prefix": "option.comments",
+		"prefix": "option-comments",
 		"body": [
 			"comments: ${1:false},$0"
 		],

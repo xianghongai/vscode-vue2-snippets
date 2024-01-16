@@ -37,7 +37,7 @@
 	},
 	"Vue Components (Locally, option)": {
 		"prefix": [
-			"option.components",
+			"option-components",
 			"ocs"
 		],
 		"body": [

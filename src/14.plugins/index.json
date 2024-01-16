@@ -22,7 +22,7 @@
 	"Vue Plugins (Components)": {
 		"prefix": "vue-plugin",
 		"body": [
-			"import Feature from './src/main';",
+			"import Feature from './src/main.vue';",
 			"$0",
 			"const components = [Feature];",
 			"",
@@ -55,6 +55,40 @@
 			"  Feature,",
 			"};"
 		]
+	},
+	"Vue Plugins": {
+		"prefix": "vue-plugin",
+		"body": [
+			"import $1 from './src/main.vue';",
+			"",
+			"// calls `Vue.component(Feature.name, Feature);`",
+			"export { $1 };",
+			"",
+			"const plugin = {",
+			"  install(Vue) {",
+			"    // Vue.prototype.\\$property = 'options.property'",
+			"    Vue.component(${1:Feature}.name, $1);",
+			"  },",
+			"};",
+			"",
+			"// calls `Vue.use(Feature)`",
+			"export default plugin;",
+			"",
+			"// Supporting Automatic Installation",
+			"let GlobalVue = null;",
+			"",
+			"if (typeof window !== 'undefined') {",
+			"  GlobalVue = window.Vue;",
+			"} else if (typeof globalThis !== 'undefined') {",
+			"  // eslint-disable-next-line no-undef",
+			"  GlobalVue = globalThis.Vue;",
+			"}",
+			"",
+			"if (GlobalVue) {",
+			"  GlobalVue.use(plugin);",
+			"}"
+		],
+		"description": "Vue Plugin"
 	},
 	"Vue Plugins, add an instance method": {
 		"prefix": "Vue.prototype_UNSAFE",

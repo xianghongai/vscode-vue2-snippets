@@ -47,7 +47,7 @@
 	},
 	"Vue Directives (Locally, option)": {
 		"prefix": [
-			"option.directives",
+			"option-directives",
 			"ods"
 		],
 		"body": [
