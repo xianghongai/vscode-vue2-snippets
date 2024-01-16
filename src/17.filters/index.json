@@ -1,0 +1,44 @@
+{
+	"Vue Import Filter": {
+		"prefix": "UNSAFE_importFilter",
+		"body": [
+			"import $1 from '@/filters/${1:Feature}';$0"
+		]
+	},
+	"Vue Filters (Globally)": {
+		"prefix": "UNSAFE_Vue.filter()",
+		"body": [
+			"Vue.filter('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', function (value, length, suffix = '...') {",
+			"  return value.substring(0, length) + suffix;",
+			"});"
+		],
+		"description": "Define a filter globally before creating the Vue instance.\nVue 3.x removed.\n"
+	},
+	"Vue Filters (Locally, option)": {
+		"prefix": "UNSAFE_option.filters",
+		"body": [
+			"filters: {",
+			"  ${1:featureFilter}(value, length, suffix = '...') {",
+			"    return value.substring(0, length) + suffix;",
+			"  },",
+			"},"
+		],
+		"description": "Define local filters in a component’s options.\nA hash of filters to be made available to the Vue instance.\nVue 3.x removed.\n"
+	},
+	"Vue Filters (Locally)": {
+		"prefix": "UNSAFE_filters-property",
+		"body": [
+			"${1:featureFilter}(value, length, suffix = '...') {",
+			"  return value.substring(0, length) + suffix;",
+			"},"
+		],
+		"description": "Define local filters in a component’s options.\nA hash of filters to be made available to the Vue instance.\nVue 3.x removed.\n"
+	},
+	"Vue Retrieve Global Filter": {
+		"prefix": "UNSAFE_Vue.filter()",
+		"body": [
+			"const ${2:feature} = Vue.filter('${1:filterName}');"
+		],
+		"description": "Retrieve a global filter.\nReturn the filter if registered.\nVue 3.x removed.\n"
+	}
+}

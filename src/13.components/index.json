@@ -1,0 +1,80 @@
+{
+	"Vue Components (Globally)": {
+		"prefix": [
+			"vue-global-component_UNSAFE",
+			"vgc_UNSAFE"
+		],
+		"body": [
+			"Vue.component(${1:'${2:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}'}, {",
+			"  props: { $3 },",
+			"",
+			"  data() {",
+			"    return {",
+			"      $4",
+			"    }",
+			"  },$0",
+			"",
+			"  template: '$5',",
+			"});"
+		],
+		"description": "Register or retrieve a global component. Registration also automatically sets the component’s `name` with the given `id`.\nAutomatically call `Vue.extend`\nVue 3.x DEPRECATED. (3.x Instance API: `app.component`)\n"
+	},
+	"Vue Components (Globally, Functional)": {
+		"prefix": [
+			"vue-global-component-functional_UNSAFE",
+			"vgcf_UNSAFE"
+		],
+		"body": [
+			"Vue.component('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', {",
+			"  functional: true,",
+			"",
+			"  render: function (createElement, context) {",
+			"    $2",
+			"  }",
+			"});"
+		],
+		"description": "Functional Components doesn’t manage any state, watch any state passed to it, and it has no lifecycle methods. Really, it’s only a function with some props.\nMark components as `functional`, which means that they’re stateless (no reactive data) and instanceless (no this context). \n In 2.3.0+ omit the `props` option and all attributes found on the component node will be implicitly extracted as props.\nThe reference will be HTMLElement when used with functional components because they’re stateless and instanceless.\nVue 3.x removed.\n"
+	},
+	"Vue Components (Locally, option)": {
+		"prefix": [
+			"option.components",
+			"ocs"
+		],
+		"body": [
+			"components: { ${1:Feature} },$0"
+		]
+	},
+	"Vue Async Components": {
+		"prefix": [
+			"vue-async-components",
+			"asvc"
+		],
+		"body": [
+			"const ${1} = () => import('@/${2:components}/${1:Feature}.vue');$0"
+		],
+		"description": "Async components were created by simply defining a component as a function that returned a promise.\n in Vue 3, since functional components are defined as pure functions, async components definitions need to be explicitly defined by wrapping it in a new `defineAsyncComponent` helper, and `component` option renamed to `loader`.\nVue 3.x removed. (`defineAsyncComponent`)\n"
+	},
+	"Vue Async Components (with options)": {
+		"prefix": [
+			"vue-async-components",
+			"asvc"
+		],
+		"body": [
+			"const ${1} = {",
+			"  component: () => import('@/${2:components}/${1:Feature.vue}'),",
+			"  delay: 200,",
+			"  timeout: 3000,",
+			"  error: ErrorComponent,",
+			"  loading: LoadingComponent",
+			"};"
+		],
+		"description": "Async components more advanced component syntax with options.\n in Vue 3, since functional components are defined as pure functions, async components definitions need to be explicitly defined by wrapping it in a new `defineAsyncComponent` helper, and `component` option renamed to `loader`.\nVue 3.x removed. (defineAsyncComponent)\n"
+	},
+	"Vue Retrieve Global Component": {
+		"prefix": "Vue.component()_UNSAFE",
+		"body": [
+			"const ${2:Feature} = Vue.component('${1:FeatureComponent}');"
+		],
+		"description": "retrieve a registered component (always return constructor)\nVue 3.x DEPRECATED. (3.x Instance API: `app.component`)\n"
+	}
+}
