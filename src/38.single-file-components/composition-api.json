@@ -1,0 +1,137 @@
+{
+	"import&use VueCompositionAPI": {
+		"prefix": "VueCompositionAPI",
+		"body": [
+			"import VueCompositionAPI from '@vue/composition-api';",
+			"",
+			"Vue.use(VueCompositionAPI);"
+		]
+	},
+	"Vue Single-File Components (@vue/composition-api)": {
+		"prefix": "vue-composition-api-plugin",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script>",
+			"import { defineComponent } from '@vue/composition-api';",
+			"",
+			"export default defineComponent({",
+			"  setup() {",
+			"    $0",
+			"",
+			"    return {",
+			"      ",
+			"    };",
+			"  },",
+			"});",
+			"</script>",
+			""
+		],
+		"description": "Vue Single-File Component (@vue/composition-api)"
+	},
+	"Vue <script> (@vue/composition-api)": {
+		"prefix": [
+			"vue-script-composition-api-plugin"
+		],
+		"body": [
+			"<script>",
+			"import { defineComponent } from '@vue/composition-api';",
+			"",
+			"export default defineComponent({",
+			"  setup() {",
+			"    $0",
+			"",
+			"    return {",
+			"      ",
+			"    };",
+			"  },",
+			"});",
+			"</script>",
+			""
+		],
+		"description": "Vue Script element (@vue/composition-api).\n"
+	},
+	"Vue Single-File Components (Composition API)": {
+		"prefix": [
+			"vue-composition-api"
+		],
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script setup>",
+			"$0",
+			"</script>",
+			""
+		],
+		"description": "Vue Single-File Component (Composition API)"
+	},
+	"Vue <script setup> (Composition API)": {
+		"prefix": [
+			"vue-script-composition-api"
+		],
+		"body": [
+			"<script setup>",
+			"$0",
+			"</script>"
+		],
+		"description": "Vue Script element (Composition API).\n"
+	},
+	"Vue Single-File Components (Composition API Hook)": {
+		"prefix": [
+			"vue-composition-api-hook"
+		],
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script>",
+			"import { ref } from 'vue';",
+			"",
+			"export default {",
+			"  setup() {",
+			"    const feature = ref();$0",
+			"",
+			"    return {",
+			"      ",
+			"    };",
+			"  },",
+			"};",
+			"</script>",
+			""
+		],
+		"description": "Vue Single-File Component (Composition API Hook)"
+	},
+	"Vue <script> (Composition API Hook)": {
+		"prefix": [
+			"vue-script-composition-api-hook"
+		],
+		"body": [
+			"<script>",
+			"import { ref } from 'vue';",
+			"",
+			"export default {",
+			"  setup() {",
+			"    const feature = ref();$0",
+			"",
+			"    return {",
+			"      ",
+			"    };",
+			"  },",
+			"};",
+			"</script>",
+			""
+		],
+		"description": "Vue Script element (Composition API Hook).\n"
+	}
+}

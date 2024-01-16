@@ -1,0 +1,308 @@
+{
+	"import createApp": {
+		"prefix": ["import-createApp"],
+		"body": [
+			"import { createApp } from 'vue';"
+		]
+	},
+	"createApp": {
+		"prefix": "createApp",
+		"body": [
+			"createApp(App).mount('#app')"
+		],
+		"description": "description"
+	},
+	"import ref": {
+		"prefix": ["import-ref"],
+		"body": [
+			"import { ref } from 'vue';"
+		]
+	},
+	"import reactive": {
+		"prefix": ["import-reactive"],
+		"body": [
+			"import { reactive } from 'vue';"
+		]
+	},
+	"import computed": {
+		"prefix": ["import-computed"],
+		"body": [
+			"import { computed } from 'vue';"
+		]
+	},
+	"import provide": {
+		"prefix": ["import-provide"],
+		"body": [
+			"import { provide } from 'vue';"
+		]
+	},
+	"import inject": {
+		"prefix": ["import-inject"],
+		"body": [
+			"import { inject } from 'vue';"
+		]
+	},
+	"import nextTick": {
+		"prefix": ["import-nextTick"],
+		"body": [
+			"import { nextTick } from 'vue';"
+		]
+	},
+	"import onMounted": {
+		"prefix": ["import-onMounted"],
+		"body": [
+			"import { onMounted } from 'vue';"
+		]
+	},
+	"import onUnmounted": {
+		"prefix": ["import-onUnmounted"],
+		"body": [
+			"import { onUnmounted } from 'vue';"
+		]
+	},
+	"onBeforeMount()": {
+		"prefix": ["onBeforeMount", "clbm"],
+		"body": ["onBeforeMount($1() => {", "$0  ", "});"],
+		"description": "Vue 2 Options API Lifecycle: `beforeMount`\n"
+	},
+	"onMounted()": {
+		"prefix": ["onMounted", "clm"],
+		"body": ["onMounted($1() => {", "$0  ", "});"],
+		"description": "Vue 2 Options API Lifecycle: `mounted`\n"
+	},
+	"onBeforeUpdate()": {
+		"prefix": ["onBeforeUpdate", "clbu"],
+		"body": ["onBeforeUpdate(() => {", "$0  ", "});"],
+		"description": "Vue 2 Options API Lifecycle: `beforeUpdate`\n"
+	},
+	"onUpdated()": {
+		"prefix": ["onUpdated", "clu"],
+		"body": ["onUpdated(() => {", "$0  ", "});"],
+		"description": "Vue 2 Options API Lifecycle: `updated`\n"
+	},
+	"onBeforeUnmount()": {
+		"prefix": ["onBeforeUnmount", "clbum"],
+		"body": ["onBeforeUnmount(() => {", "$0  ", "});"],
+		"description": "Vue 2 Options API Lifecycle: `beforeDestroy`\n"
+	},
+	"onUnmounted()": {
+		"prefix": ["onUnmounted", "clum"],
+		"body": ["onUnmounted(() => {", "$0  ", "});"],
+		"description": "Vue 2 Options API Lifecycle: `destroyed`\n"
+	},
+	"onErrorCaptured()": {
+		"prefix": ["onErrorCaptured", "clec"],
+		"body": ["onErrorCaptured(() => {", "$0  ", "});"],
+		"description": "Vue 2 Options API Lifecycle: `errorCaptured`\n"
+	},
+	"onActivated()": {
+		"prefix": ["onActivated", "cla"],
+		"body": ["onActivated(() => {", "$0  ", "});"],
+		"description": "Vue 2 Options API Lifecycle: `activated`\n"
+	},
+	"onDeactivated()": {
+		"prefix": ["onDeactivated", "clda"],
+		"body": ["onDeactivated(() => {", "$0  ", "});"],
+		"description": "Vue 2 Options API Lifecycle: `deactivated`\n"
+	},
+	"onServerPrefetch()": {
+		"prefix": ["onServerPrefetch", "clsp"],
+		"body": ["onServerPrefetch(() => {", "$0  ", "});"],
+		"description": "Vue 2 Options API Lifecycle: `serverPrefetch`\n"
+	},
+	"ref": {
+		"prefix": "ref",
+		"body": [
+			"const ${1:feature} = ref($2);$0"
+		]
+	},
+	"unref": {
+		"prefix": "unref",
+		"body": [
+			"unref($1)$0"
+		]
+	},
+	"reactive": {
+		"prefix": "reactive",
+		"body": [
+			"const ${1:feature} = reactive($2);$0"
+		]
+	},
+	"computed": {
+		"prefix": "computed",
+		"body": [
+			"const ${1:feature} = computed(() => $2);$0"
+		]
+	},
+	"Vue Context (@vue/composition-api)": {
+		"prefix": "context",
+		"body": [
+			"import { provide, inject } from '@vue/composition-api';",
+			"",
+			"export const ContextSymbol = Symbol('ContextSymbol');",
+			"",
+			"export function useProvideContext() {",
+			"  const context = {};",
+			"  provide(ContextSymbol, context);",
+			"  return context;",
+			"}",
+			"",
+			"export default function useContext() {",
+			"  const context = inject(ContextSymbol);",
+			"  return context;",
+			"}"
+		],
+		"description": "example: use-feature.js\n"
+	},
+	"watch props": {
+		"prefix": ["watch-props"],
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (newValue) => {",
+			"    $0",
+			"  },",
+			");"
+		],
+		"description": ""
+	},
+	"watch props (deep)": {
+		"prefix": ["watch-props-deep"],
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (newValue) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"  }",
+			");"
+		],
+		"description": ""
+	},
+	"watch props (immediate)": {
+		"prefix": ["watch-props-immediate"],
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (newValue) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");"
+		],
+		"description": ""
+	},
+	"watch props (immediate, multiple)": {
+		"prefix": ["watch-props-immediate-multiple"],
+		"body": [
+			"watch(",
+			"  [() => props.${1:property1}, () => props.${2:property2}],",
+			"  async ([$1, $2]) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");"
+		],
+		"description": ""
+	},
+	"watch props (deep, immediate)": {
+		"prefix": ["watch-props-deep-immediate", "watch-props-immediate-deep"],
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (newValue) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"    immediate: true,",
+			"  }",
+			");"
+		],
+		"description": ""
+	},
+	"watch": {
+		"prefix": ["watch"],
+		"body": [
+			"watch(",
+			"  ${1:source},",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
+			"    $0",
+			"  },",
+			");"
+		],
+		"description": ""
+	},
+	"watch (deep)": {
+		"prefix": ["watch-deep"],
+		"body": [
+			"watch(",
+			"  ${1:source},",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"  }",
+			");"
+		],
+		"description": ""
+	},
+	"watch (immediate)": {
+		"prefix": ["watch-immediate"],
+		"body": [
+			"watch(",
+			"  ${1:source},",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");"
+		],
+		"description": ""
+	},
+	"watch (immediate, multiple)": {
+		"prefix": ["watch-immediate-multiple"],
+		"body": [
+			"watch(",
+			"  [${1:source1}, ${2:source2}],",
+			"  async ([next${1/(.*)/${1:/pascalcase}/}, next${2/(.*)/${1:/pascalcase}/}], [prev${1/(.*)/${1:/pascalcase}/}, prev${2/(.*)/${1:/pascalcase}/}]) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");"
+		],
+		"description": ""
+	},
+	"watch (deep, immediate)": {
+		"prefix": ["watch-deep-immediate", "watch-immediate-deep"],
+		"body": [
+			"watch(",
+			"  ${1:source1},",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"    immediate: true,",
+			"  }",
+			");"
+		],
+		"description": ""
+	},
+	"Vue getCurrentInstance()": {
+		"prefix": "instance",
+		"body": ["const instance = getCurrentInstance();"],
+		"description": "`getCurrentInstance` enables access to an internal component instance.\n`getCurrentInstance` only works during 'setup' or 'Lifecycle Hooks'\n"
+	}
+}

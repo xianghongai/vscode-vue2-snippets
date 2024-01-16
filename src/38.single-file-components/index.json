@@ -1,246 +1,69 @@
 {
-	"Vue Single-File Components": {
-		"prefix": "vue",
+	"Vue <template>": {
+		"prefix": "vue-template",
 		"body": [
 			"<template>",
-			"  <div>",
-			"    $1",
+			"  <div$1>",
+			"    $0",
 			"  </div>",
-			"</template>",
-			"",
-			"<script>",
-			"export default {",
-			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
-			"  data() {",
-			"    return {",
-			"      ${6}",
-			"    };",
-			"  },$0",
-			"",
-			"  mounted() {",
-			"    ${7}",
-			"  },",
-			"",
-			"  methods: {",
-			"    ${8}",
-			"  },",
-			"};",
-			"</script>"
+			"</template>"
 		],
-		"description": "Vue Single-File Components.\n"
+		"description": "Vue Template element.\n"
 	},
-	"Vue Single-File Components (SCSS)": {
+	"Vue <style lang=\"\" scoped>": {
 		"prefix": [
-			"vue-scss"
+			"vue-style"
 		],
 		"body": [
-			"<template>",
-			"  <div>",
-			"    $1",
-			"  </div>",
-			"</template>",
-			"",
-			"<script>",
-			"export default {",
-			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
-			"  data() {",
-			"    return {",
-			"      ${6}",
-			"    };",
-			"  },$0",
-			"",
-			"  mounted() {",
-			"    ${7}",
-			"  },",
-			"",
-			"  methods: {",
-			"    ${8}",
-			"  },",
-			"};",
-			"</script>",
-			"",
-			"<style lang=\"scss\" scoped>",
-			"",
+			"<style ${1:lang=\"$2\"} ${3:scoped}>",
+			"$0",
 			"</style>"
 		],
-		"description": "Vue Single-File Components with SCSS.\n"
+		"description": "Vue Style element.\n"
 	},
-	"Vue Single-File Components (SASS)": {
-		"prefix": "vue-sass",
+	"Vue <style lang=\"\">": {
+		"prefix": [
+			"vue-style-no-scoped"
+		],
 		"body": [
-			"<template>",
-			"  <div>",
-			"    $1",
-			"  </div>",
-			"</template>",
-			"",
-			"<script>",
-			"export default {",
-			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
-			"  data() {",
-			"    return {",
-			"      ${6}",
-			"    };",
-			"  },$0",
-			"",
-			"  mounted() {",
-			"    ${7}",
-			"  },",
-			"",
-			"  methods: {",
-			"    ${8}",
-			"  },",
-			"};",
-			"</script>",
-			"",
-			"<style lang=\"sass\" scoped>",
-			"",
+			"<style ${1:lang=\"$2\"}>",
+			"$0",
 			"</style>"
 		],
-		"description": "Vue Single-File Components with SASS.\n"
+		"description": "Vue Style element.\n"
 	},
-	"Vue Single-File Components (LESS)": {
-		"prefix": "vue-less",
+	"Vue <style lang=\"postcss\" scoped>": {
+		"prefix": [
+			"vue-style-postcss"
+		],
 		"body": [
-			"<template>",
-			"  <div>",
-			"    $1",
-			"  </div>",
-			"</template>",
-			"",
-			"<script>",
-			"export default {",
-			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
-			"  data() {",
-			"    return {",
-			"      ${6}",
-			"    };",
-			"  },$0",
-			"",
-			"  mounted() {",
-			"    ${7}",
-			"  },",
-			"",
-			"  methods: {",
-			"    ${8}",
-			"  },",
-			"};",
-			"</script>",
-			"",
-			"<style lang=\"less\" scoped>",
-			"",
+			"<style lang=\"postcss\" ${1:scoped}>",
+			"$0",
 			"</style>"
 		],
-		"description": "Vue Single-File Components with LESS.\n"
+		"description": "Vue Style element.\n"
 	},
-	"Vue Single-File Components (PostCSS)": {
-		"prefix": "vue-postcss",
+	"Vue <style lang=\"scss\" scoped>": {
+		"prefix": [
+			"vue-style-scss"
+		],
 		"body": [
-			"<template>",
-			"  <div>",
-			"    $1",
-			"  </div>",
-			"</template>",
-			"",
-			"<script>",
-			"export default {",
-			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
-			"  data() {",
-			"    return {",
-			"      ${6}",
-			"    };",
-			"  },$0",
-			"",
-			"  mounted() {",
-			"    ${7}",
-			"  },",
-			"",
-			"  methods: {",
-			"    ${8}",
-			"  },",
-			"};",
-			"</script>",
-			"",
-			"<style lang=\"postcss\" scoped>",
-			"",
+			"<style lang=\"scss\" ${1:scoped}>",
+			"$0",
 			"</style>"
 		],
-		"description": "Vue Single-File Components with PostCSS.\n"
+		"description": "Vue Style element.\n"
 	},
-	"Vue Single-File Components (CSS)": {
-		"prefix": "vue-css",
+	"Vue <style lang=\"less\" scoped>": {
+		"prefix": [
+			"vue-style-less"
+		],
 		"body": [
-			"<template>",
-			"  <div>",
-			"    $1",
-			"  </div>",
-			"</template>",
-			"",
-			"<script>",
-			"export default {",
-			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
-			"  data() {",
-			"    return {",
-			"      ${6}",
-			"    };",
-			"  },$0",
-			"",
-			"  mounted() {",
-			"    ${7}",
-			"  },",
-			"",
-			"  methods: {",
-			"    ${8}",
-			"  },",
-			"};",
-			"</script>",
-			"",
-			"<style scoped>",
-			"",
+			"<style lang=\"less\" ${1:scoped}>",
+			"$0",
 			"</style>"
 		],
-		"description": "Vue Single-File Components with CSS.\n"
-	},
-	"Vue Single-File Components (Stylus)": {
-		"prefix": "vue-stylus",
-		"body": [
-			"<template>",
-			"  <div>",
-			"    $1",
-			"  </div>",
-			"</template>",
-			"",
-			"<script>",
-			"export default {",
-			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
-			"  data() {",
-			"    return {",
-			"      ${6}",
-			"    };",
-			"  },$0",
-			"",
-			"  mounted() {",
-			"    ${7}",
-			"  },",
-			"",
-			"  methods: {",
-			"    ${8}",
-			"  },",
-			"};",
-			"</script>",
-			"",
-			"<style lang=\"stylus\" scoped>",
-			"",
-			"</style>"
-		],
-		"description": "Vue Single-File Components with Stylus.\n"
+		"description": "Vue Style element.\n"
 	},
 	"Vue Single-File Components (TypeScript)": {
 		"prefix": "vue-ts",
@@ -288,85 +111,5 @@
 			"</style>"
 		],
 		"description": "Base for Vue File with Class based TypeScript format.\n"
-	},
-	"Vue <template>": {
-		"prefix": "vue-template",
-		"body": [
-			"<template>",
-			"  <div$1>",
-			"    $0",
-			"  </div>",
-			"</template>"
-		],
-		"description": "Vue Template element.\n"
-	},
-	"Vue <script>": {
-		"prefix": "vue-script",
-		"body": [
-			"<script>",
-			"export default {",
-			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
-			"  data() {",
-			"    return {",
-			"      ${6}",
-			"    };",
-			"  },$0",
-			"",
-			"  mounted() {",
-			"    ${7}",
-			"  },",
-			"",
-			"  methods: {",
-			"    ${8}",
-			"  },",
-			"};",
-			"</script>"
-		],
-		"description": "Vue Script element.\n"
-	},
-	"Vue <style lang=\"\" scoped>": {
-		"prefix": [
-			"vue-style"
-		],
-		"body": [
-			"<style ${1:lang=\"$2\"} ${3:scoped}>",
-			"$0",
-			"</style>"
-		],
-		"description": "Vue Style element.\n"
-	},
-	"Vue <style lang=\"\">": {
-		"prefix": [
-			"vue-style-no-scoped"
-		],
-		"body": [
-			"<style ${1:lang=\"$2\"}>",
-			"$0",
-			"</style>"
-		],
-		"description": "Vue Style element.\n"
-	},
-	"Vue <style lang=\"scss\" scoped>": {
-		"prefix": [
-			"vue-style-scss"
-		],
-		"body": [
-			"<style lang=\"scss\" ${1:scoped}>",
-			"$0",
-			"</style>"
-		],
-		"description": "Vue Style element.\n"
-	},
-	"Vue <style lang=\"less\" scoped>": {
-		"prefix": [
-			"vue-style-less"
-		],
-		"body": [
-			"<style lang=\"scss\" ${1:scoped}>",
-			"$0",
-			"</style>"
-		],
-		"description": "Vue Style element.\n"
 	}
 }

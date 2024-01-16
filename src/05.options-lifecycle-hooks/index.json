@@ -2,7 +2,7 @@
 	"Vue Options/Lifecycle Hooks: beforeCreate()": {
 		"prefix": [
 			"lifecycle-beforeCreate",
-			"option.beforeCreate()",
+			"option-beforeCreate()",
 			"olbc"
 		],
 		"body": [
@@ -16,7 +16,7 @@
 	"Vue Options/Lifecycle Hooks: created()": {
 		"prefix": [
 			"lifecycle-created",
-			"option.created()",
+			"option-created()",
 			"olc"
 		],
 		"body": [
@@ -30,7 +30,7 @@
 	"Vue Options/Lifecycle Hooks: beforeMount()": {
 		"prefix": [
 			"lifecycle-beforeMount",
-			"option.beforeMount()",
+			"option-beforeMount()",
 			"olbm"
 		],
 		"body": [
@@ -44,7 +44,7 @@
 	"Vue Options/Lifecycle Hooks: mounted()": {
 		"prefix": [
 			"lifecycle-mounted",
-			"option.mounted()",
+			"option-mounted()",
 			"olm"
 		],
 		"body": [
@@ -58,7 +58,7 @@
 	"Vue Options/Lifecycle Hooks: beforeUpdate()": {
 		"prefix": [
 			"lifecycle-beforeUpdate",
-			"option.beforeUpdate()",
+			"option-beforeUpdate()",
 			"olbu"
 		],
 		"body": [
@@ -72,7 +72,7 @@
 	"Vue Options/Lifecycle Hooks: updated()": {
 		"prefix": [
 			"lifecycle-updated",
-			"option.updated()",
+			"option-updated()",
 			"olu"
 		],
 		"body": [
@@ -86,7 +86,7 @@
 	"Vue Options/Lifecycle Hooks: activated()": {
 		"prefix": [
 			"lifecycle-activated",
-			"option.activated()",
+			"option-activated()",
 			"ola"
 		],
 		"body": [
@@ -100,7 +100,7 @@
 	"Vue Options/Lifecycle Hooks: deactivated()": {
 		"prefix": [
 			"lifecycle-deactivated",
-			"option.deactivated()",
+			"option-deactivated()",
 			"olda"
 		],
 		"body": [
@@ -114,7 +114,7 @@
 	"Vue Options/Lifecycle Hooks: beforeDestroy()": {
 		"prefix": [
 			"lifecycle-beforeDestroy",
-			"option.beforeDestroy()",
+			"option-beforeDestroy()",
 			"olbd"
 		],
 		"body": [
@@ -128,7 +128,7 @@
 	"Vue Options/Lifecycle Hooks: destroyed()": {
 		"prefix": [
 			"lifecycle-destroyed",
-			"option.destroyed()",
+			"option-destroyed()",
 			"old"
 		],
 		"body": [
@@ -142,7 +142,7 @@
 	"Vue Options/Lifecycle Hooks: errorCaptured()": {
 		"prefix": [
 			"lifecycle-errorCaptured",
-			"option.errorCaptured()",
+			"option-errorCaptured()",
 			"olec"
 		],
 		"body": [

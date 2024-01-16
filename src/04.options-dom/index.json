@@ -1,6 +1,6 @@
 {
 	"Vue Options/DOM: el": {
-		"prefix": "option.el",
+		"prefix": "option-el",
 		"body": [
 			"el: '${1:#root}',$0"
 		],
@@ -8,7 +8,7 @@
 	},
 	"Vue Options/DOM: template": {
 		"prefix": [
-			"option.template",
+			"option-template",
 			"ot"
 		],
 		"body": [
@@ -18,7 +18,7 @@
 	},
 	"Vue Options/DOM: render(h, context)": {
 		"prefix": [
-			"option.render",
+			"option-render",
 			"or"
 		],
 		"body": [
@@ -30,7 +30,7 @@
 	},
 	"Vue Options/DOM: renderError(h, err)": {
 		"prefix": [
-			"option.renderError",
+			"option-renderError",
 			"ore"
 		],
 		"body": [

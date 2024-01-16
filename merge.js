@@ -1,6 +1,6 @@
 // https://stackoverflow.com/a/40022630
-const fs = require('fs');
-const { glob } = require('glob');
+import fs from 'fs';
+import  { glob } from 'glob';
 
 const outputPath = './snippets/';
 
@@ -23,7 +23,7 @@ const options = [
   // },
 ];
 
-function handler(error, files, filename) {
+function handler(files, filename) {
   try {
     let output = {};
 
@@ -61,10 +61,9 @@ function handler(error, files, filename) {
 }
 
 function init() {
-  options.forEach(({ path, filename }) => {
-    glob(path, (error, files) => {
-      handler(error, files, filename);
-    });
+  options.forEach(async ({ path, filename }) => {
+    const files = await glob(path);
+    handler(files, filename)
   });
 }
 
