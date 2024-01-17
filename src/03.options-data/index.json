@@ -63,7 +63,7 @@
 	},
 	"Vue Options/Data: computed property (get/set)": {
 		"prefix": [
-			"computed-property",
+			"computed-property-get-set",
 			"cpgs"
 		],
 		"body": [
