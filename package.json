@@ -17,7 +17,7 @@
 	"homepage": "https://github.com/xianghongai/vscode-vue2-snippets/",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/xianghongai/vscode-vue2-snippets/blob/master/README.md"
+		"url": "https://github.com/xianghongai/vscode-vue2-snippets/blob/main/README.md"
 	},
 	"engines": {
 		"vscode": "^0.12.x"

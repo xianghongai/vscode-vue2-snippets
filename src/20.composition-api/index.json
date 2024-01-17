@@ -5,13 +5,6 @@
 			"import { createApp } from 'vue';"
 		]
 	},
-	"createApp": {
-		"prefix": "createApp",
-		"body": [
-			"createApp(App).mount('#app')"
-		],
-		"description": "description"
-	},
 	"import ref": {
 		"prefix": ["import-ref"],
 		"body": [
@@ -128,16 +121,16 @@
 			"const ${1:feature} = reactive($2);$0"
 		]
 	},
-	"computed": {
+	"computed (Composition API)": {
 		"prefix": "computed",
 		"body": [
 			"const ${1:feature} = computed(() => $2);$0"
 		]
 	},
-	"Vue Context (@vue/composition-api)": {
+	"Vue Context (Composition API)": {
 		"prefix": "context",
 		"body": [
-			"import { provide, inject } from '@vue/composition-api';",
+			"import { provide, inject } from 'vue';",
 			"",
 			"export const ContextSymbol = Symbol('ContextSymbol');",
 			"",
@@ -304,5 +297,11 @@
 		"prefix": "instance",
 		"body": ["const instance = getCurrentInstance();"],
 		"description": "`getCurrentInstance` enables access to an internal component instance.\n`getCurrentInstance` only works during 'setup' or 'Lifecycle Hooks'\n"
+	},
+	"Vue instance $route": {
+		"prefix": "instance.proxy.$route",
+		"body": [
+			"instance.proxy.\\$route"
+		]
 	}
 }
