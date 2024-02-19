@@ -1,5 +1,5 @@
 {
-	"Vue Single-File Components (Composition API)": {
+	"Vue SFC - Composition API": {
 		"prefix": [
 			"vue-composition-api"
 		],
@@ -15,20 +15,9 @@
 			"</script>",
 			""
 		],
-		"description": "Vue Single-File Component (Composition API)"
+		"description": "Composition API is a built-in feature of Vue 3 and Vue 2.7. For older Vue 2 versions, use the officially maintained @vue/composition-api plugin.\n"
 	},
-	"Vue <script setup> (Composition API)": {
-		"prefix": [
-			"vue-script-composition-api"
-		],
-		"body": [
-			"<script setup>",
-			"$0",
-			"</script>"
-		],
-		"description": "Vue Script element (Composition API).\n"
-	},
-	"Vue Single-File Components (Composition API Hook)": {
+	"Vue SFC - Composition API Hook": {
 		"prefix": [
 			"vue-composition-api-hook"
 		],
@@ -56,7 +45,18 @@
 		],
 		"description": "Vue Single-File Component (Composition API Hook)"
 	},
-	"Vue <script> (Composition API Hook)": {
+	"Vue <script setup> - Composition API": {
+		"prefix": [
+			"vue-script-composition-api"
+		],
+		"body": [
+			"<script setup>",
+			"$0",
+			"</script>"
+		],
+		"description": "Vue Script element (Composition API).\n"
+	},
+	"Vue <script> - Composition API Hook": {
 		"prefix": [
 			"vue-script-composition-api-hook"
 		],

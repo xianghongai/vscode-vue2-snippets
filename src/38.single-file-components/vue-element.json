@@ -65,51 +65,15 @@
 		],
 		"description": "Vue Style element.\n"
 	},
-	"Vue Single-File Components (TypeScript)": {
-		"prefix": "vue-ts",
+	"Vue <style lang=\"stylus\" scoped>": {
+		"prefix": [
+			"vue-style-stylus"
+		],
 		"body": [
-			"<template>",
-			"  <div>",
-			"    $1",
-			"  </div>",
-			"</template>",
-			"",
-			"<script lang=\"ts\">",
-			"import Vue from 'vue'",
-			"",
-			"export default Vue.extend({",
-			"  ${0}",
-			"})",
-			"</script>",
-			"",
-			"<style lang=\"$1\" ${2:scoped}>",
-			"",
+			"<style lang=\"stylus\" ${1:scoped}>",
+			"$0",
 			"</style>"
 		],
-		"description": "Vue Single-File Components with TypeScript.\n"
-	},
-	"Vue Single-File Components (TypeScript Class-based)": {
-		"prefix": "vue-ts-class",
-		"body": [
-			"<template>",
-			"  <div>",
-			"    $1",
-			"  </div>",
-			"</template>",
-			"",
-			"<script lang=\"ts\">",
-			"import { Component, Vue } from 'vue-property-decorator';",
-			"",
-			"@Component",
-			"export default class ${0} extends Vue {",
-			"  ",
-			"}",
-			"</script>",
-			"",
-			"<style lang=\"$1\" ${2:scoped}>",
-			"",
-			"</style>"
-		],
-		"description": "Base for Vue File with Class based TypeScript format.\n"
+		"description": "Vue Style element.\n"
 	}
 }

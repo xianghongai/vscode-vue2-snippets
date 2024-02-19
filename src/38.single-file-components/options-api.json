@@ -1,10 +1,10 @@
 {
-	"Vue Single-File Components (Options API)": {
+	"Vue SFC - Options API": {
 		"prefix": "vue",
 		"body": [
 			"<template>",
 			"  <div>",
-			"    $1",
+			"    <!-- -->",
 			"  </div>",
 			"</template>",
 			"",
@@ -30,14 +30,14 @@
 		],
 		"description": "Vue Single-File Components (Options API).\n"
 	},
-	"Vue Single-File Components (Options API, SCSS)": {
+	"Vue SFC - Options API, SCSS": {
 		"prefix": [
 			"vue-scss"
 		],
 		"body": [
 			"<template>",
 			"  <div>",
-			"    $1",
+			"    <!-- -->",
 			"  </div>",
 			"</template>",
 			"",
@@ -67,12 +67,12 @@
 		],
 		"description": "Vue Single-File Components (Options API) with SCSS.\n"
 	},
-	"Vue Single-File Components (Options API, SASS)": {
+	"Vue SFC - Options API, SASS": {
 		"prefix": "vue-sass",
 		"body": [
 			"<template>",
 			"  <div>",
-			"    $1",
+			"    <!-- -->",
 			"  </div>",
 			"</template>",
 			"",
@@ -102,12 +102,12 @@
 		],
 		"description": "Vue Single-File Components (Options API) with SASS.\n"
 	},
-	"Vue Single-File Components (Options API, LESS)": {
+	"Vue SFC - Options API, LESS": {
 		"prefix": "vue-less",
 		"body": [
 			"<template>",
 			"  <div>",
-			"    $1",
+			"    <!-- -->",
 			"  </div>",
 			"</template>",
 			"",
@@ -137,12 +137,12 @@
 		],
 		"description": "Vue Single-File Components (Options API) with LESS.\n"
 	},
-	"Vue Single-File Components (Options API, PostCSS)": {
+	"Vue SFC - Options API, PostCSS": {
 		"prefix": "vue-postcss",
 		"body": [
 			"<template>",
 			"  <div>",
-			"    $1",
+			"    <!-- -->",
 			"  </div>",
 			"</template>",
 			"",
@@ -172,12 +172,12 @@
 		],
 		"description": "Vue Single-File Components (Options API) with PostCSS.\n"
 	},
-	"Vue Single-File Components (Options API, CSS)": {
+	"Vue SFC - Options API, CSS": {
 		"prefix": "vue-css",
 		"body": [
 			"<template>",
 			"  <div>",
-			"    $1",
+			"    <!-- -->",
 			"  </div>",
 			"</template>",
 			"",
@@ -207,12 +207,12 @@
 		],
 		"description": "Vue Single-File Components (Options API) with CSS.\n"
 	},
-	"Vue Single-File Components (Options API, Stylus)": {
+	"Vue SFC - Options API, Stylus": {
 		"prefix": "vue-stylus",
 		"body": [
 			"<template>",
 			"  <div>",
-			"    $1",
+			"    <!-- -->",
 			"  </div>",
 			"</template>",
 			"",
@@ -242,7 +242,7 @@
 		],
 		"description": "Vue Single-File Components (Options API) with Stylus.\n"
 	},
-	"Vue <script> (Options API)": {
+	"Vue <script> - Options API": {
 		"prefix": "vue-script",
 		"body": [
 			"<script>",

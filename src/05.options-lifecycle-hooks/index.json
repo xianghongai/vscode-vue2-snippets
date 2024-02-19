@@ -155,7 +155,7 @@
 	},
 	"Vue Options/Lifecycle Hooks: async created()": {
 		"prefix": [
-			"lifecycle-async-created",
+			"async-lifecycle-created",
 			"async.option.created()",
 			"asolc"
 		],
@@ -168,7 +168,7 @@
 	},
 	"Vue Options/Lifecycle Hooks: async mounted()": {
 		"prefix": [
-			"lifecycle-async-mounted",
+			"async-lifecycle-mounted",
 			"async.option.mounted()",
 			"asolm"
 		],
@@ -181,7 +181,7 @@
 	},
 	"Vue Options/Lifecycle Hooks: async updated()": {
 		"prefix": [
-			"lifecycle-async-updated",
+			"async-lifecycle-updated",
 			"async.option.updated()",
 			"asolu"
 		],
@@ -194,7 +194,7 @@
 	},
 	"Vue Options/Lifecycle Hooks: async activated()": {
 		"prefix": [
-			"lifecycle-async-activated",
+			"async-lifecycle-activated",
 			"async.option.activated()",
 			"asola"
 		],
@@ -207,7 +207,7 @@
 	},
 	"Vue Options/Lifecycle Hooks: async deactivated()": {
 		"prefix": [
-			"lifecycle-async-deactivated",
+			"async-lifecycle-deactivated",
 			"async.option.deactivated()",
 			"asolda"
 		],
@@ -221,7 +221,7 @@
 	},
 	"Vue Options/Lifecycle Hooks: async beforeDestroy()": {
 		"prefix": [
-			"lifecycle-async-beforeDestroy",
+			"async-lifecycle-beforeDestroy",
 			"async.option.beforeDestroy()",
 			"asolbd"
 		],
@@ -234,7 +234,7 @@
 	},
 	"Vue Options/Lifecycle Hooks: async destroyed()": {
 		"prefix": [
-			"lifecycle-async-destroyed",
+			"async-lifecycle-destroyed",
 			"async.option.destroyed()",
 			"asold"
 		],
