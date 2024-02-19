@@ -1,5 +1,5 @@
 {
-	"Vue Options/Data: props": {
+	"Options API: props": {
 		"prefix": [
 			"option-props",
 			"ops"
@@ -11,7 +11,7 @@
 		],
 		"description": "Type: Array<string> | Object\ntype: can be one of the following native constructors: `String`, `Number`, `Boolean`, `Array`, `Object`, `Date`, `Function`, `Symbol`, any custom constructor function or an array of those.\n"
 	},
-	"Vue Options/Data: propsData": {
+	"Options API: propsData": {
 		"prefix": "option-propsData",
 		"body": [
 			"propsData: {",
@@ -20,7 +20,7 @@
 		],
 		"description": "Type: Object.\nonly respected in instance creation via `new`.\nPass props to an instance during its creation. This is primarily intended to make unit testing easier.\n"
 	},
-	"Vue Options/Data: data()": {
+	"Options API: data()": {
 		"prefix": [
 			"option-data()",
 			"od"
@@ -34,7 +34,7 @@
 		],
 		"description": "Type: Object | Function\n"
 	},
-	"Vue Options/Data: computed": {
+	"Options API: computed": {
 		"prefix": [
 			"option-computed",
 			"ocd"
@@ -49,7 +49,7 @@
 		],
 		"description": "Type: { [key: string]: Function | { get: Function, set: Function } }\nComputed properties to be mixed into the Vue instance. All getters and setters have their this context automatically bound to the Vue instance.\nNote that if you use an arrow function with a computed property, `this` won’t be the component’s instance, but you can still access the instance as the function’s first argument.\n"
 	},
-	"Vue Options/Data: computed property": {
+	"Options API: computed property": {
 		"prefix": [
 			"computed-property",
 			"cp"
@@ -61,7 +61,7 @@
 			""
 		]
 	},
-	"Vue Options/Data: computed property (get/set)": {
+	"Options API: computed property (get/set)": {
 		"prefix": [
 			"computed-property-get-set",
 			"cpgs"
@@ -77,7 +77,7 @@
 			"},$0"
 		]
 	},
-	"Vue Options/Data: methods": {
+	"Options API: methods": {
 		"prefix": [
 			"option-methods",
 			"oms"
@@ -91,7 +91,7 @@
 		],
 		"description": "Type: { [key: string]: Function }\n"
 	},
-	"Vue Options/Data: methods property": {
+	"Options API: methods property": {
 		"prefix": [
 			"methods-property",
 			"mp"
@@ -102,7 +102,7 @@
 			"},$0"
 		]
 	},
-	"Vue Options/Data: watch": {
+	"Options API: watch": {
 		"prefix": [
 			"option-watch",
 			"ow"
@@ -116,7 +116,7 @@
 		],
 		"description": "Type: { [key: string]: String | Function | Object | Array}\nString: methodName,\nFunction: handler(val, oldVal),\nObject: {handler(val, oldVal): Function, deep: Boolean, immediate: Boolean},\nArray: [String, Object, Function]\nAn object where keys are expressions to watch and values are the corresponding callbacks. The value can also be a string of a method name, or an Object that contains additional options. The Vue instance will call `$watch()` for each entry in the object at instantiation.\n"
 	},
-	"Vue Options/Data: watch property": {
+	"Options API: watch property": {
 		"prefix": [
 			"option-watch",
 			"wp"
@@ -127,7 +127,7 @@
 			"},$0"
 		]
 	},
-	"Vue Options/Data: watch property (deep)": {
+	"Options API: watch property (deep)": {
 		"prefix": [
 			"option-watch-deep",
 			"wpd"
@@ -141,7 +141,7 @@
 			"},$0"
 		]
 	},
-	"Vue Options/Data: watch property (immediate)": {
+	"Options API: watch property (immediate)": {
 		"prefix": [
 			"option-watch-immediate",
 			"wpi"
@@ -155,7 +155,7 @@
 			"},$0"
 		]
 	},
-	"Vue Options/Data: watch property (deep, immediate)": {
+	"Options API: watch property (deep, immediate)": {
 		"prefix": [
 			"option-watch-deep-immediate",
 			"option-watch-immediate-deep",
@@ -171,439 +171,16 @@
 			"},$0"
 		]
 	},
-	"Vue Options/Data: props, String": {
-		"prefix": [
-			"props-String",
-			"ps"
-		],
+	"Options API: emits": {
+		"prefix": "option-emits",
 		"body": [
-			"${1:property}: String,$0"
+			"emits: ['${1:eventName}'],"
 		]
 	},
-	"Vue Options/Data: props, Number": {
-		"prefix": [
-			"props-Number",
-			"pn"
-		],
+	"Options API: expose": {
+		"prefix": "option-expose",
 		"body": [
-			"${1:property}: Number,$0"
-		]
-	},
-	"Vue Options/Data: props, Boolean": {
-		"prefix": [
-			"props-Boolean",
-			"pb"
-		],
-		"body": [
-			"${1:property}: Boolean,$0"
-		]
-	},
-	"Vue Options/Data: props, Array": {
-		"prefix": [
-			"props-Array",
-			"pa"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Array,",
-			"  default() {",
-			"    return [${3}];",
-			"  },",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Object": {
-		"prefix": [
-			"props-Object",
-			"po"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Object,",
-			"  default() {",
-			"    return {${3}};",
-			"  },",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Date": {
-		"prefix": [
-			"props-Date",
-			"pd"
-		],
-		"body": [
-			"${1:property}: Date,$0"
-		]
-	},
-	"Vue Options/Data: props, Function": {
-		"prefix": [
-			"props-Function",
-			"pf"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Function,",
-			"  default${2:: undefined}$0,",
-			"},"
-		]
-	},
-	"Vue Options/Data: props, Symbol": {
-		"prefix": [
-			"props-Symbol",
-			"psy"
-		],
-		"body": [
-			"${1:property}: Symbol,$0"
-		]
-	},
-	"Vue Options/Data: props, Promise": {
-		"prefix": [
-			"props-Promise",
-			"pp"
-		],
-		"body": [
-			"${1:property}: Promise,$0"
-		]
-	},
-	"Vue Options/Data: props, String (default)": {
-		"prefix": [
-			"props-String-default",
-			"psd"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: String,",
-			"  default: '${2}',",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Number (default)": {
-		"prefix": [
-			"props-Number-default",
-			"pnd"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Number,",
-			"  default: ${2},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Boolean (default)": {
-		"prefix": [
-			"props-Boolean-default",
-			"pbd"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Boolean,",
-			"  default: ${2:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Array (default)": {
-		"prefix": [
-			"props-Array-default",
-			"pad"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Array,",
-			"  default() {",
-			"    return [${3}];",
-			"  },",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Object (default)": {
-		"prefix": [
-			"props-Object-default",
-			"pod"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Object,",
-			"  default() {",
-			"    return {${3}};",
-			"  },",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Date (default)": {
-		"prefix": [
-			"props-Date-default",
-			"pdd"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Date,",
-			"  default: ${2},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Symbol (default)": {
-		"prefix": [
-			"props-Symbol-default",
-			"psyd"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Symbol,",
-			"  default: ${2:Symbol($3)},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Function (default)": {
-		"prefix": [
-			"props-Function-default",
-			"pfd"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Function,",
-			"  default${2:: undefined}$0,",
-			"},"
-		]
-	},
-	"Vue Options/Data: props, Promise (default)": {
-		"prefix": [
-			"props-Promise-default",
-			"ppd"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Promise,",
-			"  default: ${2},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, String (required)": {
-		"prefix": [
-			"props-String-required",
-			"psr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: String,",
-			"  required: ${2:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Number (required)": {
-		"prefix": [
-			"props-Number-required",
-			"pnr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Number,",
-			"  required: ${2:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Boolean (required)": {
-		"prefix": [
-			"props-Boolean-required",
-			"pbr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Boolean,",
-			"  required: ${2:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Array (required)": {
-		"prefix": [
-			"props-Array-required",
-			"par"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Array,",
-			"  required: ${2:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Object (required)": {
-		"prefix": [
-			"props-Object-required",
-			"por"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Object,",
-			"  required: ${2:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Date (required)": {
-		"prefix": [
-			"props-Date-required",
-			"pdr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Date,",
-			"  required: ${2:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Function (required)": {
-		"prefix": [
-			"props-Function-required",
-			"pfr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Function,",
-			"  required: ${2:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Symbol (required)": {
-		"prefix": [
-			"props-Symbol-required",
-			"psyr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Symbol,",
-			"  required: ${2:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Promise (required)": {
-		"prefix": [
-			"props-Promise-required",
-			"ppr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Promise,",
-			"  required: ${2:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, String (default, required)": {
-		"prefix": [
-			"props-String-default-required",
-			"psdr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: String,",
-			"  default: '${2}',",
-			"  required: ${3:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Number (default, required)": {
-		"prefix": [
-			"props-Number-default-required",
-			"pndr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Number,",
-			"  default: ${2},",
-			"  required: ${3:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Boolean (default, required)": {
-		"prefix": [
-			"props-Boolean-default-required",
-			"pbdr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Boolean,",
-			"  default: ${2:true},",
-			"  required: ${3:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Array (default, required)": {
-		"prefix": [
-			"props-Array-default-required",
-			"padr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Array,",
-			"  required: ${3:true},",
-			"  default() {",
-			"    return [${3}];",
-			"  },",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Object (default, required)": {
-		"prefix": [
-			"props-Object-default-required",
-			"podr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Object,",
-			"  required: ${3:true},",
-			"  default() {",
-			"    return {${3}};",
-			"  },",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Date (default, required)": {
-		"prefix": [
-			"props-Date-default-required",
-			"pddr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Date,",
-			"  default: ${2},",
-			"  required: ${3:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Function (default, required)": {
-		"prefix": [
-			"props-Function-default-required",
-			"pfdr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Function,",
-			"  required: ${3:true},",
-			"  default${2:: undefined}$0,",
-			"},"
-		]
-	},
-	"Vue Options/Data: props, Symbol (default, required)": {
-		"prefix": [
-			"props-Symbol-default-required",
-			"psydr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Symbol,",
-			"  default: ${2:Symbol($3)},",
-			"  required: ${4:true},",
-			"},$0"
-		]
-	},
-	"Vue Options/Data: props, Promise (default, required)": {
-		"prefix": [
-			"props-Promise-default-required",
-			"ppdr"
-		],
-		"body": [
-			"${1:property}: {",
-			"  type: Promise,",
-			"  default: ${2},",
-			"  required: ${4:true},",
-			"},$0"
+			"expose: ['${1:publicMethod}'],"
 		]
 	}
 }

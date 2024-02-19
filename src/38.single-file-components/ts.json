@@ -1,0 +1,49 @@
+{
+  "Vue SFC - TypeScript": {
+		"prefix": "vue-ts",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    $1",
+			"  </div>",
+			"</template>",
+			"",
+			"<script lang=\"ts\">",
+			"import Vue from 'vue'",
+			"",
+			"export default Vue.extend({",
+			"  ${0}",
+			"})",
+			"</script>",
+			"",
+			"<style lang=\"$1\" ${2:scoped}>",
+			"",
+			"</style>"
+		],
+		"description": "Vue Single-File Components with TypeScript.\n"
+	},
+	"Vue SFC - TypeScript Class-based": {
+		"prefix": "vue-ts-class",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    $1",
+			"  </div>",
+			"</template>",
+			"",
+			"<script lang=\"ts\">",
+			"import { Component, Vue } from 'vue-property-decorator';",
+			"",
+			"@Component",
+			"export default class ${0} extends Vue {",
+			"  ",
+			"}",
+			"</script>",
+			"",
+			"<style lang=\"$1\" ${2:scoped}>",
+			"",
+			"</style>"
+		],
+		"description": "Base for Vue File with Class based TypeScript format.\n"
+	}
+}
