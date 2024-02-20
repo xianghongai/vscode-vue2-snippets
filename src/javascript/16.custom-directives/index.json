@@ -1,0 +1,105 @@
+{
+	"Directive (globally)": {
+		"prefix": "Vue.directive()",
+		"body": [
+			"Vue.directive('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', function (el, binding, vnode) {",
+			"  ${2:// `bind`, `update`}",
+			"  $0",
+			"});"
+		],
+		"description": "Register a global directive.\nThis will be called as `bind` and `update`.\nVue 3.x DEPRECATED. (3.x Instance API: `app.directive`)\n"
+	},
+
+	"Directive, all hooks": {
+		"prefix": "directive-all-hooks",
+		"body": [
+			"export default {",
+			"  ${2:bind(el, binding, vnode) {$3\\},}",
+			"  ${4:inserted(el, binding, vnode) {${5:vnode.context.\\$nextTick(() => {\\});}\\},}",
+			"  ${6:update(el, binding, vnode, oldVnode) {$7\\},}",
+			"  ${8:componentUpdated(el, binding, vnode, oldVnode) {$9\\},}",
+			"  ${10:unbind(el, binding, vnode) {$11\\},}",
+			"};$0"
+		],
+		"description": "define an object that contains several lifecycle hooks (all optional).\nGlobally: `Vue.directive('directive-name', directiveObject)`\n"
+	},
+
+	"Directive, all hooks (locally)": {
+		"prefix": "directive-all-hooks",
+		"body": [
+			"${1:directiveName}: {",
+			"  bind(el, binding, vnode) {",
+			"    $2",
+			"  },",
+			"  inserted(el, binding, vnode) {",
+			"    $3",
+			"  },",
+			"  update(el, binding, vnode, oldVnode) {",
+			"    $4",
+			"  },",
+			"  componentUpdated(el, binding, vnode, oldVnode) {",
+			"    $5",
+			"  },",
+			"  unbind(el, binding, vnode) {",
+			"    $5",
+			"  },",
+			"},"
+		],
+		"description": "directive property"
+	},
+	"Directive (locally)": {
+		"prefix": "directive-property",
+		"body": [
+			"${1:directiveName}(el, binding, vnode) {",
+			"  $2",
+			"},$0"
+		],
+		"description": "directive property"
+	},
+
+	"Directive: bind()": {
+		"prefix": "directive-bind",
+		"body": [
+			"bind (el${2:, binding${3:, vnode}}) {",
+			"  $4",
+			"},$0"
+		],
+		"description": "Directive `bind` lifecycle.\ncalled only once, when the directive is first bound to the element. This is where you can do one-time setup work.\n"
+	},
+	"Directive: inserted()": {
+		"prefix": "directive-inserted",
+		"body": [
+			"inserted (el${2:, binding${3:, vnode}}) {",
+			"  $4",
+			"},$0"
+		],
+		"description": "Directive `inserted` lifecycle.\ncalled when the bound element has been inserted into its parent node (this only guarantees parent node presence, not necessarily in-document).\n"
+	},
+	"Directive: update()": {
+		"prefix": "directive-update",
+		"body": [
+			"update (el${2:, binding${3:, vnode${4:, oldVnode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `update` lifecycle.\ncalled after the containing component’s VNode has updated, but possibly before its children have updated. The directive’s value may or may not have changed, but you can skip unnecessary updates by comparing the binding’s current and old values (see below on hook arguments).\n"
+	},
+	"Directive: componentUpdated()": {
+		"prefix": "directive-componentUpdated",
+		"body": [
+			"componentUpdated (el${2:, binding${3:, vnode${4:, oldVnode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `componentUpdated` lifecycle.\ncalled after the containing component’s VNode and the VNodes of its children have updated.\n"
+	},
+	"Directive: unbind()": {
+		"prefix": "directive-unbind",
+		"body": [
+			"unbind (el${2:, binding${3:, vnode}}) {",
+			"  $4",
+			"},$0"
+		],
+		"description": "Directive `unbind` lifecycle.\ncalled only once, when the directive is unbound from the element.\n"
+	}
+}

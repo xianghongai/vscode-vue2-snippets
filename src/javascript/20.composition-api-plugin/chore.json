@@ -1,0 +1,9 @@
+{
+	"createApp (@vue/composition-api)": {
+		"prefix": "createApp",
+		"body": [
+			"createApp(App).mount('#app')"
+		],
+		"description": "description"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"Vue instance $router": {
+		"prefix": "instance.proxy.$router",
+		"body": [
+			"instance.proxy.\\$router$9"
+		]
+	},
+	"Vue instance $route": {
+		"prefix": "instance.proxy.$route",
+		"body": [
+			"instance.proxy.\\$route"
+		]
+	}
+}

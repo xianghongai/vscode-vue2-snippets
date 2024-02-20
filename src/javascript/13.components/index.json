@@ -1,0 +1,49 @@
+{
+	"Vue.component('name', options)": {
+		"prefix": "vue-global-component_UNSAFE",
+		"body": [
+			"Vue.component(${1:'${2:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}'}, {",
+			"  props: { $3 },",
+			"",
+			"  data() {",
+			"    return {",
+			"      $4",
+			"    }",
+			"  },$0",
+			"",
+			"  render (h, context) {",
+			"    $2",
+			"  },",
+			"",
+			"});"
+		],
+		"description": "Register or retrieve a global component. Registration also automatically sets the component’s `name` with the given `id`.\nAutomatically call `Vue.extend`\nVue 3.x DEPRECATED. (3.x Instance API: `app.component`)\n"
+	},
+	"Vue.component('name', async)": {
+		"prefix": "async-component",
+		"body": [
+			"Vue.component('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', () => import('${2:@/components/feature.vue}'));"
+		]
+	},
+
+	"Vue: async component": {
+		"prefix": "async-component",
+		"body": [
+			"const ${1} = () => import('${2:@/components/feature.vue}');$0"
+		],
+		"description": "Async components were created by simply defining a component as a function that returned a promise.\n in Vue 3, since functional components are defined as pure functions, async components definitions need to be explicitly defined by wrapping it in a new `defineAsyncComponent` helper, and `component` option renamed to `loader`.\nVue 3.x removed. (`defineAsyncComponent`)\n"
+	},
+	"Vue: async component, options": {
+		"prefix": "async-component",
+		"body": [
+			"const ${1:Feature} = {",
+			"  component: () => import('${2:@/components/feature.vue}'),",
+			"  delay: 200,",
+			"  timeout: 3000,",
+			"  error: ErrorComponent,",
+			"  loading: LoadingComponent",
+			"};"
+		],
+		"description": "Async components more advanced component syntax with options.\n in Vue 3, since functional components are defined as pure functions, async components definitions need to be explicitly defined by wrapping it in a new `defineAsyncComponent` helper, and `component` option renamed to `loader`.\nVue 3.x removed. (defineAsyncComponent)\n"
+	}
+}

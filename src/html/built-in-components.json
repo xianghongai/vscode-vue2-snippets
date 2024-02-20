@@ -1,0 +1,29 @@
+{
+	"<Transition>": {
+		"prefix": "transition",
+		"body": [
+			"<transition name=\"${1:name}\">",
+			"  $0",
+			"</transition>"
+		],
+		"description": "Provides animated transition effects to a single element or component.\n"
+	},
+	"<TransitionGroup>": {
+		"prefix": "transition-group",
+		"body": [
+			"<transition-group name=\"${1:list}\" tag=\"${2:ul}\">",
+			"  $0",
+			"</transition-group>"
+		],
+		"description": "Provides transition effects for multiple elements or components in a list.\n"
+	},
+	"<KeepAlive>": {
+		"prefix": "keep-alive",
+		"body": [
+			"<keep-alive>",
+			"  $0",
+			"</keep-alive>"
+		],
+		"description": "Caches dynamically toggled components wrapped inside.\n"
+	}
+}
