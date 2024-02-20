@@ -1,0 +1,73 @@
+{
+	"Vue: this.$watch()": {
+		"prefix": [
+			"this.$watch()",
+			"vm.$watch()"
+		],
+		"body": [
+			"const ${8:unwatch} = ${1:this}.\\$watch('${3:property}', (${4:newValue}${5:, ${6:oldValue}}) => {",
+			"  $0",
+			"});"
+		]
+	},
+	"Vue: this.$watch(), immediate": {
+		"prefix": [
+			"this.$watch()",
+			"vm.$watch()"
+		],
+		"body": [
+			"${1:this}.\\$watch('${3:property}', (${4:newValue}${5:, ${6:oldValue}}) => {",
+			"  $0",
+			"}, {",
+			"  immediate: true,",
+			"});"
+		]
+	},
+	"Vue: this.$watch(), deep": {
+		"prefix": [
+			"this.$watch()",
+			"vm.$watch()"
+		],
+		"body": [
+			"${1:this}.\\$watch('${3:property}', (${4:newValue}${5:, ${6:oldValue}}) => {",
+			"  $0",
+			"}, {",
+			"  deep: true,",
+			"});"
+		]
+	},
+	"Vue: this.$watch(), deep, immediate": {
+		"prefix": [
+			"this.$watch()",
+			"vm.$watch()"
+		],
+		"body": [
+			"${1:this}.\\$watch('${3:property}', (${4:newValue}${5:, ${6:oldValue}}) => {",
+			"  $0",
+			"}, {",
+			"  deep: true,",
+			"  immediate: true,",
+			"});"
+		]
+	},
+	"Vue: this.$set()": {
+		"prefix": [
+			"this.$set()",
+			"vm.$set()"
+		],
+		"body": [
+			"${1:this}.\\$set(this.${2:object/array}, ${3:propertyName/index}, ${4:value});$0"
+		],
+		"description": "This is the alias of the global Vue.set.\n"
+	},
+	"Vue: this.$delete()": {
+		"prefix": [
+			"this.$delete()",
+			"vm.$delete()"
+		],
+		"body": [
+			"${1:this}.\\$delete(this.${2:object/array}, ${3:propertyName/index}, ${4:value});$0"
+		],
+		"description": "This is the alias of the global Vue.delete.\n"
+	}
+}

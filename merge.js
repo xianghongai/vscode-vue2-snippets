@@ -5,22 +5,22 @@ import  { glob } from 'glob';
 const outputPath = './snippets/';
 
 const options = [
-  {
-    path: 'src/!(38.single-file-components|39.template-directives)/*.json',
-    filename: 'javascript',
-  },
-  {
-    path: 'src/{38.single-file-components,39.template-directives}/*.json',
-    filename: 'vue',
-  },
-  // {
-  // 	path: 'src/html/*.json',
-  // 	filename: 'html',
-  // },
-  // {
-  // 	path: 'src/css/*.json',
-  // 	filename: 'css',
-  // },
+	{
+		path: 'src/javascript/**/*.json',
+		filename: 'javascript',
+	},
+	{
+		path: 'src/vue/**/*.json',
+		filename: 'vue',
+	},
+	{
+		path: 'src/html/**/*.json',
+		filename: 'html',
+	},
+	{
+		path: 'src/css/**/*.json',
+		filename: 'css',
+	},
 ];
 
 function handler(files, filename) {

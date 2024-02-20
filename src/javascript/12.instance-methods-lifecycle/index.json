@@ -1,0 +1,39 @@
+{
+	"this.$nextTick().then(cb)": {
+		"prefix": "nextTick",
+		"body": [
+			"this.\\$nextTick().then(() => {",
+			"  $1",
+			"});"
+		]
+	},
+	"await this.$nextTick()": {
+		"prefix": "await-nextTick",
+		"body": [
+			"await this.\\$nextTick();"
+		]
+	},
+
+	"Vue: this.$forceUpdate()": {
+		"prefix": "this.$forceUpdate()",
+		"body": [
+			"this.\\$forceUpdate();$0"
+		],
+		"description": "Force the component instance to re-render. Note it does not affect all child components, only the instance itself and child components with inserted slot content.\n"
+	},
+	"Vue: this.$destroy()": {
+		"prefix": "this.$destroy()",
+		"body": [
+			"this.\\$destroy();$0"
+		],
+		"description": "Completely destroy a vm. Clean up its connections with other existing vms, unbind all its directives, turn off all event listeners.\rTriggers the `beforeDestroy` and `destroyed` hooks.\n"
+	},
+	"Vue: this.$mount()": {
+		"prefix": "this.$mount()",
+		"body": [
+			"const vm = new Vue({",
+			"  $1",
+			"}).\\$mount($2);$0"
+		]
+	}
+}

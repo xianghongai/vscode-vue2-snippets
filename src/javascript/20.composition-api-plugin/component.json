@@ -1,0 +1,36 @@
+{
+	"defineComponent": {
+		"prefix": "defineComponent",
+		"body": [
+			"defineComponent({",
+			"  setup() {",
+			"    $1",
+			"",
+			"    return {",
+			"      $0",
+			"    };",
+			"  },",
+			"});"
+		]
+	},
+	"defineAsyncComponent": {
+		"prefix": "defineAsyncComponent",
+		"body": [
+			"const ${2:AsyncComp} = defineAsyncComponent(() =>",
+			"  import('${1:./components/MyComponent.vue}')",
+			");"
+		]
+	},
+	"defineAsyncComponent (options)": {
+		"prefix": "defineAsyncComponent",
+		"body": [
+			"const ${5:AsyncComp} = defineAsyncComponent({",
+			"  loader: ${1:() => import('${2:./components/MyComponent.vue}')},",
+			"  delay: 200,",
+			"  timeout: 3000,",
+			"  errorComponent: ${3:syncComponent1},",
+			"  loadingComponent: ${4:syncComponent2},",
+			"});"
+		]
+	}
+}

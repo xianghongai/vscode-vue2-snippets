@@ -1,0 +1,9 @@
+{
+	"Composition API: getCurrentInstance()": {
+		"prefix": "getCurrentInstance",
+		"body": [
+			"const instance = getCurrentInstance();"
+		],
+		"description": "Composition API.\n`getCurrentInstance` enables access to an internal component instance useful for advanced usages or for library creators.\n"
+	}
+}

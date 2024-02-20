@@ -1,0 +1,48 @@
+{
+	"Vue SFC - @vue/composition-api": {
+		"prefix": ["vue", "vue-composition-api-plugin"],
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script>",
+			"import { defineComponent } from '@vue/composition-api';",
+			"",
+			"export default defineComponent({",
+			"  setup() {",
+			"    $1",
+			"",
+			"    return {",
+			"      $0",
+			"    };",
+			"  },",
+			"});",
+			"</script>",
+			""
+		],
+		"description": "Vue Single-File Component (@vue/composition-api)"
+	},
+	"Vue <script> - @vue/composition-api": {
+		"prefix": ["vue-script", "vue-script-composition-api-plugin"],
+		"body": [
+			"<script>",
+			"import { defineComponent } from '@vue/composition-api';",
+			"",
+			"export default defineComponent({",
+			"  setup() {",
+			"    $1",
+			"",
+			"    return {",
+			"      $0",
+			"    };",
+			"  },",
+			"});",
+			"</script>",
+			""
+		],
+		"description": "Vue Script element (@vue/composition-api).\n"
+	}
+}

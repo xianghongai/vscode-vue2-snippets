@@ -1,0 +1,31 @@
+{
+	"Transition Classes​": {
+		"prefix": "css-transitions",
+		"body": [
+			".${1:name}-enter-active { ",
+			"  $2",
+			"}",
+			"",
+			".$1-enter-from { ",
+			"  ",
+			"}",
+			"",
+			".$1-enter-to { ",
+			"  ",
+			"}",
+			"",
+			".$1-leave-active { ",
+			"  ",
+			"}",
+			"",
+			".$1-leave-from { ",
+			"  ",
+			"}",
+			"",
+			".$1-leave-to { ",
+			"  ",
+			"}",
+			""
+		]
+	}
+}
