@@ -1,35 +1,49 @@
 {
 	"this.$nextTick().then(cb)": {
-		"prefix": "nextTick",
+		"prefix": [
+			"this.nextTick",
+			"vm.nextTick"
+		],
 		"body": [
-			"this.\\$nextTick().then(() => {",
+			"${5:this}.\\$nextTick().then(() => {",
 			"  $1",
 			"});"
 		]
 	},
 	"await this.$nextTick()": {
-		"prefix": "await-nextTick",
+		"prefix": [
+			"await-this.nextTick",
+			"await-vm.nextTick"
+		],
 		"body": [
-			"await this.\\$nextTick();"
+			"await ${5:this}.\\$nextTick();"
 		]
 	},
-
 	"Vue: this.$forceUpdate()": {
-		"prefix": "this.$forceUpdate()",
+		"prefix": [
+			"this.$forceUpdate()",
+			"vm.$forceUpdate()"
+		],
 		"body": [
-			"this.\\$forceUpdate();$0"
+			"${5:this}.\\$forceUpdate();$0"
 		],
 		"description": "Force the component instance to re-render. Note it does not affect all child components, only the instance itself and child components with inserted slot content.\n"
 	},
 	"Vue: this.$destroy()": {
-		"prefix": "this.$destroy()",
+		"prefix": [
+			"this.$destroy()",
+			"vm.$destroy()"
+		],
 		"body": [
-			"this.\\$destroy();$0"
+			"${5:this}.\\$destroy();$0"
 		],
 		"description": "Completely destroy a vm. Clean up its connections with other existing vms, unbind all its directives, turn off all event listeners.\rTriggers the `beforeDestroy` and `destroyed` hooks.\n"
 	},
 	"Vue: this.$mount()": {
-		"prefix": "this.$mount()",
+		"prefix": [
+			"this.$mount()",
+			"vm.$mount()"
+		],
 		"body": [
 			"const vm = new Vue({",
 			"  $1",

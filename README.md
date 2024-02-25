@@ -164,11 +164,11 @@ Prefix 为什么是 `olbc` 而不是 `opbc`？因为 `op*` 前缀会有很多冲
 
 ### Instance Properties & Methods
 
-| Prefix           | VS Code Suggest Match | Snippet                                              |
-|------------------|-----------------------|------------------------------------------------------|
-| `nextTick`       | `nt`                  | this.$nextTick().then(() => {<br>&nbsp;&nbsp;<br>}); |
-| `await-nextTick` | `awnt`                | await this.$nextTick();                              |
-| `emit`           |                       | this.$emit('event-name', param);                     |
+| Prefix              | VS Code Suggest Match | Snippet                                              |
+|---------------------|-----------------------|------------------------------------------------------|
+| `vm.nextTick`       | `vmnt`                | this.$nextTick().then(() => {<br>&nbsp;&nbsp;<br>}); |
+| `await-vm.nextTick` | `awvmnt`              | await this.$nextTick();                              |
+| `vm.emit`           |                       | this.$emit('event-name', param);                     |
 
 ## Supported languages (file extensions)
 

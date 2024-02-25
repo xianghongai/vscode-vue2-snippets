@@ -1,4 +1,23 @@
 {
+	"Vue nextTick": {
+		"prefix": "nextTick",
+		"body": [
+			"nextTick().then(() => {",
+			"  $1",
+			"});"
+		],
+		"description": "A utility for waiting for the next DOM update flush."
+	},
+	"Vue await nextTick()": {
+		"prefix": [
+			"await-nextTick",
+			"nt"
+		],
+		"body": [
+			"await nextTick();"
+		],
+		"description": "A utility for waiting for the next DOM update flush."
+	},
 	"defineComponent": {
 		"prefix": "defineComponent",
 		"body": [
