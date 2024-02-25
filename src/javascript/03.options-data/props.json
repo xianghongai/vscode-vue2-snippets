@@ -71,8 +71,8 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
-			"  default${2:: undefined}$0,",
-			"},"
+			"  default: ${2:undefined},",
+			"},$0"
 		]
 	},
 	"props: Symbol": {
@@ -101,7 +101,7 @@
 		"body": [
 			"${1:property}: {",
 			"  type: String,",
-			"  default: '${2}',",
+			"  default: ${2:undefined},",
 			"},$0"
 		]
 	},
@@ -113,7 +113,7 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Number,",
-			"  default: ${2},",
+			"  default: ${2:undefined},",
 			"},$0"
 		]
 	},
@@ -165,7 +165,7 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Date,",
-			"  default: ${2},",
+			"  default: ${2:undefined},",
 			"},$0"
 		]
 	},
@@ -189,8 +189,8 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
-			"  default${2:: undefined}$0,",
-			"},"
+			"  default: ${2:undefined},",
+			"},$0"
 		]
 	},
 	"props: Promise (default)": {
@@ -201,7 +201,7 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Promise,",
-			"  default: ${2},",
+			"  default: ${2:undefined},",
 			"},$0"
 		]
 	},
@@ -321,7 +321,7 @@
 		"body": [
 			"${1:property}: {",
 			"  type: String,",
-			"  default: '${2}',",
+			"  default: ${2:undefined},",
 			"  required: ${3:true},",
 			"},$0"
 		]
@@ -334,7 +334,7 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Number,",
-			"  default: ${2},",
+			"  default: ${2:undefined},",
 			"  required: ${3:true},",
 			"},$0"
 		]
@@ -360,10 +360,10 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Array,",
-			"  required: ${3:true},",
 			"  default() {",
-			"    return [${3}];",
+			"    return [${2}];",
 			"  },",
+			"  required: ${3:true},",
 			"},$0"
 		]
 	},
@@ -375,10 +375,10 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Object,",
-			"  required: ${3:true},",
 			"  default() {",
-			"    return {${3}};",
+			"    return {${2}};",
 			"  },",
+			"  required: ${3:true},",
 			"},$0"
 		]
 	},
@@ -390,7 +390,7 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Date,",
-			"  default: ${2},",
+			"  default: ${2:undefined},",
 			"  required: ${3:true},",
 			"},$0"
 		]
@@ -403,9 +403,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
+			"  default: ${2:undefined},",
 			"  required: ${3:true},",
-			"  default${2:: undefined}$0,",
-			"},"
+			"},$0"
 		]
 	},
 	"props: Symbol (default, required)": {
@@ -416,8 +416,8 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Symbol,",
-			"  default: ${2:Symbol($3)},",
-			"  required: ${4:true},",
+			"  default: ${2:undefined},",
+			"  required: ${3:true},",
 			"},$0"
 		]
 	},
@@ -429,8 +429,8 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Promise,",
-			"  default: ${2},",
-			"  required: ${4:true},",
+			"  default: ${2:undefined},",
+			"  required: ${3:true},",
 			"},$0"
 		]
 	}

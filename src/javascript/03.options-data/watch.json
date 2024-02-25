@@ -1,57 +1,61 @@
 {
 	"watch property": {
 		"prefix": [
-			"option-watch",
+			"watch-property",
 			"wp"
 		],
 		"body": [
-			"${1:propertyName}(newValue, oldValue) {",
-			"  $2",
-			"},$0"
+			"${1:property}(${2:newValue}${3:, ${4:oldValue}}) {",
+			"  $5",
+			"},",
+			"$0"
 		]
 	},
 	"watch property {deep}": {
 		"prefix": [
-			"option-watch-deep",
+			"watch-property-deep",
 			"wpd"
 		],
 		"body": [
-			"${1:propertyName}: {",
+			"${1:property}: {",
 			"  deep: true,",
-			"  handler(newValue, oldValue) {",
-			"    $2",
+			"  handler(${2:newValue}${3:, ${4:oldValue}}) {",
+			"    $5",
 			"  },",
-			"},$0"
+			"},",
+			"$0"
 		]
 	},
 	"watch property {immediate}": {
 		"prefix": [
-			"option-watch-immediate",
+			"watch-property-immediate",
 			"wpi"
 		],
 		"body": [
-			"${1:propertyName}: {",
+			"${1:property}: {",
 			"  immediate: true,",
-			"  handler(newValue, oldValue) {",
-			"    $2",
+			"  handler(${2:newValue}${3:, ${4:oldValue}}) {",
+			"    $5",
 			"  },",
-			"},$0"
+			"},",
+			"$0"
 		]
 	},
 	"watch property {deep, immediate}": {
 		"prefix": [
-			"option-watch-deep-immediate",
-			"option-watch-immediate-deep",
+			"watch-property-deep-immediate",
+			"watch-property-immediate-deep",
 			"wpdi"
 		],
 		"body": [
-			"${1:propertyName}: {",
+			"${1:property}: {",
 			"  deep: true,",
 			"  immediate: true,",
-			"  handler(newValue, oldValue) {",
-			"    $2",
+			"  handler(${2:newValue}${3:, ${4:oldValue}}) {",
+			"    $5",
 			"  },",
-			"},$0"
+			"},",
+			"$0"
 		]
 	}
 }

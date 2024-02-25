@@ -1,0 +1,185 @@
+{
+	"Composition API: watchEffect()": {
+		"prefix": "watchEffect",
+		"body": [
+			"watchEffect(async () => {",
+			"  $0",
+			"});"
+		],
+		"description": "watchEffect(effect, options?);\nWatchEffectOptions { immediate?, deep?, flush?, onTrack?, onTrigger?, once? };\nflush: 'pre' | 'post' | 'sync'.\n"
+	},
+	"Composition API: watchPostEffect()": {
+		"prefix": "watchPostEffect",
+		"body": [
+			"watchPostEffect(async () => {",
+			"  $0",
+			"});"
+		],
+		"description": "Alias of watchEffect() with flush: 'post' option.\n"
+	},
+	"Composition API: watchSyncEffect()": {
+		"prefix": "watchSyncEffect",
+		"body": [
+			"watchSyncEffect(() => {",
+			"  $0",
+			"});"
+		],
+		"description": "Alias of watchEffect() with flush: 'sync' option.\n"
+	},
+	"Composition API: watch props": {
+		"prefix": [
+			"watch-props"
+		],
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"    $5",
+			"  },$0",
+			");"
+		]
+	},
+	"Composition API: watch props {deep}": {
+		"prefix": [
+			"watch-props-deep"
+		],
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"  }",
+			");"
+		]
+	},
+	"Composition API: watch props {immediate}": {
+		"prefix": [
+			"watch-props-immediate"
+		],
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");"
+		]
+	},
+	"Composition API: watch props {immediate, multiple}": {
+		"prefix": [
+			"watch-props-immediate-multiple"
+		],
+		"body": [
+			"watch(",
+			"  [() => props.${1:property1}, () => props.${2:property2}],",
+			"  async ([$1, $2]) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");"
+		]
+	},
+	"Composition API: watch props {deep, immediate}": {
+		"prefix": [
+			"watch-props-deep-immediate"
+		],
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"    immediate: true,",
+			"  }",
+			");"
+		]
+	},
+	"Composition API: watch": {
+		"prefix": [
+			"watch"
+		],
+		"body": [
+			"watch(",
+			"  ${1:source},",
+			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"    $0",
+			"  },",
+			");"
+		]
+	},
+	"Composition API: watch {deep}": {
+		"prefix": [
+			"watch-deep"
+		],
+		"body": [
+			"watch(",
+			"  ${1:source},",
+			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"  }",
+			");"
+		]
+	},
+	"Composition API: watch {immediate}": {
+		"prefix": [
+			"watch-immediate"
+		],
+		"body": [
+			"watch(",
+			"  ${1:source},",
+			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");"
+		]
+	},
+	"Composition API: watch {immediate, multiple}": {
+		"prefix": [
+			"watch-immediate-multiple"
+		],
+		"body": [
+			"watch(",
+			"  [${1:source1}, ${2:source2}],",
+			"  async ([next${1/(.*)/${1:/pascalcase}/}, next${2/(.*)/${1:/pascalcase}/}], [prev${1/(.*)/${1:/pascalcase}/}, prev${2/(.*)/${1:/pascalcase}/}]) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");"
+		]
+	},
+	"Composition API: watch {deep, immediate}": {
+		"prefix": [
+			"watch-deep-immediate"
+		],
+		"body": [
+			"watch(",
+			"  ${1:source1},",
+			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"    immediate: true,",
+			"  }",
+			");"
+		]
+	}
+}

@@ -8,7 +8,7 @@
 			"${1:property}() {",
 			"  return this.${2:property};",
 			"},",
-			""
+			"$0"
 		]
 	},
 	"computed property (get/set)": {
@@ -24,7 +24,8 @@
 			"  set(${5:val}) {",
 			"    this.${4:value} = $5;",
 			"  },",
-			"},$0"
+			"},",
+			"$0"
 		]
 	}
 }
