@@ -129,6 +129,15 @@ Prefix 为什么是 `olbc` 而不是 `opbc`？因为 `op*` 前缀会有很多冲
 | `watchPostEffect`                | `wpef`                | watchPostEffect(async () => {<br>&nbsp;&nbsp;<br>});                                                                                                                                                                                                                |
 | `watchSyncEffect`                | `wsef`                | watchSyncEffect(() => {<br>&nbsp;&nbsp;<br>});                                                                                                                                                                                                                      |
 
+### Computed
+
+| Prefix                               | VS Code Suggest Match | Snippet                                                                                                                                                                                           |
+|--------------------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `computed-property` / `cp`           |                       | property() {<br>&nbsp;&nbsp;return this.property;<br>},                                                                                                                                           |
+| `computed-property-get-set` / `cpgs` |                       | property: {<br>&nbsp;&nbsp;get() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.value;<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;set(val) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.value = val;<br>&nbsp;&nbsp;},<br>}, |
+| `compute`                            |                       | const feature = computed(() => state.value);                                                                                                                                                      |
+| `computed-get-set`                   |                       | const feature = computed({<br>&nbsp;&nbsp;get: () => state.value,<br>&nbsp;&nbsp;set: (newValue) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;state.value = newValue;<br>&nbsp;&nbsp;},<br>});                 |
+
 ### Lifecycle Hooks (Options API)
 
 只要**理解** `ol` 是 <strong><u style="color: red;">O</u></strong>ptions API <strong><u style="color: red;">L</u></strong>ifecycle Hooks` 的缩写，并**记忆** Vue2 生命周期钩子，然后就能释放你的能量了。
@@ -164,11 +173,15 @@ Prefix 为什么是 `olbc` 而不是 `opbc`？因为 `op*` 前缀会有很多冲
 
 ### Instance Properties & Methods
 
-| Prefix              | VS Code Suggest Match | Snippet                                              |
-|---------------------|-----------------------|------------------------------------------------------|
-| `vm.nextTick`       | `vmnt`                | this.$nextTick().then(() => {<br>&nbsp;&nbsp;<br>}); |
-| `await-vm.nextTick` | `awvmnt`              | await this.$nextTick();                              |
-| `vm.emit`           |                       | this.$emit('event-name', param);                     |
+| Prefix              | VS Code Suggest Match | Snippet                                                            |
+|---------------------|-----------------------|--------------------------------------------------------------------|
+| `vm.nextTick`       | `vmnt`                | this.$<u>n</u>ext<u>T</u>ick().then(() => {<br>&nbsp;&nbsp;<br>}); |
+| `await-vm.nextTick` | `awvmnt`              | <u>aw</u>ait this.$<u>n</u>ext<u>T</u>ick();                       |
+| `vm.emit`           | `vmem`                | this.$<u>em</u>it('event-name', param);                            |
+
+### Vue Route v3.x
+
+
 
 ## Supported languages (file extensions)
 

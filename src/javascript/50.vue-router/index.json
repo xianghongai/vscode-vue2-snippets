@@ -83,7 +83,7 @@
 		"description": "Define alias route\n"
 	},
 	"Vue Router: route (Redirect)": {
-		"prefix": "routeRedirect",
+		"prefix": "route-redirect",
 		"body": [
 			"{ path: '${1:/feature/:id}', redirect: '${2:/pathname}' },"
 		],
@@ -131,7 +131,7 @@
 		"description": "Define lazy loading route\n"
 	},
 	"Vue Router: route (pass props: Boolean mode)": {
-		"prefix": "route-props",
+		"prefix": "route-props-boolean",
 		"body": [
 			"{",
 			"  path: '${1:/feature}',",
@@ -142,7 +142,7 @@
 		"description": "Passing Props to Route Components.\nWhen `props` is set to `true`, the `route.params` will be set as the component props.\n"
 	},
 	"Vue Router: route (pass props: Object mode)": {
-		"prefix": "route-props",
+		"prefix": "route-props-object",
 		"body": [
 			"{",
 			"  path: '${1:/feature}',",
@@ -153,7 +153,7 @@
 		"description": "Passing Props to Route Components\n"
 	},
 	"Vue Router: route (pass props: Function mode)": {
-		"prefix": "route-props",
+		"prefix": "route-props-function",
 		"body": [
 			"{",
 			"  path: '${1:/feature}',",
@@ -167,7 +167,7 @@
 		"description": "Passing Props to Route Components\n"
 	},
 	"Vue Router: route (pass props: Function mode, named views)": {
-		"prefix": "route-props",
+		"prefix": "route-props-function-named-views",
 		"body": [
 			"{",
 			"  path: '${1:/feature}',",

@@ -14,7 +14,7 @@
 		"description": "Reactivity API - Computed and watch.\nTakes a getter function and returns an immutable reactive ref object for the returned value from the getter.\n"
 	},
 	"Composition API: computed, (get/set)": {
-		"prefix": "computed",
+		"prefix": "computed-get-set",
 		"body": [
 			"const ${3:feature} = computed({",
 			"  get: () => ${1:state.value},",
