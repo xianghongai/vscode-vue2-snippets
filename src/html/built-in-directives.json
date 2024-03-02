@@ -30,7 +30,7 @@
 		]
 	},
 	"v-for (item, index)": {
-		"prefix": "v-for",
+		"prefix": "v-for-index",
 		"body": [
 			"v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\"$0"
 		]
@@ -85,7 +85,7 @@
 	},
 	"v-on, stop propagation, prevent default": {
 		"prefix": [
-			"v-on-stop-prevent"
+			"v-on-prevent-stop"
 		],
 		"body": [
 			"@${1:click}.stop.prevent=\"${2:handler}\""

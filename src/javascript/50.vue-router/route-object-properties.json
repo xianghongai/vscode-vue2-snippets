@@ -1,0 +1,65 @@
+{
+	"this.$route.path": {
+		"prefix": "this.$route.path",
+		"body": [
+			"this.\\$route.path"
+		],
+		"description": "Route Object Properties:\nA string that equals the path of the current route, always resolved as an absolute path.\n"
+	},
+	"this.$route.params": {
+		"prefix": "this.$route.params",
+		"body": [
+			"this.\\$route.params"
+		],
+		"description": "Route Object Properties:\nAn object that contains key/value pairs of dynamic segments and star segments. If there are no params the value will be an empty object.\n"
+	},
+	"this.$route.query": {
+		"prefix": "this.$route.query",
+		"body": [
+			"this.\\$route.query"
+		],
+		"description": "Route Object Properties:\nAn object that contains key/value pairs of the query string.\n"
+	},
+	"this.$route.meta": {
+		"prefix": "this.$route.meta",
+		"body": [
+			"this.\\$route.meta"
+		],
+		"description": "Route Object Properties:\nAn object that contains key/value pairs of the route meta object. If there are no meta properties the value will be an empty object.\n"
+	},
+	"this.$route.hash": {
+		"prefix": "this.$route.hash",
+		"body": [
+			"this.\\$route.hash"
+		],
+		"description": "Route Object Properties:\nThe hash of the current route (with the #), if it has one. If no hash is present the value will be an empty string.\n"
+	},
+	"this.$route.fullPath": {
+		"prefix": "this.$route.fullPath",
+		"body": [
+			"this.\\$route.fullPath"
+		],
+		"description": "Route Object Properties:\nThe full resolved URL including query and hash.\n"
+	},
+	"this.$route.matched": {
+		"prefix": "this.$route.matched",
+		"body": [
+			"this.\\$route.matched"
+		],
+		"description": "Route Object Properties:\nAn Array containing route records for all nested path segments of the current route. \n"
+	},
+	"this.$route.name": {
+		"prefix": "this.$route.name",
+		"body": [
+			"this.\\$route.name"
+		],
+		"description": "Route Object Properties:\nThe name of the current route, if it has one.\n"
+	},
+	"this.$route.redirectedFrom": {
+		"prefix": "this.$route.redirectedFrom",
+		"body": [
+			"this.\\$route.redirectedFrom"
+		],
+		"description": "Route Object Properties:\nThe name of the route being redirected from, if there were one.\n"
+	}
+}

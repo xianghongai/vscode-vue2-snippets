@@ -12,7 +12,6 @@
 		],
 		"description": "Named router views\n"
 	},
-
 	"<router-link>, literal string": {
 		"prefix": "router-link",
 		"body": [
@@ -22,8 +21,7 @@
 		],
 		"description": "Router link with literal string.\n"
 	},
-
-	"<router-link>": {
+	"<router-link>, v-bind": {
 		"prefix": "router-link",
 		"body": [
 			"<router-link :to=\"$1\">",
@@ -33,14 +31,13 @@
 		"description": "Router link using `v-bind`.\n"
 	},
 	"<router-link>, exact": {
-		"prefix": "router-link",
+		"prefix": "router-link-exact",
 		"body": [
 			"<router-link :to=\"$1\" exact>",
 			"  $2",
 			"</router-link>$0"
 		]
 	},
-
 	"<router-link>, path": {
 		"prefix": "router-link-path",
 		"body": [
@@ -53,44 +50,78 @@
 	"<router-link>, path, params": {
 		"prefix": "router-link-path-params",
 		"body": [
-			"<router-link :to=\"{ path: ${1:'${2:pathname}'}, params: { ${3:property}: ${4:'value'} } }\">",
-			"  $5",
-			"</router-link>$0"
+			"<router-link",
+			"  :to=\"{",
+			"    path: '${1:pathname}',",
+			"    params: { ${2:property}: ${3:'value'} },",
+			"  }\"",
+			">",
+			"  $0",
+			"</router-link>"
 		],
 		"description": "Router link to path with params.\n"
 	},
 	"<router-link>, path, query": {
 		"prefix": "router-link-path-query",
 		"body": [
-			"<router-link :to=\"{ path: ${1:'${2:pathname}'}, query: { ${3:property}: ${4:'value'} } }\">",
-			"  $5",
-			"</router-link>$0"
+			"<router-link",
+			"  :to=\"{",
+			"    path: '${1:pathname}',",
+			"    query: { ${2:property}: ${3:'value'} },",
+			"  }\"",
+			">",
+			"  $0",
+			"</router-link>"
+		],
+		"description": "Router link to path with query.\n"
+	},
+	"<router-link>, path, params, query": {
+		"prefix": "router-link-path-params-query",
+		"body": [
+			"<router-link",
+			"  :to=\"{",
+			"    path: '${1:pathname}',",
+			"    params: { ${2:property}: ${3:'value'} },",
+			"    query: { ${4:property}: ${5:'value'} },",
+			"  }\"",
+			">",
+			"  $0",
+			"</router-link>"
 		],
 		"description": "Router link to path with query.\n"
 	},
 	"<router-link>, path, append": {
 		"prefix": "router-link-path-append",
 		"body": [
-			"<router-link :to=\"{ path: ${1:'${2:pathname}'} }\" append>",
-			"  $3",
-			"</router-link>$0"
+			"<router-link",
+			"  :to=\"{",
+			"    path: '${1:pathname}',",
+			"  }\"",
+			"  append",
+			">",
+			"  $0",
+			"</router-link>"
 		],
 		"description": "Router link to path, append mode.\n"
 	},
 	"<router-link>, path, replace": {
 		"prefix": "router-link-path-replace",
 		"body": [
-			"<router-link :to=\"{ path: ${1:'${2:pathname}'} }\" replace>",
-			"  $3",
-			"</router-link>$0"
+			"<router-link",
+			"  :to=\"{",
+			"    path: '${1:pathname}',",
+			"  }\"",
+			"  replace",
+			">",
+			"  $0",
+			"</router-link>"
 		],
 		"description": "Router link to path, replace mode.\n"
 	},
-
 	"<router-link>, named": {
 		"prefix": "router-link-named",
 		"body": [
-			"<router-link :to=\"{ name: ${1:'${2:routename}'} }\">",
+			"<router-link :to=\"{ name: ${1:'${2:routeName}'} }\">",
 			"  $3",
 			"</router-link>$0"
 		],
@@ -99,40 +130,74 @@
 	"<router-link>, named, params": {
 		"prefix": "router-link-named-params",
 		"body": [
-			"<router-link :to=\"{ name: ${1:'${2:routename}'}, params: { ${3:property}: ${4:'value'} } }\">",
-			"  $5",
-			"</router-link>$0"
+			"<router-link",
+			"  :to=\"{",
+			"    name: '${1:routeName}',",
+			"    params: { ${2:property}: ${3:'value'} },",
+			"  }\"",
+			">",
+			"  $0",
+			"</router-link>"
 		],
 		"description": "Router link to named route with params.\n"
 	},
 	"<router-link>, named, query": {
 		"prefix": "router-link-named-query",
 		"body": [
-			"<router-link :to=\"{ name: ${1:'${2:routename}'}, query: { ${3:property}: ${4:'value'} } }\">",
-			"  $5",
-			"</router-link>$0"
+			"<router-link",
+			"  :to=\"{",
+			"    name: '${1:routeName}',",
+			"    query: { ${2:property}: ${3:'value'} },",
+			"  }\"",
+			">",
+			"  $0",
+			"</router-link>"
+		],
+		"description": "Router link to named route with query.\n"
+	},
+	"<router-link>, named, params, query": {
+		"prefix": "router-link-named-params-query",
+		"body": [
+			"<router-link",
+			"  :to=\"{",
+			"    name: '${1:routeName}',",
+			"    params: { ${2:property}: ${3:'value'} },",
+			"    query: { ${4:property}: ${5:'value'} },",
+			"  }\"",
+			">",
+			"  $0",
+			"</router-link>"
 		],
 		"description": "Router link to named route with query.\n"
 	},
 	"<router-link>, named, append": {
 		"prefix": "router-link-named-append",
 		"body": [
-			"<router-link :to=\"{ name: ${1:'${2:pathname}'} }\" append>",
-			"  $3",
-			"</router-link>$0"
+			"<router-link",
+			"  :to=\"{",
+			"    name: '${1:routeName}',",
+			"  }\"",
+			"  append",
+			">",
+			"  $0",
+			"</router-link>"
 		],
 		"description": "Router Link to named route, append mode.\n"
 	},
 	"<router-link>, named, replace": {
 		"prefix": "router-link-named-replace",
 		"body": [
-			"<router-link :to=\"{ name: ${1:'${2:pathname}'} }\" replace>",
-			"  $3",
-			"</router-link>$0"
+			"<router-link",
+			"  :to=\"{",
+			"    name: '${1:routeName}',",
+			"  }\"",
+			"  replace",
+			">",
+			"  $0",
+			"</router-link>"
 		],
 		"description": "Router Link to named route, replace mode.\n"
 	},
-
 	"router params": {
 		"prefix": "router-params",
 		"body": [
