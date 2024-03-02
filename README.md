@@ -58,13 +58,10 @@ Prefix 为什么是 `olbc` 而不是 `opbc`？因为 `op*` 前缀会有很多冲
 - Lifecycle Hooks (Options API)
 - Lifecycle Hooks (Composition API)
 - Instance Properties & Methods
+- Vue Directives
 - Vue Router v3.x
 
-Recommended editor settings:
-
---
-
-建议配置编辑器：
+Recommended editor settings (建议配置编辑器):
 
 ```
 "editor.inlineSuggest.enabled": true,
@@ -88,26 +85,21 @@ The `vue` prefix generates Vue Single-File Components, Some examples:
 | `vue` / `vue-composition-api-plugin` |                       | \<template\><br>&nbsp;&nbsp;\<div\><br>&nbsp;&nbsp;&nbsp;&nbsp;\<!-- --\><br>&nbsp;&nbsp;\</div\><br>\</template\><br><br>\<script\><br>import { defineComponent } from '@vue/composition-api';<br><br>export default defineComponent({<br>&nbsp;&nbsp;setup() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;return {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;};<br>&nbsp;&nbsp;},<br>});<br>\</script\>                                                                               |
 | ...                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-Full prefix screenshot:
-
---
-
-完整前缀截图：
+Full prefix screenshot (SFC) / 完整前缀截图 (单文件组件):
 
 ![](./art/newVue.png)
 
-
 ### Vue Language Blocks / SFC 语法定义
 
-The `vue-script` prefix generates `<script>` style language block;
+The `vue-script` prefix generates `<script>` language block, which contains a variety of API style scripting language blocks.
 
-The `vue-style` prefix generates a `<style>` style language block, which contains different style preprocessing languages.
+The `vue-style` prefix generates a `<style>` language block, which contains different style preprocessing language blocks.
 
 --
 
-`vue-script` 前缀生成 `<script>` 样式语言块；
+`vue-script` 前缀生成 `<script>` 语言块，包含不同风格脚本语言块；
 
-`vue-style` 前缀生成 `<style>` 样式语言块，包含不同样式预处理语言。
+`vue-style` 前缀生成 `<style>` 语言块，包含不同样式预处理语言块。
 
 | Prefix                                             | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -119,11 +111,7 @@ The `vue-style` prefix generates a `<style>` style language block, which contain
 | `vue-style-less`                                   |                       | \<style lang="less" scoped\><br><br>\</style\>                                                                                                                                                                                                                                                                                                                                                         |
 | ...                                                |                       |                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-Full prefix screenshot:
-
---
-
-完整前缀截图：
+Full prefix screenshot (Language Blocks) / 完整前缀截图 (SFC 语法定义):
 
 ![](./art/vue-language-blocks.png)
 
@@ -143,18 +131,14 @@ Full prefix screenshot:
 | `computed-property` / `cp`           |                       | <strong><u>p</u></strong>roperty() {<br>&nbsp;&nbsp;return this.property;<br>},                                                                                                                                                                                               |
 | `computed-property-get-set` / `cpgs` |                       | <strong><u>p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u>g</u></strong>et() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.value;<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;<strong><u>s</u></strong>et(value) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.value = value;<br>&nbsp;&nbsp;},<br>}, |
 | `option-watch` / `ow`                | `opw`                 | <strong><u>w</u></strong>atc<strong><u>h</u></strong>: {<br>&nbsp;&nbsp;<br>},                                                                                                                                                                                                |
-| `option-methods` / `om`              | `opm`                 | <strong><u>m</u></strong>ethod<strong><u>s</u></strong>: {<br>&nbsp;&nbsp;methodProperty() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>},                                                                                                                                  |
-| `methods-property` / `mp`            |                       | <strong><u>m</u></strong>ethod<strong><u>P</u></strong>roperty() {<br>&nbsp;&nbsp;<br>},                                                                                                                                                                                                                                          |
+| `option-methods` / `om`              | `opm`                 | <strong><u>m</u></strong>ethod<strong><u>s</u></strong>: {<br>&nbsp;&nbsp;methodProperty() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>},                                                                                                                              |
+| `methods-property` / `mp`            |                       | <strong><u>m</u></strong>ethod<strong><u>P</u></strong>roperty() {<br>&nbsp;&nbsp;<br>},                                                                                                                                                                                      |
 | `option-emits`                       |                       | <strong><u>e</u></strong>mit<strong><u>s</u></strong>: \['eventName'\],                                                                                                                                                                                                       |
 | `option-expose`                      |                       | <strong><u>e</u></strong>xpos<strong><u>e</u></strong>: \['publicMethod'\],                                                                                                                                                                                                   |
 | `option-render`                      |                       | <strong><u>r</u></strong>ende<strong><u>r</u></strong>(h, context) {<br>&nbsp;&nbsp;return h('tag', []);<br>},                                                                                                                                                                |
 | ...                                  |                       |                                                                                                                                                                                                                                                                               |
 
-Full prefix screenshot:
-
---
-
-完整前缀截图：
+Full prefix screenshot (Options) / 完整前缀截图:
 
 ![](./art/option.png)
 
@@ -183,11 +167,7 @@ Full prefix screenshot:
 | `props-String-default-required` / `psdr` | `pssdr`               | property: {<br>&nbsp;&nbsp;type: <strong><u>S</u></strong>tring,<br>&nbsp;&nbsp;<strong><u>d</u></strong>efault: undefined,<br>&nbsp;&nbsp;<strong><u>r</u></strong>equired: true,<br>}, |
 | ...                                      |                       |                                                                                                                                                                                          |
 
-Full prefix screenshot:
-
---
-
-完整前缀截图：
+Full prefix screenshot (Props) / 完整前缀截图:
 
 ![](./art/props.png)
 
@@ -277,7 +257,7 @@ Full prefix screenshot:
 | `nextTick`              | `ntt`                 | nextTick().then(() => {<br>&nbsp;&nbsp;<br>});                                                       |
 | `emit`                  |                       | <strong><u>em</u></strong>it('event-name', param);                                                   |
 
-### Vue-HTML
+### Vue Directives
 
 The `v` prefix generates Vue Directives, some examples:
 
@@ -329,11 +309,7 @@ The `route-` or `router-` prefix generates Vue Router, Some examples:
 | onBeforeRouteLeave            |                       | onBeforeRouteLeave((to, from, next) => {<br>&nbsp;&nbsp;next();<br>});                                                                                                                  |
 | ...                           |                       |                                                                                                                                                                                         |
 
-Full prefix screenshot:
-
---
-
-完整前缀截图：
+Full prefix screenshot (Vue Router) / 完整前缀截图 (Vue 路由):
 
 ![](./art/route.png)
 
@@ -351,14 +327,9 @@ Full prefix screenshot:
 | router-query                   |                       | params: {<br>&nbsp;&nbsp;property: 'value',<br>},                                                                                                                                                                                                               |
 | ...                            |                       |                                                                                                                                                                                                                                                                 |
 
-Full prefix screenshot:
-
---
-
-完整前缀截图：
+Full prefix screenshot (Vue Router Custom Component) / 完整前缀截图 (Vue 路由自定义组件):
 
 ![](./art/vue-router-custom-component.png)
-
 
 ### Why isn't there VueX? / 为什么没有 VueX
 
