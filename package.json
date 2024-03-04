@@ -26,6 +26,7 @@
 		"Snippets"
 	],
 	"scripts": {
+		"dev": "nodemon --watch src -e json -x 'yarn run prebuild'",
 		"prebuild": "node merge.js",
 		"build": "vsce package",
 		"prepublish": "npm run build",
@@ -108,7 +109,8 @@
 		]
 	},
 	"devDependencies": {
-		"glob": "^10.3.10"
+		"glob": "^10.3.10",
+		"nodemon": "^3.1.0"
 	},
 	"peerDependencies": {
 		"@vscode/vsce": "^2.24.0"
