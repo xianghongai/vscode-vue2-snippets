@@ -1,5 +1,5 @@
 {
-	"emit()": {
+	"Vue: context.emit()": {
 		"prefix": [
 			"emit"
 		],
@@ -7,7 +7,7 @@
 			"emit('${1:event-name}'${2:, ${3:param}});$0"
 		]
 	},
-	"expose()": {
+	"Vue: context.expose()": {
 		"prefix": [
 			"expose"
 		],

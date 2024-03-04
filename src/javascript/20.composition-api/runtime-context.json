@@ -1,11 +1,11 @@
 {
-	"Vue instance $router": {
+	"Vue: instance.proxy.$router": {
 		"prefix": "instance.proxy.$router",
 		"body": [
 			"instance.proxy.\\$router$9"
 		]
 	},
-	"Vue instance $route": {
+	"Vue: instance.proxy.$route": {
 		"prefix": "instance.proxy.$route",
 		"body": [
 			"instance.proxy.\\$route"
