@@ -1,17 +1,4 @@
 {
-	"<router-view>": {
-		"prefix": "router-view",
-		"body": [
-			"<router-view$1></router-view>$0"
-		]
-	},
-	"<router-view>, named": {
-		"prefix": "router-view-named",
-		"body": [
-			"<router-view name=\"${1:default}\"></router-view>$0"
-		],
-		"description": "Named router views\n"
-	},
 	"<router-link>, literal string": {
 		"prefix": "router-link",
 		"body": [
