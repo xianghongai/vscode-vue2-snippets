@@ -2,9 +2,9 @@
 	"name": "vscode-vue2-snippets",
 	"publisher": "NicholasHsiang",
 	"displayName": "Vue 2 Snippets",
-	"description": "Code snippets for Vue 2",
+	"description": "Code snippets for Vue 2 (Only Vue 2.x, Vue Router 3.x)",
 	"icon": "art/icon.png",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"type": "module",
 	"galleryBanner": {
 		"color": "#ffffff",
@@ -74,8 +74,8 @@
 				"path": "./snippets/javascript.json"
 			},
 			{
-				"language": "html",
-				"path": "./snippets/vue.json"
+				"language": "vue",
+				"path": "./snippets/javascript.json"
 			},
 			{
 				"language": "vue-html",
@@ -83,15 +83,27 @@
 			},
 			{
 				"language": "vue",
-				"path": "./snippets/javascript.json"
+				"path": "./snippets/html.json"
 			},
 			{
-				"language": "vue",
-				"path": "./snippets/html.json"
+				"language": "html",
+				"path": "./snippets/vue.json"
 			},
 			{
 				"language": "vue",
 				"path": "./snippets/vue.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "less",
+				"path": "./snippets/css.json"
 			}
 		]
 	},
