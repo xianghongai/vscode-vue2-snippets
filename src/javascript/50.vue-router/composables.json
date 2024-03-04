@@ -1,17 +1,17 @@
 {
-	"useRoute": {
+	"Vue: useRoute()": {
 		"prefix": "useRoute",
 		"body": [
 			"const route = useRoute();"
 		]
 	},
-	"useRouter": {
+	"Vue: useRouter()": {
 		"prefix": "useRouter",
 		"body": [
 			"const router = useRouter();"
 		]
 	},
-	"useLink": {
+	"Vue: useLink()": {
 		"prefix": "useLink",
 		"body": [
 			"const { href, isActive, isExactActive, navigate, route } = useLink({",
@@ -19,21 +19,5 @@
 			"});"
 		],
 		"description": "格式和 `<router-link>` 的 `to` prop 一样，能被 `router.resolve` 解析。\n"
-	},
-	"onBeforeRouteUpdate": {
-		"prefix": "onBeforeRouteUpdate",
-		"body": [
-			"onBeforeRouteUpdate((to, from, next) => {",
-			"  next();",
-			"});"
-		]
-	},
-	"onBeforeRouteLeave": {
-		"prefix": "onBeforeRouteLeave",
-		"body": [
-			"onBeforeRouteLeave((to, from, next) => {",
-			"  next();",
-			"});"
-		]
 	}
 }
