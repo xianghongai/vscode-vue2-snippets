@@ -11,7 +11,7 @@
 			"$0"
 		]
 	},
-	"computed property (get/set)": {
+	"computed property, get, set": {
 		"prefix": [
 			"computed-property-get-set",
 			"cpgs"
