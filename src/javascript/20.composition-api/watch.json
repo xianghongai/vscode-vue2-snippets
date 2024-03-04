@@ -4,16 +4,18 @@
 		"body": [
 			"watchEffect(async () => {",
 			"  $0",
-			"});"
+			"});",
+			""
 		],
-		"description": "watchEffect(effect, options?);\nWatchEffectOptions { immediate?, deep?, flush?, onTrack?, onTrigger?, once? };\nflush: 'pre' | 'post' | 'sync'.\n"
+		"description": "watchEffect(effect, options?);\nWatchEffectOptions { immediate?, deep?, flush?, onTrack?, onTrigger?, once? };\n"
 	},
 	"Composition API: watchPostEffect()": {
 		"prefix": "watchPostEffect",
 		"body": [
 			"watchPostEffect(async () => {",
 			"  $0",
-			"});"
+			"});",
+			""
 		],
 		"description": "Alias of watchEffect() with flush: 'post' option.\n"
 	},
@@ -22,59 +24,58 @@
 		"body": [
 			"watchSyncEffect(() => {",
 			"  $0",
-			"});"
+			"});",
+			""
 		],
 		"description": "Alias of watchEffect() with flush: 'sync' option.\n"
 	},
-	"Composition API: watch props": {
-		"prefix": [
-			"watch-props"
-		],
+	"Composition API: watch(), props": {
+		"prefix": "watch-props",
 		"body": [
 			"watch(",
 			"  () => props.${1:property},",
-			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
-			"    $5",
-			"  },$0",
-			");"
-		]
+			"  async (newValue) => {",
+			"    $0",
+			"  },",
+			");",
+			""
+		],
+		"description": ""
 	},
-	"Composition API: watch props {deep}": {
-		"prefix": [
-			"watch-props-deep"
-		],
+	"Composition API: watch(), props, deep": {
+		"prefix": "watch-props-deep",
 		"body": [
 			"watch(",
 			"  () => props.${1:property},",
-			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"  async (newValue) => {",
 			"    $0",
 			"  },",
 			"  {",
 			"    deep: true,",
 			"  }",
-			");"
-		]
-	},
-	"Composition API: watch props {immediate}": {
-		"prefix": [
-			"watch-props-immediate"
+			");",
+			""
 		],
+		"description": ""
+	},
+	"Composition API: watch(), props, immediate": {
+		"prefix": "watch-props-immediate",
 		"body": [
 			"watch(",
 			"  () => props.${1:property},",
-			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"  async (newValue) => {",
 			"    $0",
 			"  },",
 			"  {",
 			"    immediate: true,",
 			"  }",
-			");"
-		]
-	},
-	"Composition API: watch props {immediate, multiple}": {
-		"prefix": [
-			"watch-props-immediate-multiple"
+			");",
+			""
 		],
+		"description": ""
+	},
+	"Composition API: watch(), props, immediate, multiple": {
+		"prefix": "watch-props-immediate-multiple",
 		"body": [
 			"watch(",
 			"  [() => props.${1:property1}, () => props.${2:property2}],",
@@ -84,74 +85,86 @@
 			"  {",
 			"    immediate: true,",
 			"  }",
-			");"
-		]
+			");",
+			""
+		],
+		"description": ""
 	},
-	"Composition API: watch props {deep, immediate}": {
+	"Composition API: watch(), props, deep, immediate": {
 		"prefix": [
-			"watch-props-deep-immediate"
+			"watch-props-deep-immediate",
+			"watch-props-immediate-deep"
 		],
 		"body": [
 			"watch(",
 			"  () => props.${1:property},",
-			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"  async (newValue) => {",
 			"    $0",
 			"  },",
 			"  {",
 			"    deep: true,",
 			"    immediate: true,",
 			"  }",
-			");"
-		]
-	},
-	"Composition API: watch": {
-		"prefix": [
-			"watch"
+			");",
+			""
 		],
+		"description": ""
+	},
+	"Composition API: watch()": {
+		"prefix": "watch",
 		"body": [
 			"watch(",
 			"  ${1:source},",
-			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
 			"    $0",
 			"  },",
-			");"
-		]
+			");",
+			""
+		],
+		"description": ""
 	},
-	"Composition API: watch {deep}": {
+	"Composition API: watch(), deep": {
 		"prefix": [
-			"watch-deep"
+			"watch-deep",
+			"wd"
 		],
 		"body": [
 			"watch(",
 			"  ${1:source},",
-			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
 			"    $0",
 			"  },",
 			"  {",
 			"    deep: true,",
 			"  }",
-			");"
-		]
+			");",
+			""
+		],
+		"description": ""
 	},
-	"Composition API: watch {immediate}": {
+	"Composition API: watch(), immediate": {
 		"prefix": [
-			"watch-immediate"
+			"watch-immediate",
+			"wi"
 		],
 		"body": [
 			"watch(",
 			"  ${1:source},",
-			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
 			"    $0",
 			"  },",
 			"  {",
 			"    immediate: true,",
 			"  }",
-			");"
-		]
+			");",
+			""
+		],
+		"description": ""
 	},
-	"Composition API: watch {immediate, multiple}": {
+	"Composition API: watch(), immediate, multiple": {
 		"prefix": [
-			"watch-immediate-multiple"
+			"watch-immediate-multiple",
+			"wim"
 		],
 		"body": [
 			"watch(",
@@ -162,24 +175,29 @@
 			"  {",
 			"    immediate: true,",
 			"  }",
-			");"
-		]
+			");",
+			""
+		],
+		"description": ""
 	},
-	"Composition API: watch {deep, immediate}": {
+	"Composition API: watch(), deep, immediate": {
 		"prefix": [
-			"watch-deep-immediate"
+			"watch-deep-immediate",
+			"wdi"
 		],
 		"body": [
 			"watch(",
 			"  ${1:source1},",
-			"  async (${2:newValue}${3:, ${4:oldValue}}) => {",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
 			"    $0",
 			"  },",
 			"  {",
 			"    deep: true,",
 			"    immediate: true,",
 			"  }",
-			");"
-		]
+			");",
+			""
+		],
+		"description": ""
 	}
 }
