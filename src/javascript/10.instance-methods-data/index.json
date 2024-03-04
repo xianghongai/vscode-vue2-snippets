@@ -1,22 +1,16 @@
 {
 	"Vue: this.$watch()": {
-		"prefix": [
-			"this.$watch()",
-			"vm.$watch()"
-		],
+		"prefix": "vm-$watch()",
 		"body": [
-			"const ${8:unwatch} = ${1:this}.\\$watch('${3:property}', (${4:newValue}${5:, ${6:oldValue}}) => {",
+			"const ${5:unwatch} = ${9:this}.\\$watch('${2:property}', (${3:newValue}${5:, ${4:oldValue}}) => {",
 			"  $0",
 			"});"
 		]
 	},
 	"Vue: this.$watch(), immediate": {
-		"prefix": [
-			"this.$watch()",
-			"vm.$watch()"
-		],
+		"prefix": "vm-$watch()-immediate",
 		"body": [
-			"${1:this}.\\$watch('${3:property}', (${4:newValue}${5:, ${6:oldValue}}) => {",
+			"${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
 			"  $0",
 			"}, {",
 			"  immediate: true,",
@@ -24,12 +18,9 @@
 		]
 	},
 	"Vue: this.$watch(), deep": {
-		"prefix": [
-			"this.$watch()",
-			"vm.$watch()"
-		],
+		"prefix": "vm-$watch()-deep",
 		"body": [
-			"${1:this}.\\$watch('${3:property}', (${4:newValue}${5:, ${6:oldValue}}) => {",
+			"${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
 			"  $0",
 			"}, {",
 			"  deep: true,",
@@ -37,12 +28,9 @@
 		]
 	},
 	"Vue: this.$watch(), deep, immediate": {
-		"prefix": [
-			"this.$watch()",
-			"vm.$watch()"
-		],
+		"prefix": "vm-$watch()-deep-immediate",
 		"body": [
-			"${1:this}.\\$watch('${3:property}', (${4:newValue}${5:, ${6:oldValue}}) => {",
+			"${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
 			"  $0",
 			"}, {",
 			"  deep: true,",
@@ -51,22 +39,16 @@
 		]
 	},
 	"Vue: this.$set()": {
-		"prefix": [
-			"this.$set()",
-			"vm.$set()"
-		],
+		"prefix": "vm-$set()",
 		"body": [
-			"${1:this}.\\$set(this.${2:object/array}, ${3:propertyName/index}, ${4:value});$0"
+			"${9:this}.\\$set(this.${2:object/array}, ${3:propertyName/index}, ${4:value});$0"
 		],
 		"description": "This is the alias of the global Vue.set.\n"
 	},
 	"Vue: this.$delete()": {
-		"prefix": [
-			"this.$delete()",
-			"vm.$delete()"
-		],
+		"prefix": "vm-$delete()",
 		"body": [
-			"${1:this}.\\$delete(this.${2:object/array}, ${3:propertyName/index}, ${4:value});$0"
+			"${9:this}.\\$delete(this.${2:object/array}, ${3:propertyName/index}, ${4:value});$0"
 		],
 		"description": "This is the alias of the global Vue.delete.\n"
 	}
