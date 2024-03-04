@@ -1,23 +1,4 @@
 {
-	"import vue-router": {
-		"prefix": "import-vue-router",
-		"body": [
-			"import VueRouter from 'vue-router';$0"
-		],
-		"description": "import Vue Router\n"
-	},
-	"new VueRouter()": {
-		"prefix": "newVueRouter",
-		"body": [
-			"Vue.use(VueRouter);",
-			"",
-			"const ${1:router} = new VueRouter({",
-			"  mode: 'history',",
-			"  ${2:routes}",
-			"});$0"
-		],
-		"description": "Create the router instance, The default is hash mode.\nRouter Construction Options:\n- routes: Array<RouteConfig>,\n- mode: 'hash' | 'history' | 'abstract' (Node.js),\n- base: '/',\n"
-	},
 	"routes: Array<RouteConfig>": {
 		"prefix": "routes",
 		"body": [
@@ -40,18 +21,8 @@
 		],
 		"description": "Define routes\n"
 	},
-	"Define route, { path, component }": {
-		"prefix": "route",
-		"body": [
-			"{",
-			"  path: '${1:pathname}',",
-			"  component: ${3:Feature},",
-			"},"
-		],
-		"description": "Define route\n"
-	},
 	"Define route, { path, name, component }": {
-		"prefix": "route-name",
+		"prefix": "route",
 		"body": [
 			"{",
 			"  path: '${1:/pathname}',",
@@ -60,6 +31,16 @@
 			"},"
 		],
 		"description": "Define named route\n"
+	},
+	"Define route, { path, component }": {
+		"prefix": "route-path",
+		"body": [
+			"{",
+			"  path: '${1:pathname}',",
+			"  component: ${3:Feature},",
+			"},"
+		],
+		"description": "Define route\n"
 	},
 	"Define route, { path, component }, Named Views": {
 		"prefix": "route-named-views",
@@ -129,19 +110,6 @@
 		],
 		"description": "Define dynamic redirect\n"
 	},
-	"Define route, Lazy Loading Routes": {
-		"prefix": "route-lazy",
-		"body": [
-			"// const Feature = () => import('./Feature.vue')",
-			"{",
-			"  path: '${1:pathname}',",
-			"  name: '${2:routeName}',",
-			"  // component: () => import('./Feature.vue'),",
-			"  component: ${3:Feature},",
-			"},"
-		],
-		"description": "Define lazy loading route\n"
-	},
 	"Define route, Passing Props: Boolean mode": {
 		"prefix": "route-props-boolean",
 		"body": [
@@ -194,84 +162,24 @@
 		],
 		"description": "Passing Props to Route Components\n"
 	},
-	"route: beforeEnter(to, from, next)": {
-		"prefix": "route-beforeEnter",
-		"body": [
-			"beforeEnter (to, from, next) {",
-			"  $1/* must call `next` */",
-			"},"
-		],
-		"description": "Per-Route Guard.\n路由独享的守卫。\n"
-	},
-	"Options API: beforeRouteEnter(to, from, next)": {
-		"prefix": "option-beforeRouteEnter()",
-		"body": [
-			"beforeRouteEnter(to, from, next) {",
-			"  next((vm) => {$0});",
-			"},",
-			""
-		],
-		"description": "In-Component Guards.\n"
-	},
-	"Options API: beforeRouteUpdate(to, from, next)": {
-		"prefix": "option-beforeRouteUpdate()",
-		"body": [
-			"beforeRouteUpdate(to, from, next) {",
-			"  ",
-			"},",
-			""
-		],
-		"description": "In-Component Guards.\n"
-	},
-	"Options API: beforeRouteLeave(to, from, next)": {
-		"prefix": "option-beforeRouteLeave()",
-		"body": [
-			"beforeRouteLeave(to, from, next) {",
-			"  if (true) {",
-			"    next();",
-			"  } else {",
-			"    next(false);",
-			"  }",
-			"},",
-			""
-		],
-		"description": "In-Component Guards.\n"
-	},
-	"In-Component Guards (Leave Confirm)": {
-		"prefix": "option-route-leave-confirm",
-		"body": [
-			"beforeRouteEnter(to, from, next) {",
-			"  next((vm) => {$0});",
-			"},",
-			"beforeRouteUpdate(to, from, next) {",
-			"  // this.name = to.params.name;",
-			"  next();",
-			"},",
-			"beforeRouteLeave(to, from, next) {",
-			"  const answer = window.confirm(",
-			"    'Do you really want to leave? you have unsaved changes!'",
-			"  );",
-			"  if (answer) {",
-			"    next();",
-			"  } else {",
-			"    next(false);",
-			"  }",
-			"},"
-		]
-	},
 	"Lazy Loading Routes": {
 		"prefix": "lazy-route",
 		"body": [
-			"const ${1} = () => import('@/${2:features}/${1:Feature}.vue');$0"
-		],
-		"description": "Define an async component that will be automatically code-split by webpack.\n定义一个能够被 Webpack 自动代码分割的异步组件。\n"
+			"const ${1:Feature} = () => import('${2:@/views/Feature.vue}');$0"
+		]
 	},
-	"Lazy Loading Routes, Grouping Components in the Same Chunk": {
-		"prefix": "lazy-route-chunk",
+	"Lazy Loading Routes, webpack named chunks": {
+		"prefix": "lazy-route-chunk-webpack",
 		"body": [
-			"const ${1:Feature1} = () => import(/* webpackChunkName: \"${3:feature}\" */ '${4:.}/${1}.vue');",
-			"const ${2:Feature2} = () => import(/* webpackChunkName: \"${3}\" */ '${5:.}/${2}.vue');"
-		],
-		"description": "Group all the components nested under the same route into the same async chunk.\n把某个路由下的所有组件都打包在同个异步块 (chunk) 中。只需要使用 命名 chunk (opens new window)，一个特殊的注释语法来提供 chunk name (需要 Webpack > 2.4)。\n"
+			"const ${1:Feature} = () => import(/* webpackChunkName: \"${2:feature}\" */ '${3:@/views/Feature.vue}');"
+		]
+	},
+	"Route Meta Fields": {
+		"prefix": "route-meta",
+		"body": [
+			"meta: { ",
+			"  ${1:requiresAuth}: ${2:true},",
+			"},"
+		]
 	}
 }
