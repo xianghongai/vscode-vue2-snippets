@@ -11,7 +11,7 @@
 			"$0"
 		]
 	},
-	"watch property {deep}": {
+	"watch property, deep ": {
 		"prefix": [
 			"watch-property-deep",
 			"wpd"
@@ -26,7 +26,7 @@
 			"$0"
 		]
 	},
-	"watch property {immediate}": {
+	"watch property, immediate ": {
 		"prefix": [
 			"watch-property-immediate",
 			"wpi"
@@ -41,7 +41,7 @@
 			"$0"
 		]
 	},
-	"watch property {deep, immediate}": {
+	"watch property, deep, immediate ": {
 		"prefix": [
 			"watch-property-deep-immediate",
 			"watch-property-immediate-deep",

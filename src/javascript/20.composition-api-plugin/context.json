@@ -1,5 +1,5 @@
 {
-	"Vue Context (@vue/composition-api)": {
+	"Vue: Context, @vue/composition-api": {
 		"prefix": "context",
 		"body": [
 			"import { provide, inject } from '@vue/composition-api';",
