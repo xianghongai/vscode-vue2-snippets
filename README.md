@@ -59,6 +59,7 @@ Prefix 为什么是 `olbc` 而不是 `opbc`？因为 `op*` 前缀会有很多冲
 - Lifecycle Hooks (Composition API)
 - Instance Properties & Methods
 - Vue Directives
+- Transition & TransitionGroup
 - Vue Router v3.x
 
 Recommended editor settings (建议配置编辑器):
@@ -285,6 +286,20 @@ The `v` prefix generates Vue Directives, some examples:
 | `transition`          |                       | <transition name="name"><br>&nbsp;&nbsp;<br></transition>                                                           |
 | `transition-group`    | `tg`                  | <transition-group name="list" tag="ul"><br>&nbsp;&nbsp;<br></transition-group>                                      |
 | `keep-alive`          | `ka`                  | <keep-alive><br>&nbsp;&nbsp;<br></keep-alive>                                                                       |
+
+### Transition & TransitionGroup
+
+Props for customizing transition classes / 用于自定义过渡 class 的 prop
+
+![](./art/custom-transition-classes.png)
+
+Events / 事件
+
+![](./art/transition-events.png)
+
+CSS Classes / CSS 类
+
+`css-transitions`。
 
 ### Vue Router v3.x
 
