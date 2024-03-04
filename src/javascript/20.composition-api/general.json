@@ -1,5 +1,5 @@
 {
-	"Vue nextTick()": {
+	"Vue: nextTick()": {
 		"prefix": "nextTick",
 		"body": [
 			"nextTick().then(() => {",
@@ -8,7 +8,7 @@
 		],
 		"description": "A utility for waiting for the next DOM update flush."
 	},
-	"Vue await nextTick()": {
+	"Vue: await nextTick()": {
 		"prefix": [
 			"await-nextTick",
 			"nt"
@@ -18,14 +18,14 @@
 		],
 		"description": "A utility for waiting for the next DOM update flush."
 	},
-	"Vue defineComponent(ComponentOptions)": {
+	"Vue: defineComponent(ComponentOptions)": {
 		"prefix": "defineComponent",
 		"body": [
 			"const ${2:Feature} = defineComponent($1);"
 		],
 		"description": "function defineComponent(component: ComponentOptions): ComponentConstructor;\nfunction defineComponent(setup: ComponentOptions['setup'], extraOptions?: ComponentOptions): () => any;\n"
 	},
-	"Vue defineAsyncComponent(AsyncComponentLoader)": {
+	"Vue: defineAsyncComponent(AsyncComponentLoader)": {
 		"prefix": "defineAsyncComponent",
 		"body": [
 			"const ${2:AsyncComp} = defineAsyncComponent(() =>",
@@ -34,7 +34,7 @@
 		],
 		"description": "defineAsyncComponent(AsyncComponentLoader): Component;\ntype AsyncComponentLoader = () => Promise<Component>;\n"
 	},
-	"Vue defineAsyncComponent(AsyncComponentOptions)": {
+	"Vue: defineAsyncComponent(AsyncComponentOptions)": {
 		"prefix": "defineAsyncComponent",
 		"body": [
 			"const ${5:AsyncComp} = defineAsyncComponent({",

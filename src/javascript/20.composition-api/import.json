@@ -1,65 +1,65 @@
 {
-	"import createApp": {
+	"Vue: import createApp": {
 		"prefix": "import-createApp",
 		"body": [
 			"import { createApp$1 } from 'vue';"
 		]
 	},
-	"import onMounted": {
+	"Vue: import onMounted": {
 		"prefix": ["import-onMounted"],
 		"body": [
 			"import { onMounted } from 'vue';"
 		]
 	},
-	"import ref": {
+	"Vue: import ref": {
 		"prefix": "import-ref",
 		"body": [
 			"import { ref$1 } from 'vue';"
 		]
 	},
-	"import computed": {
+	"Vue: import computed": {
 		"prefix": ["import-computed"],
 		"body": [
 			"import { computed } from 'vue';"
 		]
 	},
-	"import provide": {
+	"Vue: import provide": {
 		"prefix": ["import-provide"],
 		"body": [
 			"import { provide } from 'vue';"
 		]
 	},
-	"import inject": {
+	"Vue: import inject": {
 		"prefix": ["import-inject"],
 		"body": [
 			"import { inject } from 'vue';"
 		]
 	},
-	"import watch": {
+	"Vue: import watch": {
 		"prefix": "import-watch",
 		"body": [
 			"import { watch$1 } from 'vue';"
 		]
 	},
-	"import nextTick": {
+	"Vue: import nextTick": {
 		"prefix": "import-nextTick",
 		"body": [
 			"import { nextTick$1 } from 'vue';"
 		]
 	},
-	"import defineComponent": {
+	"Vue: import defineComponent": {
 		"prefix": "import-defineComponent",
 		"body": [
 			"import { defineComponent$1 } from 'vue';"
 		]
 	},
-	"import defineAsyncComponent": {
+	"Vue: import defineAsyncComponent": {
 		"prefix": "import-defineAsyncComponent",
 		"body": [
 			"import { defineAsyncComponent$1 } from 'vue';"
 		]
 	},
-	"import PropType": {
+	"Vue: import PropType": {
 		"prefix": "import-PropType",
 		"body": [
 			"import type { PropType } from 'vue';"
