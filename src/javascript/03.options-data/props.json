@@ -5,7 +5,8 @@
 			"ps"
 		],
 		"body": [
-			"${1:property}: String,$0"
+			"${1:property}: String,",
+			"$0"
 		]
 	},
 	"props: Number": {
@@ -14,7 +15,8 @@
 			"pn"
 		],
 		"body": [
-			"${1:property}: Number,$0"
+			"${1:property}: Number,",
+			"$0"
 		]
 	},
 	"props: Boolean": {
@@ -23,7 +25,8 @@
 			"pb"
 		],
 		"body": [
-			"${1:property}: Boolean,$0"
+			"${1:property}: Boolean,",
+			"$0"
 		]
 	},
 	"props: Array": {
@@ -35,9 +38,10 @@
 			"${1:property}: {",
 			"  type: Array,",
 			"  default() {",
-			"    return [${3}];",
-			"  },",
-			"},$0"
+			"    return [${2}];",
+			"  },$3",
+			"},",
+			"$0"
 		]
 	},
 	"props: Object": {
@@ -50,8 +54,9 @@
 			"  type: Object,",
 			"  default() {",
 			"    return {${3}};",
-			"  },",
-			"},$0"
+			"  },$3",
+			"},",
+			"$0"
 		]
 	},
 	"props: Date": {
@@ -60,7 +65,8 @@
 			"pd"
 		],
 		"body": [
-			"${1:property}: Date,$0"
+			"${1:property}: Date,",
+			"$0"
 		]
 	},
 	"props: Function": {
@@ -71,8 +77,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
-			"  default: ${2:undefined},",
-			"},$0"
+			"  default${2: undefined},",
+			"},$3",
+			"$0"
 		]
 	},
 	"props: Symbol": {
@@ -81,7 +88,8 @@
 			"psy"
 		],
 		"body": [
-			"${1:property}: Symbol,$0"
+			"${1:property}: Symbol,",
+			"$0"
 		]
 	},
 	"props: Promise": {
@@ -90,7 +98,8 @@
 			"pp"
 		],
 		"body": [
-			"${1:property}: Promise,$0"
+			"${1:property}: Promise,",
+			"$0"
 		]
 	},
 	"props: String (default)": {
@@ -101,8 +110,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: String,",
-			"  default: ${2:undefined},",
-			"},$0"
+			"  default: ${2:undefined},$3",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Number (default)": {
@@ -113,8 +123,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Number,",
-			"  default: ${2:undefined},",
-			"},$0"
+			"  default: ${2:undefined},$3",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Boolean (default)": {
@@ -125,8 +136,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Boolean,",
-			"  default: ${2:true},",
-			"},$0"
+			"  default: ${2:undefined},$3",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Array (default)": {
@@ -139,8 +151,9 @@
 			"  type: Array,",
 			"  default() {",
 			"    return [${3}];",
-			"  },",
-			"},$0"
+			"  },$3",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Object (default)": {
@@ -152,9 +165,10 @@
 			"${1:property}: {",
 			"  type: Object,",
 			"  default() {",
-			"    return {${3}};",
-			"  },",
-			"},$0"
+			"    return {${2}};",
+			"  },$3",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Date (default)": {
@@ -165,8 +179,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Date,",
-			"  default: ${2:undefined},",
-			"},$0"
+			"  default: ${2:undefined},$3",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Symbol (default)": {
@@ -177,8 +192,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Symbol,",
-			"  default: ${2:Symbol($3)},",
-			"},$0"
+			"  default: ${2:Symbol($3)},$3",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Function (default)": {
@@ -189,8 +205,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
-			"  default: ${2:undefined},",
-			"},$0"
+			"  default${2: undefined},$3",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Promise (default)": {
@@ -201,8 +218,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Promise,",
-			"  default: ${2:undefined},",
-			"},$0"
+			"  default: ${2:undefined},$3",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: String (required)": {
@@ -213,8 +231,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: String,",
-			"  required: ${2:true},",
-			"},$0"
+			"  required: true,$2",
+			"},",
+			"$0"
 		]
 	},
 	"props: Number (required)": {
@@ -225,8 +244,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Number,",
-			"  required: ${2:true},",
-			"},$0"
+			"  required: true,$2",
+			"},",
+			"$0"
 		]
 	},
 	"props: Boolean (required)": {
@@ -237,8 +257,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Boolean,",
-			"  required: ${2:true},",
-			"},$0"
+			"  required: true,$2",
+			"},",
+			"$0"
 		]
 	},
 	"props: Array (required)": {
@@ -249,8 +270,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Array,",
-			"  required: ${2:true},",
-			"},$0"
+			"  required: true,$2",
+			"},",
+			"$0"
 		]
 	},
 	"props: Object (required)": {
@@ -261,8 +283,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Object,",
-			"  required: ${2:true},",
-			"},$0"
+			"  required: true,$2",
+			"},",
+			"$0"
 		]
 	},
 	"props: Date (required)": {
@@ -273,8 +296,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Date,",
-			"  required: ${2:true},",
-			"},$0"
+			"  required: true,$2",
+			"},",
+			"$0"
 		]
 	},
 	"props: Function (required)": {
@@ -285,8 +309,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
-			"  required: ${2:true},",
-			"},$0"
+			"  required: true,$2",
+			"},",
+			"$0"
 		]
 	},
 	"props: Symbol (required)": {
@@ -297,8 +322,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Symbol,",
-			"  required: ${2:true},",
-			"},$0"
+			"  required: true,$2",
+			"},",
+			"$0"
 		]
 	},
 	"props: Promise (required)": {
@@ -309,8 +335,9 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Promise,",
-			"  required: ${2:true},",
-			"},$0"
+			"  required: true,$2",
+			"},",
+			"$0"
 		]
 	},
 	"props: String (default, required)": {
@@ -322,8 +349,9 @@
 			"${1:property}: {",
 			"  type: String,",
 			"  default: ${2:undefined},",
-			"  required: ${3:true},",
-			"},$0"
+			"  required: true,",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Number (default, required)": {
@@ -335,8 +363,9 @@
 			"${1:property}: {",
 			"  type: Number,",
 			"  default: ${2:undefined},",
-			"  required: ${3:true},",
-			"},$0"
+			"  required: true,",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Boolean (default, required)": {
@@ -347,9 +376,10 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Boolean,",
-			"  default: ${2:true},",
-			"  required: ${3:true},",
-			"},$0"
+			"  default: ${2:undefined},",
+			"  required: true,",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Array (default, required)": {
@@ -363,8 +393,9 @@
 			"  default() {",
 			"    return [${2}];",
 			"  },",
-			"  required: ${3:true},",
-			"},$0"
+			"  required: true,",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Object (default, required)": {
@@ -378,8 +409,9 @@
 			"  default() {",
 			"    return {${2}};",
 			"  },",
-			"  required: ${3:true},",
-			"},$0"
+			"  required: true,",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Date (default, required)": {
@@ -391,8 +423,9 @@
 			"${1:property}: {",
 			"  type: Date,",
 			"  default: ${2:undefined},",
-			"  required: ${3:true},",
-			"},$0"
+			"  required: true,",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Function (default, required)": {
@@ -403,9 +436,10 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
-			"  default: ${2:undefined},",
-			"  required: ${3:true},",
-			"},$0"
+			"  default${2: undefined},",
+			"  required: true,",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Symbol (default, required)": {
@@ -416,9 +450,10 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Symbol,",
-			"  default: ${2:undefined},",
-			"  required: ${3:true},",
-			"},$0"
+			"  default: ${2:Symbol($3)},",
+			"  required: true,",
+			"},$5",
+			"$0"
 		]
 	},
 	"props: Promise (default, required)": {
@@ -429,9 +464,10 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Promise,",
-			"  default: ${2:undefined},",
-			"  required: ${3:true},",
-			"},$0"
+			"  default: ${2},",
+			"  required: true,",
+			"},$5",
+			"$0"
 		]
 	}
 }
