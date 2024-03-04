@@ -1,5 +1,5 @@
 {
-	"Vue Instance": {
+	"Vue: new instance": {
 		"prefix": "newVue",
 		"body": [
 			"import Vue from 'vue';",
