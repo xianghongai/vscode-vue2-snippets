@@ -249,14 +249,22 @@ Full prefix screenshot (Props) / 完整前缀截图:
 
 ### Instance Properties & Methods
 
-| Prefix                  | VS Code Suggest Match | Snippet                                                                                              |
-|-------------------------|-----------------------|------------------------------------------------------------------------------------------------------|
-| `vm.nextTick`           | `vmnt`                | this.$<strong><u>n</u></strong>ext<strong><u>T</u></strong>ick().then(() => {<br>&nbsp;&nbsp;<br>}); |
-| `await-vm.nextTick`     | `awvmnt`              | <strong><u>aw</u></strong>ait this.$<strong><u>n</u></strong>ext<strong><u>T</u></strong>ick();      |
-| `vm.emit`               | `vmem`                | this.$<strong><u>em</u></strong>it('event-name', param);                                             |
-| `nt` / `await-nextTick` | `awnt`                | await nextTick();                                                                                    |
-| `nextTick`              | `ntt`                 | nextTick().then(() => {<br>&nbsp;&nbsp;<br>});                                                       |
-| `emit`                  |                       | <strong><u>em</u></strong>it('event-name', param);                                                   |
+All instance properties and methods are triggered with the `vm` prefix, such as:
+
+所有实例属性和方法都以 `vm` 前缀触发，部分示例如下：
+
+| Prefix                       | VS Code Suggest Match | Snippet                                                                                              |
+|------------------------------|-----------------------|------------------------------------------------------------------------------------------------------|
+| `vm-nextTick`                |                       | this.$<strong><u>n</u></strong>ext<strong><u>T</u></strong>ick().then(() => {<br>&nbsp;&nbsp;<br>}); |
+| `await-vm-nextTick` / `vmnt` | `awvmnt`              | <strong><u>aw</u></strong>ait this.$<strong><u>n</u></strong>ext<strong><u>T</u></strong>ick();      |
+| `vm-emit`                    | `vmem`                | this.$<strong><u>em</u></strong>it('event-name', param);                                             |
+| `nt` / `await-nextTick`      | `awnt`                | await nextTick();                                                                                    |
+| `nextTick`                   | `ntt`                 | nextTick().then(() => {<br>&nbsp;&nbsp;<br>});                                                       |
+| `emit`                       |                       | <strong><u>em</u></strong>it('event-name', param);                                                   |
+
+Full prefix screenshot (Vue Instance) / 完整前缀截图 (Vue 实例):
+
+![](./art/vm.png)
 
 ### Vue Directives
 
@@ -289,23 +297,27 @@ The `v` prefix generates Vue Directives, some examples:
 
 ### Transition & TransitionGroup
 
-Props for customizing transition classes / 用于自定义过渡 class 的 prop
+(1). Props for customizing transition classes / 用于自定义过渡 class 的 prop
 
 ![](./art/custom-transition-classes.png)
 
-Events / 事件
+(2). Events / 事件
 
 ![](./art/transition-events.png)
 
-CSS Classes / CSS 类
+(3). CSS Classes / CSS 类
 
 `css-transitions`。
 
 ### Vue Router v3.x
 
-The `route-` or `router-` prefix generates Vue Router, Some examples:
+The `route-`/`vmroute-` or `router-`/`vmrouter-` prefix generates Vue Router, Some examples:
 
-通过 `route-` 或 `router-` 前缀触发，包涵大量 Vue Router v3.x API 代码片段，部分示例如下：
+如果是 Composition API，可通过 `route-` 或 `router-` 前缀触发；
+
+如果是 Options API，可通过 `vmroute-` 或 `vmrouter-` 前缀触发。
+
+包涵大量 Vue Router v3.x API 代码片段，部分示例如下：
 
 #### Vue Route v3.x - Script
 
@@ -326,9 +338,21 @@ The `route-` or `router-` prefix generates Vue Router, Some examples:
 
 Full prefix screenshot (Vue Router) / 完整前缀截图 (Vue 路由):
 
-![](./art/route.png)
+(1). Define Route / 定义路由
+
+![](./art/route-define.png)
+
+(2). Router Instance (Composition API) / Router 实例 (组合式接口)
 
 ![](./art/router.png)
+
+(3). Router Instance (Options API) / Router 实例 (选项式接口)
+
+![](./art/router-vm.png)
+
+(4). Route Property (Composition API) / Route 属性 (组合式接口)
+
+![](./art/route-vm.png)
 
 #### Vue Route v3.x - Custom Component
 
@@ -339,12 +363,12 @@ Full prefix screenshot (Vue Router) / 完整前缀截图 (Vue 路由):
 | router-link                    | rl                    | \<router-link :to=""\><br>&nbsp;&nbsp;<br>\</router-link\>                                                                                                                                                                                                      |
 | router-link-named-params-query | rlnpq                 | \<router-link<br>&nbsp;&nbsp;:to="{<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'routeName',<br>&nbsp;&nbsp;&nbsp;&nbsp;params: { property: 'value' },<br>&nbsp;&nbsp;&nbsp;&nbsp;query: { property: 'value' },<br>&nbsp;&nbsp;}"<br>><br>&nbsp;&nbsp;<br>\</router-link\> |
 | router-params                  |                       | params: {<br>&nbsp;&nbsp;property: 'value',<br>},                                                                                                                                                                                                               |
-| router-query                   |                       | params: {<br>&nbsp;&nbsp;property: 'value',<br>},                                                                                                                                                                                                               |
+| router-query                   |                       | query: {<br>&nbsp;&nbsp;property: 'value',<br>},                                                                                                                                                                                                                |
 | ...                            |                       |                                                                                                                                                                                                                                                                 |
 
 Full prefix screenshot (Vue Router Custom Component) / 完整前缀截图 (Vue 路由自定义组件):
 
-![](./art/vue-router-custom-component.png)
+![](./art/router-component.png)
 
 ### Why isn't there VueX? / 为什么没有 VueX
 
@@ -354,13 +378,13 @@ In Vue 2.x, Vuex is used, while in Vue 3.x, Pinia is adopted. There are costs as
 
 Vue 2.x 中采用 VueX，Vue 3.x 采用 Pinia，项目级别迁移有成本，组件级别复用耦合了状态管理库，用状态库没多大意义，状态共享完全可以通过 Vue [依赖注入](https://cn.vuejs.org/api/composition-api-dependency-injection.html)实现。
 
-
 ## Supported languages (file extensions)
 
 - JavaScript (`.js`)
 - TypeScript (`.ts`)
 - HTML (`.html`)
 - Vue (`.vue`)
+- CSS (`.css`)
 
 ## The `UNSAFE` prefix/suffix
 
