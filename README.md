@@ -20,6 +20,8 @@
   </a>
 </p>
 
+Code snippets for Vue (Only Vue 2.x, Vue Router 3.x, @vue/composition-api).
+
 ## Introduction 📚
 
 There is no need to deliberately memorize it, you can generate code according to the Vue API **partial abbreviations**, and special handling required to **reduce conflicts**. You only need to understand the Extension design rules of this extension to release your energy.
@@ -97,6 +99,8 @@ Recommended editor settings (建议配置编辑器):
 
 The `vue` prefix generates Vue Single-File Components, Some examples:
 
+--
+
 通过 `vue` 前缀触发，包涵大量创建 Vue 单文件组件的代码片段，部分示例如下：
 
 
@@ -110,7 +114,7 @@ The `vue` prefix generates Vue Single-File Components, Some examples:
 
 Full prefix screenshot (SFC) / 完整前缀截图 (单文件组件):
 
-![](./art/newVue.png)
+![](./art/assets/newVue.png)
 
 ### Vue Language Blocks / SFC 语法定义
 
@@ -136,10 +140,16 @@ The `vue-style` prefix generates a `<style>` language block, which contains diff
 
 Full prefix screenshot (Language Blocks) / 完整前缀截图 (SFC 语法定义):
 
-![](./art/vue-language-blocks.png)
+![](./art/assets/vue-language-blocks.png)
 
 
 ### Options API
+
+The `option-` prefix generates Vue Options API Code, Examples:
+
+--
+
+通过 `option-` 前缀触发，包涵所有生成 Vue 选项式 API 的代码片段，示例如下：
 
 | Prefix                                      | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                       |
 |---------------------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -163,9 +173,11 @@ Full prefix screenshot (Language Blocks) / 完整前缀截图 (SFC 语法定义)
 
 Full prefix screenshot (Options) / 完整前缀截图:
 
-![](./art/option.png)
+![](./art/assets/option.png)
 
 ### Props Property
+
+Just `ps*`...
 
 1. 直接生成 (Prefix)：`ps` = <strong><u style="color: red;">P</u></strong></strong>rops, <strong><u style="color: red;">S</u></strong></strong>tring.
 2. 联想匹配 (Suggest Match)：`pssdr` = <strong><u style="color: red;">P</u></strong></strong>rop<strong><u style="color: red;">s</u></strong></strong>, <strong><u style="color: red;">S</u></strong></strong>tring, <strong><u style="color: red;">d</u></strong></strong>efault, <strong><u style="color: red;">r</u></strong></strong>equired.
@@ -190,9 +202,9 @@ Full prefix screenshot (Options) / 完整前缀截图:
 | `props-String-default-required` <br><br> `psdr` | `pssdr`               | property: {<br>&nbsp;&nbsp;type: <strong><u>S</u></strong>tring,<br>&nbsp;&nbsp;<strong><u>d</u></strong>efault: undefined,<br>&nbsp;&nbsp;<strong><u>r</u></strong>equired: true,<br>}, |
 | ...                                             |                       |                                                                                                                                                                                          |
 
-Full prefix screenshot (Props) / 完整前缀截图:
+The prefix screenshot (Props) / 前缀截图:
 
-![](./art/props.png)
+![](./art/assets/props.png)
 
 ### Watch Property (Options API)
 
@@ -205,6 +217,10 @@ Full prefix screenshot (Props) / 完整前缀截图:
 | `watch-property-deep` <br><br> `wpd`            |                       | <strong><u>p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u>d</u></strong>eep: true,<br>&nbsp;&nbsp;handler(newValue, oldValue) {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>},                                                         |
 | `watch-property-immediate` <br><br> `wpi`       |                       | <strong><u>p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u>i</u></strong>mmediate: true,<br>&nbsp;&nbsp;handler(newValue, oldValue) {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>},                                                    |
 | `watch-property-deep-immediate` <br><br> `wpdi` |                       | <strong><u>p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u>d</u></strong>eep: true,<br>&nbsp;&nbsp;<strong><u>i</u></strong>mmediate: true,<br>&nbsp;&nbsp;handler(newValue, oldValue) {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>}, |
+
+The prefix screenshot (Watch) / 前缀截图:
+
+![](./art/assets/watch-options-api.png)
 
 ### Watch (Composition API)
 
@@ -227,6 +243,10 @@ Full prefix screenshot (Props) / 完整前缀截图:
 | `watchPostEffect`                        | `wpef`                | <strong><u>w</u></strong>atch<strong><u>P</u></strong>ost<strong><u>Ef</u></strong>fect(async () => {<br>&nbsp;&nbsp;<br>});                                                                                                                                                                                                                                                                |
 | `watchSyncEffect`                        | `wsef`                | <strong><u>w</u></strong>atch<strong><u>S</u></strong>ync<strong><u>Ef</u></strong>fect(() => {<br>&nbsp;&nbsp;<br>});                                                                                                                                                                                                                                                                      |
 
+The prefix screenshot (Watch) / 前缀截图:
+
+![](./art/assets/watch-composition-api.png)
+
 ### Computed
 
 | Prefix                                      | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                   |
@@ -236,7 +256,13 @@ Full prefix screenshot (Props) / 完整前缀截图:
 | `compute`                                   |                       | const feature = computed(() => state.value);                                                                                                                                                                                                                              |
 | `computed-get-set`                          |                       | const feature = computed({<br>&nbsp;&nbsp;get: () => state.value,<br>&nbsp;&nbsp;set: (newValue) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;state.value = newValue;<br>&nbsp;&nbsp;},<br>});                                                                                         |
 
+The prefix screenshot (Computed) / 前缀截图:
+
+![](./art/assets/computed.png)
+
 ### Lifecycle Hooks (Options API)
+
+Just `ol*`...
 
 只要**理解** `ol` 是 <strong><u style="color: red;">O</u></strong></strong>ptions API <strong><u style="color: red;">L</u></strong></strong>ifecycle Hooks` 的缩写，并**记忆** Vue2 生命周期钩子，然后就能释放你的能量了。
 
@@ -255,7 +281,17 @@ Full prefix screenshot (Props) / 完整前缀截图:
 | `async-option-created()` <br><br> `asolc` | `asopcr`              | <strong><u>as</u></strong>ync <strong><u>c</u></strong>reated() {<br>&nbsp;&nbsp;<br>}, |
 | `async-option-mounted()` <br><br> `asolm` | `asopmu`              | <strong><u>as</u></strong>ync <strong><u>m</u></strong>ounted() {<br>&nbsp;&nbsp;<br>}, |
 
+The prefix screenshot (Lifecycle Hooks) / 前缀截图:
+
+![](./art/assets/option-lifecycle.png)
+
 ### Lifecycle Hooks (Composition API)
+
+The `on` prefix generates Vue Lifecycle Hooks, Some examples:
+
+--
+
+通过 `on` 前缀触发，包涵所有生成 Vue 生命周期钩子的代码片段，示例如下：
 
 | Prefix            | VS Code Suggest Match | Snippet                                                                                        |
 |-------------------|-----------------------|------------------------------------------------------------------------------------------------|
@@ -268,6 +304,10 @@ Full prefix screenshot (Props) / 完整前缀截图:
 | `onActivated`     | `ona`                 | <strong><u>onA</u></strong>ctivated(() => {<br>&nbsp;&nbsp;<br>});                             |
 | `onDeactivated`   | `onda`                | <strong><u>onD</u></strong>e<strong><u>a</u></strong>ctivated(() => {<br>&nbsp;&nbsp;<br>});   |
 | `async-onMounted` | `asonm`               | <strong><u>onM</u></strong>ounted(<strong><u>as</u></strong>ync () => {<br>&nbsp;&nbsp;<br>}); |
+
+The prefix screenshot (Lifecycle Hooks) / 前缀截图:
+
+![](./art/assets/on.png)
 
 ### Instance Properties & Methods
 
@@ -286,7 +326,7 @@ All instance properties and methods are triggered with the `vm` prefix, such as:
 
 Full prefix screenshot (Vue Instance) / 完整前缀截图 (Vue 实例):
 
-![](./art/vm.png)
+![](./art/assets/vm.png)
 
 ### Built-ins Directives
 
@@ -314,21 +354,30 @@ The `v` prefix generates Vue Directives, some examples:
 | `v-on-$listeners`     |                       | v-on="$listeners"                                                                                                   |
 | `v-$attrs-$listeners` |                       | v-bind="$attrs" v-on="$listeners"                                                                                   |
 
-### Built-ins Components
+Full prefix screenshot (`v-`) / 完整前缀截图 (Vue 内置指令):
 
-| Prefix             | VS Code Suggest Match | Snippet                                                                        |
-|--------------------|-----------------------|--------------------------------------------------------------------------------|
-| `transition`       |                       | <transition name="name"><br>&nbsp;&nbsp;<br></transition>                      |
-| `transition-group` | `tg`                  | <transition-group name="list" tag="ul"><br>&nbsp;&nbsp;<br></transition-group> |
-| `keep-alive`       | `ka`                  | <keep-alive><br>&nbsp;&nbsp;<br></keep-alive>                                  |
+![](./art/assets/v-.png)
+
+### Built-ins Components & Special Elements
+
+| Prefix             | VS Code Suggest Match | Snippet                                                                            |
+|--------------------|-----------------------|------------------------------------------------------------------------------------|
+| `transition`       |                       | \<transition name="name"\><br>&nbsp;&nbsp;<br>\</transition\>                      |
+| `transition-group` | `tg`                  | \<transition-group name="list" tag="ul"\><br>&nbsp;&nbsp;<br>\</transition-group\> |
+| `keep-alive`       | `ka`                  | \<keep-alive\><br>&nbsp;&nbsp;<br>\</keep-alive\>                                  |
+| `slot`             |                       | \<slot\>\</slot\>                                                                  |
+| `slot-name`        |                       | \<slot :prop="var"\>\</slot\>                                                      |
+| `slot-scope`       |                       | \<slot name="name"\>\</slot\>                                                      |
+| `slot-name-scope`  | `snc`                 | \<slot name="name" :prop="var"\>\</slot\>                                          |
+| ...                |                       |                                                                                    |
 
 (1). Transition classes / 用于自定义过渡 class Props
 
-![](./art/custom-transition-classes.png)
+![](./art/assets/transition-component-classes.png)
 
 (2). Transition events / 过渡事件
 
-![](./art/transition-events.png)
+![](./art/assets/transition-events.png)
 
 (3). Transition css / 过渡 CSS 类
 
@@ -366,19 +415,19 @@ Full prefix screenshot (Vue Router) / 完整前缀截图 (Vue 路由):
 
 (1). Define Route / 定义路由
 
-![](./art/route-define.png)
+![](./art/assets/route-define.png)
 
 (2). Router Instance (Composition API) / Router 实例 (组合式接口)
 
-![](./art/router.png)
+![](./art/assets/router.png)
 
 (3). Router Instance (Options API) / Router 实例 (选项式接口)
 
-![](./art/router-vm.png)
+![](./art/assets/router-vm.png)
 
-(4). Route Property (Composition API) / Route 属性 (组合式接口)
+(3). Route Property (Options API) / Route 属性 (选项式接口)
 
-![](./art/route-vm.png)
+![](./art/assets/route-vm.png)
 
 #### Vue Route v3.x - Custom Component
 
@@ -394,7 +443,7 @@ Full prefix screenshot (Vue Router) / 完整前缀截图 (Vue 路由):
 
 Full prefix screenshot (Vue Router Custom Component) / 完整前缀截图 (Vue 路由自定义组件):
 
-![](./art/router-component.png)
+![](./art/assets/router-component.png)
 
 ### Why isn't there VueX? / 为什么没有 VueX
 
