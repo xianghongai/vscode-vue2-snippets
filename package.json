@@ -2,9 +2,9 @@
 	"name": "vscode-vue2-snippets",
 	"publisher": "NicholasHsiang",
 	"displayName": "Vue 2 Snippets",
-	"description": "Code snippets for Vue 2 (Only Vue 2.x, Vue Router 3.x)",
+	"description": "Code snippets for Vue 2 (Only Vue 2.x, Vue Router 3.x, @vue/composition-api)",
 	"icon": "art/icon.png",
-	"version": "2.2.2",
+	"version": "2.2.3",
 	"type": "module",
 	"galleryBanner": {
 		"color": "#ffffff",
