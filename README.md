@@ -185,20 +185,20 @@ Full prefix screenshot (Options) / 完整前缀截图:
 
 Just `ps*`...
 
-1. 直接生成 (Prefix)：`ps` = <small><em><strong><u style="color: red;">P</u></strong></strong>rops, <strong><u style="color: red;">S</u></strong></strong>tring.</em></small>
-2. 联想匹配 (Suggest Match)：`pssdr` = <small><em><strong><u style="color: red;">P</u></strong></strong>rop<strong><u style="color: red;">s</u></strong></strong>, <strong><u style="color: red;">S</u></strong></strong>tring, <strong><u style="color: red;">d</u></strong></strong>efault, <strong><u style="color: red;">r</u></strong></strong>equired.</em></small>
+1. 直接生成 (Prefix)：`ps` = <small><em><strong><u style="color: red;">P</u></strong>rops, <strong><u style="color: red;">S</u></strong>tring.</em></small>
+2. 联想匹配 (Suggest Match)：`pssdr` = <small><em><strong><u style="color: red;">P</u></strong>rop<strong><u style="color: red;">s</u></strong>, <strong><u style="color: red;">S</u></strong>tring, <strong><u style="color: red;">d</u></strong>efault, <strong><u style="color: red;">r</u></strong>equired.</em></small>
 
 不同类型以此类推：
 
-- <small><em><strong><u style="color: red;">S</u></strong></strong>tring</em></small>，
-- <small><em><strong><u style="color: red;">N</u></strong></strong>umber</em></small>，
-- <small><em><strong><u style="color: red;">B</u></strong></strong>oolean</em></small>，
-- <small><em><strong><u style="color: red;">A</u></strong></strong>rray</em></small>，
-- <small><em><strong><u style="color: red;">O</u></strong></strong>bject</em></small>，
-- <small><em><strong><u style="color: red;">D</u></strong></strong>ate</em></small>，
-- <small><em><strong><u style="color: red;">F</u></strong></strong>unction</em></small>，
-- <small><em><strong><u style="color: red;">S</u></strong></strong>ymbol</em></small>，
-- <small><em><strong><u style="color: red;">P</u></strong></strong>romise</em></small>。
+- <small><em><strong><u style="color: red;">S</u></strong>tring</em></small>，
+- <small><em><strong><u style="color: red;">N</u></strong>umber</em></small>，
+- <small><em><strong><u style="color: red;">B</u></strong>oolean</em></small>，
+- <small><em><strong><u style="color: red;">A</u></strong>rray</em></small>，
+- <small><em><strong><u style="color: red;">O</u></strong>bject</em></small>，
+- <small><em><strong><u style="color: red;">D</u></strong>ate</em></small>，
+- <small><em><strong><u style="color: red;">F</u></strong>unction</em></small>，
+- <small><em><strong><u style="color: red;">S</u></strong>ymbol</em></small>，
+- <small><em><strong><u style="color: red;">P</u></strong>romise</em></small>。
 
 | Prefix                                          | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                      |
 |-------------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -214,8 +214,8 @@ The prefix screenshot (Props) / 前缀截图:
 
 ### Watch Property (Options API)
 
-1. 直接生成 (Prefix)：`wp` = <small><em><strong><u style="color: red;">w</u></strong></strong>atch-<strong><u style="color: red;">p</u></strong></strong>roperty</em></small>。
-2. 联想匹配 (Suggest Match)：`wpdi` = <small><em><strong><u style="color: red;">w</u></strong></strong>atch-<strong><u style="color: red;">p</u></strong></strong>roperty-<strong><u style="color: red;">d</u></strong></strong>eep-<strong><u style="color: red;">i</u></strong></strong>mmediate</em></small>。
+1. 直接生成 (Prefix)：`wp` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">p</u></strong>roperty</em></small>。
+2. 联想匹配 (Suggest Match)：`wpdi` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">p</u></strong>roperty-<strong><u style="color: red;">d</u></strong>eep-<strong><u style="color: red;">i</u></strong>mmediate</em></small>。
 
 | Prefix                                          | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                             |
 |-------------------------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -230,8 +230,8 @@ The prefix screenshot (Watch) / 前缀截图:
 
 ### Watch (Composition API)
 
-1. 联想匹配 (Suggest Match)：`wps` = <small><em><strong><u style="color: red;">w</u></strong></strong>atch-<strong><u style="color: red;">p</u></strong></strong>rop<strong><u style="color: red;">s</u></strong></strong></em></small>。
-2. 联想匹配 (Suggest Match)：`wim` = <small><em><strong><u style="color: red;">w</u></strong></strong>atch-<strong><u style="color: red;">im</u></strong></strong>mediate</em></small>。
+1. 联想匹配 (Suggest Match)：`wps` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">p</u></strong>rop<strong><u style="color: red;">s</u></strong></em></small>。
+2. 联想匹配 (Suggest Match)：`wim` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">im</u></strong>mediate</em></small>。
 
 | Prefix                                   | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |------------------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -270,7 +270,7 @@ The prefix screenshot (Computed) / 前缀截图:
 
 Just `ol*`...
 
-只要**理解** `ol` 是 <small><em><strong><u style="color: red;">O</u></strong></strong>ptions API <strong><u style="color: red;">L</u></strong></strong>ifecycle Hooks`</em></small> 的缩写，并 **记忆** Vue2 生命周期钩子，然后就能释放你的能量了。
+只要**理解** `ol` 是 <small><em><strong><u style="color: red;">O</u></strong>ptions API <strong><u style="color: red;">L</u></strong>ifecycle Hooks`</em></small> 的缩写，并 **记忆** Vue2 生命周期钩子，然后就能释放你的能量了。
 
 | Prefix                                    | VS Code Suggest Match | Snippet                                                                                                                                                 |
 |-------------------------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
