@@ -52,9 +52,9 @@ property: {
 },
 ```
 
-To get the above code, you only need to understand it as: <small><em><u style="color: red;"><strong>w</strong></u>atch <u style="color: red;"><strong>p</strong></u>roperty <u style="color: red;"><strong>d</strong></u>eep <u style="color: red;"><strong>i</strong></u>mmediate</em></small>, and then enter `wpdi` through VS Code's Suggest Match and press Enter.
+To get the above code, you only need to understand it as: <small><em><strong><u style="color: red;">w</u></strong>atch <strong><u style="color: red;">p</u></strong>roperty <strong><u style="color: red;">d</u></strong>eep <strong><u style="color: red;">i</u></strong>mmediate</em></small>, and then enter `wpdi` through VS Code's Suggest Match and press Enter.
 
-想得到上面这一段代码，只需要理解为：<small><em><u style="color: red;"><strong>w</strong></u>atch <u style="color: red;"><strong>p</strong></u>roperty <u style="color: red;"><strong>d</strong></u>eep <u style="color: red;"><strong>i</strong></u>mmediate</em></small>, 然后通过 VS Code 自带的联想功能，输入 `wpdi` 回车即可。
+想得到上面这一段代码，只需要理解为：<small><em><strong><u style="color: red;">w</u></strong>atch <strong><u style="color: red;">p</u></strong>roperty <strong><u style="color: red;">d</u></strong>eep <strong><u style="color: red;">i</u></strong>mmediate</em></small>, 然后通过 VS Code 自带的联想功能，输入 `wpdi` 回车即可。
 
 再例如，声明一个 Props 属性：
 
@@ -70,7 +70,7 @@ property: {
 
 Same as above...
 
-想得到上面这一段代码，只需要理解为：<small><em><u style="color: red;"><strong>p</strong></u>rop<u style="color: red;"><strong>s</strong></u> <u style="color: red;"><strong>O</strong></u>bject <u style="color: red;"><strong>d</strong></u>efault <u style="color: red;"><strong>r</strong></u>equired</em></small>， 然后通过 VS Code 自带的联想功能，输入 `psOdr` 回车即可 (注意大小写，减少冲突)，或者通过本扩展内置的 `podr` 缩写前缀直接生成。
+想得到上面这一段代码，只需要理解为：<small><em><strong><u style="color: red;">p</u></strong>rop<strong><u style="color: red;">s</u></strong> <strong><u style="color: red;">O</u></strong>bject <strong><u style="color: red;">d</u></strong>efault <strong><u style="color: red;">r</u></strong>equired</em></small>， 然后通过 VS Code 自带的联想功能，输入 `psOdr` 回车即可 (注意大小写，减少冲突)，或者通过本扩展内置的 `podr` 缩写前缀直接生成。
 
 仅高频常用代码提供<u><strong>缩写</strong></u>前缀。
 
@@ -255,12 +255,12 @@ The prefix screenshot (Watch) / 前缀截图:
 
 ### Computed
 
-| Prefix                                      | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                       |
-|---------------------------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `computed-property` <br><br> `cp`           |                       | <small><em><strong><u style="color: red;">p</u></strong>roperty() {<br>&nbsp;&nbsp;return this.property;<br>},</em></small>                                                                                                                                                                                                                                   |
-| `computed-property-get-set` <br><br> `cpgs` |                       | <small><em><strong><u style="color: red;">p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u style="color: red;">g</u></strong>et() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.value;<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;<strong><u style="color: red;">s</u></strong>et(val) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.value = val;<br>&nbsp;&nbsp;},<br>},</em></small> |
-| `computed`                                  | `cd`                  | <small><em>const feature = computed(() => state.value);</em></small>                                                                                                                                                                                                                                                                                          |
-| `computed-get-set`                          | `cdgs`                | <small><em>const feature = computed({<br>&nbsp;&nbsp;get: () => state.value,<br>&nbsp;&nbsp;set: (newValue) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;state.value = newValue;<br>&nbsp;&nbsp;},<br>});</em></small>                                                                                                                                                     |
+| Prefix                                      | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                                                   |
+|---------------------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `computed-property` <br><br> `cp`           |                       | <small><em><strong><u style="color: red;">p</u></strong>roperty() {<br>&nbsp;&nbsp;return this.property;<br>},</em></small>                                                                                                                                                                                                                                                               |
+| `computed-property-get-set` <br><br> `cpgs` |                       | <small><em><strong><u style="color: red;">p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u style="color: red;">g</u></strong>et() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.value;<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;<strong><u style="color: red;">s</u></strong>et(val) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.value = val;<br>&nbsp;&nbsp;},<br>},</em></small>                             |
+| `computed`                                  | `cd`                  | <small><em>const feature = <strong><u style="color: red;">c</u></strong>ompute<strong><u style="color: red;">d</u></strong>(() => state.value);</em></small>                                                                                                                                                                                                                              |
+| `computed-get-set`                          | `cdgs`                | <small><em>const feature = <strong><u style="color: red;">c</u></strong>ompute<strong><u style="color: red;">d</u></strong>({<br>&nbsp;&nbsp;<strong><u style="color: red;">g</u></strong>et: () => state.value,<br>&nbsp;&nbsp;<strong><u style="color: red;">s</u></strong>et: (newValue) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;state.value = newValue;<br>&nbsp;&nbsp;},<br>});</em></small> |
 
 The prefix screenshot (Computed) / 前缀截图:
 
@@ -391,11 +391,11 @@ Full prefix screenshot (`v-`) / 完整前缀截图 (Vue 内置指令):
 
 ### Vue Router v3.x
 
-The `route-`/`vmroute-` or `router-`/`vmrouter-` prefix generates Vue Router, Some examples:
+The `route-`/`vm-route-` or `router-`/`vm-router-` prefix generates Vue Router, Some examples:
 
 如果是 Composition API，可通过 `route-` 或 `router-` 前缀触发；
 
-如果是 Options API，可通过 `vmroute-` 或 `vmrouter-` 前缀触发。
+如果是 Options API，可通过 `vm-route-` 或 `vm-router-` 前缀触发。
 
 包涵大量 Vue Router v3.x API 代码片段，部分示例如下：
 
@@ -459,7 +459,7 @@ In Vue 2.x, Vuex is used, while in Vue 3.x, Pinia is adopted. There are costs as
 
 Vue 2.x 中采用 VueX，Vue 3.x 采用 Pinia，项目级别迁移有成本，组件级别复用耦合了状态管理库，用状态库没多大意义，状态共享完全可以通过 Vue [依赖注入](https://cn.vuejs.org/api/composition-api-dependency-injection.html)实现。
 
-## Supported languages (file extensions)
+## Supported languages (file extensions) 🌈
 
 - JavaScript (`.js`)
 - TypeScript (`.ts`)
