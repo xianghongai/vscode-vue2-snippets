@@ -77,7 +77,7 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
-			"  default${2: undefined},",
+			"  default: ${2:undefined},",
 			"},$3",
 			"$0"
 		]
@@ -205,7 +205,7 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
-			"  default${2: undefined},$3",
+			"  default: ${2:undefined},$3",
 			"},$5",
 			"$0"
 		]
@@ -436,7 +436,7 @@
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
-			"  default${2: undefined},",
+			"  default: ${2:undefined},",
 			"  required: true,",
 			"},$5",
 			"$0"
