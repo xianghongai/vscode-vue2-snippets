@@ -88,6 +88,10 @@
 			},
 			{
 				"language": "html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "html",
 				"path": "./snippets/vue.json"
 			},
 			{
