@@ -1,6 +1,6 @@
 {
 	"Vue SFC - @vue/composition-api": {
-		"prefix": ["vue", "vue-composition-api-plugin"],
+		"prefix": ["vue", "vcap", "vue-composition-api-plugin"],
 		"body": [
 			"<template>",
 			"  <div>",
