@@ -14,9 +14,12 @@
 		"description": "Denotes slot content outlets in templates.\n"
 	},
 	"<slot>, named": {
-		"prefix": "slot-name",
+		"prefix": [
+			"slot-named",
+			"sn"
+		],
 		"body": [
-			"<slot name=\"${1:name}\"></slot>"
+			"<slot name=\"${1:default}\"></slot>"
 		],
 		"description": "Named Slots.\n"
 	}

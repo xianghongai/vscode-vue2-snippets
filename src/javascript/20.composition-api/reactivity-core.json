@@ -1,19 +1,25 @@
 {
 	"Composition API: ref()": {
-		"prefix": "ref",
+		"prefix": [
+			"ref",
+			"r"
+		],
 		"body": [
-			"const ${1:feature} = ref(${2:value});"
+			"const ${1:feature} = ref(${2:null});"
 		],
 		"description": "Reactivity API - Refs.\nTakes an inner value and returns a reactive and mutable ref object. The ref object has a single property `.value` that points to the inner value.\n"
 	},
 	"Composition API: computed()": {
-		"prefix": "computed",
+		"prefix": [
+			"computed",
+			"c"
+		],
 		"body": [
 			"const ${3:feature} = computed(() => ${1:state.value});"
 		],
 		"description": "Reactivity API - Computed and watch.\nTakes a getter function and returns an immutable reactive ref object for the returned value from the getter.\n"
 	},
-	"Composition API: computed, (get/set)": {
+	"Composition API: computed ({ get, set })": {
 		"prefix": "computed-get-set",
 		"body": [
 			"const ${3:feature} = computed({",
