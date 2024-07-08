@@ -6,13 +6,6 @@
 		],
 		"description": "Type: `string`.\nRestriction: only respected when used as a component option.\nDetails:\nAllow the component to recursively invoke itself in its template. Note that when a component is registered globally with `Vue.component()`, the global ID is automatically set as its name.\nAnother benefit of specifying a `name` option is debugging. Named components result in more helpful warning messages. Also, when inspecting an app in the vue-devtools, unnamed components will show up as `<AnonymousComponent>`, which isn’t very informative. By providing the `name` option, you will get a much more informative component tree.\n"
 	},
-	"Options API: delimiters": {
-		"prefix": "option-delimiters",
-		"body": [
-			"delimiters: ['${1:{{}', '${2:\\}\\}}'],$0"
-		],
-		"description": "Type: `Array<string>`.\nDefault: ['{{', '}}'].\nRestrictions: This option is only available in the full build, with in-browser compilation.\nDetails:\nChange the plain text interpolation delimiters.\n"
-	},
 	"Options API: functional": {
 		"prefix": "option-functional",
 		"body": [
@@ -24,7 +17,7 @@
 		"prefix": "option-model",
 		"body": [
 			"model: {",
-			"  prop: '${1:checked}',",
+			"  prop: '${1:value}',",
 			"  event: '${2:change}',",
 			"},$0"
 		],

@@ -50,17 +50,17 @@
 		]
 	},
 	"v-slot, named": {
-		"prefix": "v-slot-named",
+		"prefix": ["v-slot-named", "vsn"],
 		"body": [
-			"<template #${1:name}>",
+			"<template #${1:default}>",
 			"  $0",
 			"</template>"
 		]
 	},
 	"v-slot, named, props": {
-		"prefix": "v-slot-named-props",
+		"prefix": ["v-slot-named-props", "vsnp"],
 		"body": [
-			"<template #${1:name}=\"${2:slotProps}\">",
+			"<template #${1:default}=\"${2:slotProps}\">",
 			"  $0",
 			"</template>"
 		]
@@ -112,16 +112,18 @@
 	},
 	"v-bind=\"$attrs\"": {
 		"prefix": [
-			"v-bind-$attrs"
+			"v-bind-$attrs",
+			"vba"
 		],
 		"body": [
 			"${1:v-bind=\"\\$attrs\"}$0"
 		],
 		"description": "In combination with `inheritAttrs: false`, apply attributes to some other element instead of the root element.\n"
 	},
-	"v-bind=\"$listeners\"": {
+	"v-on=\"$listeners\"": {
 		"prefix": [
-			"v-on-$listeners"
+			"v-on-$listeners",
+			"vol"
 		],
 		"body": [
 			"${1:v-on=\"\\$listeners\"}$0"

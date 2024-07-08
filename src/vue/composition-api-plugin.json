@@ -1,6 +1,10 @@
 {
 	"Vue SFC - @vue/composition-api": {
-		"prefix": ["vue", "vcap", "vue-composition-api-plugin"],
+		"prefix": [
+			"vue",
+			"vue-composition-api-plugin",
+			"vcap"
+		],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -22,11 +26,110 @@
 			"});",
 			"</script>",
 			""
-		],
-		"description": "Vue Single-File Component (@vue/composition-api)"
+		]
 	},
-	"Vue <script> - @vue/composition-api": {
-		"prefix": ["vue-script", "vue-script-composition-api-plugin"],
+	"Vue SFC - @vue/composition-api, SCSS": {
+		"prefix": "vue-composition-api-plugin (scss)",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script>",
+			"import { defineComponent } from '@vue/composition-api';",
+			"",
+			"export default defineComponent({",
+			"  setup() {",
+			"    $1",
+			"",
+			"    return {",
+			"      $0",
+			"    };",
+			"  },",
+			"});",
+			"</script>",
+			""
+		]
+	},
+	"Vue SFC - @vue/composition-api, LESS": {
+		"prefix": "vue-composition-api-plugin (less)",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script>",
+			"import { defineComponent } from '@vue/composition-api';",
+			"",
+			"export default defineComponent({",
+			"  setup() {",
+			"    $1",
+			"",
+			"    return {",
+			"      $0",
+			"    };",
+			"  },",
+			"});",
+			"</script>",
+			""
+		]
+	},
+	"Vue SFC - @vue/composition-api, PostCSS": {
+		"prefix": "vue-composition-api-plugin (postcss)",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script>",
+			"import { defineComponent } from '@vue/composition-api';",
+			"",
+			"export default defineComponent({",
+			"  setup() {",
+			"    $1",
+			"",
+			"    return {",
+			"      $0",
+			"    };",
+			"  },",
+			"});",
+			"</script>",
+			""
+		]
+	},
+	"Vue SFC - @vue/composition-api, CSS": {
+		"prefix": "vue-composition-api-plugin (css)",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script>",
+			"import { defineComponent } from '@vue/composition-api';",
+			"",
+			"export default defineComponent({",
+			"  setup() {",
+			"    $1",
+			"",
+			"    return {",
+			"      $0",
+			"    };",
+			"  },",
+			"});",
+			"</script>",
+			""
+		]
+	},
+	"@vue/composition-api: <script>": {
+		"prefix": "vue-composition-api-plugin-script",
 		"body": [
 			"<script>",
 			"import { defineComponent } from '@vue/composition-api';",
@@ -42,7 +145,6 @@
 			"});",
 			"</script>",
 			""
-		],
-		"description": "Vue Script element (@vue/composition-api).\n"
+		]
 	}
 }

@@ -1,5 +1,5 @@
 {
-	"computed property": {
+	"Options API: computed property": {
 		"prefix": [
 			"computed-property",
 			"cp"
@@ -11,11 +11,8 @@
 			"$0"
 		]
 	},
-	"computed property, get, set": {
-		"prefix": [
-			"computed-property-get-set",
-			"cpgs"
-		],
+	"Options API: computed property: { get, set }": {
+		"prefix": "computed-property-get-set",
 		"body": [
 			"${3:property}: {",
 			"  get() {",

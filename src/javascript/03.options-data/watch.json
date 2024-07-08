@@ -1,5 +1,5 @@
 {
-	"watch property": {
+	"Options API: watch property": {
 		"prefix": [
 			"watch-property",
 			"wp"
@@ -11,7 +11,7 @@
 			"$0"
 		]
 	},
-	"watch property, deep ": {
+	"Options API: watch property, deep ": {
 		"prefix": [
 			"watch-property-deep",
 			"wpd"
@@ -26,7 +26,7 @@
 			"$0"
 		]
 	},
-	"watch property, immediate ": {
+	"Options API: watch property, immediate ": {
 		"prefix": [
 			"watch-property-immediate",
 			"wpi"
@@ -41,10 +41,9 @@
 			"$0"
 		]
 	},
-	"watch property, deep, immediate ": {
+	"Options API: watch property, deep, immediate ": {
 		"prefix": [
 			"watch-property-deep-immediate",
-			"watch-property-immediate-deep",
 			"wpdi"
 		],
 		"body": [
