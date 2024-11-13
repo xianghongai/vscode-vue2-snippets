@@ -4,7 +4,7 @@
 	"displayName": "Vue 2 Snippets",
 	"description": "Code snippets for Vue 2 (Only Vue 2.x, Vue Router 3.x, @vue/composition-api)",
 	"icon": "art/icon.png",
-	"version": "2.3.0",
+	"version": "2.4.0",
 	"type": "module",
 	"galleryBanner": {
 		"color": "#ffffff",
@@ -20,7 +20,7 @@
 		"url": "https://github.com/xianghongai/vscode-vue2-snippets/blob/main/README.md"
 	},
 	"engines": {
-		"vscode": "^0.12.x"
+		"vscode": "^1.0.0"
 	},
 	"categories": [
 		"Snippets"
@@ -113,10 +113,8 @@
 		]
 	},
 	"devDependencies": {
+		"@vscode/vsce": "^3.2.1",
 		"glob": "^10.3.10",
 		"nodemon": "^3.1.0"
-	},
-	"peerDependencies": {
-		"@vscode/vsce": "^2.24.0"
 	}
 }
