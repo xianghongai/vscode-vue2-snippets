@@ -110,11 +110,11 @@ Recommended editor settings (建议配置编辑器):
 
 ### Single-File Components / 单文件组件
 
-The `vue` prefix generates Vue Single-File Components, Some examples:
+The `sfc` prefix generates Vue <strong><u style="color: red;">S</u></strong>ingle-<strong><u style="color: red;">F</u></strong>ile <strong><u style="color: red;">C</u></strong>omponents, Some examples:
 
 --
 
-通过 `vue` 前缀触发，包含大量创建 Vue 单文件组件的代码片段，部分示例如下：
+通过 `sfc` 前缀触发，包含大量创建 Vue 单文件组件的代码片段，部分示例如下：
 
 Vue 2.6 及以下版本，推荐 [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup)；
 
