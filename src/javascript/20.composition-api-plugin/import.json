@@ -1,91 +1,56 @@
 {
-	"import&use VueCompositionAPI": {
-		"prefix": "VueCompositionAPI",
+	"Composition API Plugin: import ref": {
+		"prefix": "import-ref",
 		"body": [
-			"import VueCompositionAPI from '@vue/composition-api';",
-			"",
-			"Vue.use(VueCompositionAPI);"
-		],
-		"description": "@vue/composition-api: Vue 2 plugin for Composition API.\n"
-	},
-	"import createApp (@vue/composition-api)": {
-		"prefix": [
-			"import-createApp"
-		],
-		"body": [
-			"import { createApp } from '@vue/composition-api';"
+			"import { ref$1 } from '@vue/composition-api';"
 		]
 	},
-	"import ref (@vue/composition-api)": {
-		"prefix": [
-			"import-ref"
-		],
+	"Composition API Plugin: import computed": {
+		"prefix": "import-computed",
 		"body": [
-			"import { ref } from '@vue/composition-api';"
+			"import { computed$1 } from '@vue/composition-api';"
 		]
 	},
-	"import reactive (@vue/composition-api)": {
-		"prefix": [
-			"import-reactive"
-		],
+	"Composition API Plugin: import watch": {
+		"prefix": "import-watch",
 		"body": [
-			"import { reactive } from '@vue/composition-api';"
+			"import { watch$1 } from '@vue/composition-api';"
 		]
 	},
-	"import computed (@vue/composition-api)": {
-		"prefix": [
-			"import-computed"
-		],
+	"Composition API Plugin: import nextTick": {
+		"prefix": "import-nextTick",
 		"body": [
-			"import { computed } from '@vue/composition-api';"
+			"import { nextTick$1 } from '@vue/composition-api';"
 		]
 	},
-	"import watch (@vue/composition-api)": {
-		"prefix": [
-			"import-watch"
-		],
+	"Composition API Plugin: import provide": {
+		"prefix": "import-provide",
 		"body": [
-			"import { watch } from '@vue/composition-api';"
+			"import { provide$1 } from '@vue/composition-api';"
 		]
 	},
-	"import provide (@vue/composition-api)": {
-		"prefix": [
-			"import-provide"
-		],
+	"Composition API Plugin: import inject": {
+		"prefix": "import-inject",
 		"body": [
-			"import { provide } from '@vue/composition-api';"
+			"import { inject$1 } from '@vue/composition-api';"
 		]
 	},
-	"import inject (@vue/composition-api)": {
-		"prefix": [
-			"import-inject"
-		],
+	"Composition API Plugin: import onMounted": {
+		"prefix": "import-onMounted",
 		"body": [
-			"import { inject } from '@vue/composition-api';"
+			"import { onMounted$1 } from '@vue/composition-api';"
 		]
 	},
-	"import nextTick (@vue/composition-api)": {
-		"prefix": [
-			"import-nextTick"
-		],
+	"Composition API: import defineComponent": {
+		"prefix": "import-defineComponent",
 		"body": [
-			"import { nextTick } from '@vue/composition-api';"
+			"import { defineComponent$1 } from '@vue/composition-api';"
 		]
 	},
-	"import onMounted (@vue/composition-api)": {
-		"prefix": [
-			"import-onMounted"
-		],
+	"Composition API: import defineAsyncComponent": {
+		"prefix": "import-defineAsyncComponent",
 		"body": [
-			"import { onMounted } from '@vue/composition-api';"
-		]
-	},
-	"import onUnmounted (@vue/composition-api)": {
-		"prefix": [
-			"import-onUnmounted"
-		],
-		"body": [
-			"import { onUnmounted } from '@vue/composition-api';"
+			"import { defineAsyncComponent$1 } from '@vue/composition-api';"
 		]
 	}
 }

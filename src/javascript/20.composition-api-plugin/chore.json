@@ -1,9 +1,12 @@
 {
-	"createApp (@vue/composition-api)": {
-		"prefix": "createApp",
+	"Vue Composition API Plugin: app": {
+		"prefix": "vue-app",
 		"body": [
+			"import Vue from 'vue';",
 			"import { createApp } from '@vue/composition-api';",
 			"import App from './App.vue';",
+			"",
+			"Vue.use(VueCompositionAPI);",
 			"",
 			"const app = createApp(App);",
 			"app.mount('${1:Element/#Selector}');"
