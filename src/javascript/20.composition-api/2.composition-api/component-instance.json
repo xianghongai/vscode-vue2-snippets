@@ -1,0 +1,11 @@
+{
+	"Composition API: getCurrentInstance": {
+		"prefix": [
+			"proxy",
+			"gi"
+		],
+		"body": [
+			"const { proxy } = getCurrentInstance();"
+		]
+	}
+}

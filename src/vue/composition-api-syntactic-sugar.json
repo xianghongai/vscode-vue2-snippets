@@ -1,0 +1,121 @@
+{
+	"Vue2 SFC-Composition API <script setup>": {
+		"prefix": "vue2-sfc",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script setup>",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref(${2});",
+			"$0",
+			"</script>",
+			""
+		],
+		"description": "Only Vue 2.7\nVue2 SFC-Composition API <script setup>.\n"
+	},
+	"Vue2 SFC-Composition API <script setup>, SCSS": {
+		"prefix": "vue2-sfc-scss",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script setup>",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref(${2});",
+			"$0",
+			"</script>",
+			"",
+			"<style lang=\"scss\" scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Only Vue 2.7\nVue2 SFC-Composition API <script setup> with SCSS.\n"
+	},
+	"Vue2 SFC-Composition API <script setup>, LESS": {
+		"prefix": "vue2-sfc-less",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script setup>",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref(${2});",
+			"$0",
+			"</script>",
+			"",
+			"<style lang=\"less\" scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Only Vue 2.7\nVue2 SFC-Composition API <script setup> with LESS.\n"
+	},
+	"Vue2 SFC-Composition API <script setup>, PostCSS": {
+		"prefix": "vue2-sfc-postcss",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script setup>",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref(${2});",
+			"$0",
+			"</script>",
+			"",
+			"<style lang=\"postcss\" scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Only Vue 2.7\nVue2 SFC-Composition API <script setup> with PostCSS.\n"
+	},
+	"Vue2 SFC-Composition API <script setup>, CSS": {
+		"prefix": "vue2-sfc-css",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script setup>",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref(${2});",
+			"$0",
+			"</script>",
+			"",
+			"<style lang=\"css\" scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Only Vue 2.7\nVue2 SFC-Composition API <script setup> with CSS.\n"
+	},
+	"Vue2 Composition API <script setup>": {
+		"prefix": "vue-script",
+		"body": [
+			"<script setup>",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref(${2});",
+			"$0",
+			"</script>"
+		],
+		"description": "Only Vue 2.7\nVue2 Composition API <script setup> element.\n"
+	}
+}

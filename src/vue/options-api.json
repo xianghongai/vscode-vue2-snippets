@@ -1,10 +1,6 @@
 {
-	"Vue SFC - Options API": {
-		"prefix": [
-			"vue",
-			"vue-options-api",
-			"voi"
-		],
+	"Vue2 SFC-Options API": {
+		"prefix": "vue2-sfc",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -32,10 +28,10 @@
 			"};",
 			"</script>"
 		],
-		"description": "Vue Single-File Components (Options API).\n"
+		"description": "Vue2 SFC-Options API.\n"
 	},
-	"Vue SFC - Options API, SCSS": {
-		"prefix": "vue-options-api (scss)",
+	"Vue2 SFC-Options API, SCSS": {
+		"prefix": "vue2-sfc-scss",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -67,10 +63,10 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single-File Components (Options API) with SCSS.\n"
+		"description": "Vue2 SFC-Options API with SCSS.\n"
 	},
-	"Vue SFC - Options API, LESS": {
-		"prefix": "vue-options-api (less)",
+	"Vue2 SFC-Options API, LESS": {
+		"prefix": "vue2-sfc-less",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -102,10 +98,10 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single-File Components (Options API) with LESS.\n"
+		"description": "Vue2 SFC-Options API with LESS.\n"
 	},
-	"Vue SFC - Options API, PostCSS": {
-		"prefix": "vue-options-api (postcss)",
+	"Vue2 SFC-Options API, PostCSS": {
+		"prefix": "vue2-sfc-postcss",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -137,10 +133,10 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single-File Components (Options API) with PostCSS.\n"
+		"description": "Vue2 SFC-Options API with PostCSS.\n"
 	},
-	"Vue SFC - Options API, CSS": {
-		"prefix": "vue-options-api (css)",
+	"Vue2 SFC-Options API, CSS": {
+		"prefix": "vue2-sfc-css",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -172,10 +168,10 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single-File Components (Options API) with CSS.\n"
+		"description": "Vue2 SFC-Options API with CSS.\n"
 	},
-	"Options API: <script>": {
-		"prefix": "vue-options-api-script",
+	"Vue2 Options API <script>": {
+		"prefix": "vue-script",
 		"body": [
 			"<script>",
 			"export default {",
@@ -197,6 +193,6 @@
 			"};",
 			"</script>"
 		],
-		"description": "Vue Script element (Options API).\n"
+		"description": "Vue2 Options API <script> element.\n"
 	}
 }

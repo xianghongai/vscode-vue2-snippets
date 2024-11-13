@@ -2,23 +2,27 @@
 	"Vue: this.$router.push('pathname')": {
 		"prefix": "vm-router-push",
 		"body": [
-			"${9:this.\\$}router.push('${1:pathname}');"
+			"${1:this}.\\$router.push('${2:pathname}');"
 		],
 		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Vue: this.$router.push({ path })": {
 		"prefix": "vm-router-push-path",
 		"body": [
-			"${9:this.\\$}router.push({ path: '${1:pathname}' });"
+			"${1:this}.\\$router.push({",
+			"  path: '${2:pathname}',",
+			"});"
 		],
 		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Vue: this.$router.push({ path, params })": {
 		"prefix": "vm-router-push-path-params",
 		"body": [
-			"${9:this.\\$}router.push({",
-			"  path: ${1:'${2:pathname}'},",
-			"  params: { ${3:property}: ${4:'value'} },$0",
+			"${1:this}.\\$router.push({",
+			"  path: '${2:pathname}',",
+			"  params: {",
+			"    ${4:property}: ${5:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to path with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
@@ -26,9 +30,11 @@
 	"Vue: this.$router.push({ path, query })": {
 		"prefix": "vm-router-push-path-query",
 		"body": [
-			"${9:this.\\$}router.push({",
-			"  path: ${1:'${2:pathname}'},",
-			"  query: { ${3:property}: ${4:'value'} },$0",
+			"${1:this}.\\$router.push({",
+			"  path: '${2:pathname}',",
+			"  query: {",
+			"    ${4:property}: ${5:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to path with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
@@ -36,26 +42,32 @@
 	"Vue: this.$router.push({ path, params, query })": {
 		"prefix": "vm-router-push-path-params-query",
 		"body": [
-			"${9:this.\\$}router.push({",
-			"  path: ${1:'${2:pathname}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
-			"  query: { ${5:property}: ${6:'value'} },$0",
+			"${1:this}.\\$router.push({",
+			"  path: '${2:pathname}',",
+			"  params: {",
+			"    ${4:property}: ${5:'value'},",
+			"  },",
+			"  query: {",
+			"    ${6:property}: ${7:'value'},",
+			"  },$0",
 			"});"
 		]
 	},
 	"Vue: this.$router.push({ name })": {
 		"prefix": "vm-router-push-name",
 		"body": [
-			"${9:this.\\$}router.push({ name: '${1:routeName}' });"
+			"${1:this}.\\$router.push({ name: '${3:routeName}' });"
 		],
 		"description": "Router navigate to named routes\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"Vue: this.$router.push({ name, params })": {
 		"prefix": "vm-router-push-name-params",
 		"body": [
-			"${9:this.\\$}router.push({",
-			"  name: ${1:'${2:routeName}'},",
-			"  params: { ${3:property}: ${4:'value'} },$0",
+			"${1:this}.\\$router.push({",
+			"  name: '${2:routeName}',",
+			"  params: {",
+			"    ${4:property}: ${5:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to named routes with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
@@ -63,9 +75,11 @@
 	"Vue: this.$router.push({ name, query })": {
 		"prefix": "vm-router-push-name-query",
 		"body": [
-			"${9:this.\\$}router.push({",
-			"  name: ${1:'${2:routeName}'},",
-			"  query: { ${3:property}: ${4:'value'} },$0",
+			"${1:this}.\\$router.push({",
+			"  name: '${2:routeName}',",
+			"  query: {",
+			"    ${4:property}: ${5:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to named routes with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
@@ -73,19 +87,25 @@
 	"Vue: this.$router.push({ name, params, query })": {
 		"prefix": "vm-router-push-name-params-query",
 		"body": [
-			"${9:this.\\$}router.push({",
-			"  name: ${1:'${2:routeName}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
-			"  query: { ${5:property}: ${6:'value'} },$0",
+			"${1:this}.\\$router.push({",
+			"  name: '${2:routeName}',",
+			"  params: {",
+			"    ${4:property}: ${5:'value'},",
+			"  },",
+			"  query: {",
+			"    ${6:property}: ${7:'value'},",
+			"  },$0",
 			"});"
 		]
 	},
 	"Vue: this.$router.replace({ path, params })": {
 		"prefix": "vm-router-replace",
 		"body": [
-			"${9:this.\\$}router.replace({",
-			"  path: ${1:'${2:pathname}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
+			"${1:this}.\\$router.replace({",
+			"  path: '${2:pathname}',",
+			"  params: {",
+			"    ${4:property}: ${5:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to path without pushing a new history entry.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)\n"
@@ -93,9 +113,11 @@
 	"Vue: this.$router.replace({ name, params })": {
 		"prefix": "vm-router-replace-name",
 		"body": [
-			"${9:this.\\$}router.replace({",
-			"  name: ${1:'${2:routeName}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
+			"${1:this}.\\$router.replace({",
+			"  name: '${2:routeName}',",
+			"  params: {",
+			"    ${4:property}: ${5:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to named routes without pushing a new history entry.\n#Syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
@@ -103,28 +125,28 @@
 	"Vue: this.$router.go(n)": {
 		"prefix": "vm-router-go",
 		"body": [
-			"${9:this.\\$}router.go('${1:n}');"
+			"${1:this}.\\$router.go('${2:n}');"
 		],
 		"description": "This method takes a single integer as parameter that indicates by how many steps to go forwards or go backwards in the history stack.\n"
 	},
 	"Vue: this.$router.back()": {
 		"prefix": "vm-router-back",
 		"body": [
-			"${9:this.\\$}router.back();"
+			"${1:this}.\\$router.back();"
 		],
 		"description": "go backwards in the history stack.\n"
 	},
 	"Vue: this.$router.forward()": {
 		"prefix": "vm-router-forward",
 		"body": [
-			"${9:this.\\$}router.forward();"
+			"${1:this}.\\$router.forward();"
 		],
 		"description": "go forwards in the history stack.\n"
 	},
 	"Vue: this.$router.resolve(location, current?, append?)": {
 		"prefix": "vm-router-resolve",
 		"body": [
-			"${9:this.\\$}router.resolve(${3:this.to}, ${4:this.\\$route}, ${5:this.append});"
+			"${1:this}.\\$router.resolve(${3:this.to}, ${4:this.\\$route}, ${5:this.append});"
 		],
 		"description": "Resolves a location.\n#Syntax:\nconst resolved: { location: Location; route: Route; href: string; } = router.resolve(location, current?, append?)\n"
 	},
@@ -138,35 +160,35 @@
 	"Vue: this.$router.addRoute()": {
 		"prefix": "vm-router-addRoute",
 		"body": [
-			"${9:this.\\$}router.addRoute(${1:route});"
+			"${1:this}.\\$router.addRoute(${2:route});"
 		],
 		"description": "Adding routes.\n#Syntax:\nrouter.addRoute(route: RouteConfig): () => void\n"
 	},
 	"Vue: this.$router.addRoute(), nested": {
 		"prefix": "vm-router-addRoute",
 		"body": [
-			"${9:this.\\$}router.addRoute(${1:route});"
+			"${1:this}.\\$router.addRoute(${2:route});"
 		],
 		"description": "Adding routes.\n#Syntax:\nrouter.addRoute(parentName: string, route: RouteConfig): () => void\n"
 	},
 	"Vue: this.$router.getRoutes()": {
 		"prefix": "vm-router-getRoutes",
 		"body": [
-			"const ${1:routes} = ${9:this.\\$}router.getRoutes();"
+			"const ${2:routes} = ${1:this}.\\$router.getRoutes();"
 		],
 		"description": "Getting routes.\n#Syntax:\nrouter.getRoutes(): RouteRecord[]\n"
 	},
 	"Vue: this.$router.onReady()": {
 		"prefix": "vm-router-onReady",
 		"body": [
-			"${9:this.\\$}router.onReady(${1:callback}${2:, errorCallback});"
+			"${1:this}.\\$router.onReady(${2:callback}${3:, errorCallback});"
 		],
 		"description": "#Syntax:\nrouter.onReady(callback, [errorCallback])\n"
 	},
 	"Vue: this.$router.onError()": {
 		"prefix": "vm-router-onError",
 		"body": [
-			"${9:this.\\$}router.onError(${1:callback});"
+			"${1:this}.\\$router.onError(${2:callback});"
 		],
 		"description": "#Syntax:\nrouter.onError(callback)\n"
 	}

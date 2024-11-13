@@ -1,5 +1,5 @@
 {
-	"await this.$nextTick()": {
+	"Vue: await this.$nextTick()": {
 		"prefix": [
 			"await-vm-nextTick",
 			"vmnt"
@@ -8,7 +8,7 @@
 			"await ${9:this}.\\$nextTick();$1"
 		]
 	},
-	"this.$nextTick().then(cb)": {
+	"Vue: this.$nextTick().then(cb)": {
 		"prefix": [
 			"vm-nextTick-then"
 		],

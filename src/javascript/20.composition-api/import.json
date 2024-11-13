@@ -1,65 +1,59 @@
 {
-	"Vue: import createApp": {
-		"prefix": "import-createApp",
-		"body": [
-			"import { createApp$1 } from 'vue';"
-		]
-	},
-	"Vue: import onMounted": {
-		"prefix": ["import-onMounted"],
-		"body": [
-			"import { onMounted } from 'vue';"
-		]
-	},
-	"Vue: import ref": {
+	"Composition API: import ref": {
 		"prefix": "import-ref",
 		"body": [
 			"import { ref$1 } from 'vue';"
 		]
 	},
-	"Vue: import computed": {
-		"prefix": ["import-computed"],
+	"Composition API: import computed": {
+		"prefix": "import-computed",
 		"body": [
-			"import { computed } from 'vue';"
+			"import { computed$1 } from 'vue';"
 		]
 	},
-	"Vue: import provide": {
-		"prefix": ["import-provide"],
-		"body": [
-			"import { provide } from 'vue';"
-		]
-	},
-	"Vue: import inject": {
-		"prefix": ["import-inject"],
-		"body": [
-			"import { inject } from 'vue';"
-		]
-	},
-	"Vue: import watch": {
+	"Composition API: import watch": {
 		"prefix": "import-watch",
 		"body": [
 			"import { watch$1 } from 'vue';"
 		]
 	},
-	"Vue: import nextTick": {
+	"Composition API: import nextTick": {
 		"prefix": "import-nextTick",
 		"body": [
 			"import { nextTick$1 } from 'vue';"
 		]
 	},
-	"Vue: import defineComponent": {
+	"Composition API: import provide": {
+		"prefix": "import-provide",
+		"body": [
+			"import { provide$1 } from 'vue';"
+		]
+	},
+	"Composition API: import inject": {
+		"prefix": "import-inject",
+		"body": [
+			"import { inject$1 } from 'vue';"
+		]
+	},
+	"Composition API: import onMounted": {
+		"prefix": "import-onMounted",
+		"body": [
+			"import { onMounted$1 } from 'vue';"
+		]
+	},
+	"Composition API: import defineComponent": {
 		"prefix": "import-defineComponent",
 		"body": [
 			"import { defineComponent$1 } from 'vue';"
 		]
 	},
-	"Vue: import defineAsyncComponent": {
+	"Composition API: import defineAsyncComponent": {
 		"prefix": "import-defineAsyncComponent",
 		"body": [
 			"import { defineAsyncComponent$1 } from 'vue';"
 		]
 	},
-	"Vue: import PropType": {
+	"Composition API: import PropType": {
 		"prefix": "import-PropType",
 		"body": [
 			"import type { PropType } from 'vue';"

@@ -1,6 +1,6 @@
 {
-	"Vue: new instance": {
-		"prefix": "newVue",
+	"Vue2: app": {
+		"prefix": "vue-app",
 		"body": [
 			"import Vue from 'vue';",
 			"import App from './App.vue';",
