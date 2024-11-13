@@ -9,7 +9,9 @@
 	"router.push({ path })": {
 		"prefix": "router-push-path",
 		"body": [
-			"router.push({ path: '${1:pathname}' });"
+			"router.push({",
+			"  path: '${1:pathname}',",
+			"});"
 		],
 		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
@@ -17,8 +19,10 @@
 		"prefix": "router-push-path-params",
 		"body": [
 			"router.push({",
-			"  path: ${1:'${2:pathname}'},",
-			"  params: { ${3:property}: ${4:'value'} },$0",
+			"  path: '${1:pathname}',",
+			"  params: {",
+			"    ${3:property}: ${4:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to path with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
@@ -27,8 +31,10 @@
 		"prefix": "router-push-path-query",
 		"body": [
 			"router.push({",
-			"  path: ${1:'${2:pathname}'},",
-			"  query: { ${3:property}: ${4:'value'} },$0",
+			"  path: '${1:pathname}',",
+			"  query: {",
+			"    ${3:property}: ${4:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to path with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
@@ -38,8 +44,12 @@
 		"body": [
 			"router.push({",
 			"  path: ${1:'${2:pathname}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
-			"  query: { ${5:property}: ${6:'value'} },$0",
+			"  params: {",
+			"    ${3:property}: ${4:'value'},",
+			"  },",
+			"  query: {",
+			"    ${5:property}: ${6:'value'},",
+			"  },$0",
 			"});"
 		]
 	},
@@ -54,8 +64,10 @@
 		"prefix": "router-push-name-params",
 		"body": [
 			"router.push({",
-			"  name: ${1:'${2:routeName}'},",
-			"  params: { ${3:property}: ${4:'value'} },$0",
+			"  name: '${1:routeName}',",
+			"  params: {",
+			"    ${3:property}: ${4:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to named routes with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
@@ -64,8 +76,10 @@
 		"prefix": "router-push-name-query",
 		"body": [
 			"router.push({",
-			"  name: ${1:'${2:routeName}'},",
-			"  query: { ${3:property}: ${4:'value'} },$0",
+			"  name: '${1:routeName}',",
+			"  query: {",
+			"    ${3:property}: ${4:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to named routes with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
@@ -75,8 +89,12 @@
 		"body": [
 			"router.push({",
 			"  name: ${1:'${2:routeName}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
-			"  query: { ${5:property}: ${6:'value'} },$0",
+			"  params: {",
+			"    ${3:property}: ${4:'value'},",
+			"  },",
+			"  query: {",
+			"    ${5:property}: ${6:'value'},",
+			"  },$0",
 			"});"
 		]
 	},
@@ -84,8 +102,10 @@
 		"prefix": "router-replace",
 		"body": [
 			"router.replace({",
-			"  path: ${1:'${2:pathname}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
+			"  path: '${1:pathname}',",
+			"  params: {",
+			"    ${3:property}: ${4:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to path without pushing a new history entry.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)\n"
@@ -94,8 +114,10 @@
 		"prefix": "router-replace-name",
 		"body": [
 			"router.replace({",
-			"  name: ${1:'${2:routeName}'},",
-			"  params: { ${3:property}: ${4:'value'} },",
+			"  name: '${1:routeName}',",
+			"  params: {",
+			"    ${3:property}: ${4:'value'},",
+			"  },$0",
 			"});"
 		],
 		"description": "Router navigate to named routes without pushing a new history entry.\n#Syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
