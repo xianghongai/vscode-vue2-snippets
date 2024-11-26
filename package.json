@@ -4,7 +4,7 @@
 	"displayName": "Vue 2 Snippets",
 	"description": "Code snippets for Vue 2 (Only Vue 2.x, Vue Router 3.x, @vue/composition-api)",
 	"icon": "art/icon.png",
-	"version": "2.4.2",
+	"version": "2.5.0",
 	"type": "module",
 	"galleryBanner": {
 		"color": "#ffffff",
