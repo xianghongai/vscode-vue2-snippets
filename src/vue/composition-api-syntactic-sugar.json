@@ -1,6 +1,6 @@
 {
 	"Vue2 SFC-Composition API <script setup>": {
-		"prefix": "vue2-sfc",
+		"prefix": "vue2-sfc (Composition API <script setup>)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -19,7 +19,7 @@
 		"description": "Only Vue 2.7\nVue2 SFC-Composition API <script setup>.\n"
 	},
 	"Vue2 SFC-Composition API <script setup>, SCSS": {
-		"prefix": "vue2-sfc-scss",
+		"prefix": "vue2-sfc-scss (Composition API <script setup>)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -41,7 +41,7 @@
 		"description": "Only Vue 2.7\nVue2 SFC-Composition API <script setup> with SCSS.\n"
 	},
 	"Vue2 SFC-Composition API <script setup>, LESS": {
-		"prefix": "vue2-sfc-less",
+		"prefix": "vue2-sfc-less (Composition API <script setup>)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -63,7 +63,7 @@
 		"description": "Only Vue 2.7\nVue2 SFC-Composition API <script setup> with LESS.\n"
 	},
 	"Vue2 SFC-Composition API <script setup>, PostCSS": {
-		"prefix": "vue2-sfc-postcss",
+		"prefix": "vue2-sfc-postcss (Composition API <script setup>)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -85,7 +85,7 @@
 		"description": "Only Vue 2.7\nVue2 SFC-Composition API <script setup> with PostCSS.\n"
 	},
 	"Vue2 SFC-Composition API <script setup>, CSS": {
-		"prefix": "vue2-sfc-css",
+		"prefix": "vue2-sfc-css (Composition API <script setup>)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -107,7 +107,7 @@
 		"description": "Only Vue 2.7\nVue2 SFC-Composition API <script setup> with CSS.\n"
 	},
 	"Vue2 Composition API <script setup>": {
-		"prefix": "vue-script",
+		"prefix": "vue-script (Composition API <script setup>)",
 		"body": [
 			"<script setup>",
 			"import { ref } from 'vue';",

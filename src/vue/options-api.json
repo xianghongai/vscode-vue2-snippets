@@ -1,6 +1,6 @@
 {
 	"Vue2 SFC-Options API": {
-		"prefix": "vue2-sfc",
+		"prefix": "vue2-sfc (Options API)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -31,7 +31,7 @@
 		"description": "Vue2 SFC-Options API.\n"
 	},
 	"Vue2 SFC-Options API, SCSS": {
-		"prefix": "vue2-sfc-scss",
+		"prefix": "vue2-sfc-scss (Options API)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -66,7 +66,7 @@
 		"description": "Vue2 SFC-Options API with SCSS.\n"
 	},
 	"Vue2 SFC-Options API, LESS": {
-		"prefix": "vue2-sfc-less",
+		"prefix": "vue2-sfc-less (Options API)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -101,7 +101,7 @@
 		"description": "Vue2 SFC-Options API with LESS.\n"
 	},
 	"Vue2 SFC-Options API, PostCSS": {
-		"prefix": "vue2-sfc-postcss",
+		"prefix": "vue2-sfc-postcss (Options API)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -136,7 +136,7 @@
 		"description": "Vue2 SFC-Options API with PostCSS.\n"
 	},
 	"Vue2 SFC-Options API, CSS": {
-		"prefix": "vue2-sfc-css",
+		"prefix": "vue2-sfc-css (Options API)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -171,7 +171,7 @@
 		"description": "Vue2 SFC-Options API with CSS.\n"
 	},
 	"Vue2 Options API <script>": {
-		"prefix": "vue-script",
+		"prefix": "vue-script (Options API)",
 		"body": [
 			"<script>",
 			"export default {",
