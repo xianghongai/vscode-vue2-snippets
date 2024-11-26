@@ -62,6 +62,8 @@ property: {
 },
 ```
 
+![Watch Property](./art/assets/watch.gif "Watch Property")
+
 To get the above code, you only need to understand it as: <small><em><strong><u style="color: red;">w</u></strong>atch <strong><u style="color: red;">p</u></strong>roperty <strong><u style="color: red;">d</u></strong>eep <strong><u style="color: red;">i</u></strong>mmediate</em></small>, and then enter `wpdi` through VS Code's Suggest Match and press Enter.
 
 想得到上面这一段代码，只需要理解为：<small><em><strong><u style="color: red;">w</u></strong>atch <strong><u style="color: red;">p</u></strong>roperty <strong><u style="color: red;">d</u></strong>eep <strong><u style="color: red;">i</u></strong>mmediate</em></small>, 然后通过 VS Code 自带的联想功能，输入 `wpdi` 回车即可。
@@ -77,6 +79,8 @@ property: {
   required: true,
 },
 ```
+
+!["Props"](./art/assets/props.gif "Props")
 
 Same as above...
 
@@ -110,11 +114,13 @@ Recommended editor settings (建议配置编辑器):
 
 ### Single-File Components / 单文件组件
 
+
 The `sfc` prefix generates Vue <strong><u style="color: red;">S</u></strong>ingle-<strong><u style="color: red;">F</u></strong>ile <strong><u style="color: red;">C</u></strong>omponents, Some examples:
 
 --
 
 通过 `sfc` 前缀触发，包含大量创建 Vue 单文件组件的代码片段，部分示例如下：
+
 
 Vue 2.6 及以下版本，推荐 [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup)；
 
@@ -127,6 +133,8 @@ Vue 2.7 已内置 Composition API；
 3. Vue2 SFC-Composition API `<script setup>`  (2.7+)
 4. Vue2 SFC-Composition API Plugin (依赖 [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api))
 5. Vue2 SFC-Composition API Plugin `<script setup>` (依赖 @vue/composition-api & [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup))
+
+![Single-File Components](./art/assets/sfc++.gif "Single-File Components")
 
 | Full prefix screenshot (SFC) / 完整前缀截图 (单文件组件) |
 |----------------------------------------------------------|
@@ -154,11 +162,14 @@ The `vue-style` prefix generates a `<style>` language block, which contains diff
 
 ### Options API
 
+
 The `option-` prefix generates Vue Options API Code, Examples:
 
 --
 
 通过 `option-` 前缀触发，包涵所有生成 Vue 选项式 API 的代码片段，示例如下：
+
+![](./art/assets/option-data-computed.gif)
 
 | Prefix                      | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                           |
 |-----------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -203,6 +214,8 @@ Just `ps*`...
 - <small><em><strong><u style="color: red;">S</u></strong>ymbol</em></small>，
 - <small><em><strong><u style="color: red;">P</u></strong>romise</em></small>。
 
+![](./art/assets/option-props.gif)
+
 | Prefix                                          | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                      |
 |-------------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `props-String` <br><br> `ps`                    | `pss`                 | <small><em>property: <strong><u style="color: red;">S</u></strong>tring</em></small>,                                                                                                                                                                                        |
@@ -220,6 +233,8 @@ The prefix screenshot (Props) / 前缀截图:
 1. 直接生成 (Prefix)：`wp` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">p</u></strong>roperty</em></small>。
 2. 联想匹配 (Suggest Match)：`wpdi` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">p</u></strong>roperty-<strong><u style="color: red;">d</u></strong>eep-<strong><u style="color: red;">i</u></strong>mmediate</em></small>。
 
+![](./art/assets/option-watch.gif)
+
 | Prefix                          | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `watch-property`                | `wp`                  | <small><em><strong><u style="color: red;">p</u></strong>roperty (newValue, oldValue) {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                                                                                                                                           |
@@ -235,6 +250,8 @@ The prefix screenshot (Watch) / 前缀截图:
 
 1. 直接生成 (Prefix)：`wdi` =  <small><em><strong><u style="color: red;">w</u></strong></em>atch-props-<em><strong><u style="color: red;">d</u></strong></em>eep-<em><strong><u style="color: red;">i</u></strong></em>mmediate</small>
 2. 联想匹配 (Suggest Match)：`wps` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">p</u></strong>rop<strong><u style="color: red;">s</u></strong></em></small>。
+
+![](./art/assets/watch.gif)
 
 | Prefix                       | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -270,6 +287,8 @@ Just `ol*`...
 
 只要**理解** `ol` 是 <small><em><strong><u style="color: red;">O</u></strong>ptions API <strong><u style="color: red;">L</u></strong>ifecycle Hooks`</em></small> 的缩写，并 **记忆** Vue2 生命周期钩子，然后就能释放你的能量了。
 
+![](./art/assets/option-lifecyle.gif)
+
 | Prefix                   | VS Code Suggest Match | Snippet                                                                                                                                                 |
 |--------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `option-beforeCreate()`  | `olbc`                | <small><em><strong><u style="color: red;">b</u></strong>efore<strong><u style="color: red;">C</u></strong>reate() {<br>&nbsp;&nbsp;<br>},</em></small>  |
@@ -297,6 +316,8 @@ The `on` prefix generates Vue Lifecycle Hooks, Some examples:
 
 通过 `on` 前缀触发，包涵所有生成 Vue 生命周期钩子的代码片段，示例如下：
 
+![](./art/assets/lifecyle.gif)
+
 | Prefix                | VS Code Suggest Match | Snippet                                                                                                                                                                                                        |
 |-----------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `onBeforeMount`       | `onbm`                | <small><em><strong><u style="color: red;">onB</u></strong>efore<strong><u style="color: red;">M</u></strong>ount(() => {<br>&nbsp;&nbsp;<br>});</em></small>                                                   |
@@ -313,6 +334,23 @@ The `on` prefix generates Vue Lifecycle Hooks, Some examples:
 The prefix screenshot (Lifecycle Hooks) / 前缀截图:
 
 ![](./art/assets/lifecycle-hooks-composition-api.png)
+
+### State
+
+建议配置 `jsconfig.json` 支持修复自动导入。
+
+```json
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    // ...
+  }
+  // ...
+}
+```
+
+![](./art/assets/state.gif)
 
 ### Instance Properties & Methods
 
@@ -393,6 +431,8 @@ The `route-`/`vm-route-` or `router-`/`vm-router-` prefix generates Vue Router, 
 如果是 Composition API，可通过 `route-` 或 `router-` 前缀触发；
 
 如果是 Options API，可通过 `vm-route-` 或 `vm-router-` 前缀触发。
+
+![](./art/assets/router.gif)
 
 包涵大量 Vue Router v3.x API 代码片段，部分示例如下：
 
