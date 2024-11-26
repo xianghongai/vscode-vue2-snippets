@@ -1,6 +1,6 @@
 {
 	"Vue2 SFC-Composition API Plugin <script setup>": {
-		"prefix": ["vue2-sfc", "vp"],
+		"prefix": "vue2-sfc (Composition API Plugin <script setup>)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -19,7 +19,7 @@
 		"description": "Dependence `unplugin-vue2-script-setup` & `@vue/composition-api`.\nOnly Vue 2.6 or earlier.\nVue2 SFC-Composition API Plugin <script setup>.\n"
 	},
 	"Vue2 SFC-Composition API Plugin <script setup>, SCSS": {
-		"prefix": ["vue2-sfc-scss", "vps"],
+		"prefix": "vue2-sfc-scss (Composition API Plugin <script setup>)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -41,7 +41,7 @@
 		"description": "Dependence `unplugin-vue2-script-setup` & `@vue/composition-api`.\nOnly Vue 2.6 or earlier.\nVue2 SFC-Composition API Plugin <script setup> with SCSS.\n"
 	},
 	"Vue2 SFC-Composition API Plugin <script setup>, LESS": {
-		"prefix": ["vue2-sfc-less", "vpl"],
+		"prefix": "vue2-sfc-less (Composition API Plugin <script setup>)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -63,7 +63,7 @@
 		"description": "Dependence `unplugin-vue2-script-setup` & `@vue/composition-api`.\nOnly Vue 2.6 or earlier.\nVue2 SFC-Composition API Plugin <script setup> with LESS.\n"
 	},
 	"Vue2 SFC-Composition API Plugin <script setup>, PostCSS": {
-		"prefix": "vue2-sfc-postcss",
+		"prefix": "vue2-sfc-postcss (Composition API Plugin <script setup>)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -85,7 +85,7 @@
 		"description": "Dependence `unplugin-vue2-script-setup` & `@vue/composition-api`.\nOnly Vue 2.6 or earlier.\nVue2 SFC-Composition API Plugin <script setup> with PostCSS.\n"
 	},
 	"Vue2 SFC-Composition API Plugin <script setup>, CSS": {
-		"prefix": "vue2-sfc-css",
+		"prefix": "vue2-sfc-css (Composition API Plugin <script setup>)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -107,7 +107,7 @@
 		"description": "Dependence `unplugin-vue2-script-setup` & `@vue/composition-api`.\nOnly Vue 2.6 or earlier.\nVue2 SFC-Composition API Plugin <script setup> with CSS.\n"
 	},
 	"Vue2 Composition API Plugin <script setup>": {
-		"prefix": "vue-script",
+		"prefix": "vue-script (Composition API Plugin <script setup>)",
 		"body": [
 			"<script setup>",
 			"import { ref } from '@vue/composition-api';",

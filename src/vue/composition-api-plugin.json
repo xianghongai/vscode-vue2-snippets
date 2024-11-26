@@ -1,6 +1,6 @@
 {
 	"Vue2 SFC-Composition API Plugin": {
-		"prefix": "vue2-sfc",
+		"prefix": "vue2-sfc (Composition API Plugin)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -26,7 +26,7 @@
 		"description": "Dependence `@vue/composition-api`.\nOnly Vue 2.6 or earlier.\nVue2 SFC-Composition API Plugin.\n"
 	},
 	"Vue2 SFC-Composition API Plugin, SCSS": {
-		"prefix": "vue2-sfc-scss",
+		"prefix": "vue2-sfc-scss (Composition API Plugin)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -55,7 +55,7 @@
 		"description": "Dependence `@vue/composition-api`.\nOnly Vue 2.6 or earlier.\nVue2 SFC-Composition API Plugin with SCSS.\n"
 	},
 	"Vue2 SFC-Composition API Plugin, LESS": {
-		"prefix": "vue2-sfc-less",
+		"prefix": "vue2-sfc-less (Composition API Plugin)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -84,7 +84,7 @@
 		"description": "Dependence `@vue/composition-api`.\nOnly Vue 2.6 or earlier.\nVue2 SFC-Composition API Plugin with LESS.\n"
 	},
 	"Vue2 SFC-Composition API Plugin, PostCSS": {
-		"prefix": "vue2-sfc-postcss",
+		"prefix": "vue2-sfc-postcss (Composition API Plugin)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -113,7 +113,7 @@
 		"description": "Dependence `@vue/composition-api`.\nOnly Vue 2.6 or earlier.\nVue2 SFC-Composition API Plugin with PostCSS.\n"
 	},
 	"Vue2 SFC-Composition API Plugin, CSS": {
-		"prefix": "vue2-sfc-css",
+		"prefix": "vue2-sfc-css (Composition API Plugin)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -142,7 +142,7 @@
 		"description": "Dependence `@vue/composition-api`.\nOnly Vue 2.6 or earlier.\nVue2 SFC-Composition API Plugin with CSS.\n"
 	},
 	"Vue2 Composition API Plugin <script>": {
-		"prefix": "vue-script",
+		"prefix": "vue-script (Composition API Plugin)",
 		"body": [
 			"<script>",
 			"import { defineComponent, ref } from '@vue/composition-api';",
