@@ -1,9 +1,7 @@
 {
 	"Vue Import Filter": {
 		"prefix": "UNSAFE_importFilter",
-		"body": [
-			"import $1 from '@/filters/${1:Feature}';$0"
-		]
+		"body": ["import $1 from '@/filters/${1:Feature}';$0"]
 	},
 	"Vue Filters (Globally)": {
 		"prefix": "UNSAFE_Vue.filter()",
@@ -36,9 +34,7 @@
 	},
 	"Vue Retrieve Global Filter": {
 		"prefix": "UNSAFE_Vue.filter()",
-		"body": [
-			"const ${2:feature} = Vue.filter('${1:filterName}');"
-		],
+		"body": ["const ${2:feature} = Vue.filter('${1:filterName}');"],
 		"description": "Retrieve a global filter.\nReturn the filter if registered.\nVue 3.x removed.\n"
 	}
 }

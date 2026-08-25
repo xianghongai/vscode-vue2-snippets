@@ -1,23 +1,11 @@
 {
 	"Options API: directives{}": {
-		"prefix": [
-			"option-directives",
-			"ods"
-		],
-		"body": [
-			"directives: {",
-			"  $0",
-			"},"
-		],
+		"prefix": ["option-directives", "ods"],
+		"body": ["directives: {", "  $0", "},"],
 		"description": "Define local directives in a component’s options.\nA hash of directives to be made available to the Vue instance.\n"
 	},
 	"Options API: components{}": {
-		"prefix": [
-			"option-components",
-			"ocs"
-		],
-		"body": [
-			"components: { ${1:Feature} },$0"
-		]
+		"prefix": ["option-components", "ocs"],
+		"body": ["components: { ${1:Feature} },$0"]
 	}
 }

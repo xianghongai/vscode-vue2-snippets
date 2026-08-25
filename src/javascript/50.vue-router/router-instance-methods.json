@@ -1,18 +1,12 @@
 {
 	"router.push('pathname')": {
 		"prefix": "router-push",
-		"body": [
-			"router.push('${1:pathname}');"
-		],
+		"body": ["router.push('${1:pathname}');"],
 		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"router.push({ path })": {
 		"prefix": "router-push-path",
-		"body": [
-			"router.push({",
-			"  path: '${1:pathname}',",
-			"});"
-		],
+		"body": ["router.push({", "  path: '${1:pathname}',", "});"],
 		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"router.push({ path, params })": {
@@ -55,9 +49,7 @@
 	},
 	"router.push({ name })": {
 		"prefix": "router-push-name",
-		"body": [
-			"router.push({ name: '${1:routeName}' });"
-		],
+		"body": ["router.push({ name: '${1:routeName}' });"],
 		"description": "Router navigate to named routes\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
 	},
 	"router.push({ name, params })": {
@@ -124,23 +116,17 @@
 	},
 	"router.go(n)": {
 		"prefix": "router-go",
-		"body": [
-			"router.go('${1:n}');"
-		],
+		"body": ["router.go('${1:n}');"],
 		"description": "This method takes a single integer as parameter that indicates by how many steps to go forwards or go backwards in the history stack.\n"
 	},
 	"router.back()": {
 		"prefix": "router-back",
-		"body": [
-			"router.back();"
-		],
+		"body": ["router.back();"],
 		"description": "go backwards in the history stack.\n"
 	},
 	"router.forward()": {
 		"prefix": "router-forward",
-		"body": [
-			"router.forward();"
-		],
+		"body": ["router.forward();"],
 		"description": "go forwards in the history stack.\n"
 	},
 	"router.resolve(location, current?, append?)": {
@@ -152,44 +138,32 @@
 	},
 	"router.getMatchedComponents()": {
 		"prefix": "router-getMatchedComponents",
-		"body": [
-			"const components = this.\\$router.getMatchedComponents()"
-		],
+		"body": ["const components = this.\\$router.getMatchedComponents()"],
 		"description": "Getting matched components.\n#Syntax:\nconst matchedComponents: Array<Component> = router.getMatchedComponents(location?)\n"
 	},
 	"router.addRoute()": {
 		"prefix": "router-addRoute",
-		"body": [
-			"router.addRoute(${1:route});"
-		],
+		"body": ["router.addRoute(${1:route});"],
 		"description": "Adding routes.\n#Syntax:\nrouter.addRoute(route: RouteConfig): () => void\n"
 	},
 	"router.addRoute(), nested": {
 		"prefix": "router-addRoute-nested",
-		"body": [
-			"router.addRoute(${1:route});"
-		],
+		"body": ["router.addRoute(${1:route});"],
 		"description": "Adding routes.\n#Syntax:\nrouter.addRoute(parentName: string, route: RouteConfig): () => void\n"
 	},
 	"router.getRoutes()": {
 		"prefix": "router-getRoutes",
-		"body": [
-			"const ${1:routes} = router.getRoutes();"
-		],
+		"body": ["const ${1:routes} = router.getRoutes();"],
 		"description": "Getting routes.\n#Syntax:\nrouter.getRoutes(): RouteRecord[]\n"
 	},
 	"router.onReady()": {
 		"prefix": "router-onReady",
-		"body": [
-			"router.onReady(${1:callback}${2:, errorCallback});"
-		],
+		"body": ["router.onReady(${1:callback}${2:, errorCallback});"],
 		"description": "#Syntax:\nrouter.onReady(callback, [errorCallback])\n"
 	},
 	"router.onError()": {
 		"prefix": "router-onError",
-		"body": [
-			"router.onError(${1:callback});"
-		],
+		"body": ["router.onError(${1:callback});"],
 		"description": "#Syntax:\nrouter.onError(callback)\n"
 	}
 }

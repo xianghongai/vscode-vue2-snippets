@@ -1,62 +1,62 @@
 {
 	"Composition API: import ref": {
 		"prefix": "import-ref",
-		"body": [
-			"import { ref$1 } from 'vue';"
-		]
+		"body": ["import { ref$1 } from 'vue';"],
+		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below use the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin.\n"
 	},
 	"Composition API: import computed": {
 		"prefix": "import-computed",
-		"body": [
-			"import { computed$1 } from 'vue';"
-		]
+		"body": ["import { computed$1 } from 'vue';"],
+		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below use the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin.\n"
 	},
 	"Composition API: import watch": {
 		"prefix": "import-watch",
-		"body": [
-			"import { watch$1 } from 'vue';"
-		]
+		"body": ["import { watch$1 } from 'vue';"],
+		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below use the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin.\n"
 	},
 	"Composition API: import nextTick": {
 		"prefix": "import-nextTick",
-		"body": [
-			"import { nextTick$1 } from 'vue';"
-		]
+		"body": ["import { nextTick$1 } from 'vue';"],
+		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below use the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin.\n"
 	},
 	"Composition API: import provide": {
 		"prefix": "import-provide",
-		"body": [
-			"import { provide$1 } from 'vue';"
-		]
+		"body": ["import { provide$1 } from 'vue';"],
+		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below use the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin.\n"
 	},
 	"Composition API: import inject": {
 		"prefix": "import-inject",
-		"body": [
-			"import { inject$1 } from 'vue';"
-		]
+		"body": ["import { inject$1 } from 'vue';"],
+		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below use the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin.\n"
 	},
 	"Composition API: import onMounted": {
 		"prefix": "import-onMounted",
-		"body": [
-			"import { onMounted$1 } from 'vue';"
-		]
+		"body": ["import { onMounted$1 } from 'vue';"],
+		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below use the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin.\n"
 	},
 	"Composition API: import defineComponent": {
 		"prefix": "import-defineComponent",
-		"body": [
-			"import { defineComponent$1 } from 'vue';"
-		]
+		"body": ["import { defineComponent$1 } from 'vue';"],
+		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below use the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin.\n"
 	},
 	"Composition API: import defineAsyncComponent": {
 		"prefix": "import-defineAsyncComponent",
-		"body": [
-			"import { defineAsyncComponent$1 } from 'vue';"
-		]
+		"body": ["import { defineAsyncComponent$1 } from 'vue';"],
+		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below use the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin.\n"
+	},
+	"Composition API: import set, del": {
+		"prefix": "import-set-del",
+		"body": ["import { set, del } from 'vue';"],
+		"description": "Vue 2.7+. Named-import equivalents of `Vue.set()` / `Vue.delete()`, for adding or removing reactive properties without the global `Vue` object.\nRemoved in Vue 3 — its reactivity system does not need them.\n"
+	},
+	"Composition API: import h": {
+		"prefix": "import-h",
+		"body": ["import { h } from 'vue';"],
+		"description": "Vue 2.7+. The render function helper, usable outside `render(h)`.\nUnlike Vue 3, it must still be called during a component's render phase.\n"
 	},
 	"Composition API: import PropType": {
 		"prefix": "import-PropType",
-		"body": [
-			"import type { PropType } from 'vue';"
-		]
+		"body": ["import type { PropType } from 'vue';"],
+		"description": "Vue 2.7+ (TS only). Type helper for annotating complex `props` types.\n"
 	}
 }

@@ -4,8 +4,9 @@
 	"displayName": "Vue 2 Snippets",
 	"description": "Code snippets for Vue 2 (Only Vue 2.x, Vue Router 3.x, @vue/composition-api)",
 	"icon": "art/icon.png",
-	"version": "2.5.0",
+	"version": "2.5.1",
 	"type": "module",
+	"packageManager": "pnpm@11.23.0",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
@@ -20,16 +21,18 @@
 		"url": "https://github.com/xianghongai/vscode-vue2-snippets/blob/main/README.md"
 	},
 	"engines": {
-		"vscode": "^1.0.0"
+		"vscode": "^1.0.0",
+		"node": ">=24"
 	},
 	"categories": [
 		"Snippets"
 	],
 	"scripts": {
-		"dev": "nodemon --watch src -e json -x 'yarn run prebuild'",
-		"prebuild": "node merge.js",
+		"format": "prettier --write --cache .",
+		"dev": "nodemon --watch src -e json -x 'pnpm run prebuild'",
+		"prebuild": "node main.js",
+		"vscode:prepublish": "node main.js",
 		"build": "vsce package",
-		"prepublish": "npm run build",
 		"publish": "vsce publish"
 	},
 	"keywords": [
@@ -79,10 +82,6 @@
 				"path": "./snippets/javascript.json"
 			},
 			{
-				"language": "vue-html",
-				"path": "./snippets/html.json"
-			},
-			{
 				"language": "vue",
 				"path": "./snippets/html.json"
 			},
@@ -113,8 +112,10 @@
 		]
 	},
 	"devDependencies": {
-		"@vscode/vsce": "^3.2.1",
-		"glob": "^10.3.10",
-		"nodemon": "^3.1.0"
+		"@types/node": "^24.13.3",
+		"@vscode/vsce": "^3.9.2",
+		"glob": "^13.0.6",
+		"nodemon": "^3.1.14",
+		"prettier": "^3.9.6"
 	}
 }

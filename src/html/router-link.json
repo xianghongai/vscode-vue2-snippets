@@ -1,29 +1,17 @@
 {
 	"<router-link>, literal string": {
 		"prefix": "router-link",
-		"body": [
-			"<router-link to=\"$1\">",
-			"  $2",
-			"</router-link>$0"
-		],
+		"body": ["<router-link to=\"$1\">", "  $2", "</router-link>$0"],
 		"description": "Router link with literal string.\n"
 	},
 	"<router-link>, v-bind": {
 		"prefix": "router-link",
-		"body": [
-			"<router-link :to=\"$1\">",
-			"  $2",
-			"</router-link>$0"
-		],
+		"body": ["<router-link :to=\"$1\">", "  $2", "</router-link>$0"],
 		"description": "Router link using `v-bind`.\n"
 	},
 	"<router-link>, exact": {
 		"prefix": "router-link-exact",
-		"body": [
-			"<router-link :to=\"$1\" exact>",
-			"  $2",
-			"</router-link>$0"
-		]
+		"body": ["<router-link :to=\"$1\" exact>", "  $2", "</router-link>$0"]
 	},
 	"<router-link>, path": {
 		"prefix": "router-link-path",
@@ -187,20 +175,12 @@
 	},
 	"router params": {
 		"prefix": "router-params",
-		"body": [
-			"params: {",
-			"  ${1:property}: ${2:'value'},$3",
-			"},"
-		],
+		"body": ["params: {", "  ${1:property}: ${2:'value'},$3", "},"],
 		"description": "router with params.\n"
 	},
 	"router query": {
 		"prefix": "router-query",
-		"body": [
-			"query: {",
-			"  ${1:property}: ${2:'value'},$3",
-			"},"
-		],
+		"body": ["query: {", "  ${1:property}: ${2:'value'},$3", "},"],
 		"description": "router with query.\n"
 	}
 }

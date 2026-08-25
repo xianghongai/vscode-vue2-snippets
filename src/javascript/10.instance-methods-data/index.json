@@ -2,7 +2,7 @@
 	"Vue: this.$watch()": {
 		"prefix": "vm-$watch()",
 		"body": [
-			"const ${5:unwatch} = ${9:this}.\\$watch('${2:property}', (${3:newValue}${5:, ${4:oldValue}}) => {",
+			"const ${1:unwatch} = ${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
 			"  $0",
 			"});"
 		]

@@ -164,9 +164,7 @@
 	},
 	"Lazy Loading Routes": {
 		"prefix": "lazy-route",
-		"body": [
-			"const ${1:Feature} = () => import('${2:@/views/Feature.vue}');$0"
-		]
+		"body": ["const ${1:Feature} = () => import('${2:@/views/Feature.vue}');$0"]
 	},
 	"Lazy Loading Routes, webpack named chunks": {
 		"prefix": "lazy-route-chunk-webpack",
@@ -176,10 +174,6 @@
 	},
 	"Route Meta Fields": {
 		"prefix": "route-meta",
-		"body": [
-			"meta: { ",
-			"  ${1:requiresAuth}: ${2:true},",
-			"},"
-		]
+		"body": ["meta: { ", "  ${1:requiresAuth}: ${2:true},", "},"]
 	}
 }
