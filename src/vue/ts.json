@@ -1,5 +1,5 @@
 {
-  "Vue2 SFC-TypeScript": {
+	"Vue2 SFC-TypeScript": {
 		"prefix": "vue-ts",
 		"body": [
 			"<template>",
@@ -9,18 +9,43 @@
 			"</template>",
 			"",
 			"<script lang=\"ts\">",
-			"import Vue from 'vue'",
+			"import Vue from 'vue';",
 			"",
 			"export default Vue.extend({",
-			"  ${0}",
-			"})",
+			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
+			"  $0",
+			"});",
 			"</script>",
 			"",
-			"<style lang=\"$1\" ${2:scoped}>",
+			"<style lang=\"${2:scss}\" ${3:scoped}>",
 			"",
 			"</style>"
 		],
-		"description": "Vue Single-File Components with TypeScript.\n"
+		"description": "Vue Single-File Component with TypeScript.\n`Vue.extend` gives the options object type inference on every Vue 2.x version.\nOn Vue 2.7+, `defineComponent` (prefix `vue-ts-defineComponent`) is preferred — it also types `setup()`.\n"
+	},
+	"Vue2 SFC-TypeScript, defineComponent": {
+		"prefix": "vue-ts-defineComponent",
+		"body": [
+			"<template>",
+			"  <div>",
+			"    $1",
+			"  </div>",
+			"</template>",
+			"",
+			"<script lang=\"ts\">",
+			"import { defineComponent } from 'vue';",
+			"",
+			"export default defineComponent({",
+			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
+			"  $0",
+			"});",
+			"</script>",
+			"",
+			"<style lang=\"${2:scss}\" ${3:scoped}>",
+			"",
+			"</style>"
+		],
+		"description": "Vue 2.7+ (`import { defineComponent } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nVue Single-File Component with TypeScript. A no-op at runtime — it exists so TypeScript can infer props, `data`, `computed` and `setup()`.\n"
 	},
 	"Vue2 SFC-TypeScript Class-based": {
 		"prefix": "vue-ts-class",
@@ -35,15 +60,15 @@
 			"import { Component, Vue } from 'vue-property-decorator';",
 			"",
 			"@Component",
-			"export default class ${0} extends Vue {",
-			"  ",
+			"export default class ${2:${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} extends Vue {",
+			"  $0",
 			"}",
 			"</script>",
 			"",
-			"<style lang=\"$1\" ${2:scoped}>",
+			"<style lang=\"${3:scss}\" ${4:scoped}>",
 			"",
 			"</style>"
 		],
-		"description": "Base for Vue File with Class based TypeScript format.\n"
+		"description": "Class-based Vue Single-File Component with TypeScript.\nRequires the third-party [vue-property-decorator](https://www.npmjs.com/package/vue-property-decorator) (built on `vue-class-component`) and `experimentalDecorators` in `tsconfig.json`.\nNeither package is maintained for Vue 3 — on Vue 2.7 prefer `defineComponent` or `<script setup>`.\n"
 	}
 }

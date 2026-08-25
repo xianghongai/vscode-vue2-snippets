@@ -1,15 +1,11 @@
 {
 	"<Transition>": {
 		"prefix": "transition",
-		"body": [
-			"<transition name=\"${1:name}\">",
-			"  $0",
-			"</transition>"
-		],
-		"description": "Provides animated transition effects to a single element or component.\n"
+		"body": ["<transition name=\"${1:name}\">", "  $0", "</transition>"],
+		"description": "Provides animated transition effects to a single element or component.\nThe wrapped content must be a single element; it is a renderless component, so it leaves no extra DOM node.\n"
 	},
 	"<TransitionGroup>": {
-		"prefix": "transition-group",
+		"prefix": ["transition-group", "tg"],
 		"body": [
 			"<transition-group name=\"${1:list}\" tag=\"${2:ul}\">",
 			"  $0",
@@ -18,12 +14,26 @@
 		"description": "Provides transition effects for multiple elements or components in a list.\n"
 	},
 	"<KeepAlive>": {
-		"prefix": "keep-alive",
+		"prefix": ["keep-alive", "ka"],
+		"body": ["<keep-alive>", "  $0", "</keep-alive>"],
+		"description": "Caches dynamically toggled components wrapped inside, so their state survives being switched away.\nCached components get the `activated` / `deactivated` hooks instead of being destroyed.\n"
+	},
+	"<Transition>, mode + appear": {
+		"prefix": ["transition-mode", "tm"],
 		"body": [
-			"<keep-alive>",
+			"<transition name=\"${1:name}\" mode=\"${2:out-in}\" ${3:appear}>",
+			"  $0",
+			"</transition>"
+		],
+		"description": "`mode` is `out-in` (leave finishes before enter starts) or `in-out`; `appear` also runs the transition on the initial render.\n"
+	},
+	"<KeepAlive>, include/exclude/max": {
+		"prefix": ["keep-alive-include", "kai"],
+		"body": [
+			"<keep-alive :include=\"${1:/^Feature/}\" :exclude=\"${2:[]}\" :max=\"${3:10}\">",
 			"  $0",
 			"</keep-alive>"
 		],
-		"description": "Caches dynamically toggled components wrapped inside.\n"
+		"description": "`include` / `exclude` match against a component's `name` option and accept a string, a RegExp or an Array.\n`max` (Vue 2.5+) caps the cache, evicting the least recently used instance.\n"
 	}
 }

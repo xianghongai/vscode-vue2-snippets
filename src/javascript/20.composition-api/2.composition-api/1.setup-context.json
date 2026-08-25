@@ -1,24 +1,26 @@
 {
-	"Composition API - Setup Context: emit()": {
-		"prefix": [
-			"emit",
-			"e"
-		],
+	"Composition API - Setup Context: destructure": {
+		"prefix": ["setup-context", "sc"],
 		"body": [
-			"emit('${1:event-name}'${2:, ${3:param}});$0"
+			"setup(props, { ${1:attrs, listeners, slots, emit, expose} }) {",
+			"  $0",
+			"},"
 		],
-		"description": "Emits an event from the component.\nsetup(props, { emit, expose, attrs, slots })\n* Attributes (Non-reactive object, equivalent to $attrs);\n* Slots (Non-reactive object, equivalent to $slots);\n* Emit events (Function, equivalent to $emit);\n* Expose public properties (Function).\n"
+		"description": "Vue 2.7+ (or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below).\nIn Vue 2.7 the setup context is `{ attrs, listeners, slots, emit, expose }`.\n`listeners` (equivalent to `this.$listeners`) is Vue 2 only — Vue 3 folds listeners into `attrs`.\n"
+	},
+	"Composition API - Setup Context: emit()": {
+		"prefix": ["emit", "e"],
+		"body": ["emit('${1:event-name}'${2:, ${3:param}});$0"],
+		"description": "Vue 2.7+ (or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below).\nEmits an event from the component. Equivalent to `this.$emit`.\n`setup(props, { attrs, listeners, slots, emit, expose })`\n"
 	},
 	"Composition API - Setup Context: expose()": {
-		"prefix": [
-			"expose",
-			"ex"
-		],
-		"body": [
-			"expose({",
-			"  $1",
-			"});$0"
-		],
-		"description": "Exposes a function or object from the component.\nsetup(props, { emit, expose, attrs, slots })\n"
+		"prefix": ["expose", "ex"],
+		"body": ["expose({", "  $1", "});$0"],
+		"description": "Vue 2.7+ (or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below).\nRestricts what a parent can reach through a template ref. Inside `<script setup>` use the `defineExpose()` macro instead.\n`setup(props, { attrs, listeners, slots, emit, expose })`\n"
+	},
+	"Composition API - Setup Context: listeners": {
+		"prefix": ["setup-listeners", "sl"],
+		"body": ["listeners.${1:eventName}?.(${2:param});$0"],
+		"description": "Vue 2.7+ only. Equivalent of `this.$listeners`; no Vue 3 counterpart — Vue 3 merges listeners into `attrs` as `onXxx` props.\n`setup(props, { attrs, listeners, slots, emit, expose })`\n"
 	}
 }

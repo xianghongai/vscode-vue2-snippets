@@ -49,30 +49,18 @@
 	},
 	"Directive (locally)": {
 		"prefix": "directive-property",
-		"body": [
-			"${1:directiveName}(el, binding, vnode) {",
-			"  $2",
-			"},$0"
-		],
+		"body": ["${1:directiveName}(el, binding, vnode) {", "  $2", "},$0"],
 		"description": "directive property"
 	},
 
 	"Directive: bind()": {
 		"prefix": "directive-bind",
-		"body": [
-			"bind (el${2:, binding${3:, vnode}}) {",
-			"  $4",
-			"},$0"
-		],
+		"body": ["bind (el${2:, binding${3:, vnode}}) {", "  $4", "},$0"],
 		"description": "Directive `bind` lifecycle.\ncalled only once, when the directive is first bound to the element. This is where you can do one-time setup work.\n"
 	},
 	"Directive: inserted()": {
 		"prefix": "directive-inserted",
-		"body": [
-			"inserted (el${2:, binding${3:, vnode}}) {",
-			"  $4",
-			"},$0"
-		],
+		"body": ["inserted (el${2:, binding${3:, vnode}}) {", "  $4", "},$0"],
 		"description": "Directive `inserted` lifecycle.\ncalled when the bound element has been inserted into its parent node (this only guarantees parent node presence, not necessarily in-document).\n"
 	},
 	"Directive: update()": {
@@ -95,11 +83,7 @@
 	},
 	"Directive: unbind()": {
 		"prefix": "directive-unbind",
-		"body": [
-			"unbind (el${2:, binding${3:, vnode}}) {",
-			"  $4",
-			"},$0"
-		],
+		"body": ["unbind (el${2:, binding${3:, vnode}}) {", "  $4", "},$0"],
 		"description": "Directive `unbind` lifecycle.\ncalled only once, when the directive is unbound from the element.\n"
 	}
 }

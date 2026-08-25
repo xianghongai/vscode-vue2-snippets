@@ -1,32 +1,18 @@
 {
 	"Vue: nextTick()": {
-		"prefix": [
-			"nextTick",
-			"ntt"
-		],
-		"body": [
-			"nextTick().then(() => {",
-			"  $1",
-			"});"
-		],
-		"description": "A utility for waiting for the next DOM update flush."
+		"prefix": ["nextTick", "ntt"],
+		"body": ["nextTick().then(() => {", "  $1", "});"],
+		"description": "Vue 2.7+ (`import { nextTick } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nA utility for waiting for the next DOM update flush.\n"
 	},
 	"Vue: await nextTick()": {
-		"prefix": [
-			"await-nextTick",
-			"nt"
-		],
-		"body": [
-			"await nextTick();"
-		],
-		"description": "A utility for waiting for the next DOM update flush."
+		"prefix": ["await-nextTick", "nt"],
+		"body": ["await nextTick();"],
+		"description": "Vue 2.7+ (`import { nextTick } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nA utility for waiting for the next DOM update flush.\n"
 	},
 	"Vue: defineComponent(ComponentOptions)": {
 		"prefix": "defineComponent",
-		"body": [
-			"const ${2:Feature} = defineComponent($1);"
-		],
-		"description": "function defineComponent(component: ComponentOptions): ComponentConstructor;\nfunction defineComponent(setup: ComponentOptions['setup'], extraOptions?: ComponentOptions): () => any;\n"
+		"body": ["const ${2:Feature} = defineComponent($1);"],
+		"description": "Vue 2.7+ (`import { defineComponent } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nA no-op at runtime — it exists purely so TypeScript can infer the options object.\nfunction defineComponent(component: ComponentOptions): ComponentConstructor;\nfunction defineComponent(setup: ComponentOptions['setup'], extraOptions?: ComponentOptions): () => any;\n"
 	},
 	"Vue: defineAsyncComponent(AsyncComponentLoader)": {
 		"prefix": "defineAsyncComponent",
@@ -35,7 +21,7 @@
 			"  import('${1:./components/MyComponent.vue}')",
 			");"
 		],
-		"description": "defineAsyncComponent(AsyncComponentLoader): Component;\ntype AsyncComponentLoader = () => Promise<Component>;\n"
+		"description": "Vue 2.7+ (`import { defineAsyncComponent } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\ndefineAsyncComponent(AsyncComponentLoader): Component;\ntype AsyncComponentLoader = () => Promise<Component>;\n"
 	},
 	"Vue: defineAsyncComponent(AsyncComponentOptions)": {
 		"prefix": "defineAsyncComponent",
@@ -48,6 +34,6 @@
 			"  loadingComponent: ${4:syncComponent2},",
 			"});"
 		],
-		"description": "defineAsyncComponent(AsyncComponentOptions);\n"
+		"description": "Vue 2.7+ (`import { defineAsyncComponent } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nOptions: `loader`, `loadingComponent`, `errorComponent`, `delay`, `timeout`, `onError`. The Vue 3 `suspensible` option has no Vue 2 counterpart.\ndefineAsyncComponent(AsyncComponentOptions);\n"
 	}
 }

@@ -1,9 +1,7 @@
 {
 	"Global Config: silent": {
 		"prefix": "Vue.config.silent_UNSAFE",
-		"body": [
-			"Vue.config.silent = ${1:false};$0"
-		],
+		"body": ["Vue.config.silent = ${1:false};$0"],
 		"description": "Type: `boolean`, Default: `false`\nSuppress all Vue logs and warnings.\nVue 3.x removed.\n"
 	},
 	"Global Config: optionMergeStrategies": {
@@ -17,9 +15,7 @@
 	},
 	"Global Config: devtools": {
 		"prefix": "Vue.config.devtools_UNSAFE",
-		"body": [
-			"Vue.config.devtools = ${1:true};"
-		],
+		"body": ["Vue.config.devtools = ${1:true};"],
 		"description": "Type: `boolean`, Default: `true`, (`false` in production builds)\nConfigure whether to allow vue-devtools inspection. This option’s default value is `true` in development builds and `false` in production builds. You can set it to `true` to enable inspection for production builds.\nVue 3.x removed.\n"
 	},
 	"Global Config: errorHandler": {
@@ -58,16 +54,12 @@
 	},
 	"Global Config: performance": {
 		"prefix": "Vue.config.performance_UNSAFE",
-		"body": [
-			"Vue.config.performance = ${1:false};"
-		],
+		"body": ["Vue.config.performance = ${1:false};"],
 		"description": "Type: `boolean`, Default: `false (from 2.2.3+)`\nSet this to `true` to enable component init, compile, render and patch performance tracing in the browser devtool performance/timeline panel. Only works in development mode and in browsers that support the performance.mark API.\n"
 	},
 	"Global Config: productionTip": {
 		"prefix": "Vue.config.productionTip_UNSAFE",
-		"body": [
-			"Vue.config.productionTip = ${1:true};"
-		],
+		"body": ["Vue.config.productionTip = ${1:true};"],
 		"description": "Type: `boolean`, Default: `true`\nSet this to `false` to prevent the production tip on Vue startup.\nVue 3.x removed.\n"
 	}
 }

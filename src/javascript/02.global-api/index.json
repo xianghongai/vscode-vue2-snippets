@@ -1,11 +1,7 @@
 {
 	"Global API: nextTick()": {
 		"prefix": "Vue.nextTick().then()_UNSAFE",
-		"body": [
-			"Vue.nextTick().then(() => {",
-			"  $0",
-			"});"
-		],
+		"body": ["Vue.nextTick().then(() => {", "  $0", "});"],
 		"description": "New in 2.1.0+: returns a Promise if no callback is provided and Promise is supported in the execution environment. Please note that Vue does not come with a Promise polyfill, so if you target browsers that don’t support Promises natively (looking at you, IE), you will have to provide a polyfill yourself.\nVue 3.x removed.\n"
 	},
 	"Global API: set(target, propertyName/index, value)": {
@@ -31,30 +27,22 @@
 	},
 	"Global API: version": {
 		"prefix": "Vue.version",
-		"body": [
-			"Vue.version$0"
-		],
+		"body": ["Vue.version$0"],
 		"description": "Provides the installed version of Vue as a string. This is especially useful for community plugins and components, where you might use different strategies for different versions.\n"
 	},
 	"Global API: compile(template)": {
 		"prefix": "Vue.compile()",
-		"body": [
-			"const ${2:res} = Vue.compile('${1:template}');$0"
-		],
+		"body": ["const ${2:res} = Vue.compile('${1:template}');$0"],
 		"description": "Arguments: `{string} template`.\nCompiles a template string into a render function. Only available in the full build.\n"
 	},
 	"Global API: mixin": {
 		"prefix": "Vue.mixin()_UNSAFE",
-		"body": [
-			"Vue.mixin({$1});"
-		],
+		"body": ["Vue.mixin({$1});"],
 		"description": "Vue 3.x BREAKING CHANGE.\nArguments: `{Object} mixin`\nApply a mixin globally, which affects every Vue instance created afterwards. This can be used by plugin authors to inject custom behavior into components. Not recommended in application code.\nVue 3.x DEPRECATED. (3.x Instance API: `app.mixin`)\n"
 	},
 	"Global API: extend": {
 		"prefix": "Vue.extend()",
-		"body": [
-			"const ${2:Feature}Constructor = Vue.extend(${1:Main});$0"
-		],
+		"body": ["const ${2:Feature}Constructor = Vue.extend(${1:Main});$0"],
 		"description": "Arguments: `{Object} options`.\nCreate a “subclass” of the base Vue constructor. The argument should be an object containing component options.\nThe special case to note here is the `data` option - it must be a function when used with `Vue.extend()`.\n"
 	}
 }

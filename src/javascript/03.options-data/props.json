@@ -1,39 +1,18 @@
 {
 	"props: String": {
-		"prefix": [
-			"props-String",
-			"ps"
-		],
-		"body": [
-			"${1:property}: String,",
-			"$0"
-		]
+		"prefix": ["props-String", "ps"],
+		"body": ["${1:property}: String,", "$0"]
 	},
 	"props: Number": {
-		"prefix": [
-			"props-Number",
-			"pn"
-		],
-		"body": [
-			"${1:property}: Number,",
-			"$0"
-		]
+		"prefix": ["props-Number", "pn"],
+		"body": ["${1:property}: Number,", "$0"]
 	},
 	"props: Boolean": {
-		"prefix": [
-			"props-Boolean",
-			"pb"
-		],
-		"body": [
-			"${1:property}: Boolean,",
-			"$0"
-		]
+		"prefix": ["props-Boolean", "pb"],
+		"body": ["${1:property}: Boolean,", "$0"]
 	},
 	"props: Array": {
-		"prefix": [
-			"props-Array",
-			"pa"
-		],
+		"prefix": ["props-Array", "pa"],
 		"body": [
 			"${1:property}: {",
 			"  type: Array,",
@@ -45,10 +24,7 @@
 		]
 	},
 	"props: Object": {
-		"prefix": [
-			"props-Object",
-			"po"
-		],
+		"prefix": ["props-Object", "po"],
 		"body": [
 			"${1:property}: {",
 			"  type: Object,",
@@ -60,20 +36,11 @@
 		]
 	},
 	"props: Date": {
-		"prefix": [
-			"props-Date",
-			"pd"
-		],
-		"body": [
-			"${1:property}: Date,",
-			"$0"
-		]
+		"prefix": ["props-Date", "pd"],
+		"body": ["${1:property}: Date,", "$0"]
 	},
 	"props: Function": {
-		"prefix": [
-			"props-Function",
-			"pf"
-		],
+		"prefix": ["props-Function", "pf"],
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
@@ -83,30 +50,15 @@
 		]
 	},
 	"props: Symbol": {
-		"prefix": [
-			"props-Symbol",
-			"psy"
-		],
-		"body": [
-			"${1:property}: Symbol,",
-			"$0"
-		]
+		"prefix": ["props-Symbol", "psy"],
+		"body": ["${1:property}: Symbol,", "$0"]
 	},
 	"props: Promise": {
-		"prefix": [
-			"props-Promise",
-			"pp"
-		],
-		"body": [
-			"${1:property}: Promise,",
-			"$0"
-		]
+		"prefix": ["props-Promise", "pp"],
+		"body": ["${1:property}: Promise,", "$0"]
 	},
 	"props: String (default)": {
-		"prefix": [
-			"props-String-default",
-			"psd"
-		],
+		"prefix": ["props-String-default", "psd"],
 		"body": [
 			"${1:property}: {",
 			"  type: String,",
@@ -116,10 +68,7 @@
 		]
 	},
 	"props: Number (default)": {
-		"prefix": [
-			"props-Number-default",
-			"pnd"
-		],
+		"prefix": ["props-Number-default", "pnd"],
 		"body": [
 			"${1:property}: {",
 			"  type: Number,",
@@ -129,10 +78,7 @@
 		]
 	},
 	"props: Boolean (default)": {
-		"prefix": [
-			"props-Boolean-default",
-			"pbd"
-		],
+		"prefix": ["props-Boolean-default", "pbd"],
 		"body": [
 			"${1:property}: {",
 			"  type: Boolean,",
@@ -142,10 +88,7 @@
 		]
 	},
 	"props: Array (default)": {
-		"prefix": [
-			"props-Array-default",
-			"pad"
-		],
+		"prefix": ["props-Array-default", "pad"],
 		"body": [
 			"${1:property}: {",
 			"  type: Array,",
@@ -157,10 +100,7 @@
 		]
 	},
 	"props: Object (default)": {
-		"prefix": [
-			"props-Object-default",
-			"pod"
-		],
+		"prefix": ["props-Object-default", "pod"],
 		"body": [
 			"${1:property}: {",
 			"  type: Object,",
@@ -172,10 +112,7 @@
 		]
 	},
 	"props: Date (default)": {
-		"prefix": [
-			"props-Date-default",
-			"pdd"
-		],
+		"prefix": ["props-Date-default", "pdd"],
 		"body": [
 			"${1:property}: {",
 			"  type: Date,",
@@ -185,10 +122,7 @@
 		]
 	},
 	"props: Symbol (default)": {
-		"prefix": [
-			"props-Symbol-default",
-			"psyd"
-		],
+		"prefix": ["props-Symbol-default", "psyd"],
 		"body": [
 			"${1:property}: {",
 			"  type: Symbol,",
@@ -198,10 +132,7 @@
 		]
 	},
 	"props: Function (default)": {
-		"prefix": [
-			"props-Function-default",
-			"pfd"
-		],
+		"prefix": ["props-Function-default", "pfd"],
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
@@ -211,10 +142,7 @@
 		]
 	},
 	"props: Promise (default)": {
-		"prefix": [
-			"props-Promise-default",
-			"ppd"
-		],
+		"prefix": ["props-Promise-default", "ppd"],
 		"body": [
 			"${1:property}: {",
 			"  type: Promise,",
@@ -224,10 +152,7 @@
 		]
 	},
 	"props: String (required)": {
-		"prefix": [
-			"props-String-required",
-			"psr"
-		],
+		"prefix": ["props-String-required", "psr"],
 		"body": [
 			"${1:property}: {",
 			"  type: String,",
@@ -237,10 +162,7 @@
 		]
 	},
 	"props: Number (required)": {
-		"prefix": [
-			"props-Number-required",
-			"pnr"
-		],
+		"prefix": ["props-Number-required", "pnr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Number,",
@@ -250,10 +172,7 @@
 		]
 	},
 	"props: Boolean (required)": {
-		"prefix": [
-			"props-Boolean-required",
-			"pbr"
-		],
+		"prefix": ["props-Boolean-required", "pbr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Boolean,",
@@ -263,10 +182,7 @@
 		]
 	},
 	"props: Array (required)": {
-		"prefix": [
-			"props-Array-required",
-			"par"
-		],
+		"prefix": ["props-Array-required", "par"],
 		"body": [
 			"${1:property}: {",
 			"  type: Array,",
@@ -276,10 +192,7 @@
 		]
 	},
 	"props: Object (required)": {
-		"prefix": [
-			"props-Object-required",
-			"por"
-		],
+		"prefix": ["props-Object-required", "por"],
 		"body": [
 			"${1:property}: {",
 			"  type: Object,",
@@ -289,10 +202,7 @@
 		]
 	},
 	"props: Date (required)": {
-		"prefix": [
-			"props-Date-required",
-			"pdr"
-		],
+		"prefix": ["props-Date-required", "pdr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Date,",
@@ -302,10 +212,7 @@
 		]
 	},
 	"props: Function (required)": {
-		"prefix": [
-			"props-Function-required",
-			"pfr"
-		],
+		"prefix": ["props-Function-required", "pfr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
@@ -315,10 +222,7 @@
 		]
 	},
 	"props: Symbol (required)": {
-		"prefix": [
-			"props-Symbol-required",
-			"psyr"
-		],
+		"prefix": ["props-Symbol-required", "psyr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Symbol,",
@@ -328,10 +232,7 @@
 		]
 	},
 	"props: Promise (required)": {
-		"prefix": [
-			"props-Promise-required",
-			"ppr"
-		],
+		"prefix": ["props-Promise-required", "ppr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Promise,",
@@ -341,10 +242,7 @@
 		]
 	},
 	"props: String (default, required)": {
-		"prefix": [
-			"props-String-default-required",
-			"psdr"
-		],
+		"prefix": ["props-String-default-required", "psdr"],
 		"body": [
 			"${1:property}: {",
 			"  type: String,",
@@ -355,10 +253,7 @@
 		]
 	},
 	"props: Number (default, required)": {
-		"prefix": [
-			"props-Number-default-required",
-			"pndr"
-		],
+		"prefix": ["props-Number-default-required", "pndr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Number,",
@@ -369,10 +264,7 @@
 		]
 	},
 	"props: Boolean (default, required)": {
-		"prefix": [
-			"props-Boolean-default-required",
-			"pbdr"
-		],
+		"prefix": ["props-Boolean-default-required", "pbdr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Boolean,",
@@ -383,10 +275,7 @@
 		]
 	},
 	"props: Array (default, required)": {
-		"prefix": [
-			"props-Array-default-required",
-			"padr"
-		],
+		"prefix": ["props-Array-default-required", "padr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Array,",
@@ -399,10 +288,7 @@
 		]
 	},
 	"props: Object (default, required)": {
-		"prefix": [
-			"props-Object-default-required",
-			"podr"
-		],
+		"prefix": ["props-Object-default-required", "podr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Object,",
@@ -415,10 +301,7 @@
 		]
 	},
 	"props: Date (default, required)": {
-		"prefix": [
-			"props-Date-default-required",
-			"pddr"
-		],
+		"prefix": ["props-Date-default-required", "pddr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Date,",
@@ -429,10 +312,7 @@
 		]
 	},
 	"props: Function (default, required)": {
-		"prefix": [
-			"props-Function-default-required",
-			"pfdr"
-		],
+		"prefix": ["props-Function-default-required", "pfdr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Function,",
@@ -443,10 +323,7 @@
 		]
 	},
 	"props: Symbol (default, required)": {
-		"prefix": [
-			"props-Symbol-default-required",
-			"psydr"
-		],
+		"prefix": ["props-Symbol-default-required", "psydr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Symbol,",
@@ -457,10 +334,7 @@
 		]
 	},
 	"props: Promise (default, required)": {
-		"prefix": [
-			"props-Promise-default-required",
-			"ppdr"
-		],
+		"prefix": ["props-Promise-default-required", "ppdr"],
 		"body": [
 			"${1:property}: {",
 			"  type: Promise,",

@@ -62,7 +62,7 @@ property: {
 },
 ```
 
-![Watch Property](./art/assets/watch.gif "Watch Property")
+![Watch Property](./art/assets/watch.gif 'Watch Property')
 
 To get the above code, you only need to understand it as: <small><em><strong><u style="color: red;">w</u></strong>atch <strong><u style="color: red;">p</u></strong>roperty <strong><u style="color: red;">d</u></strong>eep <strong><u style="color: red;">i</u></strong>mmediate</em></small>, and then enter `wpdi` through VS Code's Suggest Match and press Enter.
 
@@ -80,7 +80,7 @@ property: {
 },
 ```
 
-!["Props"](./art/assets/props.gif "Props")
+!["Props"](./art/assets/props.gif 'Props')
 
 Same as above...
 
@@ -88,7 +88,7 @@ Same as above...
 
 仅高频常用代码提供<u><strong>缩写</strong></u>前缀。
 
-又例如，我们在创建 `.vue` 文件后，要书写基本的 SFC 元素，本扩展提供许多便捷的代码片断，具体参考 *〖Single-File Components / 单文件组件〗* 章节内容。
+又例如，我们在创建 `.vue` 文件后，要书写基本的 SFC 元素，本扩展提供许多便捷的代码片断，具体参考 _〖Single-File Components / 单文件组件〗_ 章节内容。
 
 ## Snippets 🚀
 
@@ -114,13 +114,11 @@ Recommended editor settings (建议配置编辑器):
 
 ### Single-File Components / 单文件组件
 
-
 The `sfc` prefix generates Vue <strong><u style="color: red;">S</u></strong>ingle-<strong><u style="color: red;">F</u></strong>ile <strong><u style="color: red;">C</u></strong>omponents, Some examples:
 
 --
 
 通过 `sfc` 前缀触发，包含大量创建 Vue 单文件组件的代码片段，部分示例如下：
-
 
 Vue 2.6 及以下版本，推荐 [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup)；
 
@@ -130,17 +128,16 @@ Vue 2.7 已内置 Composition API；
 
 1. Vue2 SFC-Options API
 2. Vue2 SFC-Composition API (2.7+)
-3. Vue2 SFC-Composition API `<script setup>`  (2.7+)
+3. Vue2 SFC-Composition API `<script setup>` (2.7+)
 4. Vue2 SFC-Composition API Plugin (依赖 [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api))
 5. Vue2 SFC-Composition API Plugin `<script setup>` (依赖 @vue/composition-api & [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup))
 
-![Single-File Components](./art/assets/sfc++.gif "Single-File Components")
+![Single-File Components](./art/assets/sfc++.gif 'Single-File Components')
 
 | Full prefix screenshot (SFC) / 完整前缀截图 (单文件组件) |
-|----------------------------------------------------------|
+| -------------------------------------------------------- |
 | ![](./art/assets/sfc.png)                                |
 | ...                                                      |
-
 
 ### Vue Language Blocks / SFC 语法定义
 
@@ -154,14 +151,24 @@ The `vue-style` prefix generates a `<style>` language block, which contains diff
 
 `vue-style` 前缀生成 `<style>` 语言块，包含不同样式预处理语言块。
 
+| Prefix             | VS Code Suggest Match | Snippet                                                                                    |
+| ------------------ | --------------------- | ------------------------------------------------------------------------------------------ |
+| `vue-template`     | `t`                   | <small><em>&lt;template&gt;<br>&nbsp;&nbsp;<br>&lt;/template&gt;</em></small>              |
+| `vue-script-setup` | `vss`                 | <small><em>&lt;script setup&gt;<br>&nbsp;&nbsp;<br>&lt;/script&gt;</em></small>            |
+| `vue-style`        |                       | <small><em>&lt;style lang="" scoped&gt;<br>&nbsp;&nbsp;<br>&lt;/style&gt;</em></small>     |
+| `vue-style-module` |                       | <small><em>&lt;style lang="scss" module&gt;<br>&nbsp;&nbsp;<br>&lt;/style&gt;</em></small> |
+| `vue-style-scss`   |                       | <small><em>&lt;style lang="scss" scoped&gt;<br>&nbsp;&nbsp;<br>&lt;/style&gt;</em></small> |
+| ...                |                       |                                                                                            |
+
+`vue-script-setup` 需要 Vue 2.7 + `vue-loader` 15.10+ / `vite-plugin-vue2` 2.2+，或 Vue 2.6 及以下配合
+[unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup)；
+`vue-style-module` 生成的 CSS Modules 块可通过 `this.$style` 或 `useCssModule()` 读取。
 
 | Full prefix screenshot (Language Blocks) / 完整前缀截图 (SFC 语法定义) |
-|------------------------------------------------------------------------|
+| ---------------------------------------------------------------------- |
 | ![](./art/assets/vue-language-blocks.png)                              |
 
-
 ### Options API
-
 
 The `option-` prefix generates Vue Options API Code, Examples:
 
@@ -171,25 +178,26 @@ The `option-` prefix generates Vue Options API Code, Examples:
 
 ![](./art/assets/option-data-computed.gif)
 
-| Prefix                      | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                           |
-|-----------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `option-name`               |                       | <small><em>name: 'FileName',</em></small>                                                                                                                                                                                                                                                                                                                         |
-| `option-components`         | `ocs`                 | <small><em><strong><u style="color: red;">c</u></strong>omponent<strong><u style="color: red;">s</u></strong>: { Feature },</em></small>                                                                                                                                                                                                                          |
-| `option-directives`         | `ods`                 | <small><em><strong><u style="color: red;">d</u></strong>irective<strong><u style="color: red;">s</u></strong>: {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                                                                                                                                               |
-| `option-props`              | `ops`                 | <small><em><strong><u style="color: red;">p</u></strong>rop<strong><u style="color: red;">s</u></strong>: {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                                                                                                                                                    |
-| `option-provide()`          | `ope`                 | <small><em><strong><u style="color: red;">p</u></strong>rovid<strong><u style="color: red;">e</u></strong>() {<br>&nbsp;&nbsp;return {<br>&nbsp;&nbsp;&nbsp;&nbsp;property: 'value',<br>&nbsp;&nbsp;};<br>},</em></small>                                                                                                                                         |
-| `option-inject`             | `oit`                 | <small><em><strong><u style="color: red;">i</u></strong>njec<strong><u style="color: red;">t</u></strong>: ['property'],</em></small>                                                                                                                                                                                                                             |
-| `option-data()`             | `od`                  | <small><em><strong><u style="color: red;">d</u></strong>ata() {<br>&nbsp;&nbsp;return {<br>&nbsp;&nbsp;&nbsp;&nbsp;property: 'value',<br>&nbsp;&nbsp;};<br>},</em></small>                                                                                                                                                                                        |
-| `option-computed`           | `oc`                  | <small><em><strong><u style="color: red;">c</u></strong>omputed: {<br>&nbsp;&nbsp;property() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.property;<br>&nbsp;&nbsp;},<br>},</em></small>                                                                                                                                                                              |
-| `computed-property`         | `cp`                  | <small><em><strong><u style="color: red;">p</u></strong>roperty() {<br>&nbsp;&nbsp;return this.property;<br>},</em></small>                                                                                                                                                                                                                                       |
-| `computed-property-get-set` |                       | <small><em><strong><u style="color: red;">p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u style="color: red;">g</u></strong>et() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.value;<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;<strong><u style="color: red;">s</u></strong>et(value) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.value = value;<br>&nbsp;&nbsp;},<br>},</em></small> |
-| `option-watch`              | `ow`                  | <small><em><strong><u style="color: red;">w</u></strong>atch: {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                                                                                                                                                                                                |
-| `option-methods`            | `om`                  | <small><em><strong><u style="color: red;">m</u></strong>ethods: {<br>&nbsp;&nbsp;methodProperty() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>},</em></small>                                                                                                                                                                                              |
-| `methods-property`          | `mp`                  | <small><em><strong><u style="color: red;">m</u></strong>ethod<strong><u style="color: red;">P</u></strong>roperty() {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                                                                                                                                          |
-| `option-emits`              |                       | <small><em>emits: \['eventName'\],</em></small>                                                                                                                                                                                                                                                                                                                   |
-| `option-expose`             |                       | <small><em>expose: \['publicMethod'\],</em></small>                                                                                                                                                                                                                                                                                                               |
-| `option-render`             |                       | <small><em>render(h, context) {<br>&nbsp;&nbsp;return h('tag', []);<br>},                                                                                                                                                                                                                                                                                         |
-| ...                         |                       |                                                                                                                                                                                                                                                                                                                                                                   |
+| Prefix                       | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                           |
+| ---------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `option-name`                |                       | <small><em>name: 'FileName',</em></small>                                                                                                                                                                                                                                                                                                                         |
+| `option-components`          | `ocs`                 | <small><em><strong><u style="color: red;">c</u></strong>omponent<strong><u style="color: red;">s</u></strong>: { Feature },</em></small>                                                                                                                                                                                                                          |
+| `option-directives`          | `ods`                 | <small><em><strong><u style="color: red;">d</u></strong>irective<strong><u style="color: red;">s</u></strong>: {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                                                                                                                                               |
+| `option-props`               | `ops`                 | <small><em><strong><u style="color: red;">p</u></strong>rop<strong><u style="color: red;">s</u></strong>: {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                                                                                                                                                    |
+| `option-provide()`           | `ope`                 | <small><em><strong><u style="color: red;">p</u></strong>rovid<strong><u style="color: red;">e</u></strong>() {<br>&nbsp;&nbsp;return {<br>&nbsp;&nbsp;&nbsp;&nbsp;property: 'value',<br>&nbsp;&nbsp;};<br>},</em></small>                                                                                                                                         |
+| `option-inject`              | `oit`                 | <small><em><strong><u style="color: red;">i</u></strong>njec<strong><u style="color: red;">t</u></strong>: ['property'],</em></small>                                                                                                                                                                                                                             |
+| `option-data()`              | `od`                  | <small><em><strong><u style="color: red;">d</u></strong>ata() {<br>&nbsp;&nbsp;return {<br>&nbsp;&nbsp;&nbsp;&nbsp;property: 'value',<br>&nbsp;&nbsp;};<br>},</em></small>                                                                                                                                                                                        |
+| `option-computed`            | `oc`                  | <small><em><strong><u style="color: red;">c</u></strong>omputed: {<br>&nbsp;&nbsp;property() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.property;<br>&nbsp;&nbsp;},<br>},</em></small>                                                                                                                                                                              |
+| `computed-property`          | `cp`                  | <small><em><strong><u style="color: red;">p</u></strong>roperty() {<br>&nbsp;&nbsp;return this.property;<br>},</em></small>                                                                                                                                                                                                                                       |
+| `computed-property-get-set`  |                       | <small><em><strong><u style="color: red;">p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u style="color: red;">g</u></strong>et() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.value;<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;<strong><u style="color: red;">s</u></strong>et(value) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.value = value;<br>&nbsp;&nbsp;},<br>},</em></small> |
+| `option-watch`               | `ow`                  | <small><em><strong><u style="color: red;">w</u></strong>atch: {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                                                                                                                                                                                                |
+| `option-methods`             | `om`                  | <small><em><strong><u style="color: red;">m</u></strong>ethods: {<br>&nbsp;&nbsp;methodProperty() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>},</em></small>                                                                                                                                                                                              |
+| `option-setup()`             | `os`                  | <small><em>setup(props, { emit }) {<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;return {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;};<br>},</em></small>                                                                                                                                                                                                                      |
+| `methods-property`           | `mp`                  | <small><em><strong><u style="color: red;">m</u></strong>ethod<strong><u style="color: red;">P</u></strong>roperty() {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                                                                                                                                          |
+| `option-emits`               |                       | <small><em>emits: \['eventName'\],</em></small>                                                                                                                                                                                                                                                                                                                   |
+| `option-expose` (Vue 3 only) |                       | <small><em>expose: \['publicMethod'\],</em></small>                                                                                                                                                                                                                                                                                                               |
+| `option-render`              |                       | <small><em>render(h, context) {<br>&nbsp;&nbsp;return h('tag', []);<br>},                                                                                                                                                                                                                                                                                         |
+| ...                          |                       |                                                                                                                                                                                                                                                                                                                                                                   |
 
 Full prefix screenshot (Options) / 完整前缀截图:
 
@@ -217,7 +225,7 @@ Just `ps*`...
 ![](./art/assets/option-props.gif)
 
 | Prefix                                          | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                      |
-|-------------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `props-String` <br><br> `ps`                    | `pss`                 | <small><em>property: <strong><u style="color: red;">S</u></strong>tring</em></small>,                                                                                                                                                                                        |
 | `props-String-default` <br><br> `psd`           | `pssd`                | <small><em>property: {<br>&nbsp;&nbsp;type: <strong><u style="color: red;">S</u></strong>tring,<br>&nbsp;&nbsp;<strong><u style="color: red;">d</u></strong>efault: undefined,<br>},</em></small>                                                                            |
 | `props-String-required` <br><br> `psr`          | `pssr`                | <small><em>property: {<br>&nbsp;&nbsp;type: <strong><u style="color: red;">S</u></strong>tring,<br>&nbsp;&nbsp;<strong><u style="color: red;">r</u></strong>equired: true,<br>},</em></small>                                                                                |
@@ -236,7 +244,7 @@ The prefix screenshot (Props) / 前缀截图:
 ![](./art/assets/option-watch.gif)
 
 | Prefix                          | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                             |
-|---------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `watch-property`                | `wp`                  | <small><em><strong><u style="color: red;">p</u></strong>roperty (newValue, oldValue) {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                                                                                                                                           |
 | `watch-property-deep`           | `wpd`                 | <small><em><strong><u style="color: red;">p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u style="color: red;">d</u></strong>eep: true,<br>&nbsp;&nbsp;handler(newValue, oldValue) {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>},</em></small>                                                                             |
 | `watch-property-immediate`      | `wpi`                 | <small><em><strong><u style="color: red;">p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u style="color: red;">i</u></strong>mmediate: true,<br>&nbsp;&nbsp;handler(newValue, oldValue) {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>},</em></small>                                                                        |
@@ -248,13 +256,13 @@ The prefix screenshot (Watch) / 前缀截图:
 
 ### Watch (Composition API)
 
-1. 直接生成 (Prefix)：`wdi` =  <small><em><strong><u style="color: red;">w</u></strong></em>atch-props-<em><strong><u style="color: red;">d</u></strong></em>eep-<em><strong><u style="color: red;">i</u></strong></em>mmediate</small>
+1. 直接生成 (Prefix)：`wdi` = <small><em><strong><u style="color: red;">w</u></strong></em>atch-props-<em><strong><u style="color: red;">d</u></strong></em>eep-<em><strong><u style="color: red;">i</u></strong></em>mmediate</small>
 2. 联想匹配 (Suggest Match)：`wps` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">p</u></strong>rop<strong><u style="color: red;">s</u></strong></em></small>。
 
 ![](./art/assets/watch.gif)
 
 | Prefix                       | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `watch-props`                |                       | <small><em><strong><u style="color: red;">w</u></strong>atch(<br>&nbsp;&nbsp;() => <strong><u style="color: red;">p</u></strong>rop<strong><u style="color: red;">s</u></strong>.property,<br>&nbsp;&nbsp;async (newValue, oldValue) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>);</em></small>                                                                                                                                                                                                              |
 | `watch-props-deep`           | `wd`                  | <small><em><strong><u style="color: red;">w</u></strong>atch(<br>&nbsp;&nbsp;() => <strong><u style="color: red;">p</u></strong>rop<strong><u style="color: red;">s</u></strong>.property,<br>&nbsp;&nbsp;async (newValue, oldValue) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u style="color: red;">d</u></strong>eep: true,<br>&nbsp;&nbsp;}<br>);</em></small>                                                                                         |
 | `watch-props-immediate`      | `wi`                  | <small><em><strong><u style="color: red;">w</u></strong>atch(<br>&nbsp;&nbsp;() => <strong><u style="color: red;">p</u></strong>rop<strong><u style="color: red;">s</u></strong>.property,<br>&nbsp;&nbsp;async (newValue, oldValue) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u style="color: red;">i</u></strong>mmediate: true,<br>&nbsp;&nbsp;}<br>);</em></small>                                                                                    |
@@ -271,7 +279,7 @@ The prefix screenshot (Watch) / 前缀截图:
 ### Computed
 
 | Prefix                      | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                                                   |
-|-----------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `computed-property`         | `cp`                  | <small><em><strong><u style="color: red;">p</u></strong>roperty() {<br>&nbsp;&nbsp;return this.property;<br>},</em></small>                                                                                                                                                                                                                                                               |
 | `computed-property-get-set` |                       | <small><em><strong><u style="color: red;">p</u></strong>roperty: {<br>&nbsp;&nbsp;<strong><u style="color: red;">g</u></strong>et() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.value;<br>&nbsp;&nbsp;},<br>&nbsp;&nbsp;<strong><u style="color: red;">s</u></strong>et(val) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.value = val;<br>&nbsp;&nbsp;},<br>},</em></small>                             |
 | `computed`                  | `c`                   | <small><em>const feature = <strong><u style="color: red;">c</u></strong>ompute<strong><u style="color: red;">d</u></strong>(() => state.value);</em></small>                                                                                                                                                                                                                              |
@@ -289,20 +297,24 @@ Just `ol*`...
 
 ![](./art/assets/option-lifecyle.gif)
 
-| Prefix                   | VS Code Suggest Match | Snippet                                                                                                                                                 |
-|--------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `option-beforeCreate()`  | `olbc`                | <small><em><strong><u style="color: red;">b</u></strong>efore<strong><u style="color: red;">C</u></strong>reate() {<br>&nbsp;&nbsp;<br>},</em></small>  |
-| `option-created()`       | `olc`                 | <small><em><strong><u style="color: red;">c</u></strong>reated() {<br>&nbsp;&nbsp;<br>},</em></small>                                                   |
-| `option-beforeMount()`   | `olbm`                | <small><em><strong><u style="color: red;">b</u></strong>efore<strong><u style="color: red;">M</u></strong>ount() {<br>&nbsp;&nbsp;<br>},</em></small>   |
-| `option-mounted()`       | `olm`                 | <small><em><strong><u style="color: red;">m</u></strong>ounted() {<br>&nbsp;&nbsp;<br>},</em></small>                                                   |
-| `option-beforeUpdate()`  | `olbu`                | <small><em><strong><u style="color: red;">b</u></strong>efore<strong><u style="color: red;">U</u></strong>pdate() {<br>&nbsp;&nbsp;<br>},</em></small>  |
-| `option-updated()`       | `olu`                 | <small><em><strong><u style="color: red;">u</u></strong>pdated() {<br>&nbsp;&nbsp;<br>},</em></small>                                                   |
-| `option-activated()`     | `ola`                 | <small><em><strong><u style="color: red;">a</u></strong>ctivated() {<br>&nbsp;&nbsp;<br>},</em></small>                                                 |
-| `option-deactivated()`   | `olda`                | <small><em><strong><u style="color: red;">d</u></strong>e<strong><u style="color: red;">a</u></strong>ctivated() {<br>&nbsp;&nbsp;<br>},</em></small>   |
-| `option-beforeDestroy()` | `olbd`                | <small><em><strong><u style="color: red;">b</u></strong>efore<strong><u style="color: red;">D</u></strong>estroy() {<br>&nbsp;&nbsp;<br>},</em></small> |
-| `option-destroyed()`     | `old`                 | <small><em><strong><u style="color: red;">d</u></strong>estroyed() {<br>&nbsp;&nbsp;<br>},</em></small>                                                 |
-| `async-option-created()` | `asolc`               | <small><em><strong><u style="color: red;">as</u></strong>ync <strong><u style="color: red;">c</u></strong>reated() {<br>&nbsp;&nbsp;<br>},</em></small> |
-| `async-option-mounted()` | `asolm`               | <small><em><strong><u style="color: red;">as</u></strong>ync <strong><u style="color: red;">m</u></strong>ounted() {<br>&nbsp;&nbsp;<br>},</em></small> |
+| Prefix                            | VS Code Suggest Match | Snippet                                                                                                                                                 |
+| --------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `option-beforeCreate()`           | `olbc`                | <small><em><strong><u style="color: red;">b</u></strong>efore<strong><u style="color: red;">C</u></strong>reate() {<br>&nbsp;&nbsp;<br>},</em></small>  |
+| `option-created()`                | `olc`                 | <small><em><strong><u style="color: red;">c</u></strong>reated() {<br>&nbsp;&nbsp;<br>},</em></small>                                                   |
+| `option-beforeMount()`            | `olbm`                | <small><em><strong><u style="color: red;">b</u></strong>efore<strong><u style="color: red;">M</u></strong>ount() {<br>&nbsp;&nbsp;<br>},</em></small>   |
+| `option-mounted()`                | `olm`                 | <small><em><strong><u style="color: red;">m</u></strong>ounted() {<br>&nbsp;&nbsp;<br>},</em></small>                                                   |
+| `option-beforeUpdate()`           | `olbu`                | <small><em><strong><u style="color: red;">b</u></strong>efore<strong><u style="color: red;">U</u></strong>pdate() {<br>&nbsp;&nbsp;<br>},</em></small>  |
+| `option-updated()`                | `olu`                 | <small><em><strong><u style="color: red;">u</u></strong>pdated() {<br>&nbsp;&nbsp;<br>},</em></small>                                                   |
+| `option-activated()`              | `ola`                 | <small><em><strong><u style="color: red;">a</u></strong>ctivated() {<br>&nbsp;&nbsp;<br>},</em></small>                                                 |
+| `option-deactivated()`            | `olda`                | <small><em><strong><u style="color: red;">d</u></strong>e<strong><u style="color: red;">a</u></strong>ctivated() {<br>&nbsp;&nbsp;<br>},</em></small>   |
+| `option-beforeDestroy()`          | `olbd`                | <small><em><strong><u style="color: red;">b</u></strong>efore<strong><u style="color: red;">D</u></strong>estroy() {<br>&nbsp;&nbsp;<br>},</em></small> |
+| `option-destroyed()`              | `old`                 | <small><em><strong><u style="color: red;">d</u></strong>estroyed() {<br>&nbsp;&nbsp;<br>},</em></small>                                                 |
+| `async-option-created()`          | `asolc`               | <small><em><strong><u style="color: red;">as</u></strong>ync <strong><u style="color: red;">c</u></strong>reated() {<br>&nbsp;&nbsp;<br>},</em></small> |
+| `async-option-mounted()`          | `asolm`               | <small><em><strong><u style="color: red;">as</u></strong>ync <strong><u style="color: red;">m</u></strong>ounted() {<br>&nbsp;&nbsp;<br>},</em></small> |
+| `option-errorCaptured()`          | `olec`                | <small><em>errorCaptured(err, vm, info) {<br>&nbsp;&nbsp;<br>},</em></small>                                                                            |
+| `option-serverPrefetch()`         | `olsp`                | <small><em>serverPrefetch() {<br>&nbsp;&nbsp;return ;<br>},</em></small>                                                                                |
+| `option-renderTracked()` (2.7+)   | `olrtk`               | <small><em>renderTracked(event) {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                    |
+| `option-renderTriggered()` (2.7+) | `olrtg`               | <small><em>renderTriggered(event) {<br>&nbsp;&nbsp;<br>},</em></small>                                                                                  |
 
 The prefix screenshot (Lifecycle Hooks) / 前缀截图:
 
@@ -319,7 +331,7 @@ The `on` prefix generates Vue Lifecycle Hooks, Some examples:
 ![](./art/assets/lifecyle.gif)
 
 | Prefix                | VS Code Suggest Match | Snippet                                                                                                                                                                                                        |
-|-----------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `onBeforeMount`       | `onbm`                | <small><em><strong><u style="color: red;">onB</u></strong>efore<strong><u style="color: red;">M</u></strong>ount(() => {<br>&nbsp;&nbsp;<br>});</em></small>                                                   |
 | `onMounted`           | `onm`                 | <small><em><strong><u style="color: red;">onM</u></strong>ounted(() => {<br>&nbsp;&nbsp;<br>});</em></small>                                                                                                   |
 | `onBeforeUpdate`      | `onbup`               | <small><em><strong><u style="color: red;">onB</u></strong>efore<strong><u style="color: red;">U</u></strong>pdate(() => {<br>&nbsp;&nbsp;<br>});</em></small>                                                  |
@@ -330,6 +342,10 @@ The `on` prefix generates Vue Lifecycle Hooks, Some examples:
 | `onDeactivated`       | `onda`                | <small><em><strong><u style="color: red;">onD</u></strong>e<strong><u style="color: red;">a</u></strong>ctivated(() => {<br>&nbsp;&nbsp;<br>});</em></small>                                                   |
 | `async-onBeforeMount` | `asonbm`              | <small><em><strong><u style="color: red;">onB</u></strong>efore<strong><u style="color: red;">M</u></strong>ount(<strong><u style="color: red;">as</u></strong>ync () => {<br>&nbsp;&nbsp;<br>});</em></small> |
 | `async-onMounted`     | `asonm`               | <small><em><strong><u style="color: red;">onM</u></strong>ounted(<strong><u style="color: red;">as</u></strong>ync () => {<br>&nbsp;&nbsp;<br>});</em></small>                                                 |
+| `onErrorCaptured`     | `onec`                | <small><em>onErrorCaptured((err, instance, info) => {<br>&nbsp;&nbsp;<br>});</em></small>                                                                                                                      |
+| `onServerPrefetch`    | `onsp`                | <small><em>onServerPrefetch(async () => {<br>&nbsp;&nbsp;<br>});</em></small>                                                                                                                                  |
+| `onRenderTracked`     | `onrtk`               | <small><em>onRenderTracked((event) => {<br>&nbsp;&nbsp;<br>});</em></small>                                                                                                                                    |
+| `onRenderTriggered`   | `onrtg`               | <small><em>onRenderTriggered((event) => {<br>&nbsp;&nbsp;<br>});</em></small>                                                                                                                                  |
 
 The prefix screenshot (Lifecycle Hooks) / 前缀截图:
 
@@ -343,7 +359,7 @@ The prefix screenshot (Lifecycle Hooks) / 前缀截图:
 {
   "compilerOptions": {
     "checkJs": true,
-    "allowJs": true,
+    "allowJs": true
     // ...
   }
   // ...
@@ -359,7 +375,7 @@ All instance properties and methods are triggered with the `vm` prefix, such as:
 所有实例属性和方法都以 `vm` 前缀触发，部分示例如下：
 
 | Prefix                       | VS Code Suggest Match | Snippet                                                                                                                                                                             |
-|------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `vm-nextTick`                |                       | <small><em>this.$<strong><u style="color: red;">n</u></strong>ext<strong><u style="color: red;">T</u></strong>ick().then(() => {<br>&nbsp;&nbsp;<br>});</em></small>                |
 | `await-vm-nextTick` / `vmnt` | `awvmnt`              | <small><em><strong><u style="color: red;">aw</u></strong>ait this.$<strong><u style="color: red;">n</u></strong>ext<strong><u style="color: red;">T</u></strong>ick();</em></small> |
 | `vm-emit`                    | `vmem`                | <small><em>this.$<strong><u style="color: red;">em</u></strong>it('event-name', param);</em></small>                                                                                |
@@ -378,7 +394,7 @@ The `v` prefix generates Vue Directives, some examples:
 `v` 前缀触发，包涵大量 Vue 模板语法代码片段，部分示例如下：
 
 | Prefix                | VS Code Suggest Match | Snippet                                                                                                                                                                                                 |
-|-----------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `v-for`               | `vf`                  | <small><em><strong><u style="color: red;">v</u></strong>-<strong><u style="color: red;">f</u></strong>or="item in items" :key="item"</em></small>                                                       |
 | `v-for-index`         | `vfi`                 | <small><em><strong><u style="color: red;">v</u></strong>-<strong><u style="color: red;">f</u></strong>or="(item, <strong><u style="color: red;">i</u></strong>ndex) in items" :key="index"</em></small> |
 | `v-if`                |                       | <small><em>v-if="condition"</em></small>                                                                                                                                                                |
@@ -396,6 +412,25 @@ The `v` prefix generates Vue Directives, some examples:
 | `v-slot`              |                       | <small><em>\<template #default="slotProps"\><br>&nbsp;&nbsp;<br>\</template\></em></small>                                                                                                              |
 | `v-slot-named`        | `vsn`                 | <small><em>\<template #default\><br>&nbsp;&nbsp;<br>\</template\></em></small>                                                                                                                          |
 | `v-slot-named-props`  | `vsnp`                | <small><em>\<template #default="slotProps"\><br>&nbsp;&nbsp;<br>\</template\></em></small>                                                                                                              |
+| `v-text`              |                       | <small><em>v-text="message"</em></small>                                                                                                                                                                |
+| `v-html`              |                       | <small><em>v-html="rawHtml"</em></small>                                                                                                                                                                |
+| `v-once`              |                       | <small><em>v-once</em></small>                                                                                                                                                                          |
+| `v-pre`               |                       | <small><em>v-pre</em></small>                                                                                                                                                                           |
+| `v-cloak`             |                       | <small><em>v-cloak</em></small>                                                                                                                                                                         |
+| `v-bind`              |                       | <small><em>:attribute="value"</em></small>                                                                                                                                                              |
+| `v-bind-object`       |                       | <small><em>v-bind="object"</em></small>                                                                                                                                                                 |
+| `v-bind-dynamic`      | `vbd`                 | <small><em>:[attributeName]="value"</em></small>                                                                                                                                                        |
+| `v-bind-sync_UNSAFE`  |                       | <small><em>:title.sync="value"</em></small>                                                                                                                                                             |
+| `v-bind-prop`         |                       | <small><em>:innerHTML.prop="value"</em></small>                                                                                                                                                         |
+| `v-bind-camel`        |                       | <small><em>:view-box.camel="value"</em></small>                                                                                                                                                         |
+| `v-on-dynamic`        | `vod`                 | <small><em>@[eventName]="handler"</em></small>                                                                                                                                                          |
+| `v-on-native_UNSAFE`  |                       | <small><em>@click.native="handler"</em></small>                                                                                                                                                         |
+| `v-on-self`           |                       | <small><em>@click.self="handler"</em></small>                                                                                                                                                           |
+| `v-on-capture`        |                       | <small><em>@click.capture="handler"</em></small>                                                                                                                                                        |
+| `v-on-passive`        |                       | <small><em>@scroll.passive="handler"</em></small>                                                                                                                                                       |
+| `v-model-lazy`        | `vml`                 | <small><em>v-model.lazy="value"</em></small>                                                                                                                                                            |
+| `v-model-number`      | `vmn`                 | <small><em>v-model.number="value"</em></small>                                                                                                                                                          |
+| `v-model-trim`        | `vmt`                 | <small><em>v-model.trim="value"</em></small>                                                                                                                                                            |
 
 Full prefix screenshot (`v-`) / 完整前缀截图 (Vue 内置指令):
 
@@ -403,14 +438,17 @@ Full prefix screenshot (`v-`) / 完整前缀截图 (Vue 内置指令):
 
 ### Built-ins Components & Special Elements
 
-| Prefix             | VS Code Suggest Match | Snippet                                                                                                    |
-|--------------------|-----------------------|------------------------------------------------------------------------------------------------------------|
-| `transition`       |                       | <small><em>\<transition name="name"\><br>&nbsp;&nbsp;<br>\</transition\></em></small>                      |
-| `transition-group` | `tg`                  | <small><em>\<transition-group name="list" tag="ul"\><br>&nbsp;&nbsp;<br>\</transition-group\></em></small> |
-| `keep-alive`       | `ka`                  | <small><em>\<keep-alive\><br>&nbsp;&nbsp;<br>\</keep-alive\></em></small>                                  |
-| `slot`             |                       | <small><em>\<slot\>\</slot\></em></small>                                                                  |
-| `slot-named`       | `sn`                  | <small><em>\<slot name="default"\>\</slot\></em></small>                                                   |
-| ...                |                       |                                                                                                            |
+| Prefix               | VS Code Suggest Match | Snippet                                                                                                                         |
+| -------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `transition`         |                       | <small><em>\<transition name="name"\><br>&nbsp;&nbsp;<br>\</transition\></em></small>                                           |
+| `transition-group`   | `tg`                  | <small><em>\<transition-group name="list" tag="ul"\><br>&nbsp;&nbsp;<br>\</transition-group\></em></small>                      |
+| `keep-alive`         | `ka`                  | <small><em>\<keep-alive\><br>&nbsp;&nbsp;<br>\</keep-alive\></em></small>                                                       |
+| `slot`               |                       | <small><em>\<slot\>\</slot\></em></small>                                                                                       |
+| `slot-named`         | `sn`                  | <small><em>\<slot name="default"\>\</slot\></em></small>                                                                        |
+| `transition-mode`    | `tm`                  | <small><em>&lt;transition name="name" mode="out-in" appear&gt;<br>&nbsp;&nbsp;<br>&lt;/transition&gt;</em></small>              |
+| `keep-alive-include` | `kai`                 | <small><em>&lt;keep-alive :include="/^Feature/" :exclude="[]" :max="10"&gt;<br>&nbsp;&nbsp;<br>&lt;/keep-alive&gt;</em></small> |
+| `is`                 |                       | <small><em>:is="Feature"</em></small>                                                                                           |
+| ...                  |                       |                                                                                                                                 |
 
 (1). Transition classes / 用于自定义过渡 class Props
 
@@ -439,7 +477,7 @@ The `route-`/`vm-route-` or `router-`/`vm-router-` prefix generates Vue Router, 
 #### Vue Route v3.x - Script
 
 | Prefix                             | VS Code Suggest Match | Snippet                                                                                                                                                                                                         |
-|------------------------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `useRoute`                         |                       | <small><em>const route = useRoute();</em></small>                                                                                                                                                               |
 | `useRouter`                        |                       | <small><em>const router = useRouter();</em></small>                                                                                                                                                             |
 | `useLink`                          |                       | <small><em>const { href, isActive, isExactActive, navigate, route } = useLink({<br>&nbsp;&nbsp;to: '/pathname'<br>});</em></small>                                                                              |
@@ -475,7 +513,7 @@ Full prefix screenshot (Vue Router) / 完整前缀截图 (Vue 路由):
 #### Vue Route v3.x - Custom Component
 
 | Prefix                           | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                 |
-|----------------------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `router-view`                    | `rv`                  | <small><em>\<router-view\>\</router-view\></em></small>                                                                                                                                                                                                                                 |
 | `router-view-named`              | `rvn`                 | <small><em>\<router-view name="default"\>\</router-view\></em></small>                                                                                                                                                                                                                  |
 | `router-link`                    | `rl`                  | <small><em>\<router-link :to=""\><br>&nbsp;&nbsp;<br>\</router-link\></em></small>                                                                                                                                                                                                      |
@@ -509,6 +547,30 @@ Vue 2.x 中采用 VueX，Vue 3.x 采用 Pinia，项目级别迁移有成本，�
 `UNSAFE_x`，`prefix`, Indicates that it is deprecated in the **current** version.
 
 `x_UNSAFE`，`suffix`, Indicates that it has been deprecated in **future** versions.
+
+## Version notes in descriptions / 描述中的版本说明
+
+Every Composition API snippet states which runtime provides it, so the hover description tells you
+whether the code will actually run in your project:
+
+- **`Vue 2.7+`** — exported from `vue` itself, no plugin needed.
+  On Vue 2.6 and below use [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api),
+  which the `Composition API Plugin` snippets import from.
+- **`Vue 2.7+ only`** — Vue 2 exclusive, with no Vue 3 counterpart (`useListeners`, the setup context's `listeners`).
+- **`Vue 3.x only` / `Vue Router 4 only`** — kept for reference and for anyone reading Vue 3 code, but
+  **not available in Vue 2**. The description names the Vue 2 equivalent to use instead.
+
+`<script setup>` macros are called out separately, because they come from the compiler rather than the runtime:
+`defineProps`, `defineEmits`, `defineExpose` and `withDefaults` work in Vue 2.7 `<script setup>` and, on
+Vue 2.6 and below, through [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup).
+`defineOptions`, `defineModel` and `defineSlots` are Vue 3 only — neither Vue 2.7 nor
+unplugin-vue2-script-setup (0.11.4) compiles them.
+
+每个 Composition API 代码片段的描述中都标注了它由哪个运行时提供：`Vue 2.7+` 表示 `vue` 直接导出，无需插件；
+`Vue 2.7+ only` 表示 Vue 2 独有、Vue 3 没有对应物；`Vue 3.x only` / `Vue Router 4 only` 表示 Vue 2 中不可用，
+描述里会给出 Vue 2 的替代写法。`<script setup>` 宏中，`defineProps` / `defineEmits` / `defineExpose` /
+`withDefaults` 在 Vue 2.7 及 unplugin-vue2-script-setup 下可用，`defineOptions` / `defineModel` /
+`defineSlots` 则两者都不支持。
 
 ## Resources 🤞
 
