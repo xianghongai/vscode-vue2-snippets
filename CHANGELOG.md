@@ -4,9 +4,17 @@ All notable changes to the **Vue 2 Snippets** extension are documented in this f
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Each entry lists only the headline change per release — see git history/tags for full detail. Patch releases that only touched documentation or the build are folded into the entry above them.
 
+## [2.5.2] - 2026-08-26
+
+- Fixed the Marketplace badges
+
 ## [2.5.1] - 2026-08-25
 
-- Internal only, no change to the published snippets: migrated the toolchain to pnpm + [mise](https://mise.jdx.dev/), reformatted `src/` with Prettier, and reworked packaging (allow-list `.vscodeignore`, corrected `engines.vscode`, and a `vscode:prepublish` hook so `snippets/` is always regenerated before publish)
+Internal only; the published snippets are unchanged.
+
+- Migrated the toolchain to pnpm + [mise](https://mise.jdx.dev/)
+- Reformatted `src/` with Prettier
+- Packaging: allow-list `.vscodeignore`, corrected `engines.vscode`, and a `vscode:prepublish` hook
 
 ## [2.5.0] - 2024-11-26
 
