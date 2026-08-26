@@ -1,22 +1,20 @@
-<p>
-  <h1 align="center">Vue 2 Snippet (Visual Studio Code)</h1>
-</p>
+# Vue 2 Snippet (Visual Studio Code)
 
-<p align="center">
+<p>
   <a href="https://github.com/xianghongai/vscode-vue2-snippets">
-    <img src="https://img.shields.io/github/repo-size/xianghongai/vscode-vue2-snippets?color=4ac51c&style=plastic&?cacheSeconds=3600">
+    <img src="https://img.shields.io/github/repo-size/xianghongai/vscode-vue2-snippets?color=4ac51c&style=plastic" alt="Repo Size">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=nicholashsiang.vscode-vue2-snippets">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/nicholashsiang.vscode-vue2-snippets?color=%234ac51c&style=plastic&?cacheSeconds=3600">
+    <img src="https://vsmarketplacebadges.dev/version/nicholashsiang.vscode-vue2-snippets.svg?style=plastic&color=4ac51c" alt="Visual Studio Marketplace Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=nicholashsiang.vscode-vue2-snippets">
-    <img src="https://img.shields.io/visual-studio-marketplace/d/nicholashsiang.vscode-vue2-snippets?color=4ac51c&style=plastic&?cacheSeconds=3600">
+    <img src="https://vsmarketplacebadges.dev/downloads-short/nicholashsiang.vscode-vue2-snippets.svg?style=plastic&color=4ac51c" alt="Downloads">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=nicholashsiang.vscode-vue2-snippets">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/nicholashsiang.vscode-vue2-snippets?color=4ac51c&style=plastic&?cacheSeconds=3600">
+    <img src="https://vsmarketplacebadges.dev/rating-short/nicholashsiang.vscode-vue2-snippets.svg?style=plastic&color=4ac51c" alt="Rating">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=nicholashsiang.vscode-vue2-snippets">
-    <img src="https://img.shields.io/github/license/xianghongai/vscode-vue2-snippets?color=4ac51c&style=plastic&?cacheSeconds=3600">
+  <a href="https://github.com/xianghongai/vscode-vue2-snippets/blob/HEAD/LICENSE">
+    <img src="https://img.shields.io/github/license/xianghongai/vscode-vue2-snippets?color=4ac51c&style=plastic" alt="License">
   </a>
 </p>
 
