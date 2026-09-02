@@ -1,47 +1,56 @@
 {
-	"Composition API: isRef()": {
-		"prefix": "isRef",
-		"body": "isRef(${1:value})",
-		"description": "Vue 2.7+ (`import { isRef } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nCheck if the given value is a ref.\n"
-	},
-	"Composition API: unref()": {
-		"prefix": "unref",
-		"body": "unref(${1:source})",
-		"description": "Vue 2.7+ (`import { unref } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nUnwraps a ref object and returns its value.\n"
-	},
-	"Composition API: toRef()": {
-		"prefix": "toRef",
-		"body": "toRef(${1:source}, ${2:key})",
-		"description": "Vue 2.7+ (`import { toRef } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nCreates a ref for a property on a source reactive object; a third argument supplies a default value.\nThe value / getter normalizing overload — `toRef(getter)` — is Vue 3.3+ only.\n"
-	},
-	"Composition API: toRefs()": {
-		"prefix": "toRefs",
-		"body": "toRefs(${1:source})",
-		"description": "Vue 2.7+ (`import { toRefs } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nConverts a reactive object into a plain object where each property is a ref, so it stays reactive after destructuring.\n"
-	},
-	"Composition API: isProxy()": {
-		"prefix": "isProxy",
-		"body": "isProxy(${1:value})",
-		"description": "Vue 2.7+ (`import { isProxy } from 'vue'`).\nChecks if an object is a proxy created by `reactive()`, `readonly()`, `shallowReactive()` or `shallowReadonly()`.\n"
-	},
-	"Composition API: isReactive()": {
-		"prefix": "isReactive",
-		"body": "isReactive(${1:value})",
-		"description": "Vue 2.7+ (`import { isReactive } from 'vue'`).\nChecks if an object is a proxy created by `reactive()`or `shallowReactive()`.\n"
-	},
-	"Composition API: isReadonly()": {
-		"prefix": "isReadonly",
-		"body": "isReadonly(${1:value})",
-		"description": "Vue 2.7+ (`import { isReadonly } from 'vue'`).\nChecks whether the passed value is a readonly object. The properties of a readonly object can change, but they can't be assigned directly via the passed object.\nThe proxies created by `readonly()` and `shallowReadonly()` are both considered readonly, as is a `computed()` ref without a set function.\n"
-	},
-	"Composition API: isShallow()": {
-		"prefix": "isShallow",
-		"body": "isShallow(${1:value})",
-		"description": "Vue 2.7+ (`import { isShallow } from 'vue'`).\nChecks whether the passed value is a shallow proxy created by `shallowReactive()` or `shallowReadonly()`, or a `shallowRef()`.\n"
-	},
-	"Composition API: toValue()": {
-		"prefix": "toValue",
-		"body": "toValue(${1:source})",
-		"description": "**Vue 3.3+ only — not available in Vue 2.7 or @vue/composition-api.**\nIn Vue 2, use `unref()` and call getters yourself.\nNormalizes values / refs / getters to values. This is similar to `unref()`, except that it also normalizes getters: if the argument is a getter, it will be invoked and its return value will be returned.\n"
-	}
+  "Composition API: isRef()": {
+    "prefix": "isRef",
+    "body": "isRef(${1:value})",
+    "description": "Vue 2.7+ (`import { isRef } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nCheck if the given value is a ref.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: unref()": {
+    "prefix": "unref",
+    "body": "unref(${1:source})",
+    "description": "Vue 2.7+ (`import { unref } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nUnwraps a ref object and returns its value.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: toRef()": {
+    "prefix": "toRef",
+    "body": "toRef(${1:source}, ${2:key})",
+    "description": "Vue 2.7+ (`import { toRef } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nCreates a ref for a property on a source reactive object; a third argument supplies a default value.\nThe value / getter normalizing overload — `toRef(getter)` — is Vue 3.3+ only.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: toRefs()": {
+    "prefix": "toRefs",
+    "body": "toRefs(${1:source})",
+    "description": "Vue 2.7+ (`import { toRefs } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nConverts a reactive object into a plain object where each property is a ref, so it stays reactive after destructuring.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: isProxy()": {
+    "prefix": "isProxy",
+    "body": "isProxy(${1:value})",
+    "description": "Vue 2.7+ (`import { isProxy } from 'vue'`).\nChecks if an object is a proxy created by `reactive()`, `readonly()`, `shallowReactive()` or `shallowReadonly()`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: isReactive()": {
+    "prefix": "isReactive",
+    "body": "isReactive(${1:value})",
+    "description": "Vue 2.7+ (`import { isReactive } from 'vue'`).\nChecks if an object is a proxy created by `reactive()`or `shallowReactive()`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: isReadonly()": {
+    "prefix": "isReadonly",
+    "body": "isReadonly(${1:value})",
+    "description": "Vue 2.7+ (`import { isReadonly } from 'vue'`).\nChecks whether the passed value is a readonly object. The properties of a readonly object can change, but they can't be assigned directly via the passed object.\nThe proxies created by `readonly()` and `shallowReadonly()` are both considered readonly, as is a `computed()` ref without a set function.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: isShallow()": {
+    "prefix": "isShallow",
+    "body": "isShallow(${1:value})",
+    "description": "Vue 2.7+ (`import { isShallow } from 'vue'`).\nChecks whether the passed value is a shallow proxy created by `shallowReactive()` or `shallowReadonly()`, or a `shallowRef()`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: toValue()": {
+    "prefix": "toValue",
+    "body": "toValue(${1:source})",
+    "description": "**Vue 3.3+ only — not available in Vue 2.7 or @vue/composition-api.**\nIn Vue 2, use `unref()` and call getters yourself.\nNormalizes values / refs / getters to values. This is similar to `unref()`, except that it also normalizes getters: if the argument is a getter, it will be invoked and its return value will be returned.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  }
 }

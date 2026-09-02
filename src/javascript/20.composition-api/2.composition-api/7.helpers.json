@@ -1,51 +1,56 @@
 {
-	"Composition API Helpers: useAttrs()": {
-		"prefix": ["useAttrs", "ua"],
-		"body": ["const attrs = useAttrs();"],
-		"description": "Vue 2.7+ (`import { useAttrs } from 'vue'`).\nUsed in `<script setup>` / `setup()`. Returns the equivalent of `this.$attrs`.\n"
-	},
-	"Composition API Helpers: useSlots()": {
-		"prefix": ["useSlots", "us"],
-		"body": ["const slots = useSlots();"],
-		"description": "Vue 2.7+ (`import { useSlots } from 'vue'`).\nUsed in `<script setup>` / `setup()`. Returns the equivalent of `this.$scopedSlots`.\n"
-	},
-	"Composition API Helpers: useListeners()": {
-		"prefix": ["useListeners", "ul"],
-		"body": ["const listeners = useListeners();"],
-		"description": "Vue 2.7+ only (`import { useListeners } from 'vue'`).\nUsed in `<script setup>` / `setup()`. Returns the equivalent of `this.$listeners`.\nNo Vue 3 counterpart — Vue 3 merges listeners into `$attrs`.\n"
-	},
-	"Composition API Helpers: useCssModule()": {
-		"prefix": ["useCssModule", "ucm"],
-		"body": ["const ${1:style} = useCssModule(${2:'\\$style'});"],
-		"description": "Vue 2.7+ (`import { useCssModule } from 'vue'`).\nUsed in `<script setup>` / `setup()`. Accesses the classes injected by a `<style module>` block; the argument is the module name and defaults to `'$style'`.\n"
-	},
-	"Composition API Helpers: useCssVars()": {
-		"prefix": ["useCssVars", "ucv"],
-		"body": ["useCssVars(() => ({", "  ${1:color}: ${2:color}.value", "}));"],
-		"description": "Vue 2.7+ (`import { useCssVars } from 'vue'`).\nCompiler-generated helper backing `v-bind()` inside `<style>`. Rarely written by hand.\n"
-	},
-	"Composition API Helpers: mergeDefaults()": {
-		"prefix": ["mergeDefaults", "md"],
-		"body": [
-			"const props = mergeDefaults(${1:rawProps}, {",
-			"  ${2:key}: ${3:defaultValue}",
-			"});"
-		],
-		"description": "Vue 2.7+ (`import { mergeDefaults } from 'vue'`).\nApplies default values onto an existing props definition — the runtime helper `withDefaults()` compiles down to.\n"
-	},
-	"Composition API Helpers: useModel()": {
-		"prefix": ["useModel", "um"],
-		"body": ["const ${1:model} = useModel(props, '${3:key}');"],
-		"description": "**Vue 3.4+ only — not available in Vue 2.7 or @vue/composition-api.**\nIn Vue 2, declare the prop and emit `update:<name>` by hand, or use the `model` component option.\nUsed in `setup(props) { }`. If using `<script setup>`, `defineModel()` should be preferred instead.\n"
-	},
-	"Composition API Helpers: useTemplateRef()": {
-		"prefix": ["useTemplateRef", "utr"],
-		"body": ["const ${1:elementRef} = useTemplateRef('${2:refName}');"],
-		"description": "**Vue 3.5+ only — not available in Vue 2.7 or @vue/composition-api.**\nIn Vue 2, read template refs off `this.$refs` / `getCurrentInstance().proxy.$refs`.\n"
-	},
-	"Composition API Helpers: useId()": {
-		"prefix": ["useId", "uid"],
-		"body": ["const id = useId();"],
-		"description": "**Vue 3.5+ only — not available in Vue 2.7 or @vue/composition-api.**\n"
-	}
+  "Composition API Helpers: useAttrs()": {
+    "prefix": ["useAttrs", "ua"],
+    "body": ["const attrs = useAttrs();"],
+    "description": "Vue 2.7+ (`import { useAttrs } from 'vue'`).\nUsed in `<script setup>` / `setup()`. Returns the equivalent of `this.$attrs`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API Helpers: useSlots()": {
+    "prefix": ["useSlots", "us"],
+    "body": ["const slots = useSlots();"],
+    "description": "Vue 2.7+ (`import { useSlots } from 'vue'`).\nUsed in `<script setup>` / `setup()`. Returns the equivalent of `this.$scopedSlots`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API Helpers: useListeners()": {
+    "prefix": ["useListeners", "ul"],
+    "body": ["const listeners = useListeners();"],
+    "description": "Vue 2.7+ only (`import { useListeners } from 'vue'`).\nUsed in `<script setup>` / `setup()`. Returns the equivalent of `this.$listeners`.\nNo Vue 3 counterpart — Vue 3 merges listeners into `$attrs`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API Helpers: useCssModule()": {
+    "prefix": ["useCssModule", "ucm"],
+    "body": ["const ${1:style} = useCssModule(${2:'\\$style'});"],
+    "description": "Vue 2.7+ (`import { useCssModule } from 'vue'`).\nUsed in `<script setup>` / `setup()`. Accesses the classes injected by a `<style module>` block; the argument is the module name and defaults to `'$style'`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API Helpers: useCssVars()": {
+    "prefix": ["useCssVars", "ucv"],
+    "body": ["useCssVars(() => ({", "  ${1:color}: ${2:color}.value", "}));"],
+    "description": "Vue 2.7+ (`import { useCssVars } from 'vue'`).\nCompiler-generated helper backing `v-bind()` inside `<style>`. Rarely written by hand.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API Helpers: mergeDefaults()": {
+    "prefix": ["mergeDefaults", "md"],
+    "body": ["const props = mergeDefaults(${1:rawProps}, {", "  ${2:key}: ${3:defaultValue}", "});"],
+    "description": "Vue 2.7+ (`import { mergeDefaults } from 'vue'`).\nApplies default values onto an existing props definition — the runtime helper `withDefaults()` compiles down to.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API Helpers: useModel()": {
+    "prefix": ["useModel", "um"],
+    "body": ["const ${1:model} = useModel(props, '${3:key}');"],
+    "description": "**Vue 3.4+ only — not available in Vue 2.7 or @vue/composition-api.**\nIn Vue 2, declare the prop and emit `update:<name>` by hand, or use the `model` component option.\nUsed in `setup(props) { }`. If using `<script setup>`, `defineModel()` should be preferred instead.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API Helpers: useTemplateRef()": {
+    "prefix": ["useTemplateRef", "utr"],
+    "body": ["const ${1:elementRef} = useTemplateRef('${2:refName}');"],
+    "description": "**Vue 3.5+ only — not available in Vue 2.7 or @vue/composition-api.**\nIn Vue 2, read template refs off `this.$refs` / `getCurrentInstance().proxy.$refs`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API Helpers: useId()": {
+    "prefix": ["useId", "uid"],
+    "body": ["const id = useId();"],
+    "description": "**Vue 3.5+ only — not available in Vue 2.7 or @vue/composition-api.**\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  }
 }

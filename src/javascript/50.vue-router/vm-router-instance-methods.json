@@ -1,169 +1,188 @@
 {
-	"Vue: this.$router.push('pathname')": {
-		"prefix": "vm-router-push",
-		"body": ["${1:this}.\\$router.push('${2:pathname}');"],
-		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
-	},
-	"Vue: this.$router.push({ path })": {
-		"prefix": "vm-router-push-path",
-		"body": ["${1:this}.\\$router.push({", "  path: '${2:pathname}',", "});"],
-		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
-	},
-	"Vue: this.$router.push({ path, params })": {
-		"prefix": "vm-router-push-path-params",
-		"body": [
-			"${1:this}.\\$router.push({",
-			"  path: '${2:pathname}',",
-			"  params: {",
-			"    ${4:property}: ${5:'value'},",
-			"  },$0",
-			"});"
-		],
-		"description": "Router navigate to path with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
-	},
-	"Vue: this.$router.push({ path, query })": {
-		"prefix": "vm-router-push-path-query",
-		"body": [
-			"${1:this}.\\$router.push({",
-			"  path: '${2:pathname}',",
-			"  query: {",
-			"    ${4:property}: ${5:'value'},",
-			"  },$0",
-			"});"
-		],
-		"description": "Router navigate to path with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
-	},
-	"Vue: this.$router.push({ path, params, query })": {
-		"prefix": "vm-router-push-path-params-query",
-		"body": [
-			"${1:this}.\\$router.push({",
-			"  path: '${2:pathname}',",
-			"  params: {",
-			"    ${4:property}: ${5:'value'},",
-			"  },",
-			"  query: {",
-			"    ${6:property}: ${7:'value'},",
-			"  },$0",
-			"});"
-		]
-	},
-	"Vue: this.$router.push({ name })": {
-		"prefix": "vm-router-push-name",
-		"body": ["${1:this}.\\$router.push({ name: '${3:routeName}' });"],
-		"description": "Router navigate to named routes\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
-	},
-	"Vue: this.$router.push({ name, params })": {
-		"prefix": "vm-router-push-name-params",
-		"body": [
-			"${1:this}.\\$router.push({",
-			"  name: '${2:routeName}',",
-			"  params: {",
-			"    ${4:property}: ${5:'value'},",
-			"  },$0",
-			"});"
-		],
-		"description": "Router navigate to named routes with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
-	},
-	"Vue: this.$router.push({ name, query })": {
-		"prefix": "vm-router-push-name-query",
-		"body": [
-			"${1:this}.\\$router.push({",
-			"  name: '${2:routeName}',",
-			"  query: {",
-			"    ${4:property}: ${5:'value'},",
-			"  },$0",
-			"});"
-		],
-		"description": "Router navigate to named routes with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
-	},
-	"Vue: this.$router.push({ name, params, query })": {
-		"prefix": "vm-router-push-name-params-query",
-		"body": [
-			"${1:this}.\\$router.push({",
-			"  name: '${2:routeName}',",
-			"  params: {",
-			"    ${4:property}: ${5:'value'},",
-			"  },",
-			"  query: {",
-			"    ${6:property}: ${7:'value'},",
-			"  },$0",
-			"});"
-		]
-	},
-	"Vue: this.$router.replace({ path, params })": {
-		"prefix": "vm-router-replace",
-		"body": [
-			"${1:this}.\\$router.replace({",
-			"  path: '${2:pathname}',",
-			"  params: {",
-			"    ${4:property}: ${5:'value'},",
-			"  },$0",
-			"});"
-		],
-		"description": "Router navigate to path without pushing a new history entry.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)\n"
-	},
-	"Vue: this.$router.replace({ name, params })": {
-		"prefix": "vm-router-replace-name",
-		"body": [
-			"${1:this}.\\$router.replace({",
-			"  name: '${2:routeName}',",
-			"  params: {",
-			"    ${4:property}: ${5:'value'},",
-			"  },$0",
-			"});"
-		],
-		"description": "Router navigate to named routes without pushing a new history entry.\n#Syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
-	},
-	"Vue: this.$router.go(n)": {
-		"prefix": "vm-router-go",
-		"body": ["${1:this}.\\$router.go('${2:n}');"],
-		"description": "This method takes a single integer as parameter that indicates by how many steps to go forwards or go backwards in the history stack.\n"
-	},
-	"Vue: this.$router.back()": {
-		"prefix": "vm-router-back",
-		"body": ["${1:this}.\\$router.back();"],
-		"description": "go backwards in the history stack.\n"
-	},
-	"Vue: this.$router.forward()": {
-		"prefix": "vm-router-forward",
-		"body": ["${1:this}.\\$router.forward();"],
-		"description": "go forwards in the history stack.\n"
-	},
-	"Vue: this.$router.resolve(location, current?, append?)": {
-		"prefix": "vm-router-resolve",
-		"body": [
-			"${1:this}.\\$router.resolve(${3:this.to}, ${4:this.\\$route}, ${5:this.append});"
-		],
-		"description": "Resolves a location.\n#Syntax:\nconst resolved: { location: Location; route: Route; href: string; } = router.resolve(location, current?, append?)\n"
-	},
-	"Vue: this.$router.getMatchedComponents()": {
-		"prefix": "vm-router-getMatchedComponents",
-		"body": ["const components = this.\\$router.getMatchedComponents()"],
-		"description": "Getting matched components.\n#Syntax:\nconst matchedComponents: Array<Component> = router.getMatchedComponents(location?)\n"
-	},
-	"Vue: this.$router.addRoute()": {
-		"prefix": "vm-router-addRoute",
-		"body": ["${1:this}.\\$router.addRoute(${2:route});"],
-		"description": "Adding routes.\n#Syntax:\nrouter.addRoute(route: RouteConfig): () => void\n"
-	},
-	"Vue: this.$router.addRoute(), nested": {
-		"prefix": "vm-router-addRoute",
-		"body": ["${1:this}.\\$router.addRoute(${2:route});"],
-		"description": "Adding routes.\n#Syntax:\nrouter.addRoute(parentName: string, route: RouteConfig): () => void\n"
-	},
-	"Vue: this.$router.getRoutes()": {
-		"prefix": "vm-router-getRoutes",
-		"body": ["const ${2:routes} = ${1:this}.\\$router.getRoutes();"],
-		"description": "Getting routes.\n#Syntax:\nrouter.getRoutes(): RouteRecord[]\n"
-	},
-	"Vue: this.$router.onReady()": {
-		"prefix": "vm-router-onReady",
-		"body": ["${1:this}.\\$router.onReady(${2:callback}${3:, errorCallback});"],
-		"description": "#Syntax:\nrouter.onReady(callback, [errorCallback])\n"
-	},
-	"Vue: this.$router.onError()": {
-		"prefix": "vm-router-onError",
-		"body": ["${1:this}.\\$router.onError(${2:callback});"],
-		"description": "#Syntax:\nrouter.onError(callback)\n"
-	}
+  "Vue: this.$router.push('pathname')": {
+    "prefix": "vm-router-push",
+    "body": ["${1:this}.\\$router.push('${2:pathname}');"],
+    "description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.push({ path })": {
+    "prefix": "vm-router-push-path",
+    "body": ["${1:this}.\\$router.push({", "  path: '${2:pathname}',", "});"],
+    "description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.push({ path, params })": {
+    "prefix": "vm-router-push-path-params",
+    "body": [
+      "${1:this}.\\$router.push({",
+      "  path: '${2:pathname}',",
+      "  params: {",
+      "    ${4:property}: ${5:'value'},",
+      "  },$0",
+      "});"
+    ],
+    "description": "Router navigate to path with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.push({ path, query })": {
+    "prefix": "vm-router-push-path-query",
+    "body": [
+      "${1:this}.\\$router.push({",
+      "  path: '${2:pathname}',",
+      "  query: {",
+      "    ${4:property}: ${5:'value'},",
+      "  },$0",
+      "});"
+    ],
+    "description": "Router navigate to path with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.push({ path, params, query })": {
+    "prefix": "vm-router-push-path-params-query",
+    "body": [
+      "${1:this}.\\$router.push({",
+      "  path: '${2:pathname}',",
+      "  params: {",
+      "    ${4:property}: ${5:'value'},",
+      "  },",
+      "  query: {",
+      "    ${6:property}: ${7:'value'},",
+      "  },$0",
+      "});"
+    ],
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.push({ name })": {
+    "prefix": "vm-router-push-name",
+    "body": ["${1:this}.\\$router.push({ name: '${3:routeName}' });"],
+    "description": "Router navigate to named routes\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.push({ name, params })": {
+    "prefix": "vm-router-push-name-params",
+    "body": [
+      "${1:this}.\\$router.push({",
+      "  name: '${2:routeName}',",
+      "  params: {",
+      "    ${4:property}: ${5:'value'},",
+      "  },$0",
+      "});"
+    ],
+    "description": "Router navigate to named routes with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.push({ name, query })": {
+    "prefix": "vm-router-push-name-query",
+    "body": [
+      "${1:this}.\\$router.push({",
+      "  name: '${2:routeName}',",
+      "  query: {",
+      "    ${4:property}: ${5:'value'},",
+      "  },$0",
+      "});"
+    ],
+    "description": "Router navigate to named routes with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.push({ name, params, query })": {
+    "prefix": "vm-router-push-name-params-query",
+    "body": [
+      "${1:this}.\\$router.push({",
+      "  name: '${2:routeName}',",
+      "  params: {",
+      "    ${4:property}: ${5:'value'},",
+      "  },",
+      "  query: {",
+      "    ${6:property}: ${7:'value'},",
+      "  },$0",
+      "});"
+    ],
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.replace({ path, params })": {
+    "prefix": "vm-router-replace",
+    "body": [
+      "${1:this}.\\$router.replace({",
+      "  path: '${2:pathname}',",
+      "  params: {",
+      "    ${4:property}: ${5:'value'},",
+      "  },$0",
+      "});"
+    ],
+    "description": "Router navigate to path without pushing a new history entry.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.replace({ name, params })": {
+    "prefix": "vm-router-replace-name",
+    "body": [
+      "${1:this}.\\$router.replace({",
+      "  name: '${2:routeName}',",
+      "  params: {",
+      "    ${4:property}: ${5:'value'},",
+      "  },$0",
+      "});"
+    ],
+    "description": "Router navigate to named routes without pushing a new history entry.\n#Syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.go(n)": {
+    "prefix": "vm-router-go",
+    "body": ["${1:this}.\\$router.go('${2:n}');"],
+    "description": "This method takes a single integer as parameter that indicates by how many steps to go forwards or go backwards in the history stack.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.back()": {
+    "prefix": "vm-router-back",
+    "body": ["${1:this}.\\$router.back();"],
+    "description": "go backwards in the history stack.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.forward()": {
+    "prefix": "vm-router-forward",
+    "body": ["${1:this}.\\$router.forward();"],
+    "description": "go forwards in the history stack.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.resolve(location, current?, append?)": {
+    "prefix": "vm-router-resolve",
+    "body": ["${1:this}.\\$router.resolve(${3:this.to}, ${4:this.\\$route}, ${5:this.append});"],
+    "description": "Resolves a location.\n#Syntax:\nconst resolved: { location: Location; route: Route; href: string; } = router.resolve(location, current?, append?)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.getMatchedComponents()": {
+    "prefix": "vm-router-getMatchedComponents",
+    "body": ["const components = this.\\$router.getMatchedComponents()"],
+    "description": "Getting matched components.\n#Syntax:\nconst matchedComponents: Array<Component> = router.getMatchedComponents(location?)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.addRoute()": {
+    "prefix": "vm-router-addRoute",
+    "body": ["${1:this}.\\$router.addRoute(${2:route});"],
+    "description": "Adding routes.\n#Syntax:\nrouter.addRoute(route: RouteConfig): () => void\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.addRoute(), nested": {
+    "prefix": "vm-router-addRoute",
+    "body": ["${1:this}.\\$router.addRoute(${2:route});"],
+    "description": "Adding routes.\n#Syntax:\nrouter.addRoute(parentName: string, route: RouteConfig): () => void\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.getRoutes()": {
+    "prefix": "vm-router-getRoutes",
+    "body": ["const ${2:routes} = ${1:this}.\\$router.getRoutes();"],
+    "description": "Getting routes.\n#Syntax:\nrouter.getRoutes(): RouteRecord[]\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.onReady()": {
+    "prefix": "vm-router-onReady",
+    "body": ["${1:this}.\\$router.onReady(${2:callback}${3:, errorCallback});"],
+    "description": "#Syntax:\nrouter.onReady(callback, [errorCallback])\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Vue: this.$router.onError()": {
+    "prefix": "vm-router-onError",
+    "body": ["${1:this}.\\$router.onError(${2:callback});"],
+    "description": "#Syntax:\nrouter.onError(callback)\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  }
 }

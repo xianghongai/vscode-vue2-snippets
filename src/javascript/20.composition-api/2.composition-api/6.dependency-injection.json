@@ -1,17 +1,20 @@
 {
-	"Composition API: provide()": {
-		"prefix": "provide",
-		"body": ["provide('${1:name}', ${2:'value'});"],
-		"description": "Vue 2.7+ (`import { provide } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nMust be called synchronously during `setup()`.\n"
-	},
-	"Composition API: inject()": {
-		"prefix": "inject",
-		"body": ["const ${1:state} = inject('${2:name}'${3:, ${4:defaultValue}});"],
-		"description": "Vue 2.7+ (`import { inject } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nMust be called synchronously during `setup()`. A second argument supplies the fallback used when no ancestor provides the key.\n"
-	},
-	"Composition API: InjectionKey": {
-		"prefix": "InjectionKey",
-		"body": ["const ${1:key}: InjectionKey<${2:string}> = Symbol('$1');"],
-		"description": "Vue 2.7+ (`import type { InjectionKey } from 'vue'`). TS only.\nA `Symbol` carrying the provided value's type, so `provide()` / `inject()` stay type-checked.\n"
-	}
+  "Composition API: provide()": {
+    "prefix": "provide",
+    "body": ["provide('${1:name}', ${2:'value'});"],
+    "description": "Vue 2.7+ (`import { provide } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nMust be called synchronously during `setup()`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: inject()": {
+    "prefix": "inject",
+    "body": ["const ${1:state} = inject('${2:name}'${3:, ${4:defaultValue}});"],
+    "description": "Vue 2.7+ (`import { inject } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nMust be called synchronously during `setup()`. A second argument supplies the fallback used when no ancestor provides the key.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: InjectionKey": {
+    "prefix": "InjectionKey",
+    "body": ["const ${1:key}: InjectionKey<${2:string}> = Symbol('$1');"],
+    "description": "Vue 2.7+ (`import type { InjectionKey } from 'vue'`). TS only.\nA `Symbol` carrying the provided value's type, so `provide()` / `inject()` stay type-checked.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  }
 }

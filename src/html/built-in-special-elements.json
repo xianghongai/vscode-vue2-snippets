@@ -1,17 +1,20 @@
 {
-	"<component>": {
-		"prefix": "component",
-		"body": ["<component :is=\"${1:Feature}\" />"],
-		"description": "A \"meta component\" for rendering dynamic components or elements.\n"
-	},
-	"<slot>": {
-		"prefix": "slot",
-		"body": ["<slot></slot>"],
-		"description": "Denotes slot content outlets in templates.\n"
-	},
-	"<slot>, named": {
-		"prefix": ["slot-named", "sn"],
-		"body": ["<slot name=\"${1:default}\"></slot>"],
-		"description": "Named Slots.\n"
-	}
+  "<component>": {
+    "prefix": "component",
+    "body": ["<component :is=\"${1:Feature}\" />"],
+    "description": "A \"meta component\" for rendering dynamic components or elements.\n",
+    "scope": "vue,html"
+  },
+  "<slot>": {
+    "prefix": "slot",
+    "body": ["<slot></slot>"],
+    "description": "Denotes slot content outlets in templates.\n",
+    "scope": "vue,html"
+  },
+  "<slot>, named": {
+    "prefix": ["slot-named", "sn"],
+    "body": ["<slot name=\"${1:default}\"></slot>"],
+    "description": "Named Slots.\n",
+    "scope": "vue,html"
+  }
 }

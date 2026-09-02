@@ -1,17 +1,20 @@
 {
-	"key": {
-		"prefix": "key",
-		"body": [":key=\"${1:key}\""],
-		"description": "Hints Vue's virtual-DOM diffing which nodes are the same across renders. Required on `v-for`, and useful for forcing a re-render of a plain element.\n"
-	},
-	"ref": {
-		"prefix": "ref",
-		"body": ["ref=\"${1:featureRef}\""],
-		"description": "Denotes a template ref.\n"
-	},
-	"is": {
-		"prefix": "is",
-		"body": [":is=\"${1:Feature}\""],
-		"description": "Binds a dynamic component onto `<component>`, or works around in-DOM template parsing limits — `<tr is=\"my-row\">` inside a `<table>`, for example.\n"
-	}
+  "key": {
+    "prefix": "key",
+    "body": [":key=\"${1:key}\""],
+    "description": "Hints Vue's virtual-DOM diffing which nodes are the same across renders. Required on `v-for`, and useful for forcing a re-render of a plain element.\n",
+    "scope": "vue,html"
+  },
+  "ref": {
+    "prefix": "ref",
+    "body": ["ref=\"${1:featureRef}\""],
+    "description": "Denotes a template ref.\n",
+    "scope": "vue,html"
+  },
+  "is": {
+    "prefix": "is",
+    "body": [":is=\"${1:Feature}\""],
+    "description": "Binds a dynamic component onto `<component>`, or works around in-DOM template parsing limits — `<tr is=\"my-row\">` inside a `<table>`, for example.\n",
+    "scope": "vue,html"
+  }
 }

@@ -1,15 +1,16 @@
 {
-	"Vue2: app": {
-		"prefix": "vue-app",
-		"body": [
-			"import Vue from 'vue';",
-			"import App from './App.vue';",
-			"$0",
-			"const ${1:app} = new Vue({",
-			"  el: '#${2:root}',",
-			"  render: (h) => h(App),",
-			"});"
-		],
-		"description": "Vue 2.x application entry — the Vue 2 counterpart of Vue 3's `createApp(App).mount('#app')`.\nOn Vue 2.7+ the Composition API is available from `vue` without any plugin.\n"
-	}
+  "Vue2: app": {
+    "prefix": "vue-app",
+    "body": [
+      "import Vue from 'vue';",
+      "import App from './App.vue';",
+      "$0",
+      "const ${1:app} = new Vue({",
+      "  el: '#${2:root}',",
+      "  render: (h) => h(App),",
+      "});"
+    ],
+    "description": "Vue 2.x application entry — the Vue 2 counterpart of Vue 3's `createApp(App).mount('#app')`.\nOn Vue 2.7+ the Composition API is available from `vue` without any plugin.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  }
 }

@@ -1,121 +1,73 @@
 {
-	"name": "vscode-vue2-snippets",
-	"publisher": "NicholasHsiang",
-	"displayName": "Vue 2 Snippets",
-	"description": "Code snippets for Vue 2 (Only Vue 2.x, Vue Router 3.x, @vue/composition-api)",
-	"icon": "art/icon.png",
-	"version": "2.5.2",
-	"type": "module",
-	"packageManager": "pnpm@11.23.0",
-	"galleryBanner": {
-		"color": "#ffffff",
-		"theme": "dark"
-	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/xianghongai/vscode-vue2-snippets/issues"
-	},
-	"homepage": "https://github.com/xianghongai/vscode-vue2-snippets/",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/xianghongai/vscode-vue2-snippets/blob/main/README.md"
-	},
-	"engines": {
-		"vscode": "^1.0.0",
-		"node": ">=24"
-	},
-	"categories": [
-		"Snippets"
-	],
-	"scripts": {
-		"format": "prettier --write --cache .",
-		"dev": "nodemon --watch src -e json -x 'pnpm run prebuild'",
-		"prebuild": "node main.js",
-		"vscode:prepublish": "node main.js",
-		"build": "vsce package",
-		"publish": "vsce publish"
-	},
-	"keywords": [
-		"Snippet",
-		"Vue",
-		"Vue Router",
-		"Vuex",
-		"Vue 2",
-		"Vue2",
-		"Vue Snippet",
-		"Vue Snippets",
-		"Vue 2 Snippet",
-		"Vue 2 Snippets",
-		"Vue2 Snippet",
-		"Vue2 Snippets",
-		"Vue 2 Code Snippets",
-		"Vue2 Code Snippets"
-	],
-	"contributes": {
-		"languages": [
-			{
-				"id": "vue",
-				"aliases": [
-					"Vue",
-					"vue"
-				],
-				"extensions": [
-					".vue"
-				]
-			}
-		],
-		"snippets": [
-			{
-				"language": "javascript",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "javascriptreact",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "typescript",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "vue",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "vue",
-				"path": "./snippets/html.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/html.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/vue.json"
-			},
-			{
-				"language": "vue",
-				"path": "./snippets/vue.json"
-			},
-			{
-				"language": "css",
-				"path": "./snippets/css.json"
-			},
-			{
-				"language": "scss",
-				"path": "./snippets/css.json"
-			},
-			{
-				"language": "less",
-				"path": "./snippets/css.json"
-			}
-		]
-	},
-	"devDependencies": {
-		"@types/node": "^24.13.3",
-		"@vscode/vsce": "^3.9.2",
-		"glob": "^13.0.6",
-		"nodemon": "^3.1.14",
-		"prettier": "^3.9.6"
-	}
+  "name": "vscode-vue2-snippets",
+  "displayName": "Vue 2 Snippets",
+  "version": "2.5.3",
+  "description": "Code snippets for Vue 2 (Only Vue 2.x, Vue Router 3.x, @vue/composition-api)",
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "Snippet",
+    "Vue",
+    "Vue 2",
+    "Vue 2 Code Snippets",
+    "Vue 2 Snippet",
+    "Vue 2 Snippets",
+    "Vue Router",
+    "Vue Snippet",
+    "Vue Snippets",
+    "Vue2",
+    "Vue2 Code Snippets",
+    "Vue2 Snippet",
+    "Vue2 Snippets",
+    "Vuex"
+  ],
+  "homepage": "https://github.com/xianghongai/vscode-vue2-snippets/",
+  "bugs": {
+    "url": "https://github.com/xianghongai/vscode-vue2-snippets/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xianghongai/vscode-vue2-snippets/blob/main/README.md"
+  },
+  "publisher": "NicholasHsiang",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.ts",
+    "clean": "rimraf --glob \"*.vsix\" snippets",
+    "dev": "node --watch-path=src scripts/build.ts",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint scripts tests",
+    "package": "vsce package --no-dependencies",
+    "publish": "vsce publish --no-dependencies",
+    "test": "vitest run",
+    "vscode:prepublish": "pnpm run clean && pnpm run lint && pnpm run test && pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "@vscode/vsce": "3.9.2",
+    "oxfmt": "^0.65.0",
+    "oxlint": "^1.80.0",
+    "picocolors": "^1.1.1",
+    "rimraf": "^6.1.3",
+    "vitest": "4.1.11"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "path": "./snippets/index.code-snippets"
+      }
+    ]
+  },
+  "icon": "art/icon.png",
+  "galleryBanner": {
+    "color": "#ffffff",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "packageManager": "pnpm@11.25.0"
 }

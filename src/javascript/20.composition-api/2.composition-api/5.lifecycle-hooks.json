@@ -1,72 +1,86 @@
 {
-	"Composition API: onBeforeMount()": {
-		"prefix": ["onBeforeMount", "onbm"],
-		"body": ["onBeforeMount(() => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onBeforeMount } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a hook to be called right before the component is to be mounted.\n"
-	},
-	"Composition API: onMounted()": {
-		"prefix": ["onMounted", "onm"],
-		"body": ["onMounted(() => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onMounted } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has been mounted.\n"
-	},
-	"Composition API: onBeforeUpdate()": {
-		"prefix": ["onBeforeUpdate", "onbup"],
-		"body": ["onBeforeUpdate(() => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onBeforeUpdate } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a hook to be called right before the component is about to update its DOM tree due to a reactive state change.\n"
-	},
-	"Composition API: onUpdated()": {
-		"prefix": ["onUpdated", "onup"],
-		"body": ["onUpdated(() => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onUpdated } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has updated its DOM tree due to a reactive state change.\n"
-	},
-	"Composition API: onBeforeUnmount()": {
-		"prefix": ["onBeforeUnmount", "onbu"],
-		"body": ["onBeforeUnmount(() => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onBeforeUnmount } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nMaps to the `beforeDestroy` option in Vue 2.\nComposition API: Lifecycle Hooks.\nRegisters a hook to be called right before a component instance is to be unmounted.\n"
-	},
-	"Composition API: onUnmounted()": {
-		"prefix": ["onUnmounted", "onum"],
-		"body": ["onUnmounted(() => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onUnmounted } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nMaps to the `destroyed` option in Vue 2.\nComposition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has been unmounted.\n"
-	},
-	"Composition API: onErrorCaptured()": {
-		"prefix": ["onErrorCaptured", "onec"],
-		"body": ["onErrorCaptured((err, instance, info) => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onErrorCaptured } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a hook to be called when an error propagating from a descendant component has been captured.\n"
-	},
-	"Composition API: onRenderTracked()": {
-		"prefix": ["onRenderTracked", "onrtk"],
-		"body": ["onRenderTracked((event) => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onRenderTracked } from 'vue'`). Dev only.\nComposition API: Lifecycle Hooks.\nRegisters a debug hook to be called when a reactive dependency has been tracked by the component's render effect.\n"
-	},
-	"Composition API: onRenderTriggered()": {
-		"prefix": ["onRenderTriggered", "onrtg"],
-		"body": ["onRenderTriggered((event) => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onRenderTriggered } from 'vue'`). Dev only.\nComposition API: Lifecycle Hooks.\nRegisters a debug hook to be called when a reactive dependency triggers the component's render effect to be re-run.\n"
-	},
-	"Composition API: onActivated()": {
-		"prefix": ["onActivated", "ona"],
-		"body": ["onActivated(() => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onActivated } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a callback to be called after the component instance is inserted into the DOM as part of a tree cached by `<keep-alive>`.\n"
-	},
-	"Composition API: onDeactivated()": {
-		"prefix": ["onDeactivated", "onda"],
-		"body": ["onDeactivated(() => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onDeactivated } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a callback to be called after the component instance is removed from the DOM as part of a tree cached by `<keep-alive>`.\n"
-	},
-	"Composition API: onServerPrefetch()": {
-		"prefix": ["onServerPrefetch", "onsp"],
-		"body": ["onServerPrefetch(async () => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onServerPrefetch } from 'vue'`). SSR only.\nComposition API: Lifecycle Hooks.\nRegisters an async function to be resolved before the component instance is to be rendered on the server.\n"
-	},
-	"Composition API: async onBeforeMount()": {
-		"prefix": ["async-onBeforeMount", "asonbm"],
-		"body": ["onBeforeMount(async () => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onBeforeMount } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n"
-	},
-	"Composition API: async onMounted()": {
-		"prefix": ["async-onMounted", "asonm"],
-		"body": ["onMounted(async () => {", "  $1", "});$0"],
-		"description": "Vue 2.7+ (`import { onMounted } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n"
-	}
+  "Composition API: onBeforeMount()": {
+    "prefix": ["onBeforeMount", "onbm"],
+    "body": ["onBeforeMount(() => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onBeforeMount } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a hook to be called right before the component is to be mounted.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onMounted()": {
+    "prefix": ["onMounted", "onm"],
+    "body": ["onMounted(() => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onMounted } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has been mounted.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onBeforeUpdate()": {
+    "prefix": ["onBeforeUpdate", "onbup"],
+    "body": ["onBeforeUpdate(() => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onBeforeUpdate } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a hook to be called right before the component is about to update its DOM tree due to a reactive state change.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onUpdated()": {
+    "prefix": ["onUpdated", "onup"],
+    "body": ["onUpdated(() => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onUpdated } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has updated its DOM tree due to a reactive state change.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onBeforeUnmount()": {
+    "prefix": ["onBeforeUnmount", "onbu"],
+    "body": ["onBeforeUnmount(() => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onBeforeUnmount } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nMaps to the `beforeDestroy` option in Vue 2.\nComposition API: Lifecycle Hooks.\nRegisters a hook to be called right before a component instance is to be unmounted.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onUnmounted()": {
+    "prefix": ["onUnmounted", "onum"],
+    "body": ["onUnmounted(() => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onUnmounted } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nMaps to the `destroyed` option in Vue 2.\nComposition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has been unmounted.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onErrorCaptured()": {
+    "prefix": ["onErrorCaptured", "onec"],
+    "body": ["onErrorCaptured((err, instance, info) => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onErrorCaptured } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a hook to be called when an error propagating from a descendant component has been captured.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onRenderTracked()": {
+    "prefix": ["onRenderTracked", "onrtk"],
+    "body": ["onRenderTracked((event) => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onRenderTracked } from 'vue'`). Dev only.\nComposition API: Lifecycle Hooks.\nRegisters a debug hook to be called when a reactive dependency has been tracked by the component's render effect.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onRenderTriggered()": {
+    "prefix": ["onRenderTriggered", "onrtg"],
+    "body": ["onRenderTriggered((event) => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onRenderTriggered } from 'vue'`). Dev only.\nComposition API: Lifecycle Hooks.\nRegisters a debug hook to be called when a reactive dependency triggers the component's render effect to be re-run.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onActivated()": {
+    "prefix": ["onActivated", "ona"],
+    "body": ["onActivated(() => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onActivated } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a callback to be called after the component instance is inserted into the DOM as part of a tree cached by `<keep-alive>`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onDeactivated()": {
+    "prefix": ["onDeactivated", "onda"],
+    "body": ["onDeactivated(() => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onDeactivated } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nComposition API: Lifecycle Hooks.\nRegisters a callback to be called after the component instance is removed from the DOM as part of a tree cached by `<keep-alive>`.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: onServerPrefetch()": {
+    "prefix": ["onServerPrefetch", "onsp"],
+    "body": ["onServerPrefetch(async () => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onServerPrefetch } from 'vue'`). SSR only.\nComposition API: Lifecycle Hooks.\nRegisters an async function to be resolved before the component instance is to be rendered on the server.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: async onBeforeMount()": {
+    "prefix": ["async-onBeforeMount", "asonbm"],
+    "body": ["onBeforeMount(async () => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onBeforeMount } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  },
+  "Composition API: async onMounted()": {
+    "prefix": ["async-onMounted", "asonm"],
+    "body": ["onMounted(async () => {", "  $1", "});$0"],
+    "description": "Vue 2.7+ (`import { onMounted } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n",
+    "scope": "vue,javascript,javascriptreact,typescript"
+  }
 }
