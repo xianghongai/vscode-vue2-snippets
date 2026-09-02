@@ -8,35 +8,37 @@
 			"const app = createApp(App);",
 			"app.mount('${1:Element/#Selector}');"
 		],
-		"description": "**Vue 3 only — `vue` 2.7 does not export `createApp`.**\nIn Vue 2 use `new Vue({ el, render })` (prefix `vue-app`, snippet \"Vue2: app\"). The [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin ships a deprecated `createApp` shim.\nCreates an application instance.\n"
+		"description": "**Vue 3 only — `vue` 2.7 does not export `createApp`.**\nIn Vue 2 use `new Vue({ el, render })` (prefix `vue-app`, snippet \"Vue2: app\"). The [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin ships a deprecated `createApp` shim.\nCreates an application instance.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: app.mount()": {
 		"prefix": "app.mount()",
 		"body": ["app.mount('${1:Element/#Selector}');"],
-		"description": "**Vue 3 only — Vue 2 has no application instance.**\nIn Vue 2 use `new Vue({ ... }).$mount('#app')` or the `el` option.\nMounts the application instance in a container element.\n"
+		"description": "**Vue 3 only — Vue 2 has no application instance.**\nIn Vue 2 use `new Vue({ ... }).$mount('#app')` or the `el` option.\nMounts the application instance in a container element.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: app.unmount()": {
 		"prefix": "app.unmount()",
 		"body": ["app.unmount('${1:Element/#Selector}');"],
-		"description": "**Vue 3 only — Vue 2 has no application instance.**\nIn Vue 2 use `vm.$destroy()`.\nUnmounts a mounted application instance, triggering the unmount lifecycle hooks for all components in the application's component tree.\n"
+		"description": "**Vue 3 only — Vue 2 has no application instance.**\nIn Vue 2 use `vm.$destroy()`.\nUnmounts a mounted application instance, triggering the unmount lifecycle hooks for all components in the application's component tree.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: app.component": {
 		"prefix": "app.component",
 		"body": ["app.component('${1:feature}', ${2:Feature});"],
-		"description": "**Vue 3 only — Vue 2 has no application instance.**\nIn Vue 2 use the global `Vue.component('feature', Feature)`.\nRegisters a global component.\n"
+		"description": "**Vue 3 only — Vue 2 has no application instance.**\nIn Vue 2 use the global `Vue.component('feature', Feature)`.\nRegisters a global component.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: app.directive": {
 		"prefix": "app.directive",
 		"body": ["app.directive('${1:feature}', ${2:feature});"],
-		"description": "**Vue 3 only — Vue 2 has no application instance.**\nIn Vue 2 use the global `Vue.directive('feature', feature)`.\nRegisters a global custom directive.\n"
+		"description": "**Vue 3 only — Vue 2 has no application instance.**\nIn Vue 2 use the global `Vue.directive('feature', feature)`.\nRegisters a global custom directive.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: app.runWithContext": {
 		"prefix": "app.runWithContext",
-		"body": [
-			"const injected = app.runWithContext(() => {",
-			"  return inject('${1:key}');",
-			"});"
-		],
-		"description": "**Vue 3.3+ only — no Vue 2 counterpart.**\nExecute a callback with the current app as injection context.\n"
+		"body": ["const injected = app.runWithContext(() => {", "  return inject('${1:key}');", "});"],
+		"description": "**Vue 3.3+ only — no Vue 2 counterpart.**\nExecute a callback with the current app as injection context.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

@@ -2,12 +2,14 @@
 	"router.push('pathname')": {
 		"prefix": "router-push",
 		"body": ["router.push('${1:pathname}');"],
-		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.push({ path })": {
 		"prefix": "router-push-path",
 		"body": ["router.push({", "  path: '${1:pathname}',", "});"],
-		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+		"description": "Router navigate to path.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.push({ path, params })": {
 		"prefix": "router-push-path-params",
@@ -19,7 +21,8 @@
 			"  },$0",
 			"});"
 		],
-		"description": "Router navigate to path with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+		"description": "Router navigate to path with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.push({ path, query })": {
 		"prefix": "router-push-path-query",
@@ -31,7 +34,8 @@
 			"  },$0",
 			"});"
 		],
-		"description": "Router navigate to path with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+		"description": "Router navigate to path with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.push({ path, params, query })": {
 		"prefix": "router-push-path-params-query",
@@ -45,12 +49,14 @@
 			"    ${5:property}: ${6:'value'},",
 			"  },$0",
 			"});"
-		]
+		],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.push({ name })": {
 		"prefix": "router-push-name",
 		"body": ["router.push({ name: '${1:routeName}' });"],
-		"description": "Router navigate to named routes\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+		"description": "Router navigate to named routes\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.push({ name, params })": {
 		"prefix": "router-push-name-params",
@@ -62,7 +68,8 @@
 			"  },$0",
 			"});"
 		],
-		"description": "Router navigate to named routes with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+		"description": "Router navigate to named routes with params.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.push({ name, query })": {
 		"prefix": "router-push-name-query",
@@ -74,7 +81,8 @@
 			"  },$0",
 			"});"
 		],
-		"description": "Router navigate to named routes with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+		"description": "Router navigate to named routes with query.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.push({ name, params, query })": {
 		"prefix": "router-push-name-params-query",
@@ -88,7 +96,8 @@
 			"    ${5:property}: ${6:'value'},",
 			"  },$0",
 			"});"
-		]
+		],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.replace({ path, params })": {
 		"prefix": "router-replace",
@@ -100,7 +109,8 @@
 			"  },$0",
 			"});"
 		],
-		"description": "Router navigate to path without pushing a new history entry.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)\n"
+		"description": "Router navigate to path without pushing a new history entry.\n#Syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.replace({ name, params })": {
 		"prefix": "router-replace-name",
@@ -112,58 +122,67 @@
 			"  },$0",
 			"});"
 		],
-		"description": "Router navigate to named routes without pushing a new history entry.\n#Syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+		"description": "Router navigate to named routes without pushing a new history entry.\n#Syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.go(n)": {
 		"prefix": "router-go",
 		"body": ["router.go('${1:n}');"],
-		"description": "This method takes a single integer as parameter that indicates by how many steps to go forwards or go backwards in the history stack.\n"
+		"description": "This method takes a single integer as parameter that indicates by how many steps to go forwards or go backwards in the history stack.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.back()": {
 		"prefix": "router-back",
 		"body": ["router.back();"],
-		"description": "go backwards in the history stack.\n"
+		"description": "go backwards in the history stack.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.forward()": {
 		"prefix": "router-forward",
 		"body": ["router.forward();"],
-		"description": "go forwards in the history stack.\n"
+		"description": "go forwards in the history stack.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.resolve(location, current?, append?)": {
 		"prefix": "router-resolve",
-		"body": [
-			"router.resolve(${3:this.to}, ${4:this.\\$route}, ${5:this.append});"
-		],
-		"description": "Resolves a location.\n#Syntax:\nconst resolved: { location: Location; route: Route; href: string; } = router.resolve(location, current?, append?)\n"
+		"body": ["router.resolve(${3:this.to}, ${4:this.\\$route}, ${5:this.append});"],
+		"description": "Resolves a location.\n#Syntax:\nconst resolved: { location: Location; route: Route; href: string; } = router.resolve(location, current?, append?)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.getMatchedComponents()": {
 		"prefix": "router-getMatchedComponents",
 		"body": ["const components = this.\\$router.getMatchedComponents()"],
-		"description": "Getting matched components.\n#Syntax:\nconst matchedComponents: Array<Component> = router.getMatchedComponents(location?)\n"
+		"description": "Getting matched components.\n#Syntax:\nconst matchedComponents: Array<Component> = router.getMatchedComponents(location?)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.addRoute()": {
 		"prefix": "router-addRoute",
 		"body": ["router.addRoute(${1:route});"],
-		"description": "Adding routes.\n#Syntax:\nrouter.addRoute(route: RouteConfig): () => void\n"
+		"description": "Adding routes.\n#Syntax:\nrouter.addRoute(route: RouteConfig): () => void\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.addRoute(), nested": {
 		"prefix": "router-addRoute-nested",
 		"body": ["router.addRoute(${1:route});"],
-		"description": "Adding routes.\n#Syntax:\nrouter.addRoute(parentName: string, route: RouteConfig): () => void\n"
+		"description": "Adding routes.\n#Syntax:\nrouter.addRoute(parentName: string, route: RouteConfig): () => void\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.getRoutes()": {
 		"prefix": "router-getRoutes",
 		"body": ["const ${1:routes} = router.getRoutes();"],
-		"description": "Getting routes.\n#Syntax:\nrouter.getRoutes(): RouteRecord[]\n"
+		"description": "Getting routes.\n#Syntax:\nrouter.getRoutes(): RouteRecord[]\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.onReady()": {
 		"prefix": "router-onReady",
 		"body": ["router.onReady(${1:callback}${2:, errorCallback});"],
-		"description": "#Syntax:\nrouter.onReady(callback, [errorCallback])\n"
+		"description": "#Syntax:\nrouter.onReady(callback, [errorCallback])\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"router.onError()": {
 		"prefix": "router-onError",
 		"body": ["router.onError(${1:callback});"],
-		"description": "#Syntax:\nrouter.onError(callback)\n"
+		"description": "#Syntax:\nrouter.onError(callback)\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

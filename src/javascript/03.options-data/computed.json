@@ -1,7 +1,8 @@
 {
 	"Options API: computed property": {
 		"prefix": ["computed-property", "cp"],
-		"body": ["${1:property}() {", "  return this.${2:property};", "},", "$0"]
+		"body": ["${1:property}() {", "  return this.${2:property};", "},", "$0"],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Options API: computed property: { get, set }": {
 		"prefix": "computed-property-get-set",
@@ -15,6 +16,7 @@
 			"  },",
 			"},",
 			"$0"
-		]
+		],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

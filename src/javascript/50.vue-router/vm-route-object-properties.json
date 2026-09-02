@@ -2,46 +2,55 @@
 	"Vue: this.$route.path": {
 		"prefix": "vm-route-path",
 		"body": ["${1:this}.\\$route.path"],
-		"description": "Route Object Properties:\nA string that equals the path of the current route, always resolved as an absolute path.\n"
+		"description": "Route Object Properties:\nA string that equals the path of the current route, always resolved as an absolute path.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$route.params": {
 		"prefix": "vm-route-params",
 		"body": ["${1:this}.\\$route.params"],
-		"description": "Route Object Properties:\nAn object that contains key/value pairs of dynamic segments and star segments. If there are no params the value will be an empty object.\n"
+		"description": "Route Object Properties:\nAn object that contains key/value pairs of dynamic segments and star segments. If there are no params the value will be an empty object.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$route.query": {
 		"prefix": "vm-route-query",
 		"body": ["${1:this}.\\$route.query"],
-		"description": "Route Object Properties:\nAn object that contains key/value pairs of the query string.\n"
+		"description": "Route Object Properties:\nAn object that contains key/value pairs of the query string.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$route.meta": {
 		"prefix": "vm-route-meta",
 		"body": ["${1:this}.\\$route.meta"],
-		"description": "Route Object Properties:\nAn object that contains key/value pairs of the route meta object. If there are no meta properties the value will be an empty object.\n"
+		"description": "Route Object Properties:\nAn object that contains key/value pairs of the route meta object. If there are no meta properties the value will be an empty object.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$route.hash": {
 		"prefix": "vm-route-hash",
 		"body": ["${1:this}.\\$route.hash"],
-		"description": "Route Object Properties:\nThe hash of the current route (with the #), if it has one. If no hash is present the value will be an empty string.\n"
+		"description": "Route Object Properties:\nThe hash of the current route (with the #), if it has one. If no hash is present the value will be an empty string.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$route.fullPath": {
 		"prefix": "vm-route-fullPath",
 		"body": ["${1:this}.\\$route.fullPath"],
-		"description": "Route Object Properties:\nThe full resolved URL including query and hash.\n"
+		"description": "Route Object Properties:\nThe full resolved URL including query and hash.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$route.matched": {
 		"prefix": "vm-route-matched",
 		"body": ["${1:this}.\\$route.matched"],
-		"description": "Route Object Properties:\nAn Array containing route records for all nested path segments of the current route. \n"
+		"description": "Route Object Properties:\nAn Array containing route records for all nested path segments of the current route. \n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$route.name": {
 		"prefix": "vm-route-name",
 		"body": ["${1:this}.\\$route.name"],
-		"description": "Route Object Properties:\nThe name of the current route, if it has one.\n"
+		"description": "Route Object Properties:\nThe name of the current route, if it has one.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$route.redirectedFrom": {
 		"prefix": "vm-route-redirectedFrom",
 		"body": ["${1:this}.\\$route.redirectedFrom"],
-		"description": "Route Object Properties:\nThe name of the route being redirected from, if there were one.\n"
+		"description": "Route Object Properties:\nThe name of the route being redirected from, if there were one.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

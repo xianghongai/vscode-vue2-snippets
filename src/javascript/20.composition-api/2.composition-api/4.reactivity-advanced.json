@@ -2,12 +2,14 @@
 	"Composition API: shallowRef()": {
 		"prefix": ["shallowRef", "sr"],
 		"body": ["const ${1:state} = shallowRef(${2:original});"],
-		"description": "Vue 2.7+ (`import { shallowRef } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nOnly `.value` access is reactive; the inner value is left untouched.\n"
+		"description": "Vue 2.7+ (`import { shallowRef } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nOnly `.value` access is reactive; the inner value is left untouched.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: triggerRef()": {
 		"prefix": "triggerRef",
 		"body": ["triggerRef(${1:state});"],
-		"description": "Vue 2.7+ (`import { triggerRef } from 'vue'`).\nForces effects depending on a `shallowRef()` to re-run.\n"
+		"description": "Vue 2.7+ (`import { triggerRef } from 'vue'`).\nForces effects depending on a `shallowRef()` to re-run.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: customRef()": {
 		"prefix": "customRef",
@@ -25,59 +27,61 @@
 			"  };",
 			"});"
 		],
-		"description": "Vue 2.7+ (`import { customRef } from 'vue'`).\nCreates a ref with explicit control over its dependency tracking and update triggering.\n"
+		"description": "Vue 2.7+ (`import { customRef } from 'vue'`).\nCreates a ref with explicit control over its dependency tracking and update triggering.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: shallowReactive()": {
 		"prefix": "shallowReactive",
 		"body": ["const ${1:state} = shallowReactive(${2:original});"],
-		"description": "Vue 2.7+ (`import { shallowReactive } from 'vue'`).\nShallow data structures should only be used for root level state in a component.\n"
+		"description": "Vue 2.7+ (`import { shallowReactive } from 'vue'`).\nShallow data structures should only be used for root level state in a component.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: shallowReadonly()": {
 		"prefix": "shallowReadonly",
 		"body": ["const ${1:state} = shallowReadonly(${2:original});"],
-		"description": "Vue 2.7+ (`import { shallowReadonly } from 'vue'`).\nShallow data structures should only be used for root level state in a component.\n"
+		"description": "Vue 2.7+ (`import { shallowReadonly } from 'vue'`).\nShallow data structures should only be used for root level state in a component.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: toRaw()": {
 		"prefix": "toRaw",
 		"body": ["toRaw(${1:reactiveState})"],
-		"description": "Vue 2.7+ (`import { toRaw } from 'vue'`).\n`toRaw()` can return the original object from proxies created by `reactive()`, `readonly()`, `shallowReactive()` or `shallowReadonly()`.\n"
+		"description": "Vue 2.7+ (`import { toRaw } from 'vue'`).\n`toRaw()` can return the original object from proxies created by `reactive()`, `readonly()`, `shallowReactive()` or `shallowReadonly()`.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: markRaw()": {
 		"prefix": "markRaw",
 		"body": ["markRaw(${1:original})"],
-		"description": "Vue 2.7+ (`import { markRaw } from 'vue'`).\nMarks an object so that it will never be converted to a proxy. Returns the object itself.\n"
+		"description": "Vue 2.7+ (`import { markRaw } from 'vue'`).\nMarks an object so that it will never be converted to a proxy. Returns the object itself.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: proxyRefs()": {
 		"prefix": "proxyRefs",
 		"body": ["const ${1:state} = proxyRefs(${2:objectWithRefs});"],
-		"description": "Vue 2.7+ (`import { proxyRefs } from 'vue'`).\nReturns a proxy that unwraps the refs of an object, so properties can be read without `.value` — the same unwrapping `setup()`'s return value gets.\n"
+		"description": "Vue 2.7+ (`import { proxyRefs } from 'vue'`).\nReturns a proxy that unwraps the refs of an object, so properties can be read without `.value` — the same unwrapping `setup()`'s return value gets.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: effectScope()": {
 		"prefix": "effectScope",
-		"body": [
-			"const ${1:scope} = effectScope();",
-			"",
-			"${1}.run(() => {",
-			"  ${2}",
-			"});",
-			"",
-			"// ${1}.stop();"
-		],
-		"description": "Vue 2.7+ (`import { effectScope } from 'vue'`).\nCreates a new effect scope. The returned object has a `run` method that takes a function and runs it, and a `stop` method that disposes every effect created inside.\n"
+		"body": ["const ${1:scope} = effectScope();", "", "${1}.run(() => {", "  ${2}", "});", "", "// ${1}.stop();"],
+		"description": "Vue 2.7+ (`import { effectScope } from 'vue'`).\nCreates a new effect scope. The returned object has a `run` method that takes a function and runs it, and a `stop` method that disposes every effect created inside.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: getCurrentScope()": {
 		"prefix": "getCurrentScope",
 		"body": ["const ${1:scope} = getCurrentScope();"],
-		"description": "Vue 2.7+ (`import { getCurrentScope } from 'vue'`).\nReturns the current effect scope, or `undefined` if not inside an effect scope.\n"
+		"description": "Vue 2.7+ (`import { getCurrentScope } from 'vue'`).\nReturns the current effect scope, or `undefined` if not inside an effect scope.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: onScopeDispose()": {
 		"prefix": "onScopeDispose",
 		"body": ["onScopeDispose(() => {", "  ${1}", "});"],
-		"description": "Vue 2.7+ (`import { onScopeDispose } from 'vue'`).\nRegisters a callback to be called when the *current* effect scope is disposed. Takes the callback only — there is no scope argument.\n"
+		"description": "Vue 2.7+ (`import { onScopeDispose } from 'vue'`).\nRegisters a callback to be called when the *current* effect scope is disposed. Takes the callback only — there is no scope argument.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: EffectScope": {
 		"prefix": ["EffectScope", "es"],
 		"body": ["const ${1:scope}: EffectScope = effectScope(${2:true});"],
-		"description": "Vue 2.7+ (`import { effectScope } from 'vue'`, `import type { EffectScope } from 'vue'`).\nThe type of the object `effectScope()` returns — `{ run, stop, active }`.\nPass `true` for a *detached* scope, which is not collected by its parent scope when that one stops.\n"
+		"description": "Vue 2.7+ (`import { effectScope } from 'vue'`, `import type { EffectScope } from 'vue'`).\nThe type of the object `effectScope()` returns — `{ run, stop, active }`.\nPass `true` for a *detached* scope, which is not collected by its parent scope when that one stops.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

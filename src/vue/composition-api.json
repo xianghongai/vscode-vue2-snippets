@@ -23,7 +23,8 @@
 			"</script>",
 			""
 		],
-		"description": "Only Vue 2.7\nVue2 SFC-Composition API.\n"
+		"description": "Only Vue 2.7\nVue2 SFC-Composition API.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 SFC-Composition API, SCSS": {
 		"prefix": "vue2-sfc-scss (Composition API)",
@@ -52,7 +53,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Only Vue 2.7\nVue2 SFC-Composition API with SCSS.\n"
+		"description": "Only Vue 2.7\nVue2 SFC-Composition API with SCSS.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 SFC-Composition API, LESS": {
 		"prefix": "vue2-sfc-less (Composition API)",
@@ -81,7 +83,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Only Vue 2.7\nVue2 SFC-Composition API with LESS.\n"
+		"description": "Only Vue 2.7\nVue2 SFC-Composition API with LESS.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 SFC-Composition API, PostCSS": {
 		"prefix": "vue2-sfc-postcss (Composition API)",
@@ -110,7 +113,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Only Vue 2.7\nVue2 SFC-Composition API with PostCSS.\n"
+		"description": "Only Vue 2.7\nVue2 SFC-Composition API with PostCSS.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 SFC-Composition API, CSS": {
 		"prefix": "vue2-sfc-css (Composition API)",
@@ -139,7 +143,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Only Vue 2.7\nVue2 SFC-Composition API with CSS.\n"
+		"description": "Only Vue 2.7\nVue2 SFC-Composition API with CSS.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 Composition API <script>": {
 		"prefix": "vue-script (Composition API)",
@@ -159,6 +164,7 @@
 			"</script>",
 			""
 		],
-		"description": "Only Vue 2.7\nVue2 Composition API <script> element.\n"
+		"description": "Only Vue 2.7\nVue2 Composition API <script> element.\n",
+		"scope": "vue,html"
 	}
 }

@@ -2,12 +2,14 @@
 	"Composition API: ref()": {
 		"prefix": ["ref", "r"],
 		"body": ["const ${1:feature} = ref(${2:null});"],
-		"description": "Vue 2.7+ (`import { ref } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nReactivity API - Refs.\nTakes an inner value and returns a reactive and mutable ref object. The ref object has a single property `.value` that points to the inner value.\n"
+		"description": "Vue 2.7+ (`import { ref } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nReactivity API - Refs.\nTakes an inner value and returns a reactive and mutable ref object. The ref object has a single property `.value` that points to the inner value.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: computed()": {
 		"prefix": ["computed", "c"],
 		"body": ["const ${1:feature} = computed(() => ${2:state.value});"],
-		"description": "Vue 2.7+ (`import { computed } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nReactivity API - Computed and watch.\nTakes a getter function and returns an immutable reactive ref object for the returned value from the getter.\n"
+		"description": "Vue 2.7+ (`import { computed } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nReactivity API - Computed and watch.\nTakes a getter function and returns an immutable reactive ref object for the returned value from the getter.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: computed({ get, set })": {
 		"prefix": "computed",
@@ -19,45 +21,44 @@
 			"  },",
 			"});"
 		],
-		"description": "Vue 2.7+ (`import { computed } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nReactivity API - Computed and watch.\nTake an object with `get` and `set` functions to create a writable ref object.\n"
+		"description": "Vue 2.7+ (`import { computed } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nReactivity API - Computed and watch.\nTake an object with `get` and `set` functions to create a writable ref object.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: reactive()": {
 		"prefix": "reactive",
 		"body": ["const ${1:state} = reactive(${2:original});"],
-		"description": "Vue 2.7+ (`import { reactive } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nReactivity API - Basic Reactivity APIs.\nReturns a reactive copy of the object.\nThe reactive conversion is \"deep\"—it affects all nested properties. In the ES2015 Proxy (opens new window) based implementation, the returned proxy is not equal to the original object. It is recommended to work exclusively with the reactive proxy and avoid relying on the original object.\n"
+		"description": "Vue 2.7+ (`import { reactive } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nReactivity API - Basic Reactivity APIs.\nReturns a reactive copy of the object.\nThe reactive conversion is \"deep\"—it affects all nested properties. In the ES2015 Proxy (opens new window) based implementation, the returned proxy is not equal to the original object. It is recommended to work exclusively with the reactive proxy and avoid relying on the original object.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: readonly()": {
 		"prefix": "readonly",
 		"body": ["const ${1:state} = readonly(${2:original});"],
-		"description": "Vue 2.7+ (`import { readonly } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nReactivity API - Basic Reactivity APIs.\nTakes an object (reactive or plain) or a ref and returns a readonly proxy to the original. A readonly proxy is deep: any nested property accessed will be readonly as well.\n"
+		"description": "Vue 2.7+ (`import { readonly } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nReactivity API - Basic Reactivity APIs.\nTakes an object (reactive or plain) or a ref and returns a readonly proxy to the original. A readonly proxy is deep: any nested property accessed will be readonly as well.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: watchEffect()": {
 		"prefix": "watchEffect",
 		"body": ["watchEffect(async () => {", "  $0", "});", ""],
-		"description": "Vue 2.7+ (`import { watchEffect } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nwatchEffect(effect, options?);\nWatchEffectOptions { flush?: 'pre' | 'post' | 'sync', onTrack?, onTrigger? };\nThe `once` option is Vue 3.4+ only.\n"
+		"description": "Vue 2.7+ (`import { watchEffect } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nwatchEffect(effect, options?);\nWatchEffectOptions { flush?: 'pre' | 'post' | 'sync', onTrack?, onTrigger? };\nThe `once` option is Vue 3.4+ only.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: watchPostEffect()": {
 		"prefix": "watchPostEffect",
 		"body": ["watchPostEffect(async () => {", "  $0", "});", ""],
-		"description": "Vue 2.7+ (`import { watchPostEffect } from 'vue'`).\nAlias of watchEffect() with flush: 'post' option.\n"
+		"description": "Vue 2.7+ (`import { watchPostEffect } from 'vue'`).\nAlias of watchEffect() with flush: 'post' option.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: watchSyncEffect()": {
 		"prefix": "watchSyncEffect",
 		"body": ["watchSyncEffect(() => {", "  $0", "});", ""],
-		"description": "Vue 2.7+ (`import { watchSyncEffect } from 'vue'`).\nAlias of watchEffect() with flush: 'sync' option.\n"
+		"description": "Vue 2.7+ (`import { watchSyncEffect } from 'vue'`).\nAlias of watchEffect() with flush: 'sync' option.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: watch(), props": {
 		"prefix": ["watch-props", "w"],
-		"body": [
-			"watch(",
-			"  () => props.${1:property},",
-			"  async (${2:newValue}) => {",
-			"    $0",
-			"  },",
-			");",
-			""
-		],
-		"description": "Vue 2.7+ (`import { watch } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n"
+		"body": ["watch(", "  () => props.${1:property},", "  async (${2:newValue}) => {", "    $0", "  },", ");", ""],
+		"description": "Vue 2.7+ (`import { watch } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: watch(), props, deep": {
 		"prefix": ["watch-props-deep", "wd"],
@@ -73,7 +74,8 @@
 			");",
 			""
 		],
-		"description": "Vue 2.7+ (`import { watch } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n"
+		"description": "Vue 2.7+ (`import { watch } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: watch(), props, immediate": {
 		"prefix": ["watch-props-immediate", "wi"],
@@ -89,7 +91,8 @@
 			");",
 			""
 		],
-		"description": "Vue 2.7+ (`import { watch } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n"
+		"description": "Vue 2.7+ (`import { watch } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: watch(), props, deep, immediate": {
 		"prefix": ["watch-props-deep-immediate", "wdi"],
@@ -106,7 +109,8 @@
 			");",
 			""
 		],
-		"description": "Vue 2.7+ (`import { watch } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n"
+		"description": "Vue 2.7+ (`import { watch } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API: watch(), multiple props": {
 		"prefix": ["watch-props-multiple", "wm"],
@@ -123,6 +127,7 @@
 			");",
 			""
 		],
-		"description": "Vue 2.7+ (`import { watch } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n"
+		"description": "Vue 2.7+ (`import { watch } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

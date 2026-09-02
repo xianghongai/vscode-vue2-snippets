@@ -1,24 +1,29 @@
 {
 	"Vue: await this.$nextTick()": {
 		"prefix": ["await-vm-nextTick", "vmnt"],
-		"body": ["await ${9:this}.\\$nextTick();$1"]
+		"body": ["await ${9:this}.\\$nextTick();$1"],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$nextTick().then(cb)": {
 		"prefix": ["vm-nextTick-then"],
-		"body": ["${9:this}.\\$nextTick().then(() => {", "  $1", "});"]
+		"body": ["${9:this}.\\$nextTick().then(() => {", "  $1", "});"],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$forceUpdate()": {
 		"prefix": ["vm-$forceUpdate()"],
 		"body": ["${9:this}.\\$forceUpdate();$1"],
-		"description": "Force the component instance to re-render. Note it does not affect all child components, only the instance itself and child components with inserted slot content.\n"
+		"description": "Force the component instance to re-render. Note it does not affect all child components, only the instance itself and child components with inserted slot content.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$destroy()": {
 		"prefix": ["vm-$destroy()"],
 		"body": ["${9:this}.\\$destroy();$1"],
-		"description": "Completely destroy a vm. Clean up its connections with other existing vms, unbind all its directives, turn off all event listeners.\rTriggers the `beforeDestroy` and `destroyed` hooks.\n"
+		"description": "Completely destroy a vm. Clean up its connections with other existing vms, unbind all its directives, turn off all event listeners.\rTriggers the `beforeDestroy` and `destroyed` hooks.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$mount()": {
 		"prefix": ["vm-$mount()"],
-		"body": ["const vm = new Vue({", "  $1", "}).\\$mount($2);$0"]
+		"body": ["const vm = new Vue({", "  $1", "}).\\$mount($2);$0"],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

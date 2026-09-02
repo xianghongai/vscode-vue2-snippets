@@ -5,7 +5,8 @@
 			"const ${1:unwatch} = ${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
 			"  $0",
 			"});"
-		]
+		],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$watch(), immediate": {
 		"prefix": "vm-$watch()-immediate",
@@ -15,7 +16,8 @@
 			"}, {",
 			"  immediate: true,",
 			"});"
-		]
+		],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$watch(), deep": {
 		"prefix": "vm-$watch()-deep",
@@ -25,7 +27,8 @@
 			"}, {",
 			"  deep: true,",
 			"});"
-		]
+		],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$watch(), deep, immediate": {
 		"prefix": "vm-$watch()-deep-immediate",
@@ -36,20 +39,19 @@
 			"  deep: true,",
 			"  immediate: true,",
 			"});"
-		]
+		],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$set()": {
 		"prefix": "vm-$set()",
-		"body": [
-			"${9:this}.\\$set(this.${2:object/array}, ${3:propertyName/index}, ${4:value});$0"
-		],
-		"description": "This is the alias of the global Vue.set.\n"
+		"body": ["${9:this}.\\$set(this.${2:object/array}, ${3:propertyName/index}, ${4:value});$0"],
+		"description": "This is the alias of the global Vue.set.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: this.$delete()": {
 		"prefix": "vm-$delete()",
-		"body": [
-			"${9:this}.\\$delete(this.${2:object/array}, ${3:propertyName/index}, ${4:value});$0"
-		],
-		"description": "This is the alias of the global Vue.delete.\n"
+		"body": ["${9:this}.\\$delete(this.${2:object/array}, ${3:propertyName/index}, ${4:value});$0"],
+		"description": "This is the alias of the global Vue.delete.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

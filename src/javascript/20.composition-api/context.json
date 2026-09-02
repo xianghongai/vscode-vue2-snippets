@@ -17,6 +17,7 @@
 			"  return context;",
 			"}"
 		],
-		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below import from [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) instead.\nexample: use-feature.js\n"
+		"description": "Vue 2.7+ (Composition API is built into `vue`).\nOn Vue 2.6 and below import from [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) instead.\nexample: use-feature.js\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

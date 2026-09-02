@@ -2,17 +2,20 @@
 	"Vue: defineProps()": {
 		"prefix": ["defineProps", "dp"],
 		"body": ["const props = defineProps({", "  ${1}", "});", ""],
-		"description": "Vue 2.7+ `<script setup>`, or Vue 2.6 and below via [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup).\n**compiler macro** only usable inside `<script setup>`. It does not need to be imported, and is compiled away when `<script setup>` is processed.\n"
+		"description": "Vue 2.7+ `<script setup>`, or Vue 2.6 and below via [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup).\n**compiler macro** only usable inside `<script setup>`. It does not need to be imported, and is compiled away when `<script setup>` is processed.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: defineEmits()": {
 		"prefix": ["defineEmits", "de"],
 		"body": ["const emit = defineEmits(['${1:change}']);", "$0"],
-		"description": "Vue 2.7+ `<script setup>`, or Vue 2.6 and below via [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup).\n**compiler macro** only usable inside `<script setup>`. It does not need to be imported, and is compiled away when `<script setup>` is processed.\n"
+		"description": "Vue 2.7+ `<script setup>`, or Vue 2.6 and below via [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup).\n**compiler macro** only usable inside `<script setup>`. It does not need to be imported, and is compiled away when `<script setup>` is processed.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: defineExpose()": {
 		"prefix": ["defineExpose", "dex"],
 		"body": ["defineExpose({", "  ${1}", "});"],
-		"description": "Vue 2.7+ `<script setup>`, or Vue 2.6 and below via [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup).\n**compiler macro** only usable inside `<script setup>`. It does not need to be imported, and is compiled away when `<script setup>` is processed.\n"
+		"description": "Vue 2.7+ `<script setup>`, or Vue 2.6 and below via [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup).\n**compiler macro** only usable inside `<script setup>`. It does not need to be imported, and is compiled away when `<script setup>` is processed.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: withDefaults()": {
 		"prefix": ["withDefaults", "wdf"],
@@ -23,19 +26,20 @@
 			"  $1: ${3:defaultValue}",
 			"});"
 		],
-		"description": "Vue 2.7+ `<script setup>`, or Vue 2.6 and below via [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup). TS only.\nSupplies default values for a type-based `defineProps` declaration.\n**compiler macro** only usable inside `<script setup>`. It does not need to be imported, and is compiled away when `<script setup>` is processed.\n"
+		"description": "Vue 2.7+ `<script setup>`, or Vue 2.6 and below via [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup). TS only.\nSupplies default values for a type-based `defineProps` declaration.\n**compiler macro** only usable inside `<script setup>`. It does not need to be imported, and is compiled away when `<script setup>` is processed.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
-
 	"Vue: defineOptions()": {
 		"prefix": ["defineOptions", "do"],
 		"body": ["defineOptions({", "  ${1}", "});"],
-		"description": "**Vue 3.3+ only — not supported by Vue 2.7 `<script setup>` nor by [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup) (as of 0.11.4).**\nIn Vue 2, put the options in a second, plain `<script>` block alongside `<script setup>`.\n**compiler macro** only usable inside `<script setup>`.\n"
+		"description": "**Vue 3.3+ only — not supported by Vue 2.7 `<script setup>` nor by [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup) (as of 0.11.4).**\nIn Vue 2, put the options in a second, plain `<script>` block alongside `<script setup>`.\n**compiler macro** only usable inside `<script setup>`.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
-
 	"Vue: defineModel()": {
 		"prefix": ["defineModel", "dm"],
 		"body": ["const ${1:model} = defineModel();"],
-		"description": "**Vue 3.4+ only — not supported by Vue 2.7 `<script setup>` nor by [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup) (as of 0.11.4).**\nIn Vue 2, declare the prop and emit the update event by hand, or use the `model` component option.\nExample:\n`const model = defineModel('<name>', { required: true, default: 0 });`\n`<ChildComponent v-model:<name>=\"value\" />` === `<ChildComponent :<name>=\"value\" @update:<name>=\"value = $event\" />`\nIn 3.x `v-model` on the custom component is an equivalent of passing a `modelValue` prop and emitting an `update:modelValue` event: `<ChildComponent v-model=\"value\" />` === `<ChildComponent :modelValue=\"value\" @update:modelValue=\"value = $event\" />`"
+		"description": "**Vue 3.4+ only — not supported by Vue 2.7 `<script setup>` nor by [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup) (as of 0.11.4).**\nIn Vue 2, declare the prop and emit the update event by hand, or use the `model` component option.\nExample:\n`const model = defineModel('<name>', { required: true, default: 0 });`\n`<ChildComponent v-model:<name>=\"value\" />` === `<ChildComponent :<name>=\"value\" @update:<name>=\"value = $event\" />`\nIn 3.x `v-model` on the custom component is an equivalent of passing a `modelValue` prop and emitting an `update:modelValue` event: `<ChildComponent v-model=\"value\" />` === `<ChildComponent :modelValue=\"value\" @update:modelValue=\"value = $event\" />`",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: defineModel(), Modifiers and Transformers": {
 		"prefix": ["defineModel", "dmm"],
@@ -49,15 +53,13 @@
 			"  }",
 			"});"
 		],
-		"description": "**Vue 3.4+ only — not supported by Vue 2.7 `<script setup>` nor by [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup) (as of 0.11.4).**\n"
+		"description": "**Vue 3.4+ only — not supported by Vue 2.7 `<script setup>` nor by [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup) (as of 0.11.4).**\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Vue: defineSlots()": {
 		"prefix": ["defineSlots", "ds"],
-		"body": [
-			"const slots = defineSlots<{",
-			"  default(props: { ${1:prop}: string }): any",
-			"}>();"
-		],
-		"description": "**Vue 3.3+ only (TS only) — not supported by Vue 2.7 `<script setup>` nor by [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup) (as of 0.11.4).**\nIn Vue 2, type slots through `useSlots()` instead.\nProvide type hints to IDEs for slot name and props type checking.\n**compiler macro** only usable inside `<script setup>`.\n"
+		"body": ["const slots = defineSlots<{", "  default(props: { ${1:prop}: string }): any", "}>();"],
+		"description": "**Vue 3.3+ only (TS only) — not supported by Vue 2.7 `<script setup>` nor by [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup) (as of 0.11.4).**\nIn Vue 2, type slots through `useSlots()` instead.\nProvide type hints to IDEs for slot name and props type checking.\n**compiler macro** only usable inside `<script setup>`.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

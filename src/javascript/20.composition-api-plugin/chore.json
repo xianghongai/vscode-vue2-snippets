@@ -11,6 +11,7 @@
 			"const app = createApp(App);",
 			"app.mount('${1:Element/#Selector}');"
 		],
-		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\n`createApp` here is the plugin's deprecated Vue 3-style shim — on Vue 2.7+ drop the plugin and use `new Vue({ el, render })` instead.\n`Vue.use(VueCompositionAPI)` must run before any Composition API call.\n"
+		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\n`createApp` here is the plugin's deprecated Vue 3-style shim — on Vue 2.7+ drop the plugin and use `new Vue({ el, render })` instead.\n`Vue.use(VueCompositionAPI)` must run before any Composition API call.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

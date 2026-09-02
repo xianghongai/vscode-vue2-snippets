@@ -28,7 +28,8 @@
 			"};",
 			"</script>"
 		],
-		"description": "Vue2 SFC-Options API.\n"
+		"description": "Vue2 SFC-Options API.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 SFC-Options API, SCSS": {
 		"prefix": "vue2-sfc-scss (Options API)",
@@ -63,7 +64,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue2 SFC-Options API with SCSS.\n"
+		"description": "Vue2 SFC-Options API with SCSS.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 SFC-Options API, LESS": {
 		"prefix": "vue2-sfc-less (Options API)",
@@ -98,7 +100,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue2 SFC-Options API with LESS.\n"
+		"description": "Vue2 SFC-Options API with LESS.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 SFC-Options API, PostCSS": {
 		"prefix": "vue2-sfc-postcss (Options API)",
@@ -133,7 +136,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue2 SFC-Options API with PostCSS.\n"
+		"description": "Vue2 SFC-Options API with PostCSS.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 SFC-Options API, CSS": {
 		"prefix": "vue2-sfc-css (Options API)",
@@ -168,7 +172,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue2 SFC-Options API with CSS.\n"
+		"description": "Vue2 SFC-Options API with CSS.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 Options API <script>": {
 		"prefix": "vue-script (Options API)",
@@ -193,6 +198,7 @@
 			"};",
 			"</script>"
 		],
-		"description": "Vue2 Options API <script> element.\n"
+		"description": "Vue2 Options API <script> element.\n",
+		"scope": "vue,html"
 	}
 }

@@ -2,46 +2,55 @@
 	"Composition API Plugin: import ref": {
 		"prefix": "import-ref",
 		"body": ["import { ref$1 } from '@vue/composition-api';"],
-		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n"
+		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API Plugin: import computed": {
 		"prefix": "import-computed",
 		"body": ["import { computed$1 } from '@vue/composition-api';"],
-		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n"
+		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API Plugin: import watch": {
 		"prefix": "import-watch",
 		"body": ["import { watch$1 } from '@vue/composition-api';"],
-		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n"
+		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API Plugin: import nextTick": {
 		"prefix": "import-nextTick",
 		"body": ["import { nextTick$1 } from '@vue/composition-api';"],
-		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n"
+		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API Plugin: import provide": {
 		"prefix": "import-provide",
 		"body": ["import { provide$1 } from '@vue/composition-api';"],
-		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n"
+		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API Plugin: import inject": {
 		"prefix": "import-inject",
 		"body": ["import { inject$1 } from '@vue/composition-api';"],
-		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n"
+		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API Plugin: import onMounted": {
 		"prefix": "import-onMounted",
 		"body": ["import { onMounted$1 } from '@vue/composition-api';"],
-		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n"
+		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API Plugin: import defineComponent": {
 		"prefix": "import-defineComponent",
 		"body": ["import { defineComponent$1 } from '@vue/composition-api';"],
-		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n"
+		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Composition API Plugin: import defineAsyncComponent": {
 		"prefix": "import-defineAsyncComponent",
 		"body": ["import { defineAsyncComponent$1 } from '@vue/composition-api';"],
-		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n"
+		"description": "Requires the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin (Vue 2.6 and below).\nOn Vue 2.7+ import from `vue` instead.\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

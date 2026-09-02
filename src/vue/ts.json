@@ -21,7 +21,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue Single-File Component with TypeScript.\n`Vue.extend` gives the options object type inference on every Vue 2.x version.\nOn Vue 2.7+, `defineComponent` (prefix `vue-ts-defineComponent`) is preferred — it also types `setup()`.\n"
+		"description": "Vue Single-File Component with TypeScript.\n`Vue.extend` gives the options object type inference on every Vue 2.x version.\nOn Vue 2.7+, `defineComponent` (prefix `vue-ts-defineComponent`) is preferred — it also types `setup()`.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 SFC-TypeScript, defineComponent": {
 		"prefix": "vue-ts-defineComponent",
@@ -45,7 +46,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Vue 2.7+ (`import { defineComponent } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nVue Single-File Component with TypeScript. A no-op at runtime — it exists so TypeScript can infer props, `data`, `computed` and `setup()`.\n"
+		"description": "Vue 2.7+ (`import { defineComponent } from 'vue'`), or the [@vue/composition-api](https://www.npmjs.com/package/@vue/composition-api) plugin on Vue 2.6 and below.\nVue Single-File Component with TypeScript. A no-op at runtime — it exists so TypeScript can infer props, `data`, `computed` and `setup()`.\n",
+		"scope": "vue,html"
 	},
 	"Vue2 SFC-TypeScript Class-based": {
 		"prefix": "vue-ts-class",
@@ -69,6 +71,7 @@
 			"",
 			"</style>"
 		],
-		"description": "Class-based Vue Single-File Component with TypeScript.\nRequires the third-party [vue-property-decorator](https://www.npmjs.com/package/vue-property-decorator) (built on `vue-class-component`) and `experimentalDecorators` in `tsconfig.json`.\nNeither package is maintained for Vue 3 — on Vue 2.7 prefer `defineComponent` or `<script setup>`.\n"
+		"description": "Class-based Vue Single-File Component with TypeScript.\nRequires the third-party [vue-property-decorator](https://www.npmjs.com/package/vue-property-decorator) (built on `vue-class-component`) and `experimentalDecorators` in `tsconfig.json`.\nNeither package is maintained for Vue 3 — on Vue 2.7 prefer `defineComponent` or `<script setup>`.\n",
+		"scope": "vue,html"
 	}
 }

@@ -2,46 +2,55 @@
 	"Vue <template>": {
 		"prefix": ["vue-template", "t"],
 		"body": ["<template$1>", "  $0", "</template>"],
-		"description": "Vue Template element.\n"
+		"description": "Vue Template element.\n",
+		"scope": "vue,html"
 	},
 	"Vue <style lang=\"\" scoped>": {
 		"prefix": "vue-style",
 		"body": ["<style ${1:lang=\"$2\"} ${3:scoped}>", "$0", "</style>"],
-		"description": "Vue Style element.\n"
+		"description": "Vue Style element.\n",
+		"scope": "vue,html"
 	},
 	"Vue <style lang=\"\">": {
 		"prefix": "vue-style-no-scoped",
 		"body": ["<style ${1:lang=\"$2\"}>", "$0", "</style>"],
-		"description": "Vue Style element.\n"
+		"description": "Vue Style element.\n",
+		"scope": "vue,html"
 	},
 	"Vue <style lang=\"postcss\" scoped>": {
 		"prefix": "vue-style-postcss",
 		"body": ["<style lang=\"postcss\" ${1:scoped}>", "$0", "</style>"],
-		"description": "Vue Style element.\n"
+		"description": "Vue Style element.\n",
+		"scope": "vue,html"
 	},
 	"Vue <style lang=\"scss\" scoped>": {
 		"prefix": "vue-style-scss",
 		"body": ["<style lang=\"scss\" ${1:scoped}>", "$0", "</style>"],
-		"description": "Vue Style element.\n"
+		"description": "Vue Style element.\n",
+		"scope": "vue,html"
 	},
 	"Vue <style lang=\"less\" scoped>": {
 		"prefix": "vue-style-less",
 		"body": ["<style lang=\"less\" ${1:scoped}>", "$0", "</style>"],
-		"description": "Vue Style element.\n"
+		"description": "Vue Style element.\n",
+		"scope": "vue,html"
 	},
 	"Vue <style lang=\"stylus\" scoped>": {
 		"prefix": "vue-style-stylus",
 		"body": ["<style lang=\"stylus\" ${1:scoped}>", "$0", "</style>"],
-		"description": "Vue Style element.\n"
+		"description": "Vue Style element.\n",
+		"scope": "vue,html"
 	},
 	"Vue <script setup>": {
 		"prefix": ["vue-script-setup", "vss"],
 		"body": ["<script setup>", "$0", "</script>"],
-		"description": "Vue 2.7+, or Vue 2.6 and below via [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup).\nOn Vue 2.7 it needs `vue-loader` 15.10+ or `vite-plugin-vue2` 2.2+.\n"
+		"description": "Vue 2.7+, or Vue 2.6 and below via [unplugin-vue2-script-setup](https://www.npmjs.com/package/unplugin-vue2-script-setup).\nOn Vue 2.7 it needs `vue-loader` 15.10+ or `vite-plugin-vue2` 2.2+.\n",
+		"scope": "vue,html"
 	},
 	"Vue <style module>": {
 		"prefix": "vue-style-module",
 		"body": ["<style ${1:lang=\"scss\" }module>", "$0", "</style>"],
-		"description": "CSS Modules block. Classes are exposed on `this.$style` in the Options API, and through `useCssModule()` in `setup()` / `<script setup>` (Vue 2.7+).\nAdd a name — `<style module=\"classes\">` — to expose it as `this.$classes` / `useCssModule('classes')`.\n"
+		"description": "CSS Modules block. Classes are exposed on `this.$style` in the Options API, and through `useCssModule()` in `setup()` / `<script setup>` (Vue 2.7+).\nAdd a name — `<style module=\"classes\">` — to expose it as `this.$classes` / `useCssModule('classes')`.\n",
+		"scope": "vue,html"
 	}
 }

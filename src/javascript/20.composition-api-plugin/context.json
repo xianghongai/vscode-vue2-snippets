@@ -17,6 +17,7 @@
 			"  return context;",
 			"}"
 		],
-		"description": "example: use-feature.js\n"
+		"description": "example: use-feature.js\n",
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

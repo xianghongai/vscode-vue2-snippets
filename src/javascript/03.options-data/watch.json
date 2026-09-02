@@ -1,12 +1,8 @@
 {
 	"Options API: watch property": {
 		"prefix": ["watch-property", "wp"],
-		"body": [
-			"${1:property}(${2:newValue}${3:, ${4:oldValue}}) {",
-			"  $5",
-			"},",
-			"$0"
-		]
+		"body": ["${1:property}(${2:newValue}${3:, ${4:oldValue}}) {", "  $5", "},", "$0"],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Options API: watch property, deep ": {
 		"prefix": ["watch-property-deep", "wpd"],
@@ -18,7 +14,8 @@
 			"  },",
 			"},",
 			"$0"
-		]
+		],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Options API: watch property, immediate ": {
 		"prefix": ["watch-property-immediate", "wpi"],
@@ -30,7 +27,8 @@
 			"  },",
 			"},",
 			"$0"
-		]
+		],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	},
 	"Options API: watch property, deep, immediate ": {
 		"prefix": ["watch-property-deep-immediate", "wpdi"],
@@ -43,6 +41,7 @@
 			"  },",
 			"},",
 			"$0"
-		]
+		],
+		"scope": "vue,javascript,javascriptreact,typescript"
 	}
 }

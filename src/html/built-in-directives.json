@@ -1,187 +1,220 @@
 {
 	"v-model": {
 		"prefix": "v-model",
-		"body": ["v-model=\"${1:value}\""]
+		"body": ["v-model=\"${1:value}\""],
+		"scope": "vue,html"
 	},
 	"v-show": {
 		"prefix": "v-show",
-		"body": ["v-show=\"${1:condition}\""]
+		"body": ["v-show=\"${1:condition}\""],
+		"scope": "vue,html"
 	},
 	"v-if": {
 		"prefix": "v-if",
-		"body": ["v-if=\"${1:condition}\""]
+		"body": ["v-if=\"${1:condition}\""],
+		"scope": "vue,html"
 	},
 	"v-else-if": {
 		"prefix": "v-else-if",
-		"body": ["v-else-if=\"${1:condition}\""]
+		"body": ["v-else-if=\"${1:condition}\""],
+		"scope": "vue,html"
 	},
 	"v-else": {
 		"prefix": "v-else",
-		"body": ["v-else"]
+		"body": ["v-else"],
+		"scope": "vue,html"
 	},
 	"v-for (item, index)": {
 		"prefix": ["v-for-index", "vfi"],
-		"body": [
-			"v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\"$0"
-		]
+		"body": ["v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\"$0"],
+		"scope": "vue,html"
 	},
 	"v-for (item)": {
 		"prefix": ["v-for", "vf"],
-		"body": ["v-for=\"${1:item} in ${2:items}\" :key=\"${3:$1}\"$0"]
+		"body": ["v-for=\"${1:item} in ${2:items}\" :key=\"${3:$1}\"$0"],
+		"scope": "vue,html"
 	},
 	"v-slot, props": {
 		"prefix": "v-slot",
-		"body": ["<template #default=\"${1:slotProps}\">", "  $0", "</template>"]
+		"body": ["<template #default=\"${1:slotProps}\">", "  $0", "</template>"],
+		"scope": "vue,html"
 	},
 	"v-slot, named": {
 		"prefix": ["v-slot-named", "vsn"],
-		"body": ["<template #${1:default}>", "  $0", "</template>"]
+		"body": ["<template #${1:default}>", "  $0", "</template>"],
+		"scope": "vue,html"
 	},
 	"v-slot, named, props": {
 		"prefix": ["v-slot-named-props", "vsnp"],
-		"body": [
-			"<template #${1:default}=\"${2:slotProps}\">",
-			"  $0",
-			"</template>"
-		]
+		"body": ["<template #${1:default}=\"${2:slotProps}\">", "  $0", "</template>"],
+		"scope": "vue,html"
 	},
 	"v-on": {
 		"prefix": "v-on",
-		"body": ["@${1:click}=\"${2:handler}\""]
+		"body": ["@${1:click}=\"${2:handler}\""],
+		"scope": "vue,html"
 	},
 	"v-on, stop propagation": {
 		"prefix": "v-on-stop",
-		"body": ["@${1:click}.stop=\"${2:handler}\""]
+		"body": ["@${1:click}.stop=\"${2:handler}\""],
+		"scope": "vue,html"
 	},
 	"v-on, prevent default": {
 		"prefix": "v-on-prevent",
-		"body": ["@${1:click}.prevent=\"${2:handler}\""]
+		"body": ["@${1:click}.prevent=\"${2:handler}\""],
+		"scope": "vue,html"
 	},
 	"v-on, stop propagation, prevent default": {
 		"prefix": ["v-on-prevent-stop"],
-		"body": ["@${1:click}.stop.prevent=\"${2:handler}\""]
+		"body": ["@${1:click}.stop.prevent=\"${2:handler}\""],
+		"scope": "vue,html"
 	},
 	"v-on, keyAlias": {
 		"prefix": "v-on-keyAlias",
 		"body": ["@${1:keyup}.${2:enter}=\"${3:handler}\""],
-		"description": "Key Aliases, System Modifier Keys, Mouse Button Modifiers..."
+		"description": "Key Aliases, System Modifier Keys, Mouse Button Modifiers...",
+		"scope": "vue,html"
 	},
 	"v-on, once": {
 		"prefix": "v-on-once",
-		"body": ["@${1:click}.once=\"${2:handler}\""]
+		"body": ["@${1:click}.once=\"${2:handler}\""],
+		"scope": "vue,html"
 	},
 	"v-on, multiple": {
 		"prefix": "v-on-multiple",
-		"body": ["v-on=\"{ ${1:event1}: ${2:handler1} }\""]
+		"body": ["v-on=\"{ ${1:event1}: ${2:handler1} }\""],
+		"scope": "vue,html"
 	},
 	"v-bind=\"$attrs\"": {
 		"prefix": ["v-bind-$attrs", "vba"],
 		"body": ["${1:v-bind=\"\\$attrs\"}$0"],
-		"description": "In combination with `inheritAttrs: false`, apply attributes to some other element instead of the root element.\n"
+		"description": "In combination with `inheritAttrs: false`, apply attributes to some other element instead of the root element.\n",
+		"scope": "vue,html"
 	},
 	"v-on=\"$listeners\"": {
 		"prefix": ["v-on-$listeners", "vol"],
 		"body": ["${1:v-on=\"\\$listeners\"}$0"],
-		"description": "In combination with `inheritAttrs: false`, apply listeners to some other element instead of the root element.\nVue 3.x removed. (merged into $attrs)\n"
+		"description": "In combination with `inheritAttrs: false`, apply listeners to some other element instead of the root element.\nVue 3.x removed. (merged into $attrs)\n",
+		"scope": "vue,html"
 	},
 	"v-bind=\"$attrs\" v-on=\"$listeners\"": {
 		"prefix": ["v-$attrs-$listeners", "val"],
 		"body": ["${1:v-bind=\"\\$attrs\" }${2:v-on=\"\\$listeners\"}$0"],
-		"description": "In combination with `inheritAttrs: false`, apply attributes and listeners to some other element instead of the root element.\n"
+		"description": "In combination with `inheritAttrs: false`, apply attributes and listeners to some other element instead of the root element.\n",
+		"scope": "vue,html"
 	},
 	"v-text": {
 		"prefix": "v-text",
 		"body": ["v-text=\"${1:message}\""],
-		"description": "Updates the element's `textContent`. Prefer mustache interpolation `{{ }}` unless the whole text node is replaced.\n"
+		"description": "Updates the element's `textContent`. Prefer mustache interpolation `{{ }}` unless the whole text node is replaced.\n",
+		"scope": "vue,html"
 	},
 	"v-html": {
 		"prefix": "v-html",
 		"body": ["v-html=\"${1:rawHtml}\""],
-		"description": "Updates the element's `innerHTML`.\n**The content is inserted as plain HTML — never use it on user-supplied input**, it opens an XSS hole. Scoped-CSS styles do not apply inside it.\n"
+		"description": "Updates the element's `innerHTML`.\n**The content is inserted as plain HTML — never use it on user-supplied input**, it opens an XSS hole. Scoped-CSS styles do not apply inside it.\n",
+		"scope": "vue,html"
 	},
 	"v-once": {
 		"prefix": "v-once",
 		"body": ["v-once"],
-		"description": "Renders the element or component once and skips it on later updates.\n"
+		"description": "Renders the element or component once and skips it on later updates.\n",
+		"scope": "vue,html"
 	},
 	"v-pre": {
 		"prefix": "v-pre",
 		"body": ["v-pre"],
-		"description": "Skips compilation for this element and all its children — mustaches are rendered verbatim.\n"
+		"description": "Skips compilation for this element and all its children — mustaches are rendered verbatim.\n",
+		"scope": "vue,html"
 	},
 	"v-cloak": {
 		"prefix": "v-cloak",
 		"body": ["v-cloak"],
-		"description": "Stays on the element until the instance finishes compiling. Paired with `[v-cloak] { display: none }` it hides un-compiled mustaches when using in-DOM templates.\n"
+		"description": "Stays on the element until the instance finishes compiling. Paired with `[v-cloak] { display: none }` it hides un-compiled mustaches when using in-DOM templates.\n",
+		"scope": "vue,html"
 	},
 	"v-bind": {
 		"prefix": "v-bind",
 		"body": [":${1:attribute}=\"${2:value}\""],
-		"description": "Dynamically binds an attribute or a component prop. `:attr` is shorthand for `v-bind:attr`.\n"
+		"description": "Dynamically binds an attribute or a component prop. `:attr` is shorthand for `v-bind:attr`.\n",
+		"scope": "vue,html"
 	},
 	"v-bind, object": {
 		"prefix": "v-bind-object",
 		"body": ["v-bind=\"${1:object}\""],
-		"description": "Binds every property of an object as an attribute or prop.\n"
+		"description": "Binds every property of an object as an attribute or prop.\n",
+		"scope": "vue,html"
 	},
 	"v-bind, dynamic argument": {
 		"prefix": ["v-bind-dynamic", "vbd"],
 		"body": [":[${1:attributeName}]=\"${2:value}\""],
-		"description": "Vue 2.6+. Dynamic argument — the attribute name itself comes from an expression.\nThe expression must evaluate to a string or `null`; in in-DOM templates it has to be lowercase, since browsers lowercase attribute names.\n"
+		"description": "Vue 2.6+. Dynamic argument — the attribute name itself comes from an expression.\nThe expression must evaluate to a string or `null`; in in-DOM templates it has to be lowercase, since browsers lowercase attribute names.\n",
+		"scope": "vue,html"
 	},
 	"v-bind, .sync modifier": {
 		"prefix": "v-bind-sync_UNSAFE",
 		"body": [":${1:title}.sync=\"${2:value}\""],
-		"description": "**Vue 2 only — removed in Vue 3** (replaced by `v-model:argument`).\nVue 2.3+. Sugar for `:title=\"value\" @update:title=\"value = $event\"`; the child updates it with `this.$emit('update:title', newValue)`.\n"
+		"description": "**Vue 2 only — removed in Vue 3** (replaced by `v-model:argument`).\nVue 2.3+. Sugar for `:title=\"value\" @update:title=\"value = $event\"`; the child updates it with `this.$emit('update:title', newValue)`.\n",
+		"scope": "vue,html"
 	},
 	"v-bind, .prop modifier": {
 		"prefix": "v-bind-prop",
 		"body": [":${1:innerHTML}.prop=\"${2:value}\""],
-		"description": "Binds as a DOM property instead of an attribute.\n"
+		"description": "Binds as a DOM property instead of an attribute.\n",
+		"scope": "vue,html"
 	},
 	"v-bind, .camel modifier": {
 		"prefix": "v-bind-camel",
 		"body": [":${1:view-box}.camel=\"${2:value}\""],
-		"description": "Vue 2.1+. Converts a kebab-case attribute name to camelCase — needed for SVG attributes such as `viewBox` in in-DOM templates.\n"
+		"description": "Vue 2.1+. Converts a kebab-case attribute name to camelCase — needed for SVG attributes such as `viewBox` in in-DOM templates.\n",
+		"scope": "vue,html"
 	},
 	"v-on, dynamic argument": {
 		"prefix": ["v-on-dynamic", "vod"],
 		"body": ["@[${1:eventName}]=\"${2:handler}\""],
-		"description": "Vue 2.6+. Dynamic argument — the event name itself comes from an expression.\n"
+		"description": "Vue 2.6+. Dynamic argument — the event name itself comes from an expression.\n",
+		"scope": "vue,html"
 	},
 	"v-on, .native modifier": {
 		"prefix": "v-on-native_UNSAFE",
 		"body": ["@${1:click}.native=\"${2:handler}\""],
-		"description": "**Vue 2 only — removed in Vue 3** (all listeners land in `$attrs` and are applied by `inheritAttrs`).\nListens for a native DOM event on the component's root element instead of a custom event.\n"
+		"description": "**Vue 2 only — removed in Vue 3** (all listeners land in `$attrs` and are applied by `inheritAttrs`).\nListens for a native DOM event on the component's root element instead of a custom event.\n",
+		"scope": "vue,html"
 	},
 	"v-on, self": {
 		"prefix": "v-on-self",
 		"body": ["@${1:click}.self=\"${2:handler}\""],
-		"description": "Only fires when the event was dispatched from this element itself, not from a descendant.\n"
+		"description": "Only fires when the event was dispatched from this element itself, not from a descendant.\n",
+		"scope": "vue,html"
 	},
 	"v-on, capture": {
 		"prefix": "v-on-capture",
 		"body": ["@${1:click}.capture=\"${2:handler}\""],
-		"description": "Uses the capture phase — the handler runs before the event reaches its target.\n"
+		"description": "Uses the capture phase — the handler runs before the event reaches its target.\n",
+		"scope": "vue,html"
 	},
 	"v-on, passive": {
 		"prefix": "v-on-passive",
 		"body": ["@${1:scroll}.passive=\"${2:handler}\""],
-		"description": "Vue 2.3+. Marks the listener as passive, so the browser need not wait to see whether `preventDefault()` is called. Do not combine with `.prevent`.\n"
+		"description": "Vue 2.3+. Marks the listener as passive, so the browser need not wait to see whether `preventDefault()` is called. Do not combine with `.prevent`.\n",
+		"scope": "vue,html"
 	},
 	"v-model, .lazy modifier": {
 		"prefix": ["v-model-lazy", "vml"],
 		"body": ["v-model.lazy=\"${1:value}\""],
-		"description": "Syncs on `change` instead of `input`.\n"
+		"description": "Syncs on `change` instead of `input`.\n",
+		"scope": "vue,html"
 	},
 	"v-model, .number modifier": {
 		"prefix": ["v-model-number", "vmn"],
 		"body": ["v-model.number=\"${1:value}\""],
-		"description": "Casts the input to a Number; falls back to the original string when the cast yields `NaN`.\n"
+		"description": "Casts the input to a Number; falls back to the original string when the cast yields `NaN`.\n",
+		"scope": "vue,html"
 	},
 	"v-model, .trim modifier": {
 		"prefix": ["v-model-trim", "vmt"],
 		"body": ["v-model.trim=\"${1:value}\""],
-		"description": "Trims leading and trailing whitespace from the input.\n"
+		"description": "Trims leading and trailing whitespace from the input.\n",
+		"scope": "vue,html"
 	}
 }
