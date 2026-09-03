@@ -4,6 +4,11 @@ All notable changes to the **Vue 2 Snippets** extension are documented in this f
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Each entry lists only the headline change per release — see git history/tags for full detail. Patch releases that only touched documentation or the build are folded into the entry above them.
 
+## [2.6.0] - 2026-09-03
+
+- Unify packaging and publishing scripts to `vsce:package` and `vsce:publish`
+- Update GitHub Actions CI workflow to use `pnpm run vsce:publish`
+
 ## [2.5.3] - 2026-09-02
 
 - **`.vue` files now need a Vue extension installed.** This extension no longer registers the `vue` language id itself, so `.vue` recognition comes from whichever Vue extension you use. Snippets in `.js`, `.ts`, `.html`, `.css`, `.scss` and `.less` are unaffected
